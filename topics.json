@@ -1,0 +1,254 @@
+[
+  {
+    "id": "neurons-platform",
+    "name": "Ivanti Neurons Platform",
+    "family": "Platform",
+    "interviewWeight": "High",
+    "summary": "Unified platform layer that brings together service management, endpoint operations, security and automation on a shared, cloud-native foundation.",
+    "keyCapabilities": [
+      "Cross-product visibility",
+      "Shared automation mindset",
+      "AI-assisted outcomes",
+      "Unified operational experience",
+      "Analytics and orchestration",
+      "Foundation for expansion"
+    ],
+    "interviewThemes": [
+      "Why a platform approach matters across IT and security",
+      "How shared data and workflows reduce silos",
+      "How to explain value without overselling AI",
+      "When to start broad versus start deep in rollout"
+    ]
+  },
+  {
+    "id": "neurons-itsm",
+    "name": "Ivanti Neurons for ITSM",
+    "family": "Service management",
+    "interviewWeight": "High",
+    "summary": "Flexible service management platform for incidents, requests, change, problem, knowledge, self-service and automation-driven support experiences.",
+    "keyCapabilities": [
+      "Incident and request workflows",
+      "Self-service and portals",
+      "Approvals and escalations",
+      "Automation and integrations",
+      "Reporting and dashboards",
+      "ITIL-aligned process support"
+    ],
+    "interviewThemes": [
+      "Object model and workflow design",
+      "Role-based experience and data quality",
+      "Process standardization versus business flexibility",
+      "Notification strategy and operational metrics"
+    ]
+  },
+  {
+    "id": "neurons-mdm",
+    "name": "Ivanti Neurons for MDM",
+    "family": "Modern device management",
+    "interviewWeight": "High",
+    "summary": "Modern device management platform covering enrollment, policies, compliance, app distribution and security controls for a broad mix of endpoint types.",
+    "keyCapabilities": [
+      "Multi-OS device support",
+      "Enrollment options",
+      "Compliance and restrictions",
+      "App deployment",
+      "Audit trails",
+      "Lifecycle controls"
+    ],
+    "interviewThemes": [
+      "Enrollment design by ownership model",
+      "Compliance actions and user impact",
+      "App deployment readiness and staged rollouts",
+      "Troubleshooting device and policy issues"
+    ]
+  },
+  {
+    "id": "neurons-uem",
+    "name": "Ivanti Neurons for UEM",
+    "family": "Endpoint operations",
+    "interviewWeight": "High",
+    "summary": "Unified endpoint management capability that combines visibility, self-healing, self-securing and personalized endpoint operations at scale.",
+    "keyCapabilities": [
+      "Endpoint visibility",
+      "Self-healing bots",
+      "Operational intelligence",
+      "Personalized support experiences",
+      "Automation library",
+      "Cross-team endpoint insights"
+    ],
+    "interviewThemes": [
+      "Moving from reactive support to proactive operations",
+      "Bot governance and safe automation",
+      "Endpoint health reporting and value storytelling",
+      "Integration between endpoint actions and service response"
+    ]
+  },
+  {
+    "id": "endpoint-manager",
+    "name": "Ivanti Endpoint Manager",
+    "family": "Endpoint operations",
+    "interviewWeight": "High",
+    "summary": "Established endpoint management toolset for inventory, software distribution, OS deployment, patching and device administration across managed environments.",
+    "keyCapabilities": [
+      "Inventory and discovery",
+      "Software distribution",
+      "Patch operations",
+      "OS deployment",
+      "Device targeting",
+      "Operational remediation"
+    ],
+    "interviewThemes": [
+      "Deployment safety and phased rollouts",
+      "Device targeting and maintenance windows",
+      "Patch exceptions and reporting",
+      "Troubleshooting agent and deployment failures"
+    ]
+  },
+  {
+    "id": "neurons-healing",
+    "name": "Ivanti Neurons for Healing",
+    "family": "Automation",
+    "interviewWeight": "Medium",
+    "summary": "Automation capability focused on detecting, diagnosing and resolving endpoint issues automatically so support teams can reduce repetitive work.",
+    "keyCapabilities": [
+      "Proactive issue detection",
+      "Automated remediation",
+      "Reduced support volume",
+      "Repeatable runbooks",
+      "Operational consistency",
+      "User disruption reduction"
+    ],
+    "interviewThemes": [
+      "Choosing the right issues to self-heal",
+      "Testing remediation safely before scale",
+      "Monitoring automation outcomes",
+      "Balancing automation speed with risk"
+    ]
+  },
+  {
+    "id": "neurons-edge-intelligence",
+    "name": "Ivanti Neurons for Edge Intelligence",
+    "family": "Analytics and insights",
+    "interviewWeight": "Medium",
+    "summary": "Real-time endpoint intelligence and observability capability used to identify patterns, understand issues and drive better endpoint decisions.",
+    "keyCapabilities": [
+      "Real-time intelligence",
+      "Operational insight",
+      "Endpoint pattern discovery",
+      "Context-aware actions",
+      "Experience data",
+      "Decision support"
+    ],
+    "interviewThemes": [
+      "Turning insight into action",
+      "Choosing useful operational indicators",
+      "Prioritizing remediation from endpoint signals",
+      "Communicating analytics value to non-technical stakeholders"
+    ]
+  },
+  {
+    "id": "velocity",
+    "name": "Ivanti Velocity",
+    "family": "Operational mobility",
+    "interviewWeight": "Medium",
+    "summary": "Modernizes telnet and web applications for mobile operations and enables more efficient workflows in warehouse, distribution and field environments.",
+    "keyCapabilities": [
+      "Legacy app modernization",
+      "Mobile workflow optimization",
+      "Scanning support",
+      "Operational insights",
+      "Peripheral integration",
+      "Process productivity improvements"
+    ],
+    "interviewThemes": [
+      "Business case for modernizing host-based workflows",
+      "User adoption in operational environments",
+      "Testing on rugged devices and peripherals",
+      "Measuring efficiency improvement after rollout"
+    ]
+  },
+  {
+    "id": "security-controls",
+    "name": "Ivanti Security Controls",
+    "family": "Security",
+    "interviewWeight": "Medium",
+    "summary": "Security-focused product area for patching and securing devices with policy-driven controls and vulnerability reduction strategies.",
+    "keyCapabilities": [
+      "Patch and remediation controls",
+      "Security configuration support",
+      "Vulnerability reduction",
+      "Device hardening",
+      "Operational compliance",
+      "Security reporting"
+    ],
+    "interviewThemes": [
+      "How security operations interact with endpoint operations",
+      "Patch governance and exception workflows",
+      "Communicating risk and remediation progress",
+      "Balancing security urgency with operational stability"
+    ]
+  },
+  {
+    "id": "neurons-rbvm",
+    "name": "Ivanti Risk-Based Vulnerability Management",
+    "family": "Security",
+    "interviewWeight": "Medium",
+    "summary": "Supports vulnerability prioritization and risk-based remediation planning to focus teams on exposures with the highest practical impact.",
+    "keyCapabilities": [
+      "Prioritization by risk",
+      "Exposure visibility",
+      "Remediation planning",
+      "Security reporting",
+      "Cross-team alignment",
+      "Actionable vulnerability workflows"
+    ],
+    "interviewThemes": [
+      "Risk-based prioritization versus raw volume",
+      "Remediation ownership across teams",
+      "Presenting vulnerability status to leadership",
+      "Coordinating with endpoint and service processes"
+    ]
+  },
+  {
+    "id": "neurons-ipaas",
+    "name": "Ivanti Neurons iPaaS",
+    "family": "Integrations",
+    "interviewWeight": "Medium",
+    "summary": "Integration capability intended to accelerate workflow connections across external applications and reduce dependency on one-off custom build patterns.",
+    "keyCapabilities": [
+      "Workflow integration",
+      "Connector-based patterns",
+      "Reduced hand coding",
+      "Cross-system data movement",
+      "Operational consistency",
+      "Scalable integration governance"
+    ],
+    "interviewThemes": [
+      "When to use platform integration versus bespoke API work",
+      "Field mapping governance and ownership",
+      "Supportability of cross-system automations",
+      "Handling errors and reprocessing flows"
+    ]
+  },
+  {
+    "id": "workspace",
+    "name": "Ivanti Neurons Workspace and Experience Capabilities",
+    "family": "Experience",
+    "interviewWeight": "Low",
+    "summary": "Experience-oriented capabilities that support more efficient self-service, user guidance and productivity improvements across endpoint and service contexts.",
+    "keyCapabilities": [
+      "User-centric support experience",
+      "Self-service guidance",
+      "Experience optimization",
+      "Contextual support interactions",
+      "Productivity focus",
+      "Operational transparency"
+    ],
+    "interviewThemes": [
+      "How better experience reduces support effort",
+      "Where self-service fits and where it fails",
+      "Adoption strategies for new experiences",
+      "Metrics for experience improvement"
+    ]
+  }
+]

@@ -1,0 +1,262 @@
+[
+  {
+    "id": "itsm-admin",
+    "name": "Ivanti ITSM Administrator",
+    "track": "Service management",
+    "level": "Core",
+    "summary": "Owns day-to-day configuration and support of Ivanti Neurons for ITSM, including objects, forms, workflows, notifications, searches, dashboards and operational support processes.",
+    "focusAreas": [
+      "Business objects, relationships and field design",
+      "Forms, layouts, validation, permissions and workspaces",
+      "Saved searches, quick actions and automation entry points",
+      "Email templates, notifications, approvals and escalations",
+      "Dashboards, reports, queues and operational monitoring",
+      "Release testing, regression validation and support handoff"
+    ],
+    "mustKnow": [
+      "Explain how you structure a new service management workflow end to end.",
+      "Describe how you design a saved-search-driven notification without creating noise.",
+      "Show how you balance usability, governance and data quality in forms.",
+      "Discuss troubleshooting for workflow failures, email issues and record visibility problems."
+    ],
+    "scenarios": [
+      "Automate a weekly report for incidents matching specific keywords.",
+      "Add a new service request experience with approvals and journal updates.",
+      "Enhance a form for self-service users while preserving admin controls."
+    ]
+  },
+  {
+    "id": "itsm-developer",
+    "name": "Ivanti ITSM Developer",
+    "track": "Service management",
+    "level": "Advanced",
+    "summary": "Builds extensible configurations and custom logic on the ITSM platform, using workflows, scripting, integrations, reusable templates and controlled customization patterns.",
+    "focusAreas": [
+      "Configuration versus customization decisions",
+      "Workflow automation, quick actions and business-rule-like logic",
+      "REST integrations, web service calls and JSON payload handling",
+      "Reusable templates, naming conventions and deployment safety",
+      "Performance tuning and traceable change design",
+      "Testing strategy for custom features and release promotion"
+    ],
+    "mustKnow": [
+      "Explain when to script and when to solve with configuration.",
+      "Describe a secure API integration approach with authentication handling.",
+      "Walk through how you debug custom logic in a lower environment before promotion.",
+      "Explain how you design upgrades and maintenance with minimal technical debt."
+    ],
+    "scenarios": [
+      "Create an outbound integration that enriches incidents from a third-party tool.",
+      "Design a quick action that emails a filtered weekly ticket summary.",
+      "Build conditional form logic that respects role-based visibility."
+    ]
+  },
+  {
+    "id": "neurons-consultant",
+    "name": "Ivanti Neurons Consultant",
+    "track": "Platform consulting",
+    "level": "Advanced",
+    "summary": "Guides platform adoption across products, aligns stakeholders on capabilities, maps requirements to product areas and turns operational pain points into automation-driven solutions.",
+    "focusAreas": [
+      "Discovery workshops and requirement mapping",
+      "Capability fit across Neurons platform products",
+      "Roadmap planning and phased implementation strategy",
+      "Governance, stakeholder communication and risk management",
+      "Value articulation through automation, self-service and analytics",
+      "Change management and adoption planning"
+    ],
+    "mustKnow": [
+      "Explain how you evaluate product fit across multiple Ivanti capabilities.",
+      "Describe how you turn pain points into a sequenced delivery roadmap.",
+      "Show how you manage stakeholder expectations when platform limits appear.",
+      "Discuss how you measure adoption and operational outcomes after rollout."
+    ],
+    "scenarios": [
+      "Recommend a first-phase rollout for an organization using multiple endpoint and service tools.",
+      "Create a roadmap balancing quick wins with future automation maturity.",
+      "Handle disagreement between service desk and security stakeholders on process design."
+    ]
+  },
+  {
+    "id": "platform-engineer",
+    "name": "Ivanti Platform Engineer",
+    "track": "Platform operations",
+    "level": "Advanced",
+    "summary": "Supports architecture, deployment readiness, platform configuration standards, integrations, monitoring and cross-product alignment across the Ivanti estate.",
+    "focusAreas": [
+      "Environment strategy and configuration standards",
+      "Integration governance and secure connectivity",
+      "Identity, roles, permission models and access design",
+      "Platform observability, release readiness and support models",
+      "Cross-product data flow and ownership boundaries",
+      "Operational resiliency and documentation discipline"
+    ],
+    "mustKnow": [
+      "Describe how you define platform guardrails across teams.",
+      "Explain operational ownership between platform, service and endpoint teams.",
+      "Discuss dependency mapping for connected tools and APIs.",
+      "Walk through a production change plan with rollback and validation."
+    ],
+    "scenarios": [
+      "Set up standards for naming, security and deployment readiness.",
+      "Coordinate a cross-product release with multiple downstream dependencies.",
+      "Investigate a platform-wide access issue after a role change."
+    ]
+  },
+  {
+    "id": "endpoint-manager-admin",
+    "name": "Ivanti Endpoint Manager Administrator",
+    "track": "Endpoint management",
+    "level": "Core",
+    "summary": "Administers endpoint operations including device inventory, software distribution, patching, OS deployment and policy-based management for managed endpoints.",
+    "focusAreas": [
+      "Endpoint discovery and inventory accuracy",
+      "Software packaging and software distribution methods",
+      "Patch management strategy and deployment windows",
+      "Device groups, targeting logic and rollout waves",
+      "Agent health, compliance and operational troubleshooting",
+      "Change control for endpoint-wide deployments"
+    ],
+    "mustKnow": [
+      "Explain how you reduce deployment risk for large software rollouts.",
+      "Describe endpoint grouping and targeting strategies.",
+      "Discuss patch exception handling and remediation follow-up.",
+      "Show how you troubleshoot devices that fail distribution or patch scans."
+    ],
+    "scenarios": [
+      "Roll out a critical application to multiple device groups with phased validation.",
+      "Investigate why a subset of devices missed a patch window.",
+      "Design a compliance view for deployment success and failures."
+    ]
+  },
+  {
+    "id": "uem-engineer",
+    "name": "Ivanti UEM Engineer",
+    "track": "Unified endpoint management",
+    "level": "Advanced",
+    "summary": "Works across discovery, endpoint intelligence, self-healing, user experience and policy-based control to improve resilience and operational efficiency in modern endpoint environments.",
+    "focusAreas": [
+      "Unified endpoint visibility and control models",
+      "Self-healing and bot-driven remediation patterns",
+      "Patch, compliance and endpoint experience alignment",
+      "Automation design for proactive endpoint operations",
+      "Integration with identity, security and service workflows",
+      "Operational analytics for endpoint health and user productivity"
+    ],
+    "mustKnow": [
+      "Explain how UEM improves operations beyond traditional endpoint administration.",
+      "Describe when to automate remediation and when to escalate to service workflows.",
+      "Discuss user experience considerations for autonomous actions.",
+      "Explain how you present endpoint health metrics to leadership."
+    ],
+    "scenarios": [
+      "Design a self-heal flow for recurring endpoint performance issues.",
+      "Align endpoint event signals with ticket creation or technician intervention.",
+      "Propose a maturity model for moving from reactive to proactive endpoint operations."
+    ]
+  },
+  {
+    "id": "mdm-engineer",
+    "name": "Ivanti Neurons for MDM Engineer",
+    "track": "Mobile and modern device management",
+    "level": "Core",
+    "summary": "Designs and manages enrollment, compliance, app distribution, security and lifecycle controls for modern devices across iOS, Android, macOS, Windows and ChromeOS environments.",
+    "focusAreas": [
+      "Enrollment models and ownership scenarios",
+      "Compliance policies, device posture and enforcement actions",
+      "App distribution, profiles, restrictions and security baselines",
+      "BYOD versus corporate-owned device strategy",
+      "Device troubleshooting, audit trails and exception handling",
+      "Operational reporting for device health and compliance"
+    ],
+    "mustKnow": [
+      "Describe common enrollment methods and their tradeoffs.",
+      "Explain how compliance policies interact with user experience and risk.",
+      "Discuss how you test app deployment before broad release.",
+      "Show how you troubleshoot a failed enrollment or unenforced restriction."
+    ],
+    "scenarios": [
+      "Set up onboarding for a mixed fleet of corporate-owned and BYOD devices.",
+      "Design a staged deployment for a business-critical mobile app.",
+      "Investigate devices not receiving policies after enrollment."
+    ]
+  },
+  {
+    "id": "velocity-specialist",
+    "name": "Ivanti Velocity Specialist",
+    "track": "Operational mobility",
+    "level": "Specialist",
+    "summary": "Optimizes mobile workflows for warehouses, field operations and supply chain environments using Velocity for modernization, browser enablement, automation, scanning and voice-related enhancements.",
+    "focusAreas": [
+      "Legacy telnet and web app modernization",
+      "Workflow redesign for mobile workers",
+      "Scanning, peripherals and process efficiency",
+      "Browser-based sessions and operational automation",
+      "User experience for rugged devices and high-volume tasks",
+      "Rollout validation in business-critical environments"
+    ],
+    "mustKnow": [
+      "Explain what business problem Velocity solves.",
+      "Describe how you modernize host applications without rebuilding core systems.",
+      "Discuss operational risks in warehouse or field mobility rollouts.",
+      "Explain how you validate productivity and user adoption improvements."
+    ],
+    "scenarios": [
+      "Convert a legacy terminal workflow into a mobile-friendly process.",
+      "Reduce picking errors using scanning and guided workflow changes.",
+      "Plan a rollout for a rugged device fleet in a warehouse environment."
+    ]
+  },
+  {
+    "id": "automation-specialist",
+    "name": "Ivanti Automation and Integration Specialist",
+    "track": "Automation",
+    "level": "Advanced",
+    "summary": "Connects Ivanti workflows with adjacent systems using APIs, event-driven logic, automation assets and orchestration patterns that reduce manual work and improve response speed.",
+    "focusAreas": [
+      "REST API design and payload handling",
+      "Authentication, secrets and secure integration patterns",
+      "Error handling, retries and idempotent workflow design",
+      "Trigger conditions, orchestration and automation boundaries",
+      "Observability for integrations and action outcomes",
+      "Documentation and supportability of automated flows"
+    ],
+    "mustKnow": [
+      "Describe a safe outbound integration pattern.",
+      "Explain how you handle retries without duplicating actions.",
+      "Discuss monitoring and support for failed automation runs.",
+      "Explain how you document field mappings and ownership."
+    ],
+    "scenarios": [
+      "Create an integration that synchronizes ticket data with a third-party platform.",
+      "Build a low-touch automation for repetitive service desk actions.",
+      "Design an alert-to-action workflow with validation checkpoints."
+    ]
+  },
+  {
+    "id": "ivanti-architect",
+    "name": "Ivanti Solution Architect",
+    "track": "Architecture",
+    "level": "Leadership",
+    "summary": "Defines end-to-end solution direction across Ivanti products, balancing business priorities, technical fit, security, implementation complexity and future scalability.",
+    "focusAreas": [
+      "Capability mapping across the broader Ivanti portfolio",
+      "Reference architecture and integration design",
+      "Governance, security and data stewardship models",
+      "Roadmaps, sequencing and implementation constraints",
+      "Decision frameworks for product fit and customization",
+      "Executive communication and architecture tradeoff management"
+    ],
+    "mustKnow": [
+      "Explain how you decide between adjacent product capabilities.",
+      "Describe how you sequence enterprise rollout without overloading teams.",
+      "Discuss how you handle conflicting stakeholder requirements.",
+      "Explain how you create scalable architecture while limiting complexity."
+    ],
+    "scenarios": [
+      "Design a multi-product architecture for service, endpoint and mobile operations.",
+      "Recommend a phased deployment strategy for a global organization.",
+      "Defend a platform decision to leadership with risk and value tradeoffs."
+    ]
+  }
+]

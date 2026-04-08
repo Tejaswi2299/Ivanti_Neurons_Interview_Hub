@@ -1,0 +1,146 @@
+[
+  {
+    "id": "outbound-rest-pattern",
+    "name": "Outbound REST enrichment pattern",
+    "type": "Integration",
+    "product": "Neurons for ITSM",
+    "summary": "Use outbound API calls to enrich records with external context such as vulnerability score, asset state or identity attributes before routing or escalation.",
+    "keyMoves": [
+      "Build secure authentication handling",
+      "Validate payload mapping before go-live",
+      "Guard against null or slow responses",
+      "Log errors for support teams"
+    ],
+    "commonQuestions": [
+      "How would you call an external API from a ticket workflow?",
+      "How do you secure credentials?",
+      "How do you handle API timeout or malformed responses?"
+    ]
+  },
+  {
+    "id": "saved-search-email-pattern",
+    "name": "Saved search to scheduled email pattern",
+    "type": "Automation",
+    "product": "Neurons for ITSM",
+    "summary": "A common interview scenario where a filtered operational view is reused to send scheduled summaries to a targeted stakeholder group.",
+    "keyMoves": [
+      "Design the search carefully",
+      "Reuse the search output as automation input",
+      "Keep the email concise and actionable",
+      "Validate recipient rules and timing"
+    ],
+    "commonQuestions": [
+      "How would you send weekly incidents matching a condition?",
+      "How do you prevent noisy recurring emails?",
+      "How do you test the output before scheduling?"
+    ]
+  },
+  {
+    "id": "conditional-form-logic",
+    "name": "Conditional form behavior pattern",
+    "type": "Configuration logic",
+    "product": "Neurons for ITSM",
+    "summary": "Show and validate fields dynamically based on user role, service type, request category or state transitions.",
+    "keyMoves": [
+      "Keep business logic transparent",
+      "Prefer maintainable rule structures",
+      "Test by persona and scenario",
+      "Preserve data integrity on hidden fields"
+    ],
+    "commonQuestions": [
+      "How do you hide fields for self-service users?",
+      "How do you require values only in certain states?",
+      "How do you avoid logic conflicts?"
+    ]
+  },
+  {
+    "id": "bulk-device-action",
+    "name": "Bulk device action safety pattern",
+    "type": "Endpoint automation",
+    "product": "Endpoint Manager",
+    "summary": "Large-scale device actions require smart targeting, phased execution and validation checkpoints so operational risk stays manageable.",
+    "keyMoves": [
+      "Pilot on representative devices",
+      "Use explicit targeting criteria",
+      "Track results in waves",
+      "Prepare reattempt or rollback steps"
+    ],
+    "commonQuestions": [
+      "How do you roll out software to thousands of devices safely?",
+      "What metrics do you watch during execution?",
+      "How do you handle failed endpoints?"
+    ]
+  },
+  {
+    "id": "policy-rollout-pattern",
+    "name": "Policy rollout and staged enforcement pattern",
+    "type": "MDM",
+    "product": "Neurons for MDM",
+    "summary": "Roll out compliance policies or restrictions in stages so operational and user impact can be observed before strict enforcement.",
+    "keyMoves": [
+      "Separate audit and enforce stages",
+      "Use pilot groups first",
+      "Communicate user impact early",
+      "Track exceptions and edge cases"
+    ],
+    "commonQuestions": [
+      "How do you deploy a new device restriction safely?",
+      "How do you troubleshoot partial policy application?",
+      "How do you minimize user disruption?"
+    ]
+  },
+  {
+    "id": "self-heal-bot-pattern",
+    "name": "Self-heal bot design pattern",
+    "type": "Automation",
+    "product": "Neurons for UEM",
+    "summary": "Use a safe decision tree for autonomous endpoint remediation: detect, validate, remediate, verify and escalate if needed.",
+    "keyMoves": [
+      "Limit scope to known repeatable issues",
+      "Include validation before action",
+      "Verify success after remediation",
+      "Escalate with context if unresolved"
+    ],
+    "commonQuestions": [
+      "What issues would you choose for self-healing?",
+      "How do you keep automation trustworthy?",
+      "How do you measure the effect on support volume?"
+    ]
+  },
+  {
+    "id": "velocity-workflow-pattern",
+    "name": "Velocity workflow modernization pattern",
+    "type": "Operational mobility",
+    "product": "Velocity",
+    "summary": "Improve a warehouse or field workflow by mapping the current host sequence, removing friction and validating new mobile interactions with real operators.",
+    "keyMoves": [
+      "Map current-state steps",
+      "Design around scan-heavy flows",
+      "Reduce taps and ambiguity",
+      "Test on production-like devices"
+    ],
+    "commonQuestions": [
+      "How would you modernize a telnet-based picking process?",
+      "How do you measure productivity improvement?",
+      "What testing matters most in operational environments?"
+    ]
+  },
+  {
+    "id": "integration-observability",
+    "name": "Integration observability checklist",
+    "type": "Supportability",
+    "product": "Cross-platform",
+    "summary": "Every serious integration needs logging, support ownership, retry rules and an agreed way to investigate failures quickly.",
+    "keyMoves": [
+      "Log request context and outcome",
+      "Capture functional versus technical failures",
+      "Define reprocessing steps",
+      "Create ownership and escalation path"
+    ],
+    "commonQuestions": [
+      "How do you support an automation after it goes live?",
+      "What should be logged?",
+      "How do you avoid duplicate processing?"
+    ]
+  }
+]
