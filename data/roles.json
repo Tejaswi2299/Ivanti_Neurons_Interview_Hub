@@ -1,5 +1,110 @@
-{
-  "coverageStatement": "Full-stack Ivanti",
-  "promise": "A software-style interview platform for Ivanti candidates who want complete ecosystem coverage.",
-  "about": "Ivanti Neurons Interview Hub is designed as a structured preparation platform covering the broader Ivanti landscape, including service management, endpoint operations, device management, automation, integrations, security and operational mobility. The experience is intentionally organized like software: searchable, modular, bookmarkable and ready for future expansion."
-}
+[
+  {
+    "id": "itsm-admin",
+    "category": "Core platform role",
+    "name": "Ivanti ITSM Administrator",
+    "summary": "Owns configuration, forms, business objects, workflows, notifications, saved searches, dashboards, and operational support in Ivanti ITSM.",
+    "responsibilities": [
+      "Configure business objects, layouts, fields, relationships, and validation rules.",
+      "Manage workflows, quick actions, saved searches, escalations, and email templates.",
+      "Support reporting, dashboards, user access, service request design, and production troubleshooting."
+    ],
+    "focus": [
+      "Business objects and relationships",
+      "Forms and layouts",
+      "Quick actions and workflows",
+      "Saved searches and reporting",
+      "Email and escalation design"
+    ]
+  },
+  {
+    "id": "itsm-dev",
+    "category": "Core platform role",
+    "name": "Ivanti ITSM Developer",
+    "summary": "Builds advanced automation, integrations, scripting solutions, API connections, and complex platform customizations.",
+    "responsibilities": [
+      "Develop integrations using REST APIs, web services, scripts, and automation logic.",
+      "Implement reusable components for forms, validations, data handling, and process orchestration.",
+      "Support deployment, troubleshooting, optimization, and technical design reviews."
+    ],
+    "focus": [
+      "REST API integration",
+      "Web service scripts",
+      "Automation design",
+      "Custom validations",
+      "Troubleshooting and optimization"
+    ]
+  },
+  {
+    "id": "uem-engineer",
+    "category": "Endpoint and device role",
+    "name": "Ivanti UEM Engineer",
+    "summary": "Designs and supports unified endpoint management, patching, distribution, policy compliance, and device lifecycle processes.",
+    "responsibilities": [
+      "Manage endpoint policies, software deployment, patching, compliance, and inventory visibility.",
+      "Coordinate device onboarding, lifecycle, and policy-driven controls across managed environments.",
+      "Investigate patch failures, agent communication issues, and deployment health."
+    ],
+    "focus": [
+      "Patch and software distribution",
+      "Policy and compliance",
+      "Device lifecycle",
+      "Endpoint visibility",
+      "Troubleshooting endpoint management"
+    ]
+  },
+  {
+    "id": "mdm-engineer",
+    "category": "Endpoint and device role",
+    "name": "Ivanti MDM Engineer",
+    "summary": "Focuses on mobile device enrollment, policy enforcement, app deployment, compliance monitoring, and security controls.",
+    "responsibilities": [
+      "Configure device enrollment, ownership profiles, compliance rules, and app delivery flows.",
+      "Support BYOD and corporate-owned device management with policy governance.",
+      "Handle mobile access, security baselines, and app lifecycle operations."
+    ],
+    "focus": [
+      "Enrollment and compliance",
+      "App deployment",
+      "Ownership models",
+      "Mobile security",
+      "Operational governance"
+    ]
+  },
+  {
+    "id": "velocity-consultant",
+    "category": "Specialized role",
+    "name": "Ivanti Velocity Consultant",
+    "summary": "Implements mobile workflows for warehouse, field, and business-critical environments using browser and scanning-based experiences.",
+    "responsibilities": [
+      "Design browser-based and mobile-enabled task flows for frontline operations.",
+      "Map business workflows into handheld or kiosk experiences.",
+      "Support scanning, navigation, operational productivity, and usability improvements."
+    ],
+    "focus": [
+      "Warehouse and field workflows",
+      "Browser-based apps",
+      "Mobility transformation",
+      "Operational scenarios",
+      "User flow design"
+    ]
+  },
+  {
+    "id": "integration-architect",
+    "category": "Advanced role",
+    "name": "Ivanti Integration and Automation Architect",
+    "summary": "Designs cross-product automation, governance, integration strategy, API security, and scalable solution patterns across the Ivanti ecosystem.",
+    "responsibilities": [
+      "Define integration patterns across ITSM, endpoint, identity, and external enterprise systems.",
+      "Guide automation strategy, reusable services, and error handling patterns.",
+      "Align solution design to operational needs, performance, and maintainability."
+    ],
+    "focus": [
+      "Architecture and governance",
+      "Cross-platform automation",
+      "Reusable APIs",
+      "Security and scalability",
+      "Enterprise integration strategy"
+    ]
+  }
+]

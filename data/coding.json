@@ -1,342 +1,62 @@
 [
   {
-    "id": "business-objects",
-    "name": "Business objects and data modeling",
-    "category": "ITSM",
-    "difficulty": "Core",
-    "summary": "Understand how entities, fields, relationships and lifecycle states are structured so workflows, forms, searches and reporting remain stable and scalable.",
-    "interviewAngles": [
-      "How would you design a new object?",
-      "How do relationships affect reporting and workflow logic?",
-      "How do you prevent poor field design from becoming long-term technical debt?"
+    "id": "rest-patterns",
+    "area": "Integrations",
+    "name": "REST API Integration Patterns",
+    "summary": "Prepare to discuss request flows, authentication, payload construction, mapping, retries, and integration governance.",
+    "talkingPoints": [
+      "Explain outbound and inbound patterns clearly.",
+      "Mention validation, logging, and error handling.",
+      "Describe how scheduled and event-driven integrations differ."
     ],
-    "reviewChecklist": [
-      "Map primary records, supporting records and relationship direction.",
-      "Define required fields, state logic and ownership clearly.",
-      "Review reporting and permission impacts before deployment."
+    "prompts": [
+      "Walk through a REST integration you designed.",
+      "How would you send scheduled results to an external recipient?"
     ]
   },
   {
-    "id": "forms-layouts",
-    "name": "Forms, layouts and workspace usability",
-    "category": "ITSM",
-    "difficulty": "Core",
-    "summary": "Designing the right experience for different user types while preserving clarity, governance and maintainability.",
-    "interviewAngles": [
-      "How do you simplify forms for self-service users?",
-      "How do you enforce required data without harming usability?",
-      "How do you organize layouts for technician efficiency?"
+    "id": "email-automation",
+    "area": "ITSM automation",
+    "name": "Email and Notification Automation",
+    "summary": "Useful for describing how saved searches, quick actions, workflows, and templates work together.",
+    "talkingPoints": [
+      "How to build a scheduled communication flow.",
+      "How templates reduce manual effort and standardize messaging.",
+      "Why testing recipient logic and filters matters."
     ],
-    "reviewChecklist": [
-      "Group fields by user intent.",
-      "Apply visibility and edit logic intentionally.",
-      "Test on real workflows, not only on form design screens."
+    "prompts": [
+      "How do you send weekly incident summaries?",
+      "How do you automate stakeholder notifications?"
     ]
   },
   {
-    "id": "saved-searches",
-    "name": "Saved searches and operational filtering",
-    "category": "ITSM",
-    "difficulty": "Core",
-    "summary": "Saved searches often drive technician views, dashboards, automation inputs and scheduled communication patterns.",
-    "interviewAngles": [
-      "How do you avoid overly broad search definitions?",
-      "How do you reuse saved searches operationally?",
-      "How do you validate search accuracy before scheduling actions?"
+    "id": "scripted-validations",
+    "area": "Platform logic",
+    "name": "Scripted Validation and Logic Design",
+    "summary": "Talk about validation paths, condition checks, field behavior, and safe automation design.",
+    "talkingPoints": [
+      "Use validations to protect data quality.",
+      "Keep logic maintainable and scoped to the right layer.",
+      "Explain tradeoffs between configuration and scripting."
     ],
-    "reviewChecklist": [
-      "Use precise conditions and ownership filters.",
-      "Validate sample outputs with stakeholders.",
-      "Document where each saved search is reused."
+    "prompts": [
+      "When would you choose scripting over configuration?",
+      "How do you avoid breaking existing workflows?"
     ]
   },
   {
-    "id": "workflows-automation",
-    "name": "Workflow automation strategy",
-    "category": "Cross-platform",
-    "difficulty": "Advanced",
-    "summary": "A recurring interview theme across Ivanti products: how to turn repetitive work into safe, supportable automation.",
-    "interviewAngles": [
-      "How do you choose automation boundaries?",
-      "How do you test conditions and branches?",
-      "How do you prevent duplicate or conflicting actions?"
+    "id": "data-mapping",
+    "area": "Integration design",
+    "name": "Data Mapping and Transformation",
+    "summary": "Essential for describing how external data lands correctly in Ivanti objects and processes.",
+    "talkingPoints": [
+      "Discuss schema alignment and transformation rules.",
+      "Explain identifiers, reconciliation, and null handling.",
+      "Mention retries and idempotent update thinking."
     ],
-    "reviewChecklist": [
-      "Define triggers, conditions and rollback approach.",
-      "Separate business intent from implementation detail.",
-      "Plan logging and failure handling from the start."
-    ]
-  },
-  {
-    "id": "quick-actions",
-    "name": "Quick actions and operator efficiency",
-    "category": "ITSM",
-    "difficulty": "Core",
-    "summary": "Low-friction actions that help operators move faster while preserving consistency across common tasks.",
-    "interviewAngles": [
-      "When is a quick action better than a bigger workflow?",
-      "What guardrails do you add to operator-triggered actions?",
-      "How do you make actions discoverable but safe?"
-    ],
-    "reviewChecklist": [
-      "Use for repetitive, bounded actions.",
-      "Clarify permissions and eligibility rules.",
-      "Test output quality and user comprehension."
-    ]
-  },
-  {
-    "id": "email-notifications",
-    "name": "Email templates and notification design",
-    "category": "ITSM",
-    "difficulty": "Core",
-    "summary": "Notifications are high-impact and high-risk: useful when precise, noisy when overused.",
-    "interviewAngles": [
-      "How do you reduce alert fatigue?",
-      "How do you personalize messages by role or audience?",
-      "How do you test data merge fields and delivery timing?"
-    ],
-    "reviewChecklist": [
-      "Tie messages to meaningful triggers.",
-      "Keep templates role-aware and concise.",
-      "Validate recipients, conditions and cadence."
-    ]
-  },
-  {
-    "id": "dashboards-reporting",
-    "name": "Dashboards, reporting and metrics",
-    "category": "Cross-platform",
-    "difficulty": "Core",
-    "summary": "Interviewers often expect you to explain which metrics matter operationally and how reporting supports decision-making.",
-    "interviewAngles": [
-      "Which metrics would you show leadership versus operations?",
-      "How do you prevent dashboards from becoming vanity views?",
-      "How do you validate data quality behind a KPI?"
-    ],
-    "reviewChecklist": [
-      "Choose metrics tied to action.",
-      "Confirm data source reliability.",
-      "Design separate views for executives and operators."
-    ]
-  },
-  {
-    "id": "rbac",
-    "name": "Roles, permissions and access governance",
-    "category": "Security",
-    "difficulty": "Advanced",
-    "summary": "Access design affects data visibility, operational safety and separation of duties across all enterprise tools.",
-    "interviewAngles": [
-      "How do you structure roles without creating access sprawl?",
-      "How do you troubleshoot unexpected record visibility?",
-      "How do you document ownership for permission changes?"
-    ],
-    "reviewChecklist": [
-      "Use least privilege design.",
-      "Map roles to job function, not individuals.",
-      "Test both visibility and edit permissions."
-    ]
-  },
-  {
-    "id": "rest-apis",
-    "name": "REST APIs and integration patterns",
-    "category": "Integration",
-    "difficulty": "Advanced",
-    "summary": "Used for inbound and outbound automation, enrichment, synchronization and orchestration with adjacent platforms.",
-    "interviewAngles": [
-      "How do you secure API integrations?",
-      "How do you handle pagination, retries and partial failures?",
-      "How do you make field mappings supportable?"
-    ],
-    "reviewChecklist": [
-      "Define authentication, error handling and ownership.",
-      "Use idempotent operations where possible.",
-      "Log request and response outcomes appropriately."
-    ]
-  },
-  {
-    "id": "endpoint-discovery",
-    "name": "Endpoint discovery and inventory health",
-    "category": "Endpoint",
-    "difficulty": "Core",
-    "summary": "Accurate inventory underpins deployment, patching, policy enforcement and reporting in endpoint-focused interviews.",
-    "interviewAngles": [
-      "Why does inventory quality matter operationally?",
-      "How do you handle stale or incomplete endpoint records?",
-      "How do you validate targeting before deployment?"
-    ],
-    "reviewChecklist": [
-      "Define discovery frequency and reconciliation logic.",
-      "Track stale endpoints separately.",
-      "Validate group membership before actioning."
-    ]
-  },
-  {
-    "id": "software-distribution",
-    "name": "Software distribution strategy",
-    "category": "Endpoint",
-    "difficulty": "Advanced",
-    "summary": "Packaging, targeting, maintenance windows and rollback thinking are common for Endpoint Manager interviews.",
-    "interviewAngles": [
-      "How do you stage a large rollout safely?",
-      "How do you identify deployment blockers early?",
-      "How do you communicate failures and next actions?"
-    ],
-    "reviewChecklist": [
-      "Pilot first, then phase rollout.",
-      "Use clear targeting and success criteria.",
-      "Define rollback or reattempt logic."
-    ]
-  },
-  {
-    "id": "patch-management",
-    "name": "Patch management and remediation windows",
-    "category": "Endpoint",
-    "difficulty": "Advanced",
-    "summary": "Combines operational urgency, risk-based prioritization, maintenance timing and validation discipline.",
-    "interviewAngles": [
-      "How do you prioritize critical patches?",
-      "How do you handle exceptions?",
-      "How do you report patch posture accurately?"
-    ],
-    "reviewChecklist": [
-      "Separate severity from practical impact.",
-      "Track missed devices and exceptions.",
-      "Validate post-patch device health."
-    ]
-  },
-  {
-    "id": "self-healing",
-    "name": "Self-healing and bot governance",
-    "category": "Automation",
-    "difficulty": "Advanced",
-    "summary": "Automated remediation can be powerful, but interviews often focus on how you decide what should self-heal and what should still require human review.",
-    "interviewAngles": [
-      "What issues are safe to remediate automatically?",
-      "How do you avoid harmful bot actions?",
-      "How do you measure self-heal success?"
-    ],
-    "reviewChecklist": [
-      "Start with repetitive, low-risk issues.",
-      "Validate rollback or safe fallback.",
-      "Track action outcomes and user impact."
-    ]
-  },
-  {
-    "id": "device-enrollment",
-    "name": "Device enrollment models",
-    "category": "MDM",
-    "difficulty": "Core",
-    "summary": "Enrollment design shapes ownership, security, user experience and downstream support operations.",
-    "interviewAngles": [
-      "How do enrollment methods differ for BYOD and corporate devices?",
-      "What are common enrollment failure points?",
-      "How do you plan for user communication and support?"
-    ],
-    "reviewChecklist": [
-      "Match method to ownership model.",
-      "Plan prerequisites and dependencies.",
-      "Test first-use experience thoroughly."
-    ]
-  },
-  {
-    "id": "compliance-policies",
-    "name": "Compliance and policy enforcement",
-    "category": "MDM",
-    "difficulty": "Advanced",
-    "summary": "Policy design should align risk, device posture and user experience without causing unnecessary operational friction.",
-    "interviewAngles": [
-      "How do you choose enforcement actions?",
-      "How do you balance security with usability?",
-      "How do you troubleshoot inconsistent policy application?"
-    ],
-    "reviewChecklist": [
-      "Document policy logic clearly.",
-      "Separate critical controls from informational checks.",
-      "Use staged testing before broad enforcement."
-    ]
-  },
-  {
-    "id": "app-distribution",
-    "name": "App distribution and mobile release control",
-    "category": "MDM",
-    "difficulty": "Core",
-    "summary": "Managing internal and public apps across device groups while keeping deployment reliable and supportable.",
-    "interviewAngles": [
-      "How do you stage app releases?",
-      "What do you validate before broad deployment?",
-      "How do you handle version drift or failed installs?"
-    ],
-    "reviewChecklist": [
-      "Test packaging and dependencies.",
-      "Use phased groups or pilots.",
-      "Monitor install success and user feedback."
-    ]
-  },
-  {
-    "id": "velocity-modernization",
-    "name": "Legacy workflow modernization with Velocity",
-    "category": "Velocity",
-    "difficulty": "Advanced",
-    "summary": "Focuses on improving operational workflows without forcing full back-end replacement projects.",
-    "interviewAngles": [
-      "Why modernize a host app instead of rebuilding it?",
-      "How do you improve mobile usability for existing processes?",
-      "How do you measure operational gain?"
-    ],
-    "reviewChecklist": [
-      "Map current user pain points first.",
-      "Design the improved task flow around real operators.",
-      "Validate on devices and peripherals used in production."
-    ]
-  },
-  {
-    "id": "integration-error-handling",
-    "name": "Integration error handling and supportability",
-    "category": "Integration",
-    "difficulty": "Advanced",
-    "summary": "Stable integrations require observability, reprocessing options, clear ownership and sane retry logic.",
-    "interviewAngles": [
-      "How do you design retries safely?",
-      "How do you alert on failed messages?",
-      "How do you prevent duplicate records?"
-    ],
-    "reviewChecklist": [
-      "Define failure categories.",
-      "Make retries controlled and idempotent.",
-      "Document support playbooks."
-    ]
-  },
-  {
-    "id": "release-management",
-    "name": "Release readiness and change promotion",
-    "category": "Cross-platform",
-    "difficulty": "Advanced",
-    "summary": "Enterprise interviews often probe how you move from build to test to production with confidence and minimal disruption.",
-    "interviewAngles": [
-      "What does a strong deployment checklist include?",
-      "How do you validate in lower environments?",
-      "How do you plan rollback?"
-    ],
-    "reviewChecklist": [
-      "Document dependencies and validation steps.",
-      "Use test cases that mirror production usage.",
-      "Prepare rollback and communication plans."
-    ]
-  },
-  {
-    "id": "troubleshooting-discipline",
-    "name": "Structured troubleshooting discipline",
-    "category": "Cross-platform",
-    "difficulty": "Core",
-    "summary": "Strong candidates explain how they isolate symptoms, validate hypotheses, use logs and protect service continuity under pressure.",
-    "interviewAngles": [
-      "How do you troubleshoot without making the issue worse?",
-      "What evidence do you gather first?",
-      "How do you communicate during high-impact incidents?"
-    ],
-    "reviewChecklist": [
-      "Reproduce safely where possible.",
-      "Separate symptom from root cause.",
-      "Document fix, validation and preventive follow-up."
+    "prompts": [
+      "How would you map data from another system into Ivanti?",
+      "How do you handle missing or duplicate records?"
     ]
   }
 ]

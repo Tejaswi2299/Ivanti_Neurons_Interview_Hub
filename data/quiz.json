@@ -1,230 +1,62 @@
 [
   {
-    "id": "weekly-incident-digest",
-    "name": "Weekly incident digest for leadership",
-    "domain": "ITSM",
-    "complexity": "Medium",
-    "problem": "Operations leadership wants a weekly digest of high-priority incidents and recurring keywords without manually exporting reports.",
-    "approach": [
-      "Create a precise saved search for the required conditions.",
-      "Use scheduled automation to compile and send the output weekly.",
-      "Format the email with counts, trends and direct links to the queue.",
-      "Validate recipients, schedule and result quality before production."
+    "question": "Which Ivanti ITSM feature is commonly used to store reusable filtered record sets for reporting and automation?",
+    "options": [
+      "Saved search",
+      "Theme editor",
+      "Task pane",
+      "Agent profile"
     ],
-    "skillsValidated": [
-      "Saved searches",
-      "Scheduling",
-      "Notification design",
-      "Operational reporting"
-    ]
+    "answerIndex": 0,
+    "explanation": "Saved searches are commonly reused in views, dashboards, reports, and automation patterns.",
+    "level": "Beginner"
   },
   {
-    "id": "auto-enrich-ticket",
-    "name": "Auto-enrich incident from external system",
-    "domain": "Integration",
-    "complexity": "High",
-    "problem": "Service desk agents lose time manually checking a separate tool for asset, risk or user context before triage.",
-    "approach": [
-      "Trigger an outbound API call when ticket criteria are met.",
-      "Map the external response into trusted fields or a related record.",
-      "Handle timeouts and invalid responses gracefully.",
-      "Expose the enriched data clearly to the resolver team."
+    "question": "What is the best interview explanation for when to use a quick action?",
+    "options": [
+      "When you need a focused reusable action on records or saved-search-driven processing",
+      "Only when you want to change CSS styles",
+      "Only for mobile enrollment",
+      "Only for patch scanning"
     ],
-    "skillsValidated": [
-      "API integration",
-      "Field mapping",
-      "Error handling",
-      "Agent efficiency"
-    ]
+    "answerIndex": 0,
+    "explanation": "Quick actions are appropriate for targeted automated operations such as sending emails, updating fields, or processing saved-search results.",
+    "level": "Intermediate"
   },
   {
-    "id": "request-approval-workflow",
-    "name": "Service request with conditional approvals",
-    "domain": "ITSM",
-    "complexity": "Medium",
-    "problem": "A new service offering needs manager approval only for certain cost or entitlement conditions.",
-    "approach": [
-      "Design the request object and form inputs around decision points.",
-      "Add conditional approval branches based on business rules.",
-      "Send targeted notifications to requester and approvers.",
-      "Track status transitions and exception handling paths."
+    "question": "In a patch rollout discussion, what is a strong best practice?",
+    "options": [
+      "Patch all endpoints at once without validation",
+      "Use pilot groups and staged waves",
+      "Disable reporting to reduce noise",
+      "Avoid exception handling"
     ],
-    "skillsValidated": [
-      "Workflow logic",
-      "Conditional approvals",
-      "Form design",
-      "User communication"
-    ]
+    "answerIndex": 1,
+    "explanation": "Pilot groups and staged waves reduce risk and make troubleshooting easier.",
+    "level": "Intermediate"
   },
   {
-    "id": "software-rollout-wave",
-    "name": "Phased software rollout across endpoint groups",
-    "domain": "Endpoint",
-    "complexity": "High",
-    "problem": "A critical application needs to be deployed broadly, but business teams require low disruption and visible rollback options.",
-    "approach": [
-      "Segment devices into pilot, early adopter and production waves.",
-      "Validate packaging, dependencies and device readiness first.",
-      "Monitor success, failure and user impact after each wave.",
-      "Pause, adjust or rollback based on observed issues."
+    "question": "What should you emphasize when describing an API integration in Ivanti?",
+    "options": [
+      "Color themes and fonts",
+      "Manual screenshots only",
+      "Authentication, mapping, error handling, and monitoring",
+      "Only endpoint names"
     ],
-    "skillsValidated": [
-      "Software distribution",
-      "Change control",
-      "Targeting",
-      "Operational validation"
-    ]
+    "answerIndex": 2,
+    "explanation": "Good integration answers explain security, data flow, transformation, and operational reliability.",
+    "level": "Advanced"
   },
   {
-    "id": "patch-exception-process",
-    "name": "Patch remediation with exception governance",
-    "domain": "Security",
-    "complexity": "High",
-    "problem": "Security wants faster patch closure, but operations needs a structured way to manage systems that cannot patch during the standard window.",
-    "approach": [
-      "Define the standard patch path and exception criteria.",
-      "Create an approval and tracking mechanism for exceptions.",
-      "Report separately on remediated, missed and excepted devices.",
-      "Require a documented next review date for unresolved exceptions."
+    "question": "What is the goal of a well-designed Velocity workflow?",
+    "options": [
+      "Add more clicks to increase control",
+      "Reduce operator efficiency",
+      "Simplify frontline execution and reduce friction",
+      "Avoid scanning support"
     ],
-    "skillsValidated": [
-      "Patch governance",
-      "Risk communication",
-      "Reporting",
-      "Cross-team workflow"
-    ]
-  },
-  {
-    "id": "device-enrollment-program",
-    "name": "Modern device onboarding program",
-    "domain": "MDM",
-    "complexity": "Medium",
-    "problem": "A company is expanding remote onboarding and needs a predictable device enrollment experience for both corporate and BYOD users.",
-    "approach": [
-      "Separate enrollment methods by ownership and platform.",
-      "Define prerequisite communication and user support steps.",
-      "Apply baseline policies and apps by user/device grouping.",
-      "Track failures and create a quick support runbook."
-    ],
-    "skillsValidated": [
-      "Enrollment design",
-      "User experience",
-      "Policy sequencing",
-      "Support readiness"
-    ]
-  },
-  {
-    "id": "app-release-staged",
-    "name": "Staged mobile app deployment",
-    "domain": "MDM",
-    "complexity": "Medium",
-    "problem": "A line-of-business app must be released to managed devices without breaking field operations.",
-    "approach": [
-      "Start with a pilot group that reflects production usage.",
-      "Validate compatibility, install behavior and required permissions.",
-      "Expand to wider groups once the pilot is stable.",
-      "Monitor installs and issue tickets for failed devices."
-    ],
-    "skillsValidated": [
-      "App distribution",
-      "Pilot strategy",
-      "Compatibility testing",
-      "Rollout monitoring"
-    ]
-  },
-  {
-    "id": "self-heal-performance",
-    "name": "Self-heal recurring endpoint performance issue",
-    "domain": "Automation",
-    "complexity": "High",
-    "problem": "A known endpoint issue repeatedly impacts users and consumes technician time even though remediation is highly repeatable.",
-    "approach": [
-      "Detect the issue through endpoint intelligence signals.",
-      "Validate the remediation is safe and reversible.",
-      "Automate the fix and confirm success post-action.",
-      "Escalate with context if the issue persists after remediation."
-    ],
-    "skillsValidated": [
-      "Detection logic",
-      "Automation design",
-      "Verification",
-      "Escalation criteria"
-    ]
-  },
-  {
-    "id": "velocity-modernize-picking",
-    "name": "Modernize warehouse picking workflow",
-    "domain": "Velocity",
-    "complexity": "High",
-    "problem": "Warehouse workers rely on an inefficient host-based workflow with too many screen transitions and avoidable picking errors.",
-    "approach": [
-      "Map the current flow with operators on the floor.",
-      "Streamline steps for scanning and mobile readability.",
-      "Validate the redesigned process using rugged devices and peripherals.",
-      "Measure speed, errors and adoption after launch."
-    ],
-    "skillsValidated": [
-      "Process redesign",
-      "Operational mobility",
-      "User validation",
-      "Outcome measurement"
-    ]
-  },
-  {
-    "id": "cross-tool-alerting",
-    "name": "Cross-tool alert to action workflow",
-    "domain": "Integration",
-    "complexity": "High",
-    "problem": "A high-value event from a monitoring or security tool needs to trigger a controlled service workflow with minimal manual triage.",
-    "approach": [
-      "Receive or poll the event data with clear filtering logic.",
-      "Create or update a service record with contextual details.",
-      "Route the record using defined urgency and assignment logic.",
-      "Prevent duplicate ticket creation for repeated alerts."
-    ],
-    "skillsValidated": [
-      "Event integration",
-      "Routing logic",
-      "Deduplication",
-      "Operational response"
-    ]
-  },
-  {
-    "id": "role-based-dashboard",
-    "name": "Role-based dashboards for operations and leadership",
-    "domain": "Reporting",
-    "complexity": "Low",
-    "problem": "Teams are looking at the same dashboards even though leaders and operators need different views and actions.",
-    "approach": [
-      "Identify decisions each audience needs to make.",
-      "Design dashboards with audience-specific KPIs and filters.",
-      "Validate metric definitions and source data quality.",
-      "Review usage and adjust based on adoption feedback."
-    ],
-    "skillsValidated": [
-      "Dashboard design",
-      "Audience mapping",
-      "KPI definition",
-      "Data quality"
-    ]
-  },
-  {
-    "id": "release-validation-playbook",
-    "name": "Release validation playbook for platform changes",
-    "domain": "Cross-platform",
-    "complexity": "Medium",
-    "problem": "Teams deploy useful changes, but validation is inconsistent and post-release surprises keep happening.",
-    "approach": [
-      "Define a standard pre-release, release and post-release checklist.",
-      "Use scenario-based test cases aligned to real users.",
-      "Track dependencies and rollback readiness for each change.",
-      "Capture lessons learned for future releases."
-    ],
-    "skillsValidated": [
-      "Testing discipline",
-      "Release management",
-      "Risk reduction",
-      "Continuous improvement"
-    ]
+    "answerIndex": 2,
+    "explanation": "Velocity is typically discussed in the context of improving mobile and frontline task execution.",
+    "level": "Beginner"
   }
 ]

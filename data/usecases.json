@@ -1,146 +1,86 @@
 [
   {
-    "id": "outbound-rest-pattern",
-    "name": "Outbound REST enrichment pattern",
-    "type": "Integration",
-    "product": "Neurons for ITSM",
-    "summary": "Use outbound API calls to enrich records with external context such as vulnerability score, asset state or identity attributes before routing or escalation.",
-    "keyMoves": [
-      "Build secure authentication handling",
-      "Validate payload mapping before go-live",
-      "Guard against null or slow responses",
-      "Log errors for support teams"
+    "id": "weekly-incidents",
+    "module": "ITSM",
+    "title": "Weekly incident email using a saved search",
+    "problem": "Support leads need a weekly summary of open incidents matching specific criteria.",
+    "approach": "Create a saved search, bind it to a quick action or scheduled process, and send the output using an email template.",
+    "steps": [
+      "Create a filtered saved search for the required incident set.",
+      "Build the email template with the right output fields.",
+      "Configure a quick action or recurring process to run weekly.",
+      "Validate recipients, schedule, and output formatting."
     ],
-    "commonQuestions": [
-      "How would you call an external API from a ticket workflow?",
-      "How do you secure credentials?",
-      "How do you handle API timeout or malformed responses?"
-    ]
+    "outcome": "The team receives a repeatable, structured operational report without manual preparation."
   },
   {
-    "id": "saved-search-email-pattern",
-    "name": "Saved search to scheduled email pattern",
-    "type": "Automation",
-    "product": "Neurons for ITSM",
-    "summary": "A common interview scenario where a filtered operational view is reused to send scheduled summaries to a targeted stakeholder group.",
-    "keyMoves": [
-      "Design the search carefully",
-      "Reuse the search output as automation input",
-      "Keep the email concise and actionable",
-      "Validate recipient rules and timing"
+    "id": "customer-response-automation",
+    "module": "ITSM",
+    "title": "Auto-activate a ticket on customer response",
+    "problem": "Tickets remain in waiting states even after the customer replies, slowing resolution.",
+    "approach": "Use response triggers, workflow logic, or automation to change status and notify the assigned team.",
+    "steps": [
+      "Identify the waiting states and response channels.",
+      "Configure trigger logic to detect customer response.",
+      "Update status and send internal notifications.",
+      "Test edge cases and duplicate updates."
     ],
-    "commonQuestions": [
-      "How would you send weekly incidents matching a condition?",
-      "How do you prevent noisy recurring emails?",
-      "How do you test the output before scheduling?"
-    ]
+    "outcome": "Agents see reactivated work immediately and customer follow-up moves faster."
   },
   {
-    "id": "conditional-form-logic",
-    "name": "Conditional form behavior pattern",
-    "type": "Configuration logic",
-    "product": "Neurons for ITSM",
-    "summary": "Show and validate fields dynamically based on user role, service type, request category or state transitions.",
-    "keyMoves": [
-      "Keep business logic transparent",
-      "Prefer maintainable rule structures",
-      "Test by persona and scenario",
-      "Preserve data integrity on hidden fields"
+    "id": "mdm-compliance",
+    "module": "MDM",
+    "title": "Handle non-compliant devices through policy action",
+    "problem": "Devices that fall out of compliance must be remediated or restricted quickly.",
+    "approach": "Use compliance rules, remediation steps, notifications, and access controls based on policy violations.",
+    "steps": [
+      "Define the compliance rule and thresholds.",
+      "Configure remediation or notification action.",
+      "Test behavior on compliant and non-compliant devices.",
+      "Monitor exceptions and operational reporting."
     ],
-    "commonQuestions": [
-      "How do you hide fields for self-service users?",
-      "How do you require values only in certain states?",
-      "How do you avoid logic conflicts?"
-    ]
+    "outcome": "Security and mobility teams can act consistently on policy violations."
   },
   {
-    "id": "bulk-device-action",
-    "name": "Bulk device action safety pattern",
-    "type": "Endpoint automation",
-    "product": "Endpoint Manager",
-    "summary": "Large-scale device actions require smart targeting, phased execution and validation checkpoints so operational risk stays manageable.",
-    "keyMoves": [
-      "Pilot on representative devices",
-      "Use explicit targeting criteria",
-      "Track results in waves",
-      "Prepare reattempt or rollback steps"
+    "id": "patch-wave",
+    "module": "Endpoint Manager",
+    "title": "Phased patch deployment",
+    "problem": "A full patch rollout creates risk without staged validation.",
+    "approach": "Create a ring-based deployment with pilot groups, production waves, monitoring, and exception handling.",
+    "steps": [
+      "Create pilot and production device groups.",
+      "Deploy and monitor the pilot wave.",
+      "Review failures, exceptions, and readiness.",
+      "Continue staged rollout with reporting."
     ],
-    "commonQuestions": [
-      "How do you roll out software to thousands of devices safely?",
-      "What metrics do you watch during execution?",
-      "How do you handle failed endpoints?"
-    ]
+    "outcome": "Patching is safer, more predictable, and easier to troubleshoot."
   },
   {
-    "id": "policy-rollout-pattern",
-    "name": "Policy rollout and staged enforcement pattern",
-    "type": "MDM",
-    "product": "Neurons for MDM",
-    "summary": "Roll out compliance policies or restrictions in stages so operational and user impact can be observed before strict enforcement.",
-    "keyMoves": [
-      "Separate audit and enforce stages",
-      "Use pilot groups first",
-      "Communicate user impact early",
-      "Track exceptions and edge cases"
+    "id": "velocity-warehouse",
+    "module": "Velocity",
+    "title": "Simplify a warehouse picking workflow",
+    "problem": "A warehouse picking flow contains too many steps and slows frontline users.",
+    "approach": "Reduce screens, optimize prompts, support scanning, and reshape the browser-based task flow.",
+    "steps": [
+      "Map the current operator journey.",
+      "Identify unnecessary interaction points.",
+      "Design a streamlined sequence for handheld execution.",
+      "Validate speed and error reduction with users."
     ],
-    "commonQuestions": [
-      "How do you deploy a new device restriction safely?",
-      "How do you troubleshoot partial policy application?",
-      "How do you minimize user disruption?"
-    ]
+    "outcome": "Operators complete tasks faster with fewer interruptions."
   },
   {
-    "id": "self-heal-bot-pattern",
-    "name": "Self-heal bot design pattern",
-    "type": "Automation",
-    "product": "Neurons for UEM",
-    "summary": "Use a safe decision tree for autonomous endpoint remediation: detect, validate, remediate, verify and escalate if needed.",
-    "keyMoves": [
-      "Limit scope to known repeatable issues",
-      "Include validation before action",
-      "Verify success after remediation",
-      "Escalate with context if unresolved"
+    "id": "api-integration",
+    "module": "Integrations",
+    "title": "Integrate Ivanti with an external approval service",
+    "problem": "Approvals must be synchronized between Ivanti and another enterprise platform.",
+    "approach": "Design a secure REST flow with payload mapping, status synchronization, and retry logic.",
+    "steps": [
+      "Define source and target payloads.",
+      "Implement authentication and connectivity handling.",
+      "Map statuses and response outcomes.",
+      "Add logging, retries, and exception reporting."
     ],
-    "commonQuestions": [
-      "What issues would you choose for self-healing?",
-      "How do you keep automation trustworthy?",
-      "How do you measure the effect on support volume?"
-    ]
-  },
-  {
-    "id": "velocity-workflow-pattern",
-    "name": "Velocity workflow modernization pattern",
-    "type": "Operational mobility",
-    "product": "Velocity",
-    "summary": "Improve a warehouse or field workflow by mapping the current host sequence, removing friction and validating new mobile interactions with real operators.",
-    "keyMoves": [
-      "Map current-state steps",
-      "Design around scan-heavy flows",
-      "Reduce taps and ambiguity",
-      "Test on production-like devices"
-    ],
-    "commonQuestions": [
-      "How would you modernize a telnet-based picking process?",
-      "How do you measure productivity improvement?",
-      "What testing matters most in operational environments?"
-    ]
-  },
-  {
-    "id": "integration-observability",
-    "name": "Integration observability checklist",
-    "type": "Supportability",
-    "product": "Cross-platform",
-    "summary": "Every serious integration needs logging, support ownership, retry rules and an agreed way to investigate failures quickly.",
-    "keyMoves": [
-      "Log request context and outcome",
-      "Capture functional versus technical failures",
-      "Define reprocessing steps",
-      "Create ownership and escalation path"
-    ],
-    "commonQuestions": [
-      "How do you support an automation after it goes live?",
-      "What should be logged?",
-      "How do you avoid duplicate processing?"
-    ]
+    "outcome": "Approvals remain synchronized and traceable across systems."
   }
 ]

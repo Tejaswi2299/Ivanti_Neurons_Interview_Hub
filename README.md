@@ -1,55 +1,51 @@
 # Ivanti Neurons Interview Hub
 
-A static GitHub Pages project for enterprise interview preparation across the broader Ivanti ecosystem.
+A static GitHub Pages project for Ivanti interview preparation.
 
-## What this project is
-Ivanti Neurons Interview Hub is designed as a structured, searchable and scenario-driven preparation platform for candidates working with Ivanti technologies. Instead of relying on scattered notes, the hub organizes interview preparation by role, module, topic, coding pattern, real-world use case and quiz mode.
-
-This project is built to support preparation across the broader Ivanti landscape, including:
-
-- Ivanti Neurons Platform
-- Ivanti Neurons for ITSM
-- Ivanti Neurons for MDM
-- Ivanti Neurons for UEM
-- Ivanti Endpoint Manager
-- Ivanti Velocity
-- Ivanti automation, integrations and security-oriented workflows
-
-## Included
-- role-based preparation paths
-- module and product-family navigation
-- topic-wise revision coverage
-- scripting and integration patterns
-- practical use case scenarios
+## What this project includes
+- role-based interview preparation
+- module and product coverage across the Ivanti ecosystem
+- topic-wise study paths
+- coding and integration talking points
+- real-world use case scenarios
 - quiz mode
-- bookmarks using browser local storage
-- Buy me a coffee CTA
-- Google Analytics placeholder for post-deployment setup
-- responsive GitHub Pages-ready UI
+- bookmarks
+- light mode UI with dark mode toggle
+- social preview metadata
+- buy me a coffee support section
+- Google Analytics placeholder
+
+## Project sections
+- Home
+- Roles
+- Modules
+- Topics
+- Coding
+- Use Cases
+- Quiz
+- Bookmarks
 
 ## Deploy to GitHub Pages
 1. Download and unzip this package.
-2. Open your GitHub repository.
-3. Upload the contents of this folder to the repository root so `index.html` sits at the top level.
+2. Open your GitHub repository: `Ivanti_Neurons_Interview_Hub`.
+3. Upload the **contents of the project folder** to the repository root so `index.html` sits at the top level.
 4. Commit the upload to your main branch.
 5. In GitHub, open **Settings → Pages**.
 6. Under **Build and deployment**, choose **Deploy from a branch**.
-7. Select your branch and choose **/(root)**.
-8. Click **Save** and wait for GitHub Pages to publish the site.
+7. Select your branch, such as `main`, and choose **/(root)**.
+8. Click **Save** and wait for GitHub Pages to publish.
 
 ## Google Analytics
-In `index.html`, replace the value of:
+Open `index.html` and set:
 
 ```html
-window.IVANTI_GA_ID = "";
+window.IVANTI_GA_ID = "YOUR_GA4_MEASUREMENT_ID";
 ```
 
-with your GA4 measurement ID after the site is deployed.
+## Social preview image
+The site includes a preview image at:
 
-## Support CTA
-The project already includes the Cash App support block. Update the payment URL in `index.html` if you ever want to change it.
+`assets/images/ivanti-preview.png`
 
 ## Notes
-- Bookmarks are stored in the browser using local storage.
-- The project uses hash-based routing, so it works cleanly on GitHub Pages.
-- All interview content is stored in JSON files inside the `data/` folder for easy editing and expansion.
+This project is designed to be user-facing and focused only on preparation content relevant to Ivanti candidates.
