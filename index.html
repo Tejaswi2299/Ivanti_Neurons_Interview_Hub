@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ivanti Neurons Interview Hub</title>
+  <meta name="description" content="Enterprise interview preparation hub for the Ivanti ecosystem, including Neurons, ITSM, UEM, MDM, Endpoint Manager, Velocity, automation, integrations, security and real-world use cases." />
+  <meta name="theme-color" content="#0f172a" />
+  <meta property="og:title" content="Ivanti Neurons Interview Hub" />
+  <meta property="og:description" content="Enterprise interview prep across the complete Ivanti product ecosystem." />
+  <meta property="og:image" content="assets/images/ivanti-preview.svg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Ivanti Neurons Interview Hub" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Ivanti Neurons Interview Hub" />
+  <meta name="twitter:description" content="Enterprise interview prep across the complete Ivanti product ecosystem." />
+  <meta name="twitter:image" content="assets/images/ivanti-preview.svg" />
+  <link rel="icon" href="assets/images/ivanti-logo.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+
+  <!-- Replace the value below after deployment if you want GA4 tracking -->
+  <script>
+    window.IVANTI_GA_ID = "";
+  </script>
+  <script>
+    if (window.IVANTI_GA_ID) {
+      const gaScript = document.createElement('script');
+      gaScript.async = true;
+      gaScript.src = `https://www.googletagmanager.com/gtag/js?id=${window.IVANTI_GA_ID}`;
+      document.head.appendChild(gaScript);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);} // eslint-disable-line no-unused-vars
+      window.gtag = gtag;
+      gtag('js', new Date());
+      gtag('config', window.IVANTI_GA_ID);
+    }
+  </script>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#/home" aria-label="Ivanti Neurons Interview Hub home">
+        <img src="assets/images/ivanti-logo.svg" alt="Ivanti Neurons Interview Hub logo" class="brand-logo" />
+        <div class="brand-copy">
+          <span class="brand-eyebrow">Enterprise interview platform</span>
+          <strong>Ivanti Neurons Interview Hub</strong>
+        </div>
+      </a>
+
+      <nav class="sidebar-nav" aria-label="Primary">
+        <a data-nav-link href="#/home">Home</a>
+        <a data-nav-link href="#/roles">Roles</a>
+        <a data-nav-link href="#/modules">Modules</a>
+        <a data-nav-link href="#/topics">Topics</a>
+        <a data-nav-link href="#/coding">Coding</a>
+        <a data-nav-link href="#/use-cases">Use Cases</a>
+        <a data-nav-link href="#/quiz">Quiz</a>
+        <a data-nav-link href="#/bookmarks">Bookmarks</a>
+      </nav>
+
+      <section class="sidebar-panel">
+        <span class="panel-kicker">Project intent</span>
+        <h3>Prepare like an implementer, not just a candidate</h3>
+        <p>Cover the full Ivanti ecosystem with role paths, module maps, practical scenarios, scripting patterns and confidence-building quizzes.</p>
+      </section>
+
+      <section class="sidebar-panel support-cta-panel" aria-label="Support this project">
+        <span class="panel-kicker">Support the hub</span>
+        <h3>Buy me a coffee ☕</h3>
+        <p>If this hub helps you prepare better, support future question banks, use cases, UI upgrades and content updates.</p>
+        <a
+          class="cashapp-button"
+          href="https://cash.app/$TEJASWIREDDYAnapalli"
+          target="_blank"
+          rel="noopener noreferrer"
+          data-support-link="cashapp"
+          aria-label="Buy me a coffee on Cash App"
+        >
+          <span>Buy me a coffee</span>
+          <span aria-hidden="true">↗</span>
+        </a>
+      </section>
+    </aside>
+
+    <div class="main-shell">
+      <header class="topbar">
+        <div class="topbar-left">
+          <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle navigation">☰</button>
+          <div>
+            <p class="eyebrow">Ivanti Neurons enterprise interview prep</p>
+            <h1 id="page-title">Ivanti Neurons Interview Hub</h1>
+          </div>
+        </div>
+
+        <form id="global-search-form" class="global-search" role="search">
+          <input id="global-search-input" type="search" placeholder="Search roles, modules, topics, scripting, use cases and interview questions..." aria-label="Search the interview hub" />
+          <button type="submit">Search</button>
+        </form>
+      </header>
+
+      <main id="app-main" class="page-content" aria-live="polite">
+        <section class="loading-state hero-card">
+          <h2>Loading Ivanti Neurons Interview Hub…</h2>
+          <p>Building role maps, module intelligence, topics, coding patterns, practical scenarios and quiz data.</p>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <script type="module" src="assets/js/app.js"></script>
+</body>
+</html>
