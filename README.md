@@ -2,20 +2,20 @@
 
 A static GitHub Pages project for Ivanti interview preparation.
 
-## What this project includes
-- role-based interview preparation
-- module and product coverage across the Ivanti ecosystem
-- topic-wise study paths
-- coding and integration talking points
-- real-world use case scenarios
+## Included
+- linked role-based preparation paths
+- module detail pages
+- topic detail pages with related interview questions
+- coding and technical discussion areas
+- use case detail pages
 - quiz mode
 - bookmarks
-- light mode UI with dark mode toggle
-- social preview metadata
-- buy me a coffee support section
+- light mode by default with dark mode toggle
+- social preview image metadata
 - Google Analytics placeholder
+- buy me a coffee support section
 
-## Project sections
+## Main navigation
 - Home
 - Roles
 - Modules
@@ -25,27 +25,21 @@ A static GitHub Pages project for Ivanti interview preparation.
 - Quiz
 - Bookmarks
 
-## Deploy to GitHub Pages
-1. Download and unzip this package.
-2. Open your GitHub repository: `Ivanti_Neurons_Interview_Hub`.
-3. Upload the **contents of the project folder** to the repository root so `index.html` sits at the top level.
-4. Commit the upload to your main branch.
-5. In GitHub, open **Settings → Pages**.
-6. Under **Build and deployment**, choose **Deploy from a branch**.
-7. Select your branch, such as `main`, and choose **/(root)**.
-8. Click **Save** and wait for GitHub Pages to publish.
+## Data model
+This project links content by role and module so users can move through preparation in a structured way:
+- role -> modules
+- role -> topics
+- role -> coding areas
+- role -> use cases
+- role -> likely interview questions
+- module -> topics
+- topic -> related questions
+
+## GitHub Pages deployment
+Upload the contents of this project to the root of your repository so `index.html` is at the top level, then publish from:
+- Branch: `main`
+- Folder: `/(root)`
 
 ## Google Analytics
-Open `index.html` and set:
-
-```html
-window.IVANTI_GA_ID = "YOUR_GA4_MEASUREMENT_ID";
-```
-
-## Social preview image
-The site includes a preview image at:
-
-`assets/images/ivanti-preview.png`
-
-## Notes
-This project is designed to be user-facing and focused only on preparation content relevant to Ivanti candidates.
+Set this in `index.html` after deployment:
+`window.IVANTI_GA_ID = "YOUR_GA4_MEASUREMENT_ID";`

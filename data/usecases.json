@@ -1,86 +1,212 @@
 [
   {
-    "id": "weekly-incidents",
-    "module": "ITSM",
-    "title": "Weekly incident email using a saved search",
-    "problem": "Support leads need a weekly summary of open incidents matching specific criteria.",
-    "approach": "Create a saved search, bind it to a quick action or scheduled process, and send the output using an email template.",
+    "id": "weekly-open-incidents",
+    "title": "Weekly open incident report by saved search",
+    "moduleId": "incident",
+    "problem": "Support leadership wants a repeatable weekly report of open incidents that match defined filters.",
+    "approach": "Use a saved search, email template, and a scheduled quick action or workflow-driven automation.",
     "steps": [
-      "Create a filtered saved search for the required incident set.",
-      "Build the email template with the right output fields.",
-      "Configure a quick action or recurring process to run weekly.",
-      "Validate recipients, schedule, and output formatting."
+      "Create the filtered saved search.",
+      "Prepare the email template and output fields.",
+      "Schedule the action and validate recipients.",
+      "Test delivery and data accuracy."
     ],
-    "outcome": "The team receives a repeatable, structured operational report without manual preparation."
+    "outcome": "A repeatable operational report is sent automatically without manual effort."
   },
   {
-    "id": "customer-response-automation",
-    "module": "ITSM",
-    "title": "Auto-activate a ticket on customer response",
-    "problem": "Tickets remain in waiting states even after the customer replies, slowing resolution.",
-    "approach": "Use response triggers, workflow logic, or automation to change status and notify the assigned team.",
+    "id": "customer-response-reactivation",
+    "title": "Reactivate a ticket on customer response",
+    "moduleId": "incident",
+    "problem": "Tickets in waiting state remain inactive even after the customer replies.",
+    "approach": "Detect customer response, update status, and notify the assigned team automatically.",
     "steps": [
-      "Identify the waiting states and response channels.",
-      "Configure trigger logic to detect customer response.",
-      "Update status and send internal notifications.",
-      "Test edge cases and duplicate updates."
+      "Identify waiting states and response channel.",
+      "Configure the trigger or automation logic.",
+      "Change the record state and notify the owner.",
+      "Test repeated replies and edge cases."
     ],
-    "outcome": "Agents see reactivated work immediately and customer follow-up moves faster."
+    "outcome": "Work is resumed faster and follow-up does not get lost."
   },
   {
-    "id": "mdm-compliance",
-    "module": "MDM",
-    "title": "Handle non-compliant devices through policy action",
-    "problem": "Devices that fall out of compliance must be remediated or restricted quickly.",
-    "approach": "Use compliance rules, remediation steps, notifications, and access controls based on policy violations.",
+    "id": "approval-routing",
+    "title": "Multi-step approval routing for service requests",
+    "moduleId": "request",
+    "problem": "A request must be routed through multiple approvers depending on request type and business rules.",
+    "approach": "Use workflow branching, approval steps, notifications, and fallback handling.",
     "steps": [
-      "Define the compliance rule and thresholds.",
-      "Configure remediation or notification action.",
-      "Test behavior on compliant and non-compliant devices.",
-      "Monitor exceptions and operational reporting."
+      "Define approval conditions and approver logic.",
+      "Configure branching and sequential steps.",
+      "Send notifications and track response timing.",
+      "Test approvals, rejections, and no-response paths."
     ],
-    "outcome": "Security and mobility teams can act consistently on policy violations."
+    "outcome": "Request fulfillment is governed and auditable."
   },
   {
-    "id": "patch-wave",
-    "module": "Endpoint Manager",
-    "title": "Phased patch deployment",
-    "problem": "A full patch rollout creates risk without staged validation.",
-    "approach": "Create a ring-based deployment with pilot groups, production waves, monitoring, and exception handling.",
-    "steps": [
-      "Create pilot and production device groups.",
-      "Deploy and monitor the pilot wave.",
-      "Review failures, exceptions, and readiness.",
-      "Continue staged rollout with reporting."
-    ],
-    "outcome": "Patching is safer, more predictable, and easier to troubleshoot."
-  },
-  {
-    "id": "velocity-warehouse",
-    "module": "Velocity",
-    "title": "Simplify a warehouse picking workflow",
-    "problem": "A warehouse picking flow contains too many steps and slows frontline users.",
-    "approach": "Reduce screens, optimize prompts, support scanning, and reshape the browser-based task flow.",
-    "steps": [
-      "Map the current operator journey.",
-      "Identify unnecessary interaction points.",
-      "Design a streamlined sequence for handheld execution.",
-      "Validate speed and error reduction with users."
-    ],
-    "outcome": "Operators complete tasks faster with fewer interruptions."
-  },
-  {
-    "id": "api-integration",
-    "module": "Integrations",
+    "id": "external-approval-sync",
     "title": "Integrate Ivanti with an external approval service",
-    "problem": "Approvals must be synchronized between Ivanti and another enterprise platform.",
-    "approach": "Design a secure REST flow with payload mapping, status synchronization, and retry logic.",
+    "moduleId": "integrations",
+    "problem": "An external system must approve requests while Ivanti stays synchronized on outcome and status.",
+    "approach": "Build a secure REST integration with status mapping, retries, and exception visibility.",
     "steps": [
-      "Define source and target payloads.",
-      "Implement authentication and connectivity handling.",
-      "Map statuses and response outcomes.",
-      "Add logging, retries, and exception reporting."
+      "Define request and response payloads.",
+      "Configure authentication and secure connectivity.",
+      "Map status values and update rules.",
+      "Add retry and logging behavior."
     ],
-    "outcome": "Approvals remain synchronized and traceable across systems."
+    "outcome": "Approvals stay aligned across systems with traceability."
+  },
+  {
+    "id": "api-report-push",
+    "title": "Push scheduled report data to an external endpoint",
+    "moduleId": "integrations",
+    "problem": "Operational data needs to be delivered on schedule to another platform for downstream consumption.",
+    "approach": "Use saved data, mapping, and scheduled API delivery with validation.",
+    "steps": [
+      "Define the source search or dataset.",
+      "Transform fields into outbound format.",
+      "Schedule the push with monitoring.",
+      "Handle failures and alert on exceptions."
+    ],
+    "outcome": "Data exchange becomes repeatable and measurable."
+  },
+  {
+    "id": "noncompliant-device",
+    "title": "Respond to a non-compliant mobile device",
+    "moduleId": "compliance",
+    "problem": "A device violates policy and must be flagged, restricted, or remediated.",
+    "approach": "Use compliance rules, notifications, and access or remediation actions.",
+    "steps": [
+      "Define compliance thresholds.",
+      "Configure remediation or restriction action.",
+      "Notify the user or support team.",
+      "Review reporting and exception handling."
+    ],
+    "outcome": "Policy violations are handled consistently and quickly."
+  },
+  {
+    "id": "mobile-app-rollout",
+    "title": "Roll out a managed mobile app",
+    "moduleId": "app-distribution",
+    "problem": "A new business app must be deployed to managed mobile devices with clear governance.",
+    "approach": "Target the right devices, validate ownership model, apply the app, and monitor success.",
+    "steps": [
+      "Identify target group and ownership type.",
+      "Configure the app deployment policy.",
+      "Monitor installation results and issues.",
+      "Communicate support and update guidance."
+    ],
+    "outcome": "The app rollout is controlled and easier to support."
+  },
+  {
+    "id": "byod-setup",
+    "title": "Set up a BYOD enrollment flow",
+    "moduleId": "mdm",
+    "problem": "Personal devices must be enrolled with appropriate privacy and policy boundaries.",
+    "approach": "Design enrollment, policy assignment, communication, and support expectations around BYOD.",
+    "steps": [
+      "Define BYOD ownership rules.",
+      "Configure the enrollment path and baseline policies.",
+      "Prepare user communication and support guidance.",
+      "Validate compliance and app experience."
+    ],
+    "outcome": "BYOD devices are managed with appropriate balance of control and user trust."
+  },
+  {
+    "id": "phased-patching",
+    "title": "Deploy patches in phased waves",
+    "moduleId": "patch-management",
+    "problem": "Patching all devices at once creates unnecessary enterprise risk.",
+    "approach": "Use pilot groups, staged rollout waves, monitoring, and exception handling.",
+    "steps": [
+      "Create pilot and broader rollout groups.",
+      "Deploy to the pilot wave.",
+      "Review failures and readiness metrics.",
+      "Continue phased rollout with reporting."
+    ],
+    "outcome": "Patch rollout is safer and easier to troubleshoot."
+  },
+  {
+    "id": "software-rollout",
+    "title": "Targeted software rollout",
+    "moduleId": "software-distribution",
+    "problem": "Software needs to be deployed only to the right device sets with visibility into completion.",
+    "approach": "Use device targeting, distribution jobs, validation, and exception tracking.",
+    "steps": [
+      "Define target device criteria.",
+      "Create the distribution job.",
+      "Monitor success and missed devices.",
+      "Retry or remediate failures."
+    ],
+    "outcome": "Deployment reaches the intended audience with measurable results."
+  },
+  {
+    "id": "device-grouping",
+    "title": "Create device groups for controlled management",
+    "moduleId": "endpoint-manager",
+    "problem": "Operations need logical grouping for patching, deployment, and reporting.",
+    "approach": "Use grouping rules that align to business or technical segmentation.",
+    "steps": [
+      "Define grouping criteria.",
+      "Build the groups and validate membership.",
+      "Use them in patching or software deployment.",
+      "Review membership drift over time."
+    ],
+    "outcome": "Endpoint operations become more controlled and reusable."
+  },
+  {
+    "id": "asset-refresh",
+    "title": "Track and plan asset refresh",
+    "moduleId": "itam",
+    "problem": "Aging assets need visibility for refresh planning and ownership review.",
+    "approach": "Use lifecycle state, inventory visibility, and reporting to identify refresh candidates.",
+    "steps": [
+      "Define refresh thresholds or criteria.",
+      "Align discovered data with asset records.",
+      "Build reporting for refresh visibility.",
+      "Coordinate lifecycle updates."
+    ],
+    "outcome": "Refresh planning becomes data-driven."
+  },
+  {
+    "id": "discovery-reconciliation",
+    "title": "Reconcile discovered inventory with asset records",
+    "moduleId": "discovery-inventory",
+    "problem": "Discovered devices and asset records do not align cleanly, reducing trust in the data.",
+    "approach": "Normalize key fields, align identifiers, and reconcile duplicates or ownership gaps.",
+    "steps": [
+      "Review source fields and matching logic.",
+      "Normalize key naming or identifiers.",
+      "Resolve duplicates and ownership mismatches.",
+      "Validate reporting accuracy after reconciliation."
+    ],
+    "outcome": "Inventory and asset reporting become more trustworthy."
+  },
+  {
+    "id": "warehouse-picking-redesign",
+    "title": "Redesign a warehouse picking workflow in Velocity",
+    "moduleId": "velocity",
+    "problem": "A frontline picking flow is too slow and requires too many manual steps.",
+    "approach": "Simplify screens, optimize prompts, and design for scan-first execution.",
+    "steps": [
+      "Map the current picking journey.",
+      "Remove unnecessary screens or prompts.",
+      "Support faster scan-driven flow.",
+      "Validate with frontline users."
+    ],
+    "outcome": "Operators complete tasks faster with less friction."
+  },
+  {
+    "id": "field-service-simplification",
+    "title": "Simplify a field workflow for handheld use",
+    "moduleId": "velocity",
+    "problem": "Field users struggle with a browser flow that was originally built for desktop use.",
+    "approach": "Adapt the experience for smaller devices, focused actions, and clearer execution steps.",
+    "steps": [
+      "Review the current browser flow.",
+      "Identify friction points on handheld devices.",
+      "Redesign the execution sequence.",
+      "Validate usability improvements."
+    ],
+    "outcome": "Field work becomes easier to complete accurately on mobile hardware."
   }
 ]

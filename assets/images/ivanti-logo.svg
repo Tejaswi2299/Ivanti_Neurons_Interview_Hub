@@ -1,13 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Ivanti logo style icon">
-  <defs>
-    <linearGradient id="g1" x1="0" x2="1" y1="0" y2="1">
-      <stop offset="0%" stop-color="#5b5bd6"/>
-      <stop offset="100%" stop-color="#14b8a6"/>
-    </linearGradient>
-  </defs>
-  <rect x="14" y="14" width="92" height="92" rx="22" fill="#ffffff" stroke="url(#g1)" stroke-width="8"/>
-  <rect x="30" y="34" width="36" height="10" rx="5" fill="#5b5bd6"/>
-  <rect x="30" y="54" width="58" height="10" rx="5" fill="#14b8a6"/>
-  <rect x="30" y="74" width="45" height="10" rx="5" fill="#8b5cf6"/>
-  <circle cx="84" cy="39" r="7" fill="#14b8a6"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Ivanti style logo"><defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop offset="0%" stop-color="#5c5cda"/><stop offset="100%" stop-color="#19b6a3"/></linearGradient></defs><rect x="14" y="14" width="92" height="92" rx="22" fill="#fff" stroke="url(#g)" stroke-width="8"/><rect x="30" y="34" width="36" height="10" rx="5" fill="#5c5cda"/><rect x="30" y="54" width="58" height="10" rx="5" fill="#19b6a3"/><rect x="30" y="74" width="45" height="10" rx="5" fill="#8b5cf6"/><circle cx="84" cy="39" r="7" fill="#19b6a3"/></svg>

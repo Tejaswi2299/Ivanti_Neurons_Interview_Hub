@@ -1,62 +1,62 @@
 [
   {
-    "id": "rest-patterns",
-    "area": "Integrations",
+    "id": "api-patterns",
     "name": "REST API Integration Patterns",
-    "summary": "Prepare to discuss request flows, authentication, payload construction, mapping, retries, and integration governance.",
-    "talkingPoints": [
-      "Explain outbound and inbound patterns clearly.",
-      "Mention validation, logging, and error handling.",
-      "Describe how scheduled and event-driven integrations differ."
-    ],
-    "prompts": [
-      "Walk through a REST integration you designed.",
-      "How would you send scheduled results to an external recipient?"
+    "summary": "How to discuss secure and maintainable API integration design in interviews.",
+    "points": [
+      "Explain request flow, authentication, mapping, and validation.",
+      "Mention logging, retries, and monitoring.",
+      "Describe scheduled versus event-driven integration patterns."
     ]
   },
   {
-    "id": "email-automation",
-    "area": "ITSM automation",
+    "id": "notification-automation",
     "name": "Email and Notification Automation",
-    "summary": "Useful for describing how saved searches, quick actions, workflows, and templates work together.",
-    "talkingPoints": [
-      "How to build a scheduled communication flow.",
-      "How templates reduce manual effort and standardize messaging.",
-      "Why testing recipient logic and filters matters."
-    ],
-    "prompts": [
-      "How do you send weekly incident summaries?",
-      "How do you automate stakeholder notifications?"
-    ]
-  },
-  {
-    "id": "scripted-validations",
-    "area": "Platform logic",
-    "name": "Scripted Validation and Logic Design",
-    "summary": "Talk about validation paths, condition checks, field behavior, and safe automation design.",
-    "talkingPoints": [
-      "Use validations to protect data quality.",
-      "Keep logic maintainable and scoped to the right layer.",
-      "Explain tradeoffs between configuration and scripting."
-    ],
-    "prompts": [
-      "When would you choose scripting over configuration?",
-      "How do you avoid breaking existing workflows?"
+    "summary": "How saved searches, quick actions, workflows, and templates work together for communications.",
+    "points": [
+      "Use quick actions or workflows for repeatable notifications.",
+      "Mention recipient logic and testing.",
+      "Discuss weekly or scheduled reporting outputs."
     ]
   },
   {
     "id": "data-mapping",
-    "area": "Integration design",
     "name": "Data Mapping and Transformation",
-    "summary": "Essential for describing how external data lands correctly in Ivanti objects and processes.",
-    "talkingPoints": [
-      "Discuss schema alignment and transformation rules.",
-      "Explain identifiers, reconciliation, and null handling.",
-      "Mention retries and idempotent update thinking."
-    ],
-    "prompts": [
-      "How would you map data from another system into Ivanti?",
-      "How do you handle missing or duplicate records?"
+    "summary": "How records and payloads are translated between Ivanti and external systems.",
+    "points": [
+      "Explain mapping, transformation, and identifiers.",
+      "Mention null handling and reconciliation.",
+      "Tie mapping to reporting accuracy and automation stability."
+    ]
+  },
+  {
+    "id": "scripted-logic-patterns",
+    "name": "Scripted Logic Patterns",
+    "summary": "When to use scripting for validation or advanced logic and how to explain it in interviews.",
+    "points": [
+      "Use scripting when configuration alone is not enough.",
+      "Keep logic maintainable and scoped.",
+      "Avoid brittle designs and over-customization."
+    ]
+  },
+  {
+    "id": "error-retry",
+    "name": "Error Handling and Retry Patterns",
+    "summary": "How to talk about operational resilience in automation and integration design.",
+    "points": [
+      "Explain retries, logging, and alerting.",
+      "Discuss how to avoid duplicate processing.",
+      "Mention exception visibility for support teams."
+    ]
+  },
+  {
+    "id": "automation-orchestration",
+    "name": "Automation and Orchestration Patterns",
+    "summary": "How to explain chained actions, scheduling, triggered automation, and governance.",
+    "points": [
+      "Discuss orchestration across modules or systems.",
+      "Explain reusable patterns and controlled execution.",
+      "Mention security and auditability."
     ]
   }
 ]

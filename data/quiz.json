@@ -1,62 +1,50 @@
 [
   {
-    "question": "Which Ivanti ITSM feature is commonly used to store reusable filtered record sets for reporting and automation?",
+    "id": "z1",
+    "question": "Which feature is most commonly reused for filtered operational record sets in Ivanti ITSM?",
     "options": [
-      "Saved search",
-      "Theme editor",
-      "Task pane",
-      "Agent profile"
+      "Saved searches",
+      "Theme packs",
+      "Chat widgets",
+      "Static layouts"
     ],
     "answerIndex": 0,
-    "explanation": "Saved searches are commonly reused in views, dashboards, reports, and automation patterns.",
-    "level": "Beginner"
+    "explanation": "Saved searches are reused for dashboards, reports, views, and automation."
   },
   {
-    "question": "What is the best interview explanation for when to use a quick action?",
+    "id": "z2",
+    "question": "Why are patch rings useful?",
     "options": [
-      "When you need a focused reusable action on records or saved-search-driven processing",
-      "Only when you want to change CSS styles",
-      "Only for mobile enrollment",
-      "Only for patch scanning"
+      "They reduce risk through phased rollout",
+      "They remove the need for reporting",
+      "They disable pilot validation",
+      "They replace all inventory needs"
     ],
     "answerIndex": 0,
-    "explanation": "Quick actions are appropriate for targeted automated operations such as sending emails, updating fields, or processing saved-search results.",
-    "level": "Intermediate"
+    "explanation": "Patch rings support controlled staged deployment."
   },
   {
-    "question": "In a patch rollout discussion, what is a strong best practice?",
+    "id": "z3",
+    "question": "What should a strong API interview answer include?",
     "options": [
-      "Patch all endpoints at once without validation",
-      "Use pilot groups and staged waves",
-      "Disable reporting to reduce noise",
-      "Avoid exception handling"
+      "Only endpoint names",
+      "Authentication, mapping, validation, logging, and retries",
+      "Only screenshots",
+      "Only user training"
     ],
     "answerIndex": 1,
-    "explanation": "Pilot groups and staged waves reduce risk and make troubleshooting easier.",
-    "level": "Intermediate"
+    "explanation": "Good API answers cover security, transformation, and reliability."
   },
   {
-    "question": "What should you emphasize when describing an API integration in Ivanti?",
+    "id": "z4",
+    "question": "What is the goal of Velocity workflow design?",
     "options": [
-      "Color themes and fonts",
-      "Manual screenshots only",
-      "Authentication, mapping, error handling, and monitoring",
-      "Only endpoint names"
+      "Add more steps",
+      "Improve operator efficiency and reduce friction",
+      "Avoid mobile adaptation",
+      "Increase manual typing"
     ],
-    "answerIndex": 2,
-    "explanation": "Good integration answers explain security, data flow, transformation, and operational reliability.",
-    "level": "Advanced"
-  },
-  {
-    "question": "What is the goal of a well-designed Velocity workflow?",
-    "options": [
-      "Add more clicks to increase control",
-      "Reduce operator efficiency",
-      "Simplify frontline execution and reduce friction",
-      "Avoid scanning support"
-    ],
-    "answerIndex": 2,
-    "explanation": "Velocity is typically discussed in the context of improving mobile and frontline task execution.",
-    "level": "Beginner"
+    "answerIndex": 1,
+    "explanation": "Velocity is about better frontline task execution."
   }
 ]

@@ -1,137 +1,490 @@
 [
   {
-    "id": "business-objects",
-    "module": "ITSM",
-    "name": "Business Objects and Relationships",
-    "summary": "Understand how objects, fields, and relationships model service management data in Ivanti.",
-    "keyPoints": [
-      "How objects represent records and processes.",
-      "How relationships connect users, requests, tasks, and dependencies.",
-      "Why object design affects reporting and automation."
+    "id": "platform-positioning",
+    "name": "Platform Positioning",
+    "moduleId": "neurons-platform",
+    "summary": "Understand how Ivanti Neurons connects service, endpoint, mobility, automation, and digital experience capabilities.",
+    "details": [
+      "Explain platform value in business terms.",
+      "Connect product capabilities to operational outcomes.",
+      "Describe where automation and visibility reduce manual effort."
     ],
-    "questions": [
-      "What is a business object and how do you use relationships?",
-      "How would you model a custom request flow with related child tasks?"
+    "questionIds": [
+      "q11",
+      "q35"
+    ]
+  },
+  {
+    "id": "bo",
+    "name": "Business Objects",
+    "moduleId": "itsm-core",
+    "summary": "Business objects represent the data model behind records, processes, and service operations in Ivanti ITSM.",
+    "details": [
+      "Understand what an object stores and how it is extended.",
+      "Know when to create custom fields or custom objects.",
+      "Explain how design affects automation, reporting, and maintainability."
+    ],
+    "questionIds": [
+      "q1",
+      "q6"
+    ]
+  },
+  {
+    "id": "relationships",
+    "name": "Relationships",
+    "moduleId": "itsm-core",
+    "summary": "Relationships connect records such as requests, tasks, owners, configuration items, and dependent process data.",
+    "details": [
+      "Explain parent-child and linked record behavior.",
+      "Describe how relationships improve reporting and navigation.",
+      "Mention how relationship design affects automation and data quality."
+    ],
+    "questionIds": [
+      "q2",
+      "q7"
+    ]
+  },
+  {
+    "id": "forms",
+    "name": "Forms",
+    "moduleId": "itsm-core",
+    "summary": "Forms define what users see and edit when they open records or submit service data.",
+    "details": [
+      "Discuss field arrangement and role-based visibility.",
+      "Explain how forms support clean user experience.",
+      "Tie form design to request and fulfillment quality."
+    ],
+    "questionIds": [
+      "q3"
+    ]
+  },
+  {
+    "id": "layouts",
+    "name": "Layouts",
+    "moduleId": "itsm-core",
+    "summary": "Layouts shape how record data is organized visually for different user needs and process stages.",
+    "details": [
+      "Use layouts to reduce clutter.",
+      "Explain conditional visibility and user-specific views.",
+      "Describe why layout design matters for adoption."
+    ],
+    "questionIds": [
+      "q3"
+    ]
+  },
+  {
+    "id": "validations",
+    "name": "Validations",
+    "moduleId": "itsm-core",
+    "summary": "Validations protect data quality by enforcing required logic and preventing incorrect updates.",
+    "details": [
+      "Use validations to stop incomplete or invalid submissions.",
+      "Explain the difference between UI behavior and business validation.",
+      "Mention maintainability and controlled logic placement."
+    ],
+    "questionIds": [
+      "q8"
     ]
   },
   {
     "id": "quick-actions",
-    "module": "ITSM",
-    "name": "Quick Actions and Automation",
-    "summary": "Use quick actions for targeted automation such as email sending, status updates, and scheduled tasks.",
-    "keyPoints": [
-      "When to use a quick action versus a workflow.",
-      "How to pass context and run repeatable actions.",
-      "Where quick actions help in reporting and fulfillment."
+    "name": "Quick Actions",
+    "moduleId": "itsm-core",
+    "summary": "Quick actions support repeatable record-level or saved-search-driven automation tasks.",
+    "details": [
+      "Use quick actions for targeted repeatable operations.",
+      "Explain when they are better than broader workflow design.",
+      "Mention scheduled and context-aware usage."
     ],
-    "questions": [
-      "How do you schedule an email using saved search results?",
-      "What are the limits and strengths of quick actions?"
+    "questionIds": [
+      "q4",
+      "q9"
     ]
   },
   {
     "id": "workflows",
-    "module": "ITSM",
-    "name": "Workflows and Escalations",
-    "summary": "Design approval flows, escalations, fulfillment logic, and transitions for operational processes.",
-    "keyPoints": [
-      "Approval and branching logic",
-      "Escalation schedules and triggers",
-      "Monitoring and maintenance considerations"
+    "name": "Workflows",
+    "moduleId": "itsm-core",
+    "summary": "Workflows model approvals, status movement, branching logic, tasks, and process automation.",
+    "details": [
+      "Describe approvals, branching, and transitions.",
+      "Explain how workflows support requests and change processes.",
+      "Mention testing, exception handling, and governance."
     ],
-    "questions": [
-      "How do you design a workflow for a service request with multiple approvals?",
-      "How do you handle notification and escalation timing?"
+    "questionIds": [
+      "q5",
+      "q10",
+      "q12"
     ]
   },
   {
     "id": "saved-searches",
-    "module": "ITSM",
-    "name": "Saved Searches and Reporting",
-    "summary": "Saved searches power reporting, operational views, automation triggers, and scheduled communications.",
-    "keyPoints": [
-      "Filtering strategies",
-      "Reusability across dashboards and quick actions",
-      "Operational reporting patterns"
+    "name": "Saved Searches",
+    "moduleId": "reporting",
+    "summary": "Saved searches are reusable filtered datasets for operational views, reporting, dashboards, and automation.",
+    "details": [
+      "Explain filtering and reusability.",
+      "Describe how saved searches support quick actions and reports.",
+      "Mention weekly reporting and communication scenarios."
     ],
-    "questions": [
-      "How are saved searches used in automation?",
-      "How would you create a report for specific incident subjects?"
+    "questionIds": [
+      "q1",
+      "q4",
+      "q38"
+    ]
+  },
+  {
+    "id": "email-templates",
+    "name": "Email Templates",
+    "moduleId": "itsm-core",
+    "summary": "Templates standardize email content for notifications, escalations, and scheduled communications.",
+    "details": [
+      "Mention consistency and reduced manual effort.",
+      "Explain dynamic fields and recipient logic.",
+      "Tie email templates to workflows and quick actions."
+    ],
+    "questionIds": [
+      "q39"
+    ]
+  },
+  {
+    "id": "escalations",
+    "name": "Escalations",
+    "moduleId": "itsm-core",
+    "summary": "Escalations enforce response timing and drive attention when records exceed operational thresholds.",
+    "details": [
+      "Explain schedule-driven and status-driven handling.",
+      "Connect escalations to SLAs and ownership.",
+      "Discuss testing and notification design."
+    ],
+    "questionIds": [
+      "q5"
+    ]
+  },
+  {
+    "id": "reporting-dashboards",
+    "name": "Reporting and Dashboards",
+    "moduleId": "reporting",
+    "summary": "Dashboards and reports provide visibility into operational trends, backlog, performance, and exceptions.",
+    "details": [
+      "Connect reports to saved searches and KPIs.",
+      "Explain audience-specific dashboards.",
+      "Discuss trend visibility and decision support."
+    ],
+    "questionIds": [
+      "q13",
+      "q24",
+      "q26"
+    ]
+  },
+  {
+    "id": "roles-permissions",
+    "name": "Roles and Permissions",
+    "moduleId": "security-rbac",
+    "summary": "Roles and permissions control access to records, actions, data, and administrative capabilities.",
+    "details": [
+      "Explain least-privilege thinking.",
+      "Discuss admin versus end-user access patterns.",
+      "Mention governance, testing, and operational support."
+    ],
+    "questionIds": [
+      "q14",
+      "q21"
+    ]
+  },
+  {
+    "id": "rest-api-basics",
+    "name": "REST APIs",
+    "moduleId": "integrations",
+    "summary": "REST API design covers methods, endpoints, authentication, payload structure, and operational reliability.",
+    "details": [
+      "Explain request/response flow clearly.",
+      "Mention authentication, validation, and mapping.",
+      "Discuss logging, retries, and monitoring."
+    ],
+    "questionIds": [
+      "q6",
+      "q33",
+      "q35"
+    ]
+  },
+  {
+    "id": "auth-patterns",
+    "name": "Authentication Patterns",
+    "moduleId": "integrations",
+    "summary": "Authentication secures connections between Ivanti and external platforms.",
+    "details": [
+      "Discuss API keys, tokens, or other secured methods at a high level.",
+      "Explain why credential handling and least privilege matter.",
+      "Mention secure storage and connection governance."
+    ],
+    "questionIds": [
+      "q36"
+    ]
+  },
+  {
+    "id": "web-service-patterns",
+    "name": "Web Service Patterns",
+    "moduleId": "integrations",
+    "summary": "Web service patterns help move or synchronize data between Ivanti and external systems.",
+    "details": [
+      "Describe payload transformation and response handling.",
+      "Explain scheduling versus event-driven invocation.",
+      "Discuss monitoring and exception paths."
+    ],
+    "questionIds": [
+      "q37"
+    ]
+  },
+  {
+    "id": "error-handling",
+    "name": "Error Handling and Retries",
+    "moduleId": "automation",
+    "summary": "Reliable automation and integrations require retries, error capture, notifications, and safe rollback thinking.",
+    "details": [
+      "Explain retry strategy and non-duplication.",
+      "Discuss logging and alerting.",
+      "Mention how to reduce silent failures."
+    ],
+    "questionIds": [
+      "q18",
+      "q23",
+      "q34"
+    ]
+  },
+  {
+    "id": "scripted-logic",
+    "name": "Scripted Logic and Validation Design",
+    "moduleId": "itsm-core",
+    "summary": "Scripted logic helps implement advanced validations, field behavior, and integration-specific control where configuration alone is not enough.",
+    "details": [
+      "Explain when scripting is appropriate.",
+      "Mention maintainability and safe scope.",
+      "Avoid over-engineering when configuration can solve the need."
+    ],
+    "questionIds": [
+      "q8"
+    ]
+  },
+  {
+    "id": "policy-governance",
+    "name": "Policy Governance",
+    "moduleId": "compliance",
+    "summary": "Policies drive operational and security behavior across managed devices and service processes.",
+    "details": [
+      "Explain governance goals and exception handling.",
+      "Describe how policy design affects user experience.",
+      "Discuss enforcement, visibility, and remediation."
+    ],
+    "questionIds": [
+      "q15",
+      "q22"
     ]
   },
   {
     "id": "enrollment",
-    "module": "MDM",
     "name": "Device Enrollment",
-    "summary": "Study how corporate and personal devices are onboarded and governed through policy.",
-    "keyPoints": [
-      "Ownership models",
-      "Enrollment paths",
-      "Baseline configuration and user experience"
+    "moduleId": "mdm",
+    "summary": "Enrollment brings devices under management and establishes ownership, policy, and baseline controls.",
+    "details": [
+      "Differentiate corporate-owned and BYOD onboarding.",
+      "Explain post-enrollment baseline actions.",
+      "Discuss user communication and compliance setup."
     ],
-    "questions": [
-      "How do you explain BYOD versus corporate enrollment?",
-      "What steps matter most after enrollment?"
+    "questionIds": [
+      "q20"
     ]
   },
   {
-    "id": "compliance",
-    "module": "MDM/UEM",
-    "name": "Compliance and Policy Enforcement",
-    "summary": "Covers policy rules, compliance checks, actions on violation, and governance outcomes.",
-    "keyPoints": [
-      "Policy creation",
-      "Compliance triggers",
-      "Remediation actions"
+    "id": "ownership-models",
+    "name": "Ownership Models",
+    "moduleId": "mdm",
+    "summary": "Ownership models shape what controls are applied, what data is visible, and how apps and compliance are managed.",
+    "details": [
+      "Differentiate BYOD and corporate-owned expectations.",
+      "Explain governance and privacy considerations.",
+      "Tie ownership to compliance and app distribution."
     ],
-    "questions": [
-      "How do you respond to a non-compliant device?",
-      "What policies are commonly discussed in interviews?"
+    "questionIds": [
+      "q20",
+      "q21"
     ]
   },
   {
-    "id": "patching",
-    "module": "UEM/Endpoint Manager",
-    "name": "Patch and Software Distribution",
-    "summary": "Understand patch cycles, targeting, testing waves, and failure handling.",
-    "keyPoints": [
-      "Group-based rollout",
-      "Patch testing and exception handling",
-      "Operational visibility and remediation"
+    "id": "compliance-rules",
+    "name": "Compliance Rules",
+    "moduleId": "compliance",
+    "summary": "Compliance rules define what makes a device compliant and what happens when it is not.",
+    "details": [
+      "Describe rule definition and thresholds.",
+      "Explain remediation and restricted access actions.",
+      "Connect policy violations to operational workflows."
     ],
-    "questions": [
-      "How would you structure phased patching?",
-      "How do you troubleshoot incomplete deployments?"
+    "questionIds": [
+      "q22"
     ]
   },
   {
-    "id": "api-design",
-    "module": "Integrations",
-    "name": "REST APIs and Integration Design",
-    "summary": "Focus on authentication, payload mapping, scheduling, retries, and cross-system reliability.",
-    "keyPoints": [
-      "REST methods and authentication",
-      "Error handling and logging",
-      "Data transformation and trigger logic"
+    "id": "app-deployment",
+    "name": "App Deployment",
+    "moduleId": "app-distribution",
+    "summary": "App deployment manages how required and approved applications reach managed devices.",
+    "details": [
+      "Explain rollout planning and audience targeting.",
+      "Discuss versioning, compliance impact, and support.",
+      "Mention validation and failure handling."
     ],
-    "questions": [
-      "How do you integrate Ivanti with an external system?",
-      "How do you secure and monitor integrations?"
+    "questionIds": [
+      "q21"
     ]
   },
   {
-    "id": "velocity-workflows",
-    "module": "Velocity",
-    "name": "Velocity Workflow Design",
-    "summary": "Covers browser-based experiences, scanning efficiency, and workflow simplification for operational teams.",
-    "keyPoints": [
-      "Task minimization",
-      "Usability for frontline staff",
-      "Scanning and navigation flow"
+    "id": "patch-rings",
+    "name": "Patch Rings and Rollout Waves",
+    "moduleId": "patch-management",
+    "summary": "Patch rings stage deployment through pilot and broader production waves to reduce risk.",
+    "details": [
+      "Explain pilot groups and rollout criteria.",
+      "Discuss reporting and exception handling.",
+      "Connect phased rollout to enterprise reliability."
     ],
-    "questions": [
-      "How would you redesign a repetitive handheld workflow?",
-      "What makes a mobility workflow successful?"
+    "questionIds": [
+      "q16",
+      "q23"
+    ]
+  },
+  {
+    "id": "distribution-jobs",
+    "name": "Distribution Jobs",
+    "moduleId": "software-distribution",
+    "summary": "Distribution jobs push software or content to targeted devices using planned scheduling and validation.",
+    "details": [
+      "Discuss package targeting and timing.",
+      "Explain outcome tracking and missed-device handling.",
+      "Connect distribution jobs to operational control."
+    ],
+    "questionIds": [
+      "q17",
+      "q18"
+    ]
+  },
+  {
+    "id": "inventory-discovery",
+    "name": "Inventory and Discovery",
+    "moduleId": "discovery-inventory",
+    "summary": "Inventory and discovery provide visibility into devices, attributes, and estate composition.",
+    "details": [
+      "Explain why source quality matters.",
+      "Describe reconciliation between discovered and managed data.",
+      "Connect discovery to reporting and asset management."
+    ],
+    "questionIds": [
+      "q25",
+      "q28"
+    ]
+  },
+  {
+    "id": "asset-lifecycle",
+    "name": "Asset Lifecycle",
+    "moduleId": "itam",
+    "summary": "Asset lifecycle tracks planning, deployment, ownership, refresh, and retirement of technology assets.",
+    "details": [
+      "Explain lifecycle states and accountability.",
+      "Connect lifecycle to cost and compliance visibility.",
+      "Discuss reconciliation with inventory sources."
+    ],
+    "questionIds": [
+      "q26",
+      "q27"
+    ]
+  },
+  {
+    "id": "data-normalization",
+    "name": "Data Normalization and Reconciliation",
+    "moduleId": "itam",
+    "summary": "Normalization improves data consistency across discovered, managed, and manually maintained sources.",
+    "details": [
+      "Explain duplicate handling and naming consistency.",
+      "Discuss source-of-truth considerations.",
+      "Connect reconciliation to reporting trustworthiness."
+    ],
+    "questionIds": [
+      "q27",
+      "q29"
+    ]
+  },
+  {
+    "id": "velocity-browser",
+    "name": "Velocity Browser Sessions",
+    "moduleId": "velocity",
+    "summary": "Velocity helps transform browser-based enterprise workflows into more efficient frontline experiences.",
+    "details": [
+      "Discuss simplification for handheld or kiosk use.",
+      "Explain how screen flow and prompt design matter.",
+      "Connect browser session improvements to operator speed."
+    ],
+    "questionIds": [
+      "q30"
+    ]
+  },
+  {
+    "id": "scan-workflows",
+    "name": "Scanning Workflows",
+    "moduleId": "velocity",
+    "summary": "Scanning workflows streamline repetitive frontline tasks and reduce manual input friction.",
+    "details": [
+      "Explain scan-first interaction design.",
+      "Discuss error reduction and speed.",
+      "Connect workflow design to real operational outcomes."
+    ],
+    "questionIds": [
+      "q31",
+      "q32"
+    ]
+  },
+  {
+    "id": "experience-monitoring",
+    "name": "Experience Monitoring",
+    "moduleId": "dx-experience",
+    "summary": "Experience monitoring helps teams understand friction, visibility gaps, and user-impact trends.",
+    "details": [
+      "Explain why visibility into user experience matters.",
+      "Connect monitoring to proactive improvement.",
+      "Discuss how insights can influence automation or support."
+    ],
+    "questionIds": [
+      "q13"
+    ]
+  },
+  {
+    "id": "workflow-design",
+    "name": "Workflow Design",
+    "moduleId": "automation",
+    "summary": "Workflow design connects operational steps into repeatable, governed processes.",
+    "details": [
+      "Discuss approvals, branching, notifications, and exception paths.",
+      "Explain how workflows support different modules.",
+      "Mention how to design for clarity and maintainability."
+    ],
+    "questionIds": [
+      "q10",
+      "q12",
+      "q33"
+    ]
+  },
+  {
+    "id": "data-mapping-topic",
+    "name": "Data Mapping",
+    "moduleId": "integrations",
+    "summary": "Data mapping transforms incoming or outgoing payloads into the right format for Ivanti or connected systems.",
+    "details": [
+      "Explain field alignment and transformation logic.",
+      "Discuss null handling, defaults, and identifiers.",
+      "Mention safe synchronization and idempotence."
+    ],
+    "questionIds": [
+      "q7",
+      "q37"
     ]
   }
 ]

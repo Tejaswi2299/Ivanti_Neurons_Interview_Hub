@@ -1,110 +1,458 @@
 [
   {
     "id": "itsm-admin",
-    "category": "Core platform role",
     "name": "Ivanti ITSM Administrator",
-    "summary": "Owns configuration, forms, business objects, workflows, notifications, saved searches, dashboards, and operational support in Ivanti ITSM.",
-    "responsibilities": [
-      "Configure business objects, layouts, fields, relationships, and validation rules.",
-      "Manage workflows, quick actions, saved searches, escalations, and email templates.",
-      "Support reporting, dashboards, user access, service request design, and production troubleshooting."
+    "category": "Core platform",
+    "summary": "Focuses on configuration, service management design, automation, notifications, forms, searches, and operational support.",
+    "moduleIds": [
+      "itsm-core",
+      "incident",
+      "problem",
+      "change",
+      "request",
+      "knowledge",
+      "reporting",
+      "security-rbac",
+      "integrations"
     ],
-    "focus": [
-      "Business objects and relationships",
-      "Forms and layouts",
-      "Quick actions and workflows",
-      "Saved searches and reporting",
-      "Email and escalation design"
+    "topicIds": [
+      "bo",
+      "relationships",
+      "forms",
+      "layouts",
+      "validations",
+      "quick-actions",
+      "workflows",
+      "saved-searches",
+      "email-templates",
+      "escalations",
+      "reporting-dashboards",
+      "roles-permissions",
+      "rest-api-basics"
+    ],
+    "codingIds": [
+      "api-patterns",
+      "notification-automation",
+      "data-mapping"
+    ],
+    "useCaseIds": [
+      "weekly-open-incidents",
+      "customer-response-reactivation",
+      "approval-routing"
+    ],
+    "questionIds": [
+      "q1",
+      "q2",
+      "q3",
+      "q4",
+      "q5"
     ]
   },
   {
-    "id": "itsm-dev",
-    "category": "Core platform role",
+    "id": "itsm-developer",
     "name": "Ivanti ITSM Developer",
-    "summary": "Builds advanced automation, integrations, scripting solutions, API connections, and complex platform customizations.",
-    "responsibilities": [
-      "Develop integrations using REST APIs, web services, scripts, and automation logic.",
-      "Implement reusable components for forms, validations, data handling, and process orchestration.",
-      "Support deployment, troubleshooting, optimization, and technical design reviews."
+    "category": "Core platform",
+    "summary": "Builds advanced automation, integrations, validation logic, workflow solutions, and deployment-ready customizations.",
+    "moduleIds": [
+      "itsm-core",
+      "incident",
+      "request",
+      "change",
+      "integrations",
+      "automation",
+      "security-rbac",
+      "reporting"
     ],
-    "focus": [
-      "REST API integration",
-      "Web service scripts",
-      "Automation design",
-      "Custom validations",
-      "Troubleshooting and optimization"
+    "topicIds": [
+      "bo",
+      "relationships",
+      "workflows",
+      "quick-actions",
+      "saved-searches",
+      "rest-api-basics",
+      "auth-patterns",
+      "error-handling",
+      "scripted-logic",
+      "web-service-patterns"
+    ],
+    "codingIds": [
+      "api-patterns",
+      "scripted-logic-patterns",
+      "error-retry",
+      "data-mapping"
+    ],
+    "useCaseIds": [
+      "weekly-open-incidents",
+      "external-approval-sync",
+      "api-report-push"
+    ],
+    "questionIds": [
+      "q6",
+      "q7",
+      "q8",
+      "q9",
+      "q10"
+    ]
+  },
+  {
+    "id": "neurons-consultant",
+    "name": "Ivanti Neurons Consultant",
+    "category": "Advisory",
+    "summary": "Bridges business requirements and platform capabilities across ITSM, endpoint, mobility, automation, and reporting.",
+    "moduleIds": [
+      "neurons-platform",
+      "itsm-core",
+      "uem",
+      "mdm",
+      "itam",
+      "integrations",
+      "automation",
+      "dx-experience"
+    ],
+    "topicIds": [
+      "platform-positioning",
+      "workflow-design",
+      "reporting-dashboards",
+      "rest-api-basics",
+      "policy-governance",
+      "asset-lifecycle",
+      "experience-monitoring"
+    ],
+    "codingIds": [
+      "api-patterns",
+      "data-mapping"
+    ],
+    "useCaseIds": [
+      "external-approval-sync",
+      "noncompliant-device",
+      "asset-refresh"
+    ],
+    "questionIds": [
+      "q11",
+      "q12",
+      "q13"
     ]
   },
   {
     "id": "uem-engineer",
-    "category": "Endpoint and device role",
     "name": "Ivanti UEM Engineer",
-    "summary": "Designs and supports unified endpoint management, patching, distribution, policy compliance, and device lifecycle processes.",
-    "responsibilities": [
-      "Manage endpoint policies, software deployment, patching, compliance, and inventory visibility.",
-      "Coordinate device onboarding, lifecycle, and policy-driven controls across managed environments.",
-      "Investigate patch failures, agent communication issues, and deployment health."
+    "category": "Endpoint management",
+    "summary": "Supports unified endpoint management, software distribution, compliance, visibility, and operational governance.",
+    "moduleIds": [
+      "uem",
+      "endpoint-manager",
+      "patch-management",
+      "software-distribution",
+      "discovery-inventory",
+      "security-rbac"
     ],
-    "focus": [
-      "Patch and software distribution",
-      "Policy and compliance",
-      "Device lifecycle",
-      "Endpoint visibility",
-      "Troubleshooting endpoint management"
+    "topicIds": [
+      "patch-rings",
+      "distribution-jobs",
+      "inventory-discovery",
+      "policy-governance",
+      "roles-permissions",
+      "error-handling"
+    ],
+    "codingIds": [
+      "automation-orchestration",
+      "error-retry"
+    ],
+    "useCaseIds": [
+      "phased-patching",
+      "software-rollout",
+      "device-grouping"
+    ],
+    "questionIds": [
+      "q14",
+      "q15",
+      "q16"
+    ]
+  },
+  {
+    "id": "endpoint-manager-engineer",
+    "name": "Ivanti Endpoint Manager Engineer",
+    "category": "Endpoint management",
+    "summary": "Handles endpoint operations including device control, inventory, deployment jobs, patching, and enterprise targeting.",
+    "moduleIds": [
+      "endpoint-manager",
+      "patch-management",
+      "software-distribution",
+      "discovery-inventory"
+    ],
+    "topicIds": [
+      "distribution-jobs",
+      "patch-rings",
+      "inventory-discovery",
+      "error-handling"
+    ],
+    "codingIds": [
+      "automation-orchestration",
+      "error-retry"
+    ],
+    "useCaseIds": [
+      "phased-patching",
+      "software-rollout",
+      "device-grouping"
+    ],
+    "questionIds": [
+      "q17",
+      "q18",
+      "q19"
     ]
   },
   {
     "id": "mdm-engineer",
-    "category": "Endpoint and device role",
     "name": "Ivanti MDM Engineer",
-    "summary": "Focuses on mobile device enrollment, policy enforcement, app deployment, compliance monitoring, and security controls.",
-    "responsibilities": [
-      "Configure device enrollment, ownership profiles, compliance rules, and app delivery flows.",
-      "Support BYOD and corporate-owned device management with policy governance.",
-      "Handle mobile access, security baselines, and app lifecycle operations."
+    "category": "Mobility",
+    "summary": "Manages mobile enrollment, compliance, app delivery, ownership models, and operational controls.",
+    "moduleIds": [
+      "mdm",
+      "app-distribution",
+      "compliance",
+      "security-rbac"
     ],
-    "focus": [
-      "Enrollment and compliance",
-      "App deployment",
-      "Ownership models",
-      "Mobile security",
-      "Operational governance"
+    "topicIds": [
+      "enrollment",
+      "ownership-models",
+      "compliance-rules",
+      "app-deployment",
+      "policy-governance",
+      "roles-permissions"
+    ],
+    "codingIds": [
+      "api-patterns",
+      "notification-automation"
+    ],
+    "useCaseIds": [
+      "noncompliant-device",
+      "mobile-app-rollout",
+      "byod-setup"
+    ],
+    "questionIds": [
+      "q20",
+      "q21",
+      "q22"
+    ]
+  },
+  {
+    "id": "patch-engineer",
+    "name": "Ivanti Patch Management Engineer",
+    "category": "Endpoint management",
+    "summary": "Designs patch strategy, pilot waves, compliance tracking, rollback thinking, and failure remediation.",
+    "moduleIds": [
+      "patch-management",
+      "endpoint-manager",
+      "uem",
+      "reporting"
+    ],
+    "topicIds": [
+      "patch-rings",
+      "reporting-dashboards",
+      "error-handling",
+      "inventory-discovery"
+    ],
+    "codingIds": [
+      "automation-orchestration",
+      "error-retry"
+    ],
+    "useCaseIds": [
+      "phased-patching"
+    ],
+    "questionIds": [
+      "q23",
+      "q24"
+    ]
+  },
+  {
+    "id": "itam-engineer",
+    "name": "Ivanti IT Asset Management Engineer",
+    "category": "Asset management",
+    "summary": "Focuses on asset lifecycle, ownership, entitlement visibility, and operational governance for IT assets.",
+    "moduleIds": [
+      "itam",
+      "discovery-inventory",
+      "reporting",
+      "integrations"
+    ],
+    "topicIds": [
+      "asset-lifecycle",
+      "inventory-discovery",
+      "reporting-dashboards",
+      "data-normalization",
+      "rest-api-basics"
+    ],
+    "codingIds": [
+      "data-mapping",
+      "api-patterns"
+    ],
+    "useCaseIds": [
+      "asset-refresh",
+      "discovery-reconciliation"
+    ],
+    "questionIds": [
+      "q25",
+      "q26",
+      "q27"
+    ]
+  },
+  {
+    "id": "discovery-engineer",
+    "name": "Ivanti Discovery and Inventory Engineer",
+    "category": "Asset management",
+    "summary": "Builds and supports device discovery, inventory visibility, reconciliation, and reporting quality.",
+    "moduleIds": [
+      "discovery-inventory",
+      "itam",
+      "reporting"
+    ],
+    "topicIds": [
+      "inventory-discovery",
+      "data-normalization",
+      "asset-lifecycle",
+      "reporting-dashboards"
+    ],
+    "codingIds": [
+      "data-mapping",
+      "error-retry"
+    ],
+    "useCaseIds": [
+      "discovery-reconciliation"
+    ],
+    "questionIds": [
+      "q28",
+      "q29"
     ]
   },
   {
     "id": "velocity-consultant",
-    "category": "Specialized role",
     "name": "Ivanti Velocity Consultant",
-    "summary": "Implements mobile workflows for warehouse, field, and business-critical environments using browser and scanning-based experiences.",
-    "responsibilities": [
-      "Design browser-based and mobile-enabled task flows for frontline operations.",
-      "Map business workflows into handheld or kiosk experiences.",
-      "Support scanning, navigation, operational productivity, and usability improvements."
+    "category": "Frontline productivity",
+    "summary": "Designs warehouse and frontline workflows for browser-based and scanning-heavy operational environments.",
+    "moduleIds": [
+      "velocity",
+      "dx-experience"
     ],
-    "focus": [
-      "Warehouse and field workflows",
-      "Browser-based apps",
-      "Mobility transformation",
-      "Operational scenarios",
-      "User flow design"
+    "topicIds": [
+      "velocity-browser",
+      "scan-workflows",
+      "experience-monitoring",
+      "workflow-design"
+    ],
+    "codingIds": [
+      "automation-orchestration"
+    ],
+    "useCaseIds": [
+      "warehouse-picking-redesign",
+      "field-service-simplification"
+    ],
+    "questionIds": [
+      "q30",
+      "q31",
+      "q32"
+    ]
+  },
+  {
+    "id": "automation-engineer",
+    "name": "Ivanti Automation Engineer",
+    "category": "Technical specialization",
+    "summary": "Builds orchestration flows, scheduled operations, automation chains, and integration-backed action pipelines.",
+    "moduleIds": [
+      "automation",
+      "integrations",
+      "itsm-core",
+      "uem"
+    ],
+    "topicIds": [
+      "workflow-design",
+      "rest-api-basics",
+      "auth-patterns",
+      "error-handling",
+      "quick-actions",
+      "saved-searches"
+    ],
+    "codingIds": [
+      "automation-orchestration",
+      "api-patterns",
+      "error-retry"
+    ],
+    "useCaseIds": [
+      "api-report-push",
+      "external-approval-sync",
+      "weekly-open-incidents"
+    ],
+    "questionIds": [
+      "q33",
+      "q34"
     ]
   },
   {
     "id": "integration-architect",
-    "category": "Advanced role",
-    "name": "Ivanti Integration and Automation Architect",
-    "summary": "Designs cross-product automation, governance, integration strategy, API security, and scalable solution patterns across the Ivanti ecosystem.",
-    "responsibilities": [
-      "Define integration patterns across ITSM, endpoint, identity, and external enterprise systems.",
-      "Guide automation strategy, reusable services, and error handling patterns.",
-      "Align solution design to operational needs, performance, and maintainability."
+    "name": "Ivanti Integration Architect",
+    "category": "Architecture",
+    "summary": "Defines secure and scalable integration patterns across Ivanti products and external enterprise platforms.",
+    "moduleIds": [
+      "integrations",
+      "automation",
+      "itsm-core",
+      "itam",
+      "mdm"
     ],
-    "focus": [
-      "Architecture and governance",
-      "Cross-platform automation",
-      "Reusable APIs",
-      "Security and scalability",
-      "Enterprise integration strategy"
+    "topicIds": [
+      "rest-api-basics",
+      "auth-patterns",
+      "error-handling",
+      "data-normalization",
+      "data-mapping-topic",
+      "workflow-design"
+    ],
+    "codingIds": [
+      "api-patterns",
+      "data-mapping",
+      "error-retry"
+    ],
+    "useCaseIds": [
+      "external-approval-sync",
+      "api-report-push",
+      "discovery-reconciliation"
+    ],
+    "questionIds": [
+      "q35",
+      "q36",
+      "q37"
+    ]
+  },
+  {
+    "id": "platform-analyst",
+    "name": "Ivanti Support and Platform Analyst",
+    "category": "Operations",
+    "summary": "Supports tickets, troubleshooting, user issues, search/reporting requests, and platform operational health.",
+    "moduleIds": [
+      "itsm-core",
+      "reporting",
+      "security-rbac",
+      "uem",
+      "mdm"
+    ],
+    "topicIds": [
+      "saved-searches",
+      "email-templates",
+      "reporting-dashboards",
+      "roles-permissions",
+      "error-handling",
+      "compliance-rules"
+    ],
+    "codingIds": [
+      "notification-automation"
+    ],
+    "useCaseIds": [
+      "weekly-open-incidents",
+      "customer-response-reactivation",
+      "noncompliant-device"
+    ],
+    "questionIds": [
+      "q38",
+      "q39"
     ]
   }
 ]

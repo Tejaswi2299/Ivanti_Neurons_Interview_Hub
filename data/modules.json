@@ -1,107 +1,351 @@
 [
   {
     "id": "neurons-platform",
-    "family": "Ivanti Neurons platform",
     "name": "Ivanti Neurons Platform",
-    "summary": "The umbrella experience for automation, visibility, operational intelligence, and connected workflows across the Ivanti ecosystem.",
-    "mustKnow": [
-      "Platform positioning and value",
-      "Connected workflows across product areas",
-      "Automation, visibility, and user experience improvements"
+    "family": "Platform",
+    "summary": "Umbrella platform experience connecting service management, endpoint operations, automation, and digital experience.",
+    "topicIds": [
+      "platform-positioning",
+      "workflow-design",
+      "experience-monitoring"
     ],
-    "scenarios": [
-      "Explain how the platform connects ITSM, endpoint, and experience capabilities.",
-      "Discuss where operational intelligence helps reduce manual effort."
+    "roleIds": [
+      "neurons-consultant",
+      "integration-architect"
     ]
   },
   {
-    "id": "itsm",
-    "family": "Service management",
+    "id": "itsm-core",
     "name": "Ivanti Neurons for ITSM",
-    "summary": "Covers service management functions such as incidents, requests, problems, changes, knowledge, approvals, and workflow-based fulfillment.",
-    "mustKnow": [
-      "Business objects and relationships",
-      "Forms, quick actions, workflows, saved searches",
-      "Notifications, dashboards, and process automation"
+    "family": "Service management",
+    "summary": "Service management foundation including business objects, forms, workflows, approvals, notifications, and automation.",
+    "topicIds": [
+      "bo",
+      "relationships",
+      "forms",
+      "layouts",
+      "validations",
+      "workflows",
+      "quick-actions",
+      "saved-searches",
+      "email-templates",
+      "escalations"
     ],
-    "scenarios": [
-      "Build a weekly report for open incidents.",
-      "Automate approval or notification flow for service requests."
+    "roleIds": [
+      "itsm-admin",
+      "itsm-developer",
+      "neurons-consultant",
+      "platform-analyst"
+    ]
+  },
+  {
+    "id": "incident",
+    "name": "Incident Management",
+    "family": "Service management",
+    "summary": "Operational handling of incidents, assignment, communication, lifecycle movement, and reporting.",
+    "topicIds": [
+      "workflow-design",
+      "saved-searches",
+      "email-templates",
+      "reporting-dashboards"
+    ],
+    "roleIds": [
+      "itsm-admin",
+      "itsm-developer",
+      "platform-analyst"
+    ]
+  },
+  {
+    "id": "problem",
+    "name": "Problem Management",
+    "family": "Service management",
+    "summary": "Root cause analysis, recurring issue handling, trend review, and knowledge feedback loops.",
+    "topicIds": [
+      "workflow-design",
+      "reporting-dashboards"
+    ],
+    "roleIds": [
+      "itsm-admin"
+    ]
+  },
+  {
+    "id": "change",
+    "name": "Change Management",
+    "family": "Service management",
+    "summary": "Change workflows, approvals, governance, and controlled deployment processes.",
+    "topicIds": [
+      "workflow-design",
+      "roles-permissions",
+      "email-templates"
+    ],
+    "roleIds": [
+      "itsm-admin",
+      "itsm-developer"
+    ]
+  },
+  {
+    "id": "request",
+    "name": "Service Request Management",
+    "family": "Service management",
+    "summary": "Catalog and request-based fulfillment design using approval logic, tasks, and status transitions.",
+    "topicIds": [
+      "forms",
+      "layouts",
+      "workflows",
+      "quick-actions",
+      "email-templates"
+    ],
+    "roleIds": [
+      "itsm-admin",
+      "itsm-developer"
+    ]
+  },
+  {
+    "id": "knowledge",
+    "name": "Knowledge Management",
+    "family": "Service management",
+    "summary": "Knowledge article lifecycle, reuse, ownership, and support efficiency enablement.",
+    "topicIds": [
+      "workflow-design",
+      "roles-permissions"
+    ],
+    "roleIds": [
+      "itsm-admin"
+    ]
+  },
+  {
+    "id": "reporting",
+    "name": "Reporting and Dashboards",
+    "family": "Analytics",
+    "summary": "Operational reporting, dashboard construction, trend visibility, and saved-search-powered insights.",
+    "topicIds": [
+      "saved-searches",
+      "reporting-dashboards"
+    ],
+    "roleIds": [
+      "itsm-admin",
+      "patch-engineer",
+      "itam-engineer",
+      "discovery-engineer",
+      "platform-analyst"
     ]
   },
   {
     "id": "uem",
-    "family": "Endpoint management",
     "name": "Ivanti Neurons for UEM",
-    "summary": "Supports unified endpoint management, policy control, software delivery, visibility, and compliance across endpoints.",
-    "mustKnow": [
-      "Endpoint policies",
-      "Device inventory and lifecycle",
-      "Compliance and operational controls"
+    "family": "Endpoint",
+    "summary": "Unified endpoint management for governance, deployment, compliance, and operational visibility.",
+    "topicIds": [
+      "policy-governance",
+      "patch-rings",
+      "distribution-jobs",
+      "inventory-discovery"
     ],
-    "scenarios": [
-      "Talk through patching and software distribution approach.",
-      "Explain policy-driven control across large endpoint populations."
-    ]
-  },
-  {
-    "id": "mdm",
-    "family": "Mobility",
-    "name": "Ivanti Neurons for MDM",
-    "summary": "Supports mobile device enrollment, policy management, app distribution, and secure device operations.",
-    "mustKnow": [
-      "Enrollment methods",
-      "Compliance policies",
-      "App lifecycle and ownership models"
-    ],
-    "scenarios": [
-      "How to roll out a new mobile app to managed devices.",
-      "How to handle non-compliant devices."
+    "roleIds": [
+      "uem-engineer",
+      "patch-engineer"
     ]
   },
   {
     "id": "endpoint-manager",
-    "family": "Endpoint management",
     "name": "Ivanti Endpoint Manager",
-    "summary": "Handles endpoint administration, inventory, deployment, patching, and operational control for enterprise devices.",
-    "mustKnow": [
-      "Agent-based management concepts",
-      "Distribution and patching workflows",
-      "Inventory, targeting, and device groups"
+    "family": "Endpoint",
+    "summary": "Device operations, software delivery, patching support, targeting, and enterprise endpoint administration.",
+    "topicIds": [
+      "distribution-jobs",
+      "patch-rings",
+      "inventory-discovery"
     ],
-    "scenarios": [
-      "Discuss patch deployment wave planning.",
-      "Explain troubleshooting when a deployment does not reach some devices."
+    "roleIds": [
+      "uem-engineer",
+      "endpoint-manager-engineer",
+      "patch-engineer"
+    ]
+  },
+  {
+    "id": "patch-management",
+    "name": "Patch Management",
+    "family": "Endpoint",
+    "summary": "Patch deployment, ring-based rollout, health tracking, and remediation operations.",
+    "topicIds": [
+      "patch-rings",
+      "error-handling",
+      "reporting-dashboards"
+    ],
+    "roleIds": [
+      "uem-engineer",
+      "endpoint-manager-engineer",
+      "patch-engineer"
+    ]
+  },
+  {
+    "id": "software-distribution",
+    "name": "Software Distribution",
+    "family": "Endpoint",
+    "summary": "Package rollout, targeting, job scheduling, and deployment outcome validation.",
+    "topicIds": [
+      "distribution-jobs",
+      "error-handling"
+    ],
+    "roleIds": [
+      "uem-engineer",
+      "endpoint-manager-engineer"
+    ]
+  },
+  {
+    "id": "discovery-inventory",
+    "name": "Discovery and Inventory",
+    "family": "Asset",
+    "summary": "Device discovery, inventory visibility, reconciliation, and source-of-truth improvement.",
+    "topicIds": [
+      "inventory-discovery",
+      "data-normalization",
+      "reporting-dashboards"
+    ],
+    "roleIds": [
+      "uem-engineer",
+      "itam-engineer",
+      "discovery-engineer"
+    ]
+  },
+  {
+    "id": "itam",
+    "name": "IT Asset Management",
+    "family": "Asset",
+    "summary": "Tracks asset lifecycle, ownership, refresh, entitlement visibility, and reconciliation quality.",
+    "topicIds": [
+      "asset-lifecycle",
+      "data-normalization",
+      "inventory-discovery"
+    ],
+    "roleIds": [
+      "itam-engineer",
+      "discovery-engineer",
+      "neurons-consultant"
+    ]
+  },
+  {
+    "id": "mdm",
+    "name": "Ivanti Neurons for MDM",
+    "family": "Mobility",
+    "summary": "Mobile device management for enrollment, ownership, compliance, app distribution, and security controls.",
+    "topicIds": [
+      "enrollment",
+      "ownership-models",
+      "compliance-rules",
+      "app-deployment",
+      "policy-governance"
+    ],
+    "roleIds": [
+      "mdm-engineer",
+      "neurons-consultant"
+    ]
+  },
+  {
+    "id": "app-distribution",
+    "name": "Mobile App Distribution",
+    "family": "Mobility",
+    "summary": "Delivery of approved applications to managed devices with ownership and compliance considerations.",
+    "topicIds": [
+      "app-deployment",
+      "ownership-models"
+    ],
+    "roleIds": [
+      "mdm-engineer"
+    ]
+  },
+  {
+    "id": "compliance",
+    "name": "Compliance and Policy",
+    "family": "Mobility",
+    "summary": "Policy enforcement, non-compliance actions, and governance-driven device control.",
+    "topicIds": [
+      "compliance-rules",
+      "policy-governance"
+    ],
+    "roleIds": [
+      "mdm-engineer",
+      "uem-engineer"
     ]
   },
   {
     "id": "velocity",
-    "family": "Frontline productivity",
     "name": "Ivanti Velocity",
-    "summary": "Optimizes mobility workflows for business-critical environments such as warehouses and field operations.",
-    "mustKnow": [
-      "Browser-based transformation",
-      "Scanning and task efficiency",
-      "Workflow usability and operator productivity"
+    "family": "Frontline productivity",
+    "summary": "Browser-based and scanning-first user experience improvement for warehouse and frontline operations.",
+    "topicIds": [
+      "velocity-browser",
+      "scan-workflows",
+      "workflow-design"
     ],
-    "scenarios": [
-      "Describe a warehouse handheld workflow redesign.",
-      "Explain how to reduce friction in repetitive frontline tasks."
+    "roleIds": [
+      "velocity-consultant"
+    ]
+  },
+  {
+    "id": "dx-experience",
+    "name": "Digital Experience",
+    "family": "Experience",
+    "summary": "Focuses on experience visibility, user-impact monitoring, and operational improvement across the estate.",
+    "topicIds": [
+      "experience-monitoring",
+      "workflow-design"
+    ],
+    "roleIds": [
+      "neurons-consultant",
+      "velocity-consultant"
+    ]
+  },
+  {
+    "id": "automation",
+    "name": "Automation and Orchestration",
+    "family": "Technical",
+    "summary": "Scheduled operations, triggered automation, reusable action design, and orchestration patterns.",
+    "topicIds": [
+      "workflow-design",
+      "rest-api-basics",
+      "auth-patterns",
+      "error-handling"
+    ],
+    "roleIds": [
+      "automation-engineer",
+      "itsm-developer",
+      "integration-architect"
     ]
   },
   {
     "id": "integrations",
-    "family": "Technical capabilities",
     "name": "Integrations and APIs",
-    "summary": "Includes REST APIs, web service integrations, automation hooks, connectors, and cross-system orchestration patterns.",
-    "mustKnow": [
-      "Inbound and outbound integration design",
-      "Authentication and error handling",
-      "Data mapping and orchestration"
+    "family": "Technical",
+    "summary": "Cross-system connectivity, payload mapping, retries, authentication, and service orchestration.",
+    "topicIds": [
+      "rest-api-basics",
+      "auth-patterns",
+      "web-service-patterns",
+      "error-handling",
+      "data-mapping-topic"
     ],
-    "scenarios": [
-      "Integrate ITSM with an external approval or reporting system.",
-      "Send scheduled results using data from a saved search."
+    "roleIds": [
+      "itsm-admin",
+      "itsm-developer",
+      "integration-architect",
+      "automation-engineer"
+    ]
+  },
+  {
+    "id": "security-rbac",
+    "name": "Security, Roles, and Access",
+    "family": "Governance",
+    "summary": "Permission model, operational access, role-based governance, and data visibility considerations.",
+    "topicIds": [
+      "roles-permissions",
+      "policy-governance"
+    ],
+    "roleIds": [
+      "itsm-admin",
+      "mdm-engineer",
+      "uem-engineer",
+      "platform-analyst"
     ]
   }
 ]
