@@ -149,29 +149,30 @@ function accordion(title, subtitle, content, open = false) {
 
 function homePage() {
   const featuredRoles = state.roles.slice(0, 6);
-  const featuredModules = state.modules.slice(0, 6);
+  const featuredModules = state.modules.slice(0, 3);
+  const featuredTopics = state.topics.slice(0, 3);
   render('Ivanti Neurons Interview Hub', `
     <section class="hero-card">
       <div class="hero-split">
         <article class="hero-copy">
-          <span class="section-kicker">Interview preparation hub</span>
-          <h2>Prepare by role, module, topic, coding pattern, use case, and tricky interview question.</h2>
-          <p>Use the role paths to understand what each Ivanti role focuses on, which modules to learn, which topics to prepare, what coding questions may come up, and which scenario-based questions are worth practicing.</p>
+          <span class="section-kicker">Welcome to the Ivanti Neurons Hub</span>
+          <h2>Complete interview preparation for Ivanti Neurons roles, topics, coding questions, tricky questions, and real-world use cases.</h2>
+          <p>This hub is designed as an enterprise interview cockpit. Start by role for a guided prep path, jump by module for product-centric preparation, or browse by topic to get deep interview-ready context and related questions.</p>
           <div class="action-row">
-            <button class="primary-btn" data-go-route="#/roles">Prepare by role</button>
-            <button class="secondary-btn" data-go-route="#/modules">Prepare by module</button>
-            <button class="secondary-btn" data-go-route="#/topics">Open topic library</button>
+            <button class="primary-btn" data-go-route="#/roles">Browse by role</button>
+            <button class="secondary-btn" data-go-route="#/modules">Browse by module</button>
+            <button class="secondary-btn" data-go-route="#/topics">Browse by topic</button>
           </div>
           <div class="tag-row" style="margin-top:14px;">
             <span class="tag">ITSM</span><span class="tag">UEM</span><span class="tag alt">MDM</span><span class="tag soft">ITAM</span><span class="tag">Discovery</span><span class="tag alt">Velocity</span>
           </div>
         </article>
         <article class="detail-card">
-          <h3>How this hub works</h3>
+          <h3>How the prep flow works</h3>
           <ul class="clean-list">
-            <li>Open a role to see the exact modules, topics, coding, use cases, skills, and tricky questions for that role.</li>
-            <li>Open a module to see what the module does, what topics belong to it, and what scenarios or questions matter most.</li>
-            <li>Open any topic to understand what it means, why it matters, what to prepare, and what related questions to practice.</li>
+            <li><strong>Role page:</strong> topics to prepare first, then coding, tricky questions, and scenario practice.</li>
+            <li><strong>Topic page:</strong> complete explanation, why it matters, what to prepare, and interview question mapping.</li>
+            <li><strong>Quiz + Bookmarks:</strong> revise quickly and keep your own custom interview sprint list.</li>
           </ul>
         </article>
       </div>
@@ -187,8 +188,25 @@ function homePage() {
       <div class="grid-3 home-route-grid">${featuredRoles.map((role) => tileLink(role.name, role.summary, `#/roles/${role.slug}`, `<span class="tag">${role.moduleIds.length} modules</span><span class="tag alt">${role.topicIds.length} topics</span>`, 'route-card')).join('')}</div>
     </section>
     <section class="card">
-      <div class="section-header"><div><h2>Or jump by module</h2><p>Use modules when you want a product-area-first learning path.</p></div></div>
-      <div class="grid-3">${featuredModules.map((module) => tileLink(module.name, module.summary, `#/modules/${module.slug}`, `<span class="tag">${module.topicIds.length} topics</span>`, 'route-card')).join('')}</div>
+      <div class="section-header"><div><h2>Browse essentials from home</h2><p>Start quickly with role, module, and topic tiles from one place.</p></div></div>
+      <div class="grid-3">
+        ${featuredModules.map((module) => tileLink(module.name, module.summary, `#/modules/${module.slug}`, `<span class="tag">Module</span><span class="tag alt">${module.topicIds.length} topics</span>`, 'route-card')).join('')}
+        ${featuredTopics.map((topic) => tileLink(topic.name, topic.summary, `#/topics/${topic.slug}`, `<span class="tag soft">Topic</span>`, 'route-card')).join('')}
+      </div>
+    </section>
+    <section class="card">
+      <div class="section-header"><div><h2>Trusted prep references</h2><p>Use these for official docs and learning support while preparing.</p></div></div>
+      <div class="grid-3">
+        <a class="tile tile-link" href="https://hub.ivanti.com/s/?language=en_US" target="_blank" rel="noopener noreferrer">
+          <h3>Ivanti Community Hub</h3><p>Official community posts, guidance, and platform resources.</p><div class="action-row"><span class="chip-btn">Open source ↗</span></div>
+        </a>
+        <a class="tile tile-link" href="https://advantagelearning.ivanti.com/" target="_blank" rel="noopener noreferrer">
+          <h3>Ivanti Advantage Learning</h3><p>Training materials and learning paths across Ivanti products.</p><div class="action-row"><span class="chip-btn">Open source ↗</span></div>
+        </a>
+        <a class="tile tile-link" href="https://www.youtube.com/@NCSi" target="_blank" rel="noopener noreferrer">
+          <h3>NCSi YouTube Channel</h3><p>Additional video-style learning and practical walkthrough support.</p><div class="action-row"><span class="chip-btn">Open source ↗</span></div>
+        </a>
+      </div>
     </section>
   `);
 }
@@ -202,20 +220,18 @@ function rolesPage() {
 function roleDetailPage(slug) {
   const role = findBySlug(state.roles, slug);
   if (!role) return notFound();
-  const modules = role.moduleIds.map(moduleById).filter(Boolean);
   const topics = role.topicIds.map(topicById).filter(Boolean);
   const codingItems = role.codingIds.map(codingById).filter(Boolean);
   const useCases = role.useCaseIds.map(useCaseById).filter(Boolean);
   render(role.name, `${breadcrumbs([{ label: 'Roles', href: '#/roles' }, { label: role.name }])}${pageBack('#/roles')}
-    <section class="detail-banner"><span class="section-kicker">${esc(role.category)}</span><h2>${esc(role.name)}</h2><p>${esc(role.summary)}</p><div class="detail-meta"><span class="tag">${role.moduleIds.length} modules</span><span class="tag alt">${role.topicIds.length} topics</span><span class="tag soft">${role.questionIds.length} questions</span></div><div class="action-row" style="margin-top:14px;">${bookmarkButton('role', role.id, role.name)}</div></section>
+    <section class="detail-banner"><span class="section-kicker">${esc(role.category)}</span><h2>${esc(role.name)}</h2><p>${esc(role.summary)}</p><div class="detail-meta"><span class="tag">${role.topicIds.length} topics</span><span class="tag alt">${codingItems.length} coding questions</span><span class="tag soft">${role.questionIds.length} tricky questions</span></div><div class="action-row" style="margin-top:14px;">${bookmarkButton('role', role.id, role.name)}</div></section>
     <section class="details-stack">
       ${accordion('What this role mainly focuses on', 'Role overview', `<div class="quote-box">${esc(role.summary)}</div>`, true)}
-      ${accordion('Skills to prepare', `${role.skillIds.length} mapped skills`, skillCards(role.skillIds))}
-      ${accordion('Modules to prepare', `${modules.length} modules`, `<div class="list-stack">${modules.map((module) => rowLink(module.name, module.summary, `#/modules/${module.slug}`)).join('') || '<p>No modules mapped yet.</p>'}</div>`)}
-      ${accordion('Topics to prepare', `${topics.length} topics`, `<div class="list-stack">${topics.map((topic) => rowLink(topic.name, topic.summary, `#/topics/${topic.slug}`)).join('') || '<p>No topics mapped yet.</p>'}</div>`)}
+      ${accordion('Topics to prepare first', `${topics.length} topics`, `<div class="list-stack">${topics.map((topic) => rowLink(topic.name, topic.summary, `#/topics/${topic.slug}`)).join('') || '<p>No topics mapped yet.</p>'}</div>`, true)}
       ${accordion('Coding and technical questions', `${codingItems.length} items`, `<div class="list-stack">${codingItems.map((item) => rowLink(item.title, item.summary, `#/coding/${item.slug}`)).join('') || '<p>No coding items mapped yet.</p>'}</div>`)}
-      ${accordion('Use case scenarios', `${useCases.length} scenarios`, `<div class="list-stack">${useCases.map((item) => rowLink(item.title, item.problem, `#/use-cases/${item.slug}`)).join('') || '<p>No use cases mapped yet.</p>'}</div>`)}
       ${accordion('Tricky questions to practice', `${role.questionIds.length} questions`, answerCards(role.questionIds))}
+      ${accordion('Use case scenarios', `${useCases.length} scenarios`, `<div class="list-stack">${useCases.map((item) => rowLink(item.title, item.problem, `#/use-cases/${item.slug}`)).join('') || '<p>No use cases mapped yet.</p>'}</div>`)}
+      ${accordion('Skills to prepare', `${role.skillIds.length} mapped skills`, skillCards(role.skillIds))}
     </section>`);
 }
 
