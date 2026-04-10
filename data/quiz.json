@@ -1,50 +1,460 @@
 [
   {
-    "id": "z1",
-    "question": "Which feature is most commonly reused for filtered operational record sets in Ivanti ITSM?",
+    "id": "z001",
+    "question": "How are saved searches used in Ivanti ITSM?",
     "options": [
-      "Saved searches",
-      "Theme packs",
-      "Chat widgets",
-      "Static layouts"
+      "They provide reusable filtered datasets that power views, dashboards, reporting, and automation such as scheduled communications.",
+      "It is always identical to every other approach and has no design tradeoffs.",
+      "It only matters for UI cosmetics and does not affect implementation quality.",
+      "It is purely administrative and never influences support or reporting."
     ],
     "answerIndex": 0,
-    "explanation": "Saved searches are reused for dashboards, reports, views, and automation."
+    "explanation": "They provide reusable filtered datasets that power views, dashboards, reporting, and automation such as scheduled communications.",
+    "roleIds": [
+      "itsm-admin",
+      "platform-support-analyst"
+    ],
+    "moduleIds": [
+      "reporting"
+    ],
+    "topicIds": [
+      "saved-searches"
+    ],
+    "difficulty": "Advanced"
   },
   {
-    "id": "z2",
-    "question": "Why are patch rings useful?",
+    "id": "z002",
+    "question": "What are business objects in Ivanti ITSM?",
     "options": [
-      "They reduce risk through phased rollout",
-      "They remove the need for reporting",
-      "They disable pilot validation",
-      "They replace all inventory needs"
+      "They are the underlying data structures that represent records and processes; their design affects automation, reporting, and maintainability.",
+      "It only changes the visual theme of the platform.",
+      "It mainly replaces every other configuration layer and removes tradeoffs.",
+      "It only matters during initial installation and not in operations."
     ],
     "answerIndex": 0,
-    "explanation": "Patch rings support controlled staged deployment."
+    "explanation": "They are the underlying data structures that represent records and processes; their design affects automation, reporting, and maintainability.",
+    "roleIds": [
+      "itsm-admin",
+      "itsm-developer"
+    ],
+    "moduleIds": [
+      "itsm"
+    ],
+    "topicIds": [
+      "business-objects"
+    ],
+    "difficulty": "Intermediate"
   },
   {
-    "id": "z3",
-    "question": "What should a strong API interview answer include?",
+    "id": "z003",
+    "question": "What is the value of relationships?",
     "options": [
-      "Only endpoint names",
-      "Authentication, mapping, validation, logging, and retries",
-      "Only screenshots",
-      "Only user training"
+      "Relationships connect records so ownership, dependent work, and reporting context stay visible and usable.",
+      "It only changes the visual theme of the platform.",
+      "It mainly replaces every other configuration layer and removes tradeoffs.",
+      "It only matters during initial installation and not in operations."
     ],
-    "answerIndex": 1,
-    "explanation": "Good API answers cover security, transformation, and reliability."
+    "answerIndex": 0,
+    "explanation": "Relationships connect records so ownership, dependent work, and reporting context stay visible and usable.",
+    "roleIds": [
+      "itsm-admin",
+      "itsm-developer"
+    ],
+    "moduleIds": [
+      "itsm"
+    ],
+    "topicIds": [
+      "relationships"
+    ],
+    "difficulty": "Intermediate"
   },
   {
-    "id": "z4",
-    "question": "What is the goal of Velocity workflow design?",
+    "id": "z004",
+    "question": "When would you use a quick action instead of a workflow?",
     "options": [
-      "Add more steps",
-      "Improve operator efficiency and reduce friction",
-      "Avoid mobile adaptation",
-      "Increase manual typing"
+      "Use a quick action for a focused repeatable task, while workflows model broader multi-step process logic and branching.",
+      "It is always identical to every other approach and has no design tradeoffs.",
+      "It only matters for UI cosmetics and does not affect implementation quality.",
+      "It is purely administrative and never influences support or reporting."
     ],
-    "answerIndex": 1,
-    "explanation": "Velocity is about better frontline task execution."
+    "answerIndex": 0,
+    "explanation": "Use a quick action for a focused repeatable task, while workflows model broader multi-step process logic and branching.",
+    "roleIds": [
+      "itsm-admin",
+      "itsm-developer"
+    ],
+    "moduleIds": [
+      "itsm"
+    ],
+    "topicIds": [
+      "quick-actions",
+      "workflows"
+    ],
+    "difficulty": "Advanced"
+  },
+  {
+    "id": "z005",
+    "question": "How do you explain escalation design?",
+    "options": [
+      "Explain thresholds, timing, ownership, communication, and how escalations support response commitments and visibility.",
+      "It only changes the visual theme of the platform.",
+      "It mainly replaces every other configuration layer and removes tradeoffs.",
+      "It only matters during initial installation and not in operations."
+    ],
+    "answerIndex": 0,
+    "explanation": "Explain thresholds, timing, ownership, communication, and how escalations support response commitments and visibility.",
+    "roleIds": [
+      "itsm-admin"
+    ],
+    "moduleIds": [
+      "itsm"
+    ],
+    "topicIds": [
+      "escalations"
+    ],
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": "z006",
+    "question": "How do forms and layouts affect usability?",
+    "options": [
+      "They shape what users see and how efficiently they can capture or act on the right data for the right task.",
+      "It only changes the visual theme of the platform.",
+      "It mainly replaces every other configuration layer and removes tradeoffs.",
+      "It only matters during initial installation and not in operations."
+    ],
+    "answerIndex": 0,
+    "explanation": "They shape what users see and how efficiently they can capture or act on the right data for the right task.",
+    "roleIds": [
+      "itsm-admin",
+      "itsm-business-analyst"
+    ],
+    "moduleIds": [
+      "itsm"
+    ],
+    "topicIds": [
+      "forms",
+      "layouts"
+    ],
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": "z007",
+    "question": "How do you describe workflow design?",
+    "options": [
+      "Discuss branching, approvals, tasks, exceptions, communication, and how the workflow supports business outcomes.",
+      "It only changes the visual theme of the platform.",
+      "It mainly replaces every other configuration layer and removes tradeoffs.",
+      "It only matters during initial installation and not in operations."
+    ],
+    "answerIndex": 0,
+    "explanation": "Discuss branching, approvals, tasks, exceptions, communication, and how the workflow supports business outcomes.",
+    "roleIds": [
+      "itsm-admin",
+      "itsm-developer"
+    ],
+    "moduleIds": [
+      "itsm"
+    ],
+    "topicIds": [
+      "workflows"
+    ],
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": "z008",
+    "question": "What makes reporting useful for stakeholders?",
+    "options": [
+      "Useful reporting combines relevant KPIs, audience-appropriate views, and clear actionability rather than simply listing record counts.",
+      "It is always identical to every other approach and has no design tradeoffs.",
+      "It only matters for UI cosmetics and does not affect implementation quality.",
+      "It is purely administrative and never influences support or reporting."
+    ],
+    "answerIndex": 0,
+    "explanation": "Useful reporting combines relevant KPIs, audience-appropriate views, and clear actionability rather than simply listing record counts.",
+    "roleIds": [
+      "itsm-admin",
+      "platform-support-analyst"
+    ],
+    "moduleIds": [
+      "reporting"
+    ],
+    "topicIds": [
+      "reporting-and-dashboards"
+    ],
+    "difficulty": "Advanced"
+  },
+  {
+    "id": "z009",
+    "question": "How would you discuss a REST integration in Ivanti?",
+    "options": [
+      "Explain endpoints, payloads, authentication, mapping, validation, logging, and retry behavior.",
+      "It only changes the visual theme of the platform.",
+      "It mainly replaces every other configuration layer and removes tradeoffs.",
+      "It only matters during initial installation and not in operations."
+    ],
+    "answerIndex": 0,
+    "explanation": "Explain endpoints, payloads, authentication, mapping, validation, logging, and retry behavior.",
+    "roleIds": [
+      "itsm-developer",
+      "integration-engineer",
+      "integration-architect"
+    ],
+    "moduleIds": [
+      "integrations"
+    ],
+    "topicIds": [
+      "rest-apis"
+    ],
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": "z010",
+    "question": "What matters most in data mapping?",
+    "options": [
+      "Field alignment, identifiers, transformation rules, null handling, and avoiding duplicate or inconsistent updates.",
+      "It only changes the visual theme of the platform.",
+      "It mainly replaces every other configuration layer and removes tradeoffs.",
+      "It only matters during initial installation and not in operations."
+    ],
+    "answerIndex": 0,
+    "explanation": "Field alignment, identifiers, transformation rules, null handling, and avoiding duplicate or inconsistent updates.",
+    "roleIds": [
+      "itsm-developer",
+      "integration-engineer"
+    ],
+    "moduleIds": [
+      "integrations"
+    ],
+    "topicIds": [
+      "data-mapping"
+    ],
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": "z011",
+    "question": "When is custom logic appropriate?",
+    "options": [
+      "When configuration alone cannot satisfy the requirement, but the logic must remain maintainable, scoped, and well tested.",
+      "It is always identical to every other approach and has no design tradeoffs.",
+      "It only matters for UI cosmetics and does not affect implementation quality.",
+      "It is purely administrative and never influences support or reporting."
+    ],
+    "answerIndex": 0,
+    "explanation": "When configuration alone cannot satisfy the requirement, but the logic must remain maintainable, scoped, and well tested.",
+    "roleIds": [
+      "itsm-developer"
+    ],
+    "moduleIds": [
+      "itsm"
+    ],
+    "topicIds": [
+      "validation-and-rule-logic"
+    ],
+    "difficulty": "Advanced"
+  },
+  {
+    "id": "z012",
+    "question": "How do you keep automation resilient?",
+    "options": [
+      "Use retries, logging, alerting, and duplicate-safe processing so failures are visible and recoverable.",
+      "It only changes the visual theme of the platform.",
+      "It mainly replaces every other configuration layer and removes tradeoffs.",
+      "It only matters during initial installation and not in operations."
+    ],
+    "answerIndex": 0,
+    "explanation": "Use retries, logging, alerting, and duplicate-safe processing so failures are visible and recoverable.",
+    "roleIds": [
+      "itsm-developer",
+      "automation-engineer"
+    ],
+    "moduleIds": [
+      "integrations"
+    ],
+    "topicIds": [
+      "error-handling-and-retries"
+    ],
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": "z013",
+    "question": "How do you explain authentication design?",
+    "options": [
+      "Focus on safe credential handling, trust boundaries, least privilege, and operational governance.",
+      "It only changes the visual theme of the platform.",
+      "It mainly replaces every other configuration layer and removes tradeoffs.",
+      "It only matters during initial installation and not in operations."
+    ],
+    "answerIndex": 0,
+    "explanation": "Focus on safe credential handling, trust boundaries, least privilege, and operational governance.",
+    "roleIds": [
+      "integration-engineer",
+      "integration-architect"
+    ],
+    "moduleIds": [
+      "integrations"
+    ],
+    "topicIds": [
+      "authentication-patterns"
+    ],
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": "z014",
+    "question": "How do you compare scheduled and event-driven integrations?",
+    "options": [
+      "Scheduled integrations run at defined intervals, while event-driven integrations react to a trigger; each fits different latency and control needs.",
+      "It is always identical to every other approach and has no design tradeoffs.",
+      "It only matters for UI cosmetics and does not affect implementation quality.",
+      "It is purely administrative and never influences support or reporting."
+    ],
+    "answerIndex": 0,
+    "explanation": "Scheduled integrations run at defined intervals, while event-driven integrations react to a trigger; each fits different latency and control needs.",
+    "roleIds": [
+      "integration-engineer",
+      "automation-engineer"
+    ],
+    "moduleIds": [
+      "integrations"
+    ],
+    "topicIds": [
+      "web-service-patterns"
+    ],
+    "difficulty": "Advanced"
+  },
+  {
+    "id": "z015",
+    "question": "Why use patch rings?",
+    "options": [
+      "Patch rings reduce risk by validating updates on pilot groups before broad deployment.",
+      "It only changes the visual theme of the platform.",
+      "It mainly replaces every other configuration layer and removes tradeoffs.",
+      "It only matters during initial installation and not in operations."
+    ],
+    "answerIndex": 0,
+    "explanation": "Patch rings reduce risk by validating updates on pilot groups before broad deployment.",
+    "roleIds": [
+      "patch-management-engineer",
+      "uem-engineer"
+    ],
+    "moduleIds": [
+      "patch-management"
+    ],
+    "topicIds": [
+      "patch-rings-and-rollout-waves"
+    ],
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": "z016",
+    "question": "How do you explain endpoint grouping?",
+    "options": [
+      "Device groups make targeting, rollout control, reporting, and reuse more manageable.",
+      "It only changes the visual theme of the platform.",
+      "It mainly replaces every other configuration layer and removes tradeoffs.",
+      "It only matters during initial installation and not in operations."
+    ],
+    "answerIndex": 0,
+    "explanation": "Device groups make targeting, rollout control, reporting, and reuse more manageable.",
+    "roleIds": [
+      "endpoint-manager-engineer",
+      "uem-engineer"
+    ],
+    "moduleIds": [
+      "endpoint-manager"
+    ],
+    "topicIds": [
+      "device-grouping-and-targeting"
+    ],
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": "z017",
+    "question": "How do you troubleshoot failed endpoint jobs?",
+    "options": [
+      "Review targeting, connectivity, job status, scheduling, prerequisites, and remediation options.",
+      "It only changes the visual theme of the platform.",
+      "It mainly replaces every other configuration layer and removes tradeoffs.",
+      "It only matters during initial installation and not in operations."
+    ],
+    "answerIndex": 0,
+    "explanation": "Review targeting, connectivity, job status, scheduling, prerequisites, and remediation options.",
+    "roleIds": [
+      "endpoint-manager-engineer",
+      "uem-engineer"
+    ],
+    "moduleIds": [
+      "endpoint-manager"
+    ],
+    "topicIds": [
+      "deployment-troubleshooting"
+    ],
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": "z018",
+    "question": "What makes phased patching strong?",
+    "options": [
+      "Pilot groups, measured expansion, compliance visibility, and clear exception handling make patching safer.",
+      "It is always identical to every other approach and has no design tradeoffs.",
+      "It only matters for UI cosmetics and does not affect implementation quality.",
+      "It is purely administrative and never influences support or reporting."
+    ],
+    "answerIndex": 0,
+    "explanation": "Pilot groups, measured expansion, compliance visibility, and clear exception handling make patching safer.",
+    "roleIds": [
+      "patch-management-engineer"
+    ],
+    "moduleIds": [
+      "patch-management"
+    ],
+    "topicIds": [
+      "patch-rings-and-rollout-waves"
+    ],
+    "difficulty": "Advanced"
+  },
+  {
+    "id": "z019",
+    "question": "How do you explain enrollment?",
+    "options": [
+      "Explain how a device is brought under management, what baseline controls are applied, and how user experience is handled.",
+      "It only changes the visual theme of the platform.",
+      "It mainly replaces every other configuration layer and removes tradeoffs.",
+      "It only matters during initial installation and not in operations."
+    ],
+    "answerIndex": 0,
+    "explanation": "Explain how a device is brought under management, what baseline controls are applied, and how user experience is handled.",
+    "roleIds": [
+      "mdm-engineer"
+    ],
+    "moduleIds": [
+      "mdm"
+    ],
+    "topicIds": [
+      "enrollment"
+    ],
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": "z020",
+    "question": "What is the difference between BYOD and corporate-owned?",
+    "options": [
+      "They differ in privacy expectations, management scope, policy boundaries, and app or data control.",
+      "It only changes the visual theme of the platform.",
+      "It mainly replaces every other configuration layer and removes tradeoffs.",
+      "It only matters during initial installation and not in operations."
+    ],
+    "answerIndex": 0,
+    "explanation": "They differ in privacy expectations, management scope, policy boundaries, and app or data control.",
+    "roleIds": [
+      "mdm-engineer"
+    ],
+    "moduleIds": [
+      "mdm"
+    ],
+    "topicIds": [
+      "ownership-models"
+    ],
+    "difficulty": "Intermediate"
   }
 ]

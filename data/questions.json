@@ -1,197 +1,604 @@
 [
   {
-    "id": "q1",
+    "id": "q001",
     "text": "How are saved searches used in Ivanti ITSM?",
-    "answer": "They provide reusable filtered datasets for dashboards, reports, operational views, and automation such as scheduled email actions."
+    "answer": "They provide reusable filtered datasets that power views, dashboards, reporting, and automation such as scheduled communications.",
+    "roleIds": [
+      "itsm-admin",
+      "platform-support-analyst"
+    ],
+    "moduleIds": [
+      "reporting"
+    ],
+    "topicIds": [
+      "saved-searches"
+    ],
+    "type": "tricky"
   },
   {
-    "id": "q2",
-    "text": "What is the purpose of relationships in Ivanti?",
-    "answer": "Relationships connect records so processes, reporting, and navigation reflect how work items and ownership depend on each other."
+    "id": "q002",
+    "text": "What are business objects in Ivanti ITSM?",
+    "answer": "They are the underlying data structures that represent records and processes; their design affects automation, reporting, and maintainability.",
+    "roleIds": [
+      "itsm-admin",
+      "itsm-developer"
+    ],
+    "moduleIds": [
+      "itsm"
+    ],
+    "topicIds": [
+      "business-objects"
+    ],
+    "type": "core"
   },
   {
-    "id": "q3",
-    "text": "How would you explain form and layout design in an interview?",
-    "answer": "Focus on usability, role-based visibility, field organization, and how form quality improves data capture and process efficiency."
+    "id": "q003",
+    "text": "What is the value of relationships?",
+    "answer": "Relationships connect records so ownership, dependent work, and reporting context stay visible and usable.",
+    "roleIds": [
+      "itsm-admin",
+      "itsm-developer"
+    ],
+    "moduleIds": [
+      "itsm"
+    ],
+    "topicIds": [
+      "relationships"
+    ],
+    "type": "core"
   },
   {
-    "id": "q4",
-    "text": "When would you use a quick action?",
-    "answer": "Use it for repeatable focused tasks such as sending emails, updating values, or acting on the results of a saved search."
+    "id": "q004",
+    "text": "When would you use a quick action instead of a workflow?",
+    "answer": "Use a quick action for a focused repeatable task, while workflows model broader multi-step process logic and branching.",
+    "roleIds": [
+      "itsm-admin",
+      "itsm-developer"
+    ],
+    "moduleIds": [
+      "itsm"
+    ],
+    "topicIds": [
+      "quick-actions",
+      "workflows"
+    ],
+    "type": "tricky"
   },
   {
-    "id": "q5",
-    "text": "How do you describe escalation design?",
-    "answer": "Explain thresholds, notifications, ownership, timing rules, and how escalations support service commitments and operational follow-through."
+    "id": "q005",
+    "text": "How do you explain escalation design?",
+    "answer": "Explain thresholds, timing, ownership, communication, and how escalations support response commitments and visibility.",
+    "roleIds": [
+      "itsm-admin"
+    ],
+    "moduleIds": [
+      "itsm"
+    ],
+    "topicIds": [
+      "escalations"
+    ],
+    "type": "core"
   },
   {
-    "id": "q6",
+    "id": "q006",
+    "text": "How do forms and layouts affect usability?",
+    "answer": "They shape what users see and how efficiently they can capture or act on the right data for the right task.",
+    "roleIds": [
+      "itsm-admin",
+      "itsm-business-analyst"
+    ],
+    "moduleIds": [
+      "itsm"
+    ],
+    "topicIds": [
+      "forms",
+      "layouts"
+    ],
+    "type": "core"
+  },
+  {
+    "id": "q007",
+    "text": "How do you describe workflow design?",
+    "answer": "Discuss branching, approvals, tasks, exceptions, communication, and how the workflow supports business outcomes.",
+    "roleIds": [
+      "itsm-admin",
+      "itsm-developer"
+    ],
+    "moduleIds": [
+      "itsm"
+    ],
+    "topicIds": [
+      "workflows"
+    ],
+    "type": "core"
+  },
+  {
+    "id": "q008",
+    "text": "What makes reporting useful for stakeholders?",
+    "answer": "Useful reporting combines relevant KPIs, audience-appropriate views, and clear actionability rather than simply listing record counts.",
+    "roleIds": [
+      "itsm-admin",
+      "platform-support-analyst"
+    ],
+    "moduleIds": [
+      "reporting"
+    ],
+    "topicIds": [
+      "reporting-and-dashboards"
+    ],
+    "type": "tricky"
+  },
+  {
+    "id": "q009",
     "text": "How would you discuss a REST integration in Ivanti?",
-    "answer": "Explain endpoints, authentication, mapping, validation, logging, retries, and how data flows in or out of Ivanti reliably."
+    "answer": "Explain endpoints, payloads, authentication, mapping, validation, logging, and retry behavior.",
+    "roleIds": [
+      "itsm-developer",
+      "integration-engineer",
+      "integration-architect"
+    ],
+    "moduleIds": [
+      "integrations"
+    ],
+    "topicIds": [
+      "rest-apis"
+    ],
+    "type": "core"
   },
   {
-    "id": "q7",
+    "id": "q010",
     "text": "What matters most in data mapping?",
-    "answer": "Field alignment, identifiers, transformation rules, null handling, and avoiding duplicate or incorrect updates."
+    "answer": "Field alignment, identifiers, transformation rules, null handling, and avoiding duplicate or inconsistent updates.",
+    "roleIds": [
+      "itsm-developer",
+      "integration-engineer"
+    ],
+    "moduleIds": [
+      "integrations"
+    ],
+    "topicIds": [
+      "data-mapping"
+    ],
+    "type": "core"
   },
   {
-    "id": "q8",
-    "text": "When is scripting appropriate?",
-    "answer": "When configuration is not sufficient for the requirement, but the logic should remain scoped, maintainable, and well tested."
+    "id": "q011",
+    "text": "When is custom logic appropriate?",
+    "answer": "When configuration alone cannot satisfy the requirement, but the logic must remain maintainable, scoped, and well tested.",
+    "roleIds": [
+      "itsm-developer"
+    ],
+    "moduleIds": [
+      "itsm"
+    ],
+    "topicIds": [
+      "validation-and-rule-logic"
+    ],
+    "type": "tricky"
   },
   {
-    "id": "q9",
-    "text": "What is the difference between a workflow and a quick action?",
-    "answer": "A workflow models broader multi-step process logic, while a quick action is more targeted and focused on a repeatable action or operation."
+    "id": "q012",
+    "text": "How do you keep automation resilient?",
+    "answer": "Use retries, logging, alerting, and duplicate-safe processing so failures are visible and recoverable.",
+    "roleIds": [
+      "itsm-developer",
+      "automation-engineer"
+    ],
+    "moduleIds": [
+      "integrations"
+    ],
+    "topicIds": [
+      "error-handling-and-retries"
+    ],
+    "type": "core"
   },
   {
-    "id": "q10",
-    "text": "How do you design a workflow for approvals?",
-    "answer": "Define conditions, approvers, branching logic, notifications, fallback behavior, and test edge cases thoroughly."
+    "id": "q013",
+    "text": "How do you explain authentication design?",
+    "answer": "Focus on safe credential handling, trust boundaries, least privilege, and operational governance.",
+    "roleIds": [
+      "integration-engineer",
+      "integration-architect"
+    ],
+    "moduleIds": [
+      "integrations"
+    ],
+    "topicIds": [
+      "authentication-patterns"
+    ],
+    "type": "core"
   },
   {
-    "id": "q11",
-    "text": "How would you describe Ivanti Neurons at a high level?",
-    "answer": "As a connected platform experience spanning service, endpoint, automation, and visibility capabilities that improve operations."
+    "id": "q014",
+    "text": "How do you compare scheduled and event-driven integrations?",
+    "answer": "Scheduled integrations run at defined intervals, while event-driven integrations react to a trigger; each fits different latency and control needs.",
+    "roleIds": [
+      "integration-engineer",
+      "automation-engineer"
+    ],
+    "moduleIds": [
+      "integrations"
+    ],
+    "topicIds": [
+      "web-service-patterns"
+    ],
+    "type": "tricky"
   },
   {
-    "id": "q12",
-    "text": "What makes a consultant answer strong in Ivanti interviews?",
-    "answer": "Connecting product capabilities to business outcomes, practical scenarios, and implementation tradeoffs instead of only listing features."
-  },
-  {
-    "id": "q13",
-    "text": "Why do reporting and experience visibility matter?",
-    "answer": "They help teams identify trends, friction, exceptions, and improvement opportunities before issues become larger operational problems."
-  },
-  {
-    "id": "q14",
-    "text": "How do roles and permissions affect endpoint or service operations?",
-    "answer": "They determine who can see, change, or administer specific records and functions, which is critical for governance and least privilege."
-  },
-  {
-    "id": "q15",
-    "text": "What should you highlight when discussing policy governance?",
-    "answer": "Clear control goals, exception handling, user impact, and how policies are enforced and monitored."
-  },
-  {
-    "id": "q16",
+    "id": "q015",
     "text": "Why use patch rings?",
-    "answer": "Patch rings reduce risk by validating updates on pilot groups before broad deployment."
+    "answer": "Patch rings reduce risk by validating updates on pilot groups before broad deployment.",
+    "roleIds": [
+      "patch-management-engineer",
+      "uem-engineer"
+    ],
+    "moduleIds": [
+      "patch-management"
+    ],
+    "topicIds": [
+      "patch-rings-and-rollout-waves"
+    ],
+    "type": "core"
   },
   {
-    "id": "q17",
-    "text": "How would you explain software distribution?",
-    "answer": "Describe targeting, scheduling, execution, monitoring, and failure handling for controlled deployment."
+    "id": "q016",
+    "text": "How do you explain endpoint grouping?",
+    "answer": "Device groups make targeting, rollout control, reporting, and reuse more manageable.",
+    "roleIds": [
+      "endpoint-manager-engineer",
+      "uem-engineer"
+    ],
+    "moduleIds": [
+      "endpoint-manager"
+    ],
+    "topicIds": [
+      "device-grouping-and-targeting"
+    ],
+    "type": "core"
   },
   {
-    "id": "q18",
+    "id": "q017",
     "text": "How do you troubleshoot failed endpoint jobs?",
-    "answer": "Review targeting, connectivity, job status, logs, retry logic, and whether the endpoint met the required conditions."
+    "answer": "Review targeting, connectivity, job status, scheduling, prerequisites, and remediation options.",
+    "roleIds": [
+      "endpoint-manager-engineer",
+      "uem-engineer"
+    ],
+    "moduleIds": [
+      "endpoint-manager"
+    ],
+    "topicIds": [
+      "deployment-troubleshooting"
+    ],
+    "type": "core"
   },
   {
-    "id": "q19",
-    "text": "Why is device grouping important?",
-    "answer": "It makes targeting, reporting, patching, and deployment more controlled and reusable."
+    "id": "q018",
+    "text": "What makes phased patching strong?",
+    "answer": "Pilot groups, measured expansion, compliance visibility, and clear exception handling make patching safer.",
+    "roleIds": [
+      "patch-management-engineer"
+    ],
+    "moduleIds": [
+      "patch-management"
+    ],
+    "topicIds": [
+      "patch-rings-and-rollout-waves"
+    ],
+    "type": "tricky"
   },
   {
-    "id": "q20",
-    "text": "How do you explain enrollment and ownership models?",
-    "answer": "Discuss corporate versus BYOD expectations, policy scope, privacy implications, and baseline control after enrollment."
+    "id": "q019",
+    "text": "How do you explain enrollment?",
+    "answer": "Explain how a device is brought under management, what baseline controls are applied, and how user experience is handled.",
+    "roleIds": [
+      "mdm-engineer"
+    ],
+    "moduleIds": [
+      "mdm"
+    ],
+    "topicIds": [
+      "enrollment"
+    ],
+    "type": "core"
   },
   {
-    "id": "q21",
-    "text": "What should you mention for mobile app deployment?",
-    "answer": "Targeting, ownership, compliance, app lifecycle control, and monitoring for delivery success or issues."
+    "id": "q020",
+    "text": "What is the difference between BYOD and corporate-owned?",
+    "answer": "They differ in privacy expectations, management scope, policy boundaries, and app or data control.",
+    "roleIds": [
+      "mdm-engineer"
+    ],
+    "moduleIds": [
+      "mdm"
+    ],
+    "topicIds": [
+      "ownership-models"
+    ],
+    "type": "core"
   },
   {
-    "id": "q22",
-    "text": "How do you handle a non-compliant device?",
-    "answer": "Explain rules, detection, remediation or restriction action, notifications, and reporting or escalation."
+    "id": "q021",
+    "text": "How do you handle non-compliant devices?",
+    "answer": "Define the rule, explain remediation or restriction, communicate clearly, and monitor the resulting state.",
+    "roleIds": [
+      "mdm-engineer"
+    ],
+    "moduleIds": [
+      "compliance"
+    ],
+    "topicIds": [
+      "compliance-rules"
+    ],
+    "type": "core"
   },
   {
-    "id": "q23",
-    "text": "What is a strong patch management scenario answer?",
-    "answer": "Describe pilot groups, phased rollout, monitoring, exception handling, and safe production expansion."
+    "id": "q022",
+    "text": "What should you mention for app rollout?",
+    "answer": "Targeting, ownership model, policy alignment, validation, support readiness, and post-rollout monitoring.",
+    "roleIds": [
+      "mdm-engineer"
+    ],
+    "moduleIds": [
+      "app-distribution"
+    ],
+    "topicIds": [
+      "app-deployment"
+    ],
+    "type": "core"
   },
   {
-    "id": "q24",
-    "text": "How do dashboards support patching?",
-    "answer": "They provide visibility into readiness, failures, compliance state, and rollout progress."
+    "id": "q023",
+    "text": "Why is discovery important for ITAM?",
+    "answer": "It improves visibility into what exists, supports reconciliation, and strengthens trust in asset reporting.",
+    "roleIds": [
+      "itam-engineer",
+      "discovery-engineer"
+    ],
+    "moduleIds": [
+      "discovery"
+    ],
+    "topicIds": [
+      "device-inventory"
+    ],
+    "type": "core"
   },
   {
-    "id": "q25",
-    "text": "Why is discovery important for IT asset management?",
-    "answer": "It improves visibility into what exists in the environment and supports reconciliation with asset records."
+    "id": "q024",
+    "text": "How do you explain normalization?",
+    "answer": "Normalization standardizes inventory and asset data so reporting, matching, and decision-making are more trustworthy.",
+    "roleIds": [
+      "itam-engineer",
+      "discovery-engineer"
+    ],
+    "moduleIds": [
+      "discovery"
+    ],
+    "topicIds": [
+      "normalization-and-reconciliation"
+    ],
+    "type": "core"
   },
   {
-    "id": "q26",
-    "text": "How do you explain asset lifecycle?",
-    "answer": "Track assets from planning and deployment through ownership, refresh, and retirement with reporting and accountability."
+    "id": "q025",
+    "text": "How do lifecycle states help asset teams?",
+    "answer": "They provide visibility into ownership, age, readiness for refresh, and retirement planning.",
+    "roleIds": [
+      "itam-engineer"
+    ],
+    "moduleIds": [
+      "itam"
+    ],
+    "topicIds": [
+      "asset-lifecycle"
+    ],
+    "type": "core"
   },
   {
-    "id": "q27",
-    "text": "What is normalization in asset data?",
-    "answer": "It means making naming and key values consistent so reporting and reconciliation are more trustworthy."
+    "id": "q026",
+    "text": "What weakens inventory trust?",
+    "answer": "Poor discovery coverage, inconsistent identifiers, stale data, and unreconciled duplicates weaken trust.",
+    "roleIds": [
+      "discovery-engineer"
+    ],
+    "moduleIds": [
+      "discovery"
+    ],
+    "topicIds": [
+      "normalization-and-reconciliation"
+    ],
+    "type": "tricky"
   },
   {
-    "id": "q28",
-    "text": "What causes weak inventory quality?",
-    "answer": "Poor discovery coverage, inconsistent identifiers, duplication, and lack of reconciliation."
+    "id": "q027",
+    "text": "How do you explain Ivanti Velocity?",
+    "answer": "It optimizes browser and scan-first workflows for frontline workers, especially in warehouse and field environments.",
+    "roleIds": [
+      "velocity-consultant"
+    ],
+    "moduleIds": [
+      "velocity"
+    ],
+    "topicIds": [
+      "velocity-browser-sessions"
+    ],
+    "type": "core"
   },
   {
-    "id": "q29",
-    "text": "How do you improve reconciliation?",
-    "answer": "Align identifiers, normalize key fields, review duplicates, and validate outcome through reporting."
-  },
-  {
-    "id": "q30",
-    "text": "How would you explain Ivanti Velocity in interviews?",
-    "answer": "As a way to optimize frontline or warehouse workflows for browser-based and scan-first operation on handheld or kiosk devices."
-  },
-  {
-    "id": "q31",
+    "id": "q028",
     "text": "What makes a good scanning workflow?",
-    "answer": "Fewer manual steps, clear prompts, reduced input friction, and faster task completion."
+    "answer": "Fewer manual steps, clear prompts, predictable exception handling, and faster task completion.",
+    "roleIds": [
+      "velocity-consultant"
+    ],
+    "moduleIds": [
+      "velocity"
+    ],
+    "topicIds": [
+      "scan-first-workflow-design"
+    ],
+    "type": "core"
   },
   {
-    "id": "q32",
-    "text": "What should you focus on in a Velocity use case answer?",
-    "answer": "Operator efficiency, simplified flow, usability, and measurable reduction in friction."
+    "id": "q029",
+    "text": "What should you focus on in a Velocity use-case answer?",
+    "answer": "Focus on worker productivity, reduced friction, better prompts, and measurable operational improvements.",
+    "roleIds": [
+      "velocity-consultant"
+    ],
+    "moduleIds": [
+      "velocity"
+    ],
+    "topicIds": [
+      "frontline-exception-handling"
+    ],
+    "type": "tricky"
   },
   {
-    "id": "q33",
-    "text": "How do you explain automation and orchestration?",
-    "answer": "As controlled chains of actions triggered by schedule or events, often spanning data, approvals, notifications, or system integrations."
+    "id": "q030",
+    "text": "How do roles and permissions affect operations?",
+    "answer": "They define who can view, update, or administer records and actions, which is critical for governance and least privilege.",
+    "roleIds": [
+      "platform-support-analyst",
+      "itsm-admin"
+    ],
+    "moduleIds": [
+      "security-access"
+    ],
+    "topicIds": [
+      "roles-and-permissions"
+    ],
+    "type": "core"
   },
   {
-    "id": "q34",
-    "text": "What makes automation resilient?",
-    "answer": "Retries, logging, alerting, validation, and protections against duplicate or hidden failures."
+    "id": "q031",
+    "text": "How do you describe the Ivanti Neurons Platform?",
+    "answer": "Describe it as a unified cloud-native platform connecting ITSM, endpoint operations, security, and automation through shared data and workflows.",
+    "roleIds": [
+      "neurons-consultant",
+      "integration-architect"
+    ],
+    "moduleIds": [
+      "neurons-platform"
+    ],
+    "topicIds": [],
+    "type": "core"
   },
   {
-    "id": "q35",
-    "text": "How do you discuss architecture across the Ivanti ecosystem?",
-    "answer": "Explain modular design, secure integration, operational visibility, maintainability, and alignment to business outcomes."
+    "id": "q032",
+    "text": "What makes a consultant answer strong?",
+    "answer": "Connect product capabilities to business outcomes and realistic implementation tradeoffs rather than only listing features.",
+    "roleIds": [
+      "neurons-consultant"
+    ],
+    "moduleIds": [
+      "neurons-platform"
+    ],
+    "topicIds": [],
+    "type": "tricky"
   },
   {
-    "id": "q36",
-    "text": "Why does authentication design matter?",
-    "answer": "It protects connected systems, enforces least privilege, and reduces operational security risk."
+    "id": "q033",
+    "text": "Why do dashboards and experience signals matter?",
+    "answer": "They help teams spot friction, exceptions, and trends before issues grow into broader operational problems.",
+    "roleIds": [
+      "experience-analyst",
+      "platform-support-analyst"
+    ],
+    "moduleIds": [
+      "dx"
+    ],
+    "topicIds": [
+      "experience-monitoring"
+    ],
+    "type": "core"
   },
   {
-    "id": "q37",
-    "text": "How do you explain web service or API synchronization?",
-    "answer": "Describe source and target payloads, mapping, triggers, response handling, retries, and auditability."
+    "id": "q034",
+    "text": "How do you explain request fulfillment clearly?",
+    "answer": "Describe the submission, approval, fulfillment tasks, communication, and closure path in a clean sequence.",
+    "roleIds": [
+      "itsm-business-analyst"
+    ],
+    "moduleIds": [
+      "request"
+    ],
+    "topicIds": [
+      "request-fulfillment-flow"
+    ],
+    "type": "core"
   },
   {
-    "id": "q38",
-    "text": "What is a useful support analyst answer around reporting?",
-    "answer": "Explain how saved searches and dashboards help users, support teams, and stakeholders understand operational state quickly."
+    "id": "q035",
+    "text": "What is the value of knowledge management?",
+    "answer": "Knowledge reduces repeat effort, improves self-service, and supports consistent answers.",
+    "roleIds": [
+      "itsm-business-analyst"
+    ],
+    "moduleIds": [
+      "knowledge"
+    ],
+    "topicIds": [
+      "knowledge-lifecycle"
+    ],
+    "type": "core"
   },
   {
-    "id": "q39",
-    "text": "How do email templates help platform teams?",
-    "answer": "They make communication consistent, reduce manual effort, and improve notification quality."
+    "id": "q036",
+    "text": "How do you choose KPIs?",
+    "answer": "Choose KPIs that map to service outcomes, support action, and make sense to the intended audience.",
+    "roleIds": [],
+    "moduleIds": [
+      "reporting"
+    ],
+    "topicIds": [
+      "reporting-and-dashboards"
+    ],
+    "type": "tricky"
+  },
+  {
+    "id": "q037",
+    "text": "How do you discuss software distribution?",
+    "answer": "Talk about targeting, scheduling, rollout validation, missed-device handling, and support impact.",
+    "roleIds": [
+      "endpoint-manager-engineer"
+    ],
+    "moduleIds": [
+      "software-distribution"
+    ],
+    "topicIds": [
+      "distribution-jobs"
+    ],
+    "type": "core"
+  },
+  {
+    "id": "q038",
+    "text": "How do you explain repository and catalog visibility?",
+    "answer": "They help teams understand stock, assigned assets, active orders, and service provisioning readiness.",
+    "roleIds": [
+      "itam-engineer"
+    ],
+    "moduleIds": [
+      "itam"
+    ],
+    "topicIds": [
+      "repository-and-catalog"
+    ],
+    "type": "core"
+  },
+  {
+    "id": "q039",
+    "text": "What does good approval governance look like?",
+    "answer": "Clear control points, auditable decisions, role fit, and predictable exception handling.",
+    "roleIds": [
+      "itsm-business-analyst"
+    ],
+    "moduleIds": [
+      "change"
+    ],
+    "topicIds": [
+      "approval-governance"
+    ],
+    "type": "tricky"
   }
 ]

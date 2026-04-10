@@ -1,458 +1,713 @@
 [
   {
     "id": "itsm-admin",
+    "slug": "itsm-admin",
     "name": "Ivanti ITSM Administrator",
     "category": "Core platform",
-    "summary": "Focuses on configuration, service management design, automation, notifications, forms, searches, and operational support.",
+    "summary": "Focuses on service management configuration, workflows, notifications, forms, searches, and production support.",
+    "skillIds": [
+      "platform-configuration",
+      "workflow-design",
+      "form-layout-design",
+      "reporting-analytics",
+      "troubleshooting",
+      "stakeholder-communication"
+    ],
     "moduleIds": [
-      "itsm-core",
+      "itsm",
       "incident",
       "problem",
       "change",
       "request",
       "knowledge",
       "reporting",
-      "security-rbac",
+      "security-access",
       "integrations"
     ],
     "topicIds": [
-      "bo",
+      "business-objects",
       "relationships",
       "forms",
       "layouts",
-      "validations",
+      "validation-and-rule-logic",
       "quick-actions",
       "workflows",
       "saved-searches",
       "email-templates",
       "escalations",
-      "reporting-dashboards",
-      "roles-permissions",
-      "rest-api-basics"
+      "incident-lifecycle",
+      "change-approval-flow",
+      "request-fulfillment-flow",
+      "knowledge-lifecycle",
+      "reporting-and-dashboards",
+      "roles-and-permissions"
     ],
     "codingIds": [
-      "api-patterns",
-      "notification-automation",
-      "data-mapping"
+      "scheduled-report-delivery",
+      "workflow-decision-design",
+      "reporting-kpi-design",
+      "rest-api-integration-pattern",
+      "data-mapping-and-transformation",
+      "automation-retry-pattern"
     ],
     "useCaseIds": [
-      "weekly-open-incidents",
+      "weekly-open-incident-summary",
       "customer-response-reactivation",
-      "approval-routing"
+      "multi-step-request-approval",
+      "external-approval-sync",
+      "scheduled-data-push"
     ],
     "questionIds": [
-      "q1",
-      "q2",
-      "q3",
-      "q4",
-      "q5"
+      "q001",
+      "q002",
+      "q003",
+      "q004",
+      "q005",
+      "q006",
+      "q007",
+      "q008",
+      "q030"
     ]
   },
   {
     "id": "itsm-developer",
+    "slug": "itsm-developer",
     "name": "Ivanti ITSM Developer",
     "category": "Core platform",
-    "summary": "Builds advanced automation, integrations, validation logic, workflow solutions, and deployment-ready customizations.",
+    "summary": "Builds integrations, automation, validation logic, workflow solutions, and maintainable customizations.",
+    "skillIds": [
+      "workflow-design",
+      "automation-thinking",
+      "api-integration",
+      "auth-security",
+      "troubleshooting",
+      "stakeholder-communication"
+    ],
     "moduleIds": [
-      "itsm-core",
+      "itsm",
       "incident",
       "request",
       "change",
       "integrations",
-      "automation",
-      "security-rbac",
+      "reporting",
+      "security-access"
+    ],
+    "topicIds": [
+      "business-objects",
+      "relationships",
+      "validation-and-rule-logic",
+      "quick-actions",
+      "workflows",
+      "saved-searches",
+      "rest-apis",
+      "authentication-patterns",
+      "web-service-patterns",
+      "data-mapping",
+      "error-handling-and-retries"
+    ],
+    "codingIds": [
+      "scheduled-report-delivery",
+      "workflow-decision-design",
+      "rest-api-integration-pattern",
+      "data-mapping-and-transformation",
+      "automation-retry-pattern",
+      "reporting-kpi-design"
+    ],
+    "useCaseIds": [
+      "weekly-open-incident-summary",
+      "customer-response-reactivation",
+      "multi-step-request-approval",
+      "external-approval-sync",
+      "scheduled-data-push"
+    ],
+    "questionIds": [
+      "q002",
+      "q003",
+      "q004",
+      "q007",
+      "q009",
+      "q010",
+      "q011",
+      "q012"
+    ]
+  },
+  {
+    "id": "itsm-business-analyst",
+    "slug": "itsm-business-analyst",
+    "name": "Ivanti ITSM Business Analyst",
+    "category": "Service design",
+    "summary": "Translates business processes into service management design, approvals, request flows, and operational reporting.",
+    "skillIds": [
+      "workflow-design",
+      "form-layout-design",
+      "reporting-analytics",
+      "stakeholder-communication"
+    ],
+    "moduleIds": [
+      "itsm",
+      "request",
+      "change",
+      "knowledge",
       "reporting"
     ],
     "topicIds": [
-      "bo",
-      "relationships",
+      "forms",
+      "layouts",
       "workflows",
-      "quick-actions",
-      "saved-searches",
-      "rest-api-basics",
-      "auth-patterns",
-      "error-handling",
-      "scripted-logic",
-      "web-service-patterns"
+      "request-fulfillment-flow",
+      "change-approval-flow",
+      "knowledge-lifecycle",
+      "reporting-and-dashboards",
+      "approval-governance"
     ],
     "codingIds": [
-      "api-patterns",
-      "scripted-logic-patterns",
-      "error-retry",
-      "data-mapping"
+      "scheduled-report-delivery",
+      "workflow-decision-design",
+      "reporting-kpi-design"
     ],
     "useCaseIds": [
-      "weekly-open-incidents",
-      "external-approval-sync",
-      "api-report-push"
+      "multi-step-request-approval"
     ],
     "questionIds": [
-      "q6",
-      "q7",
-      "q8",
-      "q9",
-      "q10"
+      "q006",
+      "q034",
+      "q035",
+      "q039"
     ]
   },
   {
     "id": "neurons-consultant",
+    "slug": "neurons-consultant",
     "name": "Ivanti Neurons Consultant",
     "category": "Advisory",
-    "summary": "Bridges business requirements and platform capabilities across ITSM, endpoint, mobility, automation, and reporting.",
+    "summary": "Connects platform capabilities to business outcomes across service, endpoint, mobility, asset, and experience use cases.",
+    "skillIds": [
+      "stakeholder-communication",
+      "workflow-design",
+      "automation-thinking",
+      "api-integration",
+      "reporting-analytics"
+    ],
     "moduleIds": [
       "neurons-platform",
-      "itsm-core",
+      "itsm",
       "uem",
       "mdm",
       "itam",
-      "integrations",
-      "automation",
-      "dx-experience"
+      "discovery",
+      "dx",
+      "integrations"
     ],
     "topicIds": [
       "platform-positioning",
-      "workflow-design",
-      "reporting-dashboards",
-      "rest-api-basics",
-      "policy-governance",
+      "workflows",
+      "reporting-and-dashboards",
+      "rest-apis",
       "asset-lifecycle",
-      "experience-monitoring"
+      "experience-monitoring",
+      "roles-and-permissions"
     ],
     "codingIds": [
-      "api-patterns",
-      "data-mapping"
+      "scheduled-report-delivery",
+      "workflow-decision-design",
+      "asset-reconciliation-logic",
+      "rest-api-integration-pattern",
+      "data-mapping-and-transformation",
+      "automation-retry-pattern"
+    ],
+    "useCaseIds": [
+      "byod-enrollment-setup",
+      "asset-refresh-planning",
+      "discovery-reconciliation-improvement",
+      "external-approval-sync",
+      "scheduled-data-push"
+    ],
+    "questionIds": [
+      "q031",
+      "q032"
+    ]
+  },
+  {
+    "id": "integration-engineer",
+    "slug": "integration-engineer",
+    "name": "Ivanti Integration Engineer",
+    "category": "Technical",
+    "summary": "Designs secure API and low-code integration flows, mappings, retries, and monitoring.",
+    "skillIds": [
+      "api-integration",
+      "auth-security",
+      "automation-thinking",
+      "troubleshooting"
+    ],
+    "moduleIds": [
+      "integrations",
+      "itsm",
+      "reporting"
+    ],
+    "topicIds": [
+      "rest-apis",
+      "authentication-patterns",
+      "web-service-patterns",
+      "data-mapping",
+      "error-handling-and-retries",
+      "saved-searches"
+    ],
+    "codingIds": [
+      "rest-api-integration-pattern",
+      "data-mapping-and-transformation",
+      "automation-retry-pattern",
+      "scheduled-report-delivery",
+      "workflow-decision-design",
+      "reporting-kpi-design"
     ],
     "useCaseIds": [
       "external-approval-sync",
-      "noncompliant-device",
-      "asset-refresh"
+      "scheduled-data-push"
     ],
     "questionIds": [
-      "q11",
-      "q12",
-      "q13"
+      "q009",
+      "q010",
+      "q013",
+      "q014"
+    ]
+  },
+  {
+    "id": "automation-engineer",
+    "slug": "automation-engineer",
+    "name": "Ivanti Automation Engineer",
+    "category": "Technical",
+    "summary": "Builds reusable automation patterns, orchestration flows, and scheduled operations across the platform.",
+    "skillIds": [
+      "automation-thinking",
+      "workflow-design",
+      "api-integration",
+      "troubleshooting"
+    ],
+    "moduleIds": [
+      "integrations",
+      "itsm",
+      "reporting",
+      "uem"
+    ],
+    "topicIds": [
+      "quick-actions",
+      "workflows",
+      "saved-searches",
+      "rest-apis",
+      "error-handling-and-retries",
+      "patch-rings-and-rollout-waves"
+    ],
+    "codingIds": [
+      "rest-api-integration-pattern",
+      "data-mapping-and-transformation",
+      "automation-retry-pattern",
+      "scheduled-report-delivery",
+      "workflow-decision-design",
+      "reporting-kpi-design"
+    ],
+    "useCaseIds": [
+      "external-approval-sync",
+      "scheduled-data-push"
+    ],
+    "questionIds": [
+      "q012",
+      "q014"
     ]
   },
   {
     "id": "uem-engineer",
+    "slug": "uem-engineer",
     "name": "Ivanti UEM Engineer",
-    "category": "Endpoint management",
-    "summary": "Supports unified endpoint management, software distribution, compliance, visibility, and operational governance.",
+    "category": "Endpoint",
+    "summary": "Supports unified endpoint visibility, software distribution, compliance, and operational governance.",
+    "skillIds": [
+      "endpoint-operations",
+      "patch-strategy",
+      "troubleshooting",
+      "stakeholder-communication"
+    ],
     "moduleIds": [
       "uem",
       "endpoint-manager",
       "patch-management",
       "software-distribution",
-      "discovery-inventory",
-      "security-rbac"
+      "discovery",
+      "security-access"
     ],
     "topicIds": [
-      "patch-rings",
+      "device-inventory",
+      "device-grouping-and-targeting",
       "distribution-jobs",
-      "inventory-discovery",
-      "policy-governance",
-      "roles-permissions",
-      "error-handling"
+      "patch-rings-and-rollout-waves",
+      "deployment-troubleshooting",
+      "roles-and-permissions"
     ],
     "codingIds": [
-      "automation-orchestration",
-      "error-retry"
+      "endpoint-rollout-logic",
+      "asset-reconciliation-logic"
     ],
     "useCaseIds": [
-      "phased-patching",
-      "software-rollout",
-      "device-grouping"
+      "phased-patch-deployment",
+      "targeted-software-distribution",
+      "discovery-reconciliation-improvement"
     ],
     "questionIds": [
-      "q14",
-      "q15",
-      "q16"
+      "q015",
+      "q016",
+      "q017"
     ]
   },
   {
     "id": "endpoint-manager-engineer",
+    "slug": "endpoint-manager-engineer",
     "name": "Ivanti Endpoint Manager Engineer",
-    "category": "Endpoint management",
-    "summary": "Handles endpoint operations including device control, inventory, deployment jobs, patching, and enterprise targeting.",
+    "category": "Endpoint",
+    "summary": "Handles endpoint management operations including targeting, deployment jobs, reporting, and device supportability.",
+    "skillIds": [
+      "endpoint-operations",
+      "patch-strategy",
+      "troubleshooting"
+    ],
     "moduleIds": [
       "endpoint-manager",
-      "patch-management",
       "software-distribution",
-      "discovery-inventory"
+      "patch-management",
+      "discovery"
     ],
     "topicIds": [
+      "device-grouping-and-targeting",
       "distribution-jobs",
-      "patch-rings",
-      "inventory-discovery",
-      "error-handling"
+      "patch-rings-and-rollout-waves",
+      "deployment-troubleshooting",
+      "device-inventory"
     ],
     "codingIds": [
-      "automation-orchestration",
-      "error-retry"
+      "endpoint-rollout-logic",
+      "asset-reconciliation-logic"
     ],
     "useCaseIds": [
-      "phased-patching",
-      "software-rollout",
-      "device-grouping"
+      "targeted-software-distribution",
+      "phased-patch-deployment",
+      "discovery-reconciliation-improvement"
     ],
     "questionIds": [
-      "q17",
-      "q18",
-      "q19"
+      "q016",
+      "q017",
+      "q037"
+    ]
+  },
+  {
+    "id": "patch-management-engineer",
+    "slug": "patch-management-engineer",
+    "name": "Ivanti Patch Management Engineer",
+    "category": "Endpoint Security",
+    "summary": "Designs ring-based patch strategy, prioritization, compliance visibility, and remediation paths.",
+    "skillIds": [
+      "patch-strategy",
+      "endpoint-operations",
+      "troubleshooting",
+      "reporting-analytics"
+    ],
+    "moduleIds": [
+      "patch-management",
+      "endpoint-manager",
+      "uem",
+      "reporting"
+    ],
+    "topicIds": [
+      "patch-rings-and-rollout-waves",
+      "deployment-troubleshooting",
+      "reporting-and-dashboards",
+      "device-inventory"
+    ],
+    "codingIds": [
+      "endpoint-rollout-logic",
+      "reporting-kpi-design"
+    ],
+    "useCaseIds": [
+      "phased-patch-deployment"
+    ],
+    "questionIds": [
+      "q015",
+      "q018"
     ]
   },
   {
     "id": "mdm-engineer",
+    "slug": "mdm-engineer",
     "name": "Ivanti MDM Engineer",
     "category": "Mobility",
-    "summary": "Manages mobile enrollment, compliance, app delivery, ownership models, and operational controls.",
+    "summary": "Manages enrollment, ownership models, compliance, secure app rollout, and device governance.",
+    "skillIds": [
+      "mobility-governance",
+      "auth-security",
+      "stakeholder-communication",
+      "troubleshooting"
+    ],
     "moduleIds": [
       "mdm",
       "app-distribution",
       "compliance",
-      "security-rbac"
+      "security-access"
     ],
     "topicIds": [
       "enrollment",
       "ownership-models",
       "compliance-rules",
       "app-deployment",
-      "policy-governance",
-      "roles-permissions"
+      "restriction-policies",
+      "roles-and-permissions"
     ],
     "codingIds": [
-      "api-patterns",
-      "notification-automation"
+      "compliance-remediation-design"
     ],
     "useCaseIds": [
-      "noncompliant-device",
-      "mobile-app-rollout",
-      "byod-setup"
+      "byod-enrollment-setup",
+      "managed-app-rollout",
+      "non-compliant-device-response"
     ],
     "questionIds": [
-      "q20",
-      "q21",
-      "q22"
-    ]
-  },
-  {
-    "id": "patch-engineer",
-    "name": "Ivanti Patch Management Engineer",
-    "category": "Endpoint management",
-    "summary": "Designs patch strategy, pilot waves, compliance tracking, rollback thinking, and failure remediation.",
-    "moduleIds": [
-      "patch-management",
-      "endpoint-manager",
-      "uem",
-      "reporting"
-    ],
-    "topicIds": [
-      "patch-rings",
-      "reporting-dashboards",
-      "error-handling",
-      "inventory-discovery"
-    ],
-    "codingIds": [
-      "automation-orchestration",
-      "error-retry"
-    ],
-    "useCaseIds": [
-      "phased-patching"
-    ],
-    "questionIds": [
-      "q23",
-      "q24"
+      "q019",
+      "q020",
+      "q021",
+      "q022"
     ]
   },
   {
     "id": "itam-engineer",
-    "name": "Ivanti IT Asset Management Engineer",
-    "category": "Asset management",
-    "summary": "Focuses on asset lifecycle, ownership, entitlement visibility, and operational governance for IT assets.",
+    "slug": "itam-engineer",
+    "name": "Ivanti ITAM Engineer",
+    "category": "Asset",
+    "summary": "Uses lifecycle, repository, and reporting capabilities to manage hardware and software assets strategically.",
+    "skillIds": [
+      "asset-lifecycle",
+      "discovery-reconciliation",
+      "reporting-analytics",
+      "stakeholder-communication"
+    ],
     "moduleIds": [
       "itam",
-      "discovery-inventory",
+      "discovery",
       "reporting",
       "integrations"
     ],
     "topicIds": [
       "asset-lifecycle",
-      "inventory-discovery",
-      "reporting-dashboards",
-      "data-normalization",
-      "rest-api-basics"
+      "normalization-and-reconciliation",
+      "repository-and-catalog",
+      "device-inventory",
+      "reporting-and-dashboards"
     ],
     "codingIds": [
-      "data-mapping",
-      "api-patterns"
+      "asset-reconciliation-logic",
+      "reporting-kpi-design",
+      "rest-api-integration-pattern",
+      "data-mapping-and-transformation",
+      "automation-retry-pattern"
     ],
     "useCaseIds": [
-      "asset-refresh",
-      "discovery-reconciliation"
+      "asset-refresh-planning",
+      "discovery-reconciliation-improvement",
+      "external-approval-sync",
+      "scheduled-data-push"
     ],
     "questionIds": [
-      "q25",
-      "q26",
-      "q27"
+      "q023",
+      "q024",
+      "q025",
+      "q038"
     ]
   },
   {
     "id": "discovery-engineer",
-    "name": "Ivanti Discovery and Inventory Engineer",
-    "category": "Asset management",
-    "summary": "Builds and supports device discovery, inventory visibility, reconciliation, and reporting quality.",
+    "slug": "discovery-engineer",
+    "name": "Ivanti Discovery Engineer",
+    "category": "Asset",
+    "summary": "Improves inventory coverage, normalization, reconciliation, and trusted asset visibility.",
+    "skillIds": [
+      "discovery-reconciliation",
+      "reporting-analytics",
+      "troubleshooting"
+    ],
     "moduleIds": [
-      "discovery-inventory",
+      "discovery",
       "itam",
       "reporting"
     ],
     "topicIds": [
-      "inventory-discovery",
-      "data-normalization",
+      "device-inventory",
+      "normalization-and-reconciliation",
       "asset-lifecycle",
-      "reporting-dashboards"
+      "reporting-and-dashboards"
     ],
     "codingIds": [
-      "data-mapping",
-      "error-retry"
+      "asset-reconciliation-logic",
+      "reporting-kpi-design"
     ],
     "useCaseIds": [
-      "discovery-reconciliation"
+      "discovery-reconciliation-improvement",
+      "asset-refresh-planning"
     ],
     "questionIds": [
-      "q28",
-      "q29"
+      "q023",
+      "q024",
+      "q026"
     ]
   },
   {
     "id": "velocity-consultant",
+    "slug": "velocity-consultant",
     "name": "Ivanti Velocity Consultant",
-    "category": "Frontline productivity",
-    "summary": "Designs warehouse and frontline workflows for browser-based and scanning-heavy operational environments.",
+    "category": "Frontline",
+    "summary": "Optimizes browser and scan-first flows for warehouse and field operations.",
+    "skillIds": [
+      "frontline-flow-design",
+      "stakeholder-communication",
+      "troubleshooting"
+    ],
     "moduleIds": [
       "velocity",
-      "dx-experience"
+      "dx"
     ],
     "topicIds": [
-      "velocity-browser",
-      "scan-workflows",
-      "experience-monitoring",
-      "workflow-design"
+      "velocity-browser-sessions",
+      "scan-first-workflow-design",
+      "frontline-exception-handling",
+      "experience-monitoring"
     ],
     "codingIds": [
-      "automation-orchestration"
+      "velocity-flow-simplification"
     ],
     "useCaseIds": [
-      "warehouse-picking-redesign",
-      "field-service-simplification"
+      "warehouse-picking-flow-redesign",
+      "field-workflow-simplification"
     ],
     "questionIds": [
-      "q30",
-      "q31",
-      "q32"
+      "q027",
+      "q028",
+      "q029"
     ]
   },
   {
-    "id": "automation-engineer",
-    "name": "Ivanti Automation Engineer",
-    "category": "Technical specialization",
-    "summary": "Builds orchestration flows, scheduled operations, automation chains, and integration-backed action pipelines.",
+    "id": "experience-analyst",
+    "slug": "experience-analyst",
+    "name": "Ivanti Digital Experience Analyst",
+    "category": "Experience",
+    "summary": "Uses experience signals and dashboard insight to identify friction and support proactive improvement.",
+    "skillIds": [
+      "reporting-analytics",
+      "stakeholder-communication",
+      "troubleshooting"
+    ],
     "moduleIds": [
-      "automation",
-      "integrations",
-      "itsm-core",
+      "dx",
+      "reporting",
       "uem"
     ],
     "topicIds": [
-      "workflow-design",
-      "rest-api-basics",
-      "auth-patterns",
-      "error-handling",
-      "quick-actions",
-      "saved-searches"
+      "experience-monitoring",
+      "reporting-and-dashboards",
+      "device-inventory"
     ],
     "codingIds": [
-      "automation-orchestration",
-      "api-patterns",
-      "error-retry"
+      "reporting-kpi-design"
     ],
-    "useCaseIds": [
-      "api-report-push",
-      "external-approval-sync",
-      "weekly-open-incidents"
-    ],
+    "useCaseIds": [],
     "questionIds": [
-      "q33",
-      "q34"
+      "q033"
     ]
   },
   {
     "id": "integration-architect",
+    "slug": "integration-architect",
     "name": "Ivanti Integration Architect",
     "category": "Architecture",
-    "summary": "Defines secure and scalable integration patterns across Ivanti products and external enterprise platforms.",
+    "summary": "Defines scalable integration and automation patterns across Ivanti products and connected systems.",
+    "skillIds": [
+      "api-integration",
+      "auth-security",
+      "automation-thinking",
+      "stakeholder-communication"
+    ],
     "moduleIds": [
       "integrations",
-      "automation",
-      "itsm-core",
-      "itam",
-      "mdm"
+      "neurons-platform",
+      "itsm",
+      "discovery",
+      "itam"
     ],
     "topicIds": [
-      "rest-api-basics",
-      "auth-patterns",
-      "error-handling",
-      "data-normalization",
-      "data-mapping-topic",
-      "workflow-design"
+      "platform-positioning",
+      "rest-apis",
+      "authentication-patterns",
+      "web-service-patterns",
+      "data-mapping",
+      "error-handling-and-retries",
+      "normalization-and-reconciliation"
     ],
     "codingIds": [
-      "api-patterns",
-      "data-mapping",
-      "error-retry"
+      "rest-api-integration-pattern",
+      "data-mapping-and-transformation",
+      "automation-retry-pattern",
+      "scheduled-report-delivery",
+      "workflow-decision-design",
+      "asset-reconciliation-logic"
     ],
     "useCaseIds": [
       "external-approval-sync",
-      "api-report-push",
-      "discovery-reconciliation"
+      "scheduled-data-push",
+      "discovery-reconciliation-improvement",
+      "asset-refresh-planning"
     ],
     "questionIds": [
-      "q35",
-      "q36",
-      "q37"
+      "q009",
+      "q013",
+      "q031"
     ]
   },
   {
-    "id": "platform-analyst",
-    "name": "Ivanti Support and Platform Analyst",
+    "id": "platform-support-analyst",
+    "slug": "platform-support-analyst",
+    "name": "Ivanti Platform Support Analyst",
     "category": "Operations",
-    "summary": "Supports tickets, troubleshooting, user issues, search/reporting requests, and platform operational health.",
+    "summary": "Supports production issues, reporting requests, searches, notifications, and everyday platform operations.",
+    "skillIds": [
+      "troubleshooting",
+      "platform-configuration",
+      "reporting-analytics",
+      "stakeholder-communication"
+    ],
     "moduleIds": [
-      "itsm-core",
+      "itsm",
+      "incident",
       "reporting",
-      "security-rbac",
-      "uem",
-      "mdm"
+      "security-access",
+      "mdm",
+      "uem"
     ],
     "topicIds": [
       "saved-searches",
       "email-templates",
-      "reporting-dashboards",
-      "roles-permissions",
-      "error-handling",
+      "reporting-and-dashboards",
+      "roles-and-permissions",
+      "incident-lifecycle",
       "compliance-rules"
     ],
     "codingIds": [
-      "notification-automation"
+      "scheduled-report-delivery",
+      "workflow-decision-design",
+      "reporting-kpi-design"
     ],
     "useCaseIds": [
-      "weekly-open-incidents",
+      "weekly-open-incident-summary",
       "customer-response-reactivation",
-      "noncompliant-device"
+      "byod-enrollment-setup"
     ],
     "questionIds": [
-      "q38",
-      "q39"
+      "q001",
+      "q008",
+      "q030",
+      "q033"
     ]
   }
 ]

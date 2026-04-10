@@ -1,0 +1,77 @@
+[
+  {
+    "id": "platform-configuration",
+    "name": "Platform Configuration",
+    "summary": "Configure core platform components, forms, layouts, searches, and governance settings."
+  },
+  {
+    "id": "workflow-design",
+    "name": "Workflow Design",
+    "summary": "Model approvals, transitions, escalations, branching logic, and fulfillment flow."
+  },
+  {
+    "id": "form-layout-design",
+    "name": "Form and Layout Design",
+    "summary": "Design usable record views and input layouts that reduce friction and improve data quality."
+  },
+  {
+    "id": "reporting-analytics",
+    "name": "Reporting and Analytics",
+    "summary": "Build saved searches, dashboards, KPIs, and operational reporting views."
+  },
+  {
+    "id": "automation-thinking",
+    "name": "Automation Thinking",
+    "summary": "Choose the right automation layer and design reusable, supportable logic."
+  },
+  {
+    "id": "api-integration",
+    "name": "API Integration",
+    "summary": "Design secure data exchange, mapping, authentication, and monitoring across systems."
+  },
+  {
+    "id": "auth-security",
+    "name": "Authentication and Security",
+    "summary": "Handle access, permission boundaries, authentication, and safe connection patterns."
+  },
+  {
+    "id": "endpoint-operations",
+    "name": "Endpoint Operations",
+    "summary": "Manage inventory, targeting, device groups, deployment health, and rollout controls."
+  },
+  {
+    "id": "mobility-governance",
+    "name": "Mobility Governance",
+    "summary": "Manage enrollment, ownership, app delivery, compliance, and user impact."
+  },
+  {
+    "id": "asset-lifecycle",
+    "name": "Asset Lifecycle Management",
+    "summary": "Track assets from procurement through deployment, refresh, and retirement."
+  },
+  {
+    "id": "discovery-reconciliation",
+    "name": "Discovery and Reconciliation",
+    "summary": "Normalize inventory, reconcile sources, and improve trust in asset data."
+  },
+  {
+    "id": "patch-strategy",
+    "name": "Patch Strategy",
+    "summary": "Plan rings, prioritize risk, validate deployments, and manage compliance reporting."
+  },
+  {
+    "id": "frontline-flow-design",
+    "name": "Frontline Flow Design",
+    "summary": "Simplify handheld and browser-driven flows for task workers."
+  },
+  {
+    "id": "troubleshooting",
+    "name": "Troubleshooting",
+    "summary": "Diagnose failures, investigate logs, and explain remediation steps clearly."
+  },
+  {
+    "id": "stakeholder-communication",
+    "name": "Stakeholder Communication",
+    "summary": "Explain technical design and operational impact clearly to business and IT teams."
+  }
+]

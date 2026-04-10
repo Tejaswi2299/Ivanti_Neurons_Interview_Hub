@@ -1,62 +1,317 @@
 [
   {
-    "id": "api-patterns",
-    "name": "REST API Integration Patterns",
-    "summary": "How to discuss secure and maintainable API integration design in interviews.",
-    "points": [
-      "Explain request flow, authentication, mapping, and validation.",
-      "Mention logging, retries, and monitoring.",
-      "Describe scheduled versus event-driven integration patterns."
+    "id": "rest-api-integration-pattern",
+    "slug": "rest-api-integration-pattern",
+    "title": "REST API Integration Pattern",
+    "moduleId": "integrations",
+    "summary": "Explain secure endpoint calls, payload handling, mapping, and monitoring for Ivanti integrations.",
+    "bullets": [
+      "Request and response flow",
+      "Authentication and validation",
+      "Logging and retries"
+    ],
+    "roleIds": [
+      "itsm-admin",
+      "itsm-developer",
+      "neurons-consultant",
+      "integration-engineer",
+      "automation-engineer",
+      "itam-engineer",
+      "integration-architect"
+    ],
+    "topicIds": [
+      "rest-apis",
+      "authentication-patterns",
+      "web-service-patterns",
+      "data-mapping",
+      "error-handling-and-retries"
+    ],
+    "questionIds": [
+      "q009",
+      "q010",
+      "q012",
+      "q013",
+      "q014"
     ]
   },
   {
-    "id": "notification-automation",
-    "name": "Email and Notification Automation",
-    "summary": "How saved searches, quick actions, workflows, and templates work together for communications.",
-    "points": [
-      "Use quick actions or workflows for repeatable notifications.",
-      "Mention recipient logic and testing.",
-      "Discuss weekly or scheduled reporting outputs."
+    "id": "scheduled-report-delivery",
+    "slug": "scheduled-report-delivery",
+    "title": "Scheduled Report Delivery",
+    "moduleId": "itsm",
+    "summary": "Describe how saved searches, templates, and automation can deliver scheduled operational reporting.",
+    "bullets": [
+      "Saved search source",
+      "Email template output",
+      "Schedule validation"
+    ],
+    "roleIds": [
+      "itsm-admin",
+      "itsm-developer",
+      "itsm-business-analyst",
+      "neurons-consultant",
+      "integration-engineer",
+      "automation-engineer",
+      "integration-architect",
+      "platform-support-analyst"
+    ],
+    "topicIds": [
+      "business-objects",
+      "relationships",
+      "forms",
+      "layouts",
+      "validation-and-rule-logic",
+      "quick-actions"
+    ],
+    "questionIds": [
+      "q002",
+      "q003",
+      "q004",
+      "q005",
+      "q006",
+      "q007"
     ]
   },
   {
-    "id": "data-mapping",
-    "name": "Data Mapping and Transformation",
-    "summary": "How records and payloads are translated between Ivanti and external systems.",
-    "points": [
-      "Explain mapping, transformation, and identifiers.",
-      "Mention null handling and reconciliation.",
-      "Tie mapping to reporting accuracy and automation stability."
+    "id": "workflow-decision-design",
+    "slug": "workflow-decision-design",
+    "title": "Workflow Decision Design",
+    "moduleId": "itsm",
+    "summary": "Explain how to structure branching logic, approvals, and exception handling in workflow interviews.",
+    "bullets": [
+      "Branch criteria",
+      "Approval steps",
+      "Fallback logic"
+    ],
+    "roleIds": [
+      "itsm-admin",
+      "itsm-developer",
+      "itsm-business-analyst",
+      "neurons-consultant",
+      "integration-engineer",
+      "automation-engineer",
+      "integration-architect",
+      "platform-support-analyst"
+    ],
+    "topicIds": [
+      "business-objects",
+      "relationships",
+      "forms",
+      "layouts",
+      "validation-and-rule-logic",
+      "quick-actions"
+    ],
+    "questionIds": [
+      "q002",
+      "q003",
+      "q004",
+      "q005",
+      "q006",
+      "q007"
     ]
   },
   {
-    "id": "scripted-logic-patterns",
-    "name": "Scripted Logic Patterns",
-    "summary": "When to use scripting for validation or advanced logic and how to explain it in interviews.",
-    "points": [
-      "Use scripting when configuration alone is not enough.",
-      "Keep logic maintainable and scoped.",
-      "Avoid brittle designs and over-customization."
+    "id": "data-mapping-and-transformation",
+    "slug": "data-mapping-and-transformation",
+    "title": "Data Mapping and Transformation",
+    "moduleId": "integrations",
+    "summary": "Describe how external data is aligned into Ivanti objects and fields.",
+    "bullets": [
+      "Identifiers",
+      "Null handling",
+      "Transformation rules"
+    ],
+    "roleIds": [
+      "itsm-admin",
+      "itsm-developer",
+      "neurons-consultant",
+      "integration-engineer",
+      "automation-engineer",
+      "itam-engineer",
+      "integration-architect"
+    ],
+    "topicIds": [
+      "rest-apis",
+      "authentication-patterns",
+      "web-service-patterns",
+      "data-mapping",
+      "error-handling-and-retries"
+    ],
+    "questionIds": [
+      "q009",
+      "q010",
+      "q012",
+      "q013",
+      "q014"
     ]
   },
   {
-    "id": "error-retry",
-    "name": "Error Handling and Retry Patterns",
-    "summary": "How to talk about operational resilience in automation and integration design.",
-    "points": [
-      "Explain retries, logging, and alerting.",
-      "Discuss how to avoid duplicate processing.",
-      "Mention exception visibility for support teams."
+    "id": "automation-retry-pattern",
+    "slug": "automation-retry-pattern",
+    "title": "Automation Retry Pattern",
+    "moduleId": "integrations",
+    "summary": "Explain resilient retry and error-notification patterns without creating duplicates.",
+    "bullets": [
+      "Retry boundaries",
+      "Alerting",
+      "Idempotence"
+    ],
+    "roleIds": [
+      "itsm-admin",
+      "itsm-developer",
+      "neurons-consultant",
+      "integration-engineer",
+      "automation-engineer",
+      "itam-engineer",
+      "integration-architect"
+    ],
+    "topicIds": [
+      "rest-apis",
+      "authentication-patterns",
+      "web-service-patterns",
+      "data-mapping",
+      "error-handling-and-retries"
+    ],
+    "questionIds": [
+      "q009",
+      "q010",
+      "q012",
+      "q013",
+      "q014"
     ]
   },
   {
-    "id": "automation-orchestration",
-    "name": "Automation and Orchestration Patterns",
-    "summary": "How to explain chained actions, scheduling, triggered automation, and governance.",
-    "points": [
-      "Discuss orchestration across modules or systems.",
-      "Explain reusable patterns and controlled execution.",
-      "Mention security and auditability."
+    "id": "endpoint-rollout-logic",
+    "slug": "endpoint-rollout-logic",
+    "title": "Endpoint Rollout Logic",
+    "moduleId": "endpoint-manager",
+    "summary": "Describe how device groups, pilot rings, and scheduling work together in endpoint changes.",
+    "bullets": [
+      "Targeting",
+      "Pilot rollout",
+      "Monitoring"
+    ],
+    "roleIds": [
+      "uem-engineer",
+      "endpoint-manager-engineer",
+      "patch-management-engineer"
+    ],
+    "topicIds": [
+      "device-grouping-and-targeting",
+      "deployment-troubleshooting"
+    ],
+    "questionIds": [
+      "q016",
+      "q017"
+    ]
+  },
+  {
+    "id": "compliance-remediation-design",
+    "slug": "compliance-remediation-design",
+    "title": "Compliance Remediation Design",
+    "moduleId": "compliance",
+    "summary": "Explain what happens when a device becomes non-compliant and how remediation is triggered.",
+    "bullets": [
+      "Detection",
+      "Action",
+      "Communication"
+    ],
+    "roleIds": [
+      "mdm-engineer"
+    ],
+    "topicIds": [
+      "compliance-rules",
+      "restriction-policies"
+    ],
+    "questionIds": [
+      "q021"
+    ]
+  },
+  {
+    "id": "asset-reconciliation-logic",
+    "slug": "asset-reconciliation-logic",
+    "title": "Asset Reconciliation Logic",
+    "moduleId": "discovery",
+    "summary": "Describe how discovered inventory is normalized and reconciled into a trusted asset view.",
+    "bullets": [
+      "Matching keys",
+      "Normalization",
+      "Duplicate cleanup"
+    ],
+    "roleIds": [
+      "neurons-consultant",
+      "uem-engineer",
+      "endpoint-manager-engineer",
+      "itam-engineer",
+      "discovery-engineer",
+      "integration-architect"
+    ],
+    "topicIds": [
+      "device-inventory",
+      "normalization-and-reconciliation"
+    ],
+    "questionIds": [
+      "q023",
+      "q024",
+      "q026"
+    ]
+  },
+  {
+    "id": "velocity-flow-simplification",
+    "slug": "velocity-flow-simplification",
+    "title": "Velocity Flow Simplification",
+    "moduleId": "velocity",
+    "summary": "Explain how you reduce steps and optimize a frontline browser or scanning workflow.",
+    "bullets": [
+      "Step reduction",
+      "Prompt clarity",
+      "Recovery paths"
+    ],
+    "roleIds": [
+      "velocity-consultant"
+    ],
+    "topicIds": [
+      "velocity-browser-sessions",
+      "scan-first-workflow-design",
+      "frontline-exception-handling"
+    ],
+    "questionIds": [
+      "q027",
+      "q028",
+      "q029"
+    ]
+  },
+  {
+    "id": "reporting-kpi-design",
+    "slug": "reporting-kpi-design",
+    "title": "Reporting KPI Design",
+    "moduleId": "reporting",
+    "summary": "Explain how to choose useful KPIs, dashboards, and saved-search-driven reporting views.",
+    "bullets": [
+      "Audience alignment",
+      "Trend usefulness",
+      "Operational actionability"
+    ],
+    "roleIds": [
+      "itsm-admin",
+      "itsm-developer",
+      "itsm-business-analyst",
+      "integration-engineer",
+      "automation-engineer",
+      "patch-management-engineer",
+      "itam-engineer",
+      "discovery-engineer",
+      "experience-analyst",
+      "platform-support-analyst"
+    ],
+    "topicIds": [
+      "saved-searches",
+      "reporting-and-dashboards"
+    ],
+    "questionIds": [
+      "q001",
+      "q008",
+      "q036"
     ]
   }
 ]
