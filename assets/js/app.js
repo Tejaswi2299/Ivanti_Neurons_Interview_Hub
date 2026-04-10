@@ -150,28 +150,26 @@ function accordion(title, subtitle, content, open = false) {
 function homePage() {
   const featuredRoles = state.roles.slice(0, 6);
   const featuredModules = state.modules.slice(0, 6);
+  const featuredTopics = state.topics.slice(0, 6);
   render('Ivanti Neurons Interview Hub', `
     <section class="hero-card">
       <div class="hero-split">
         <article class="hero-copy">
-          <span class="section-kicker">Interview preparation hub</span>
-          <h2>Prepare by role, module, topic, coding pattern, use case, and tricky interview question.</h2>
-          <p>Use the role paths to understand what each Ivanti role focuses on, which modules to learn, which topics to prepare, what coding questions may come up, and which scenario-based questions are worth practicing.</p>
+          <span class="section-kicker">Welcome to the Ivanti Neurons Hub</span>
+          <h2>Role-first interview preparation designed like an enterprise knowledge portal.</h2>
+          <p>Start from a role and directly prepare the important topics, coding questions, tricky scenarios, and practical use cases expected in Ivanti Neurons interviews.</p>
           <div class="action-row">
-            <button class="primary-btn" data-go-route="#/roles">Prepare by role</button>
-            <button class="secondary-btn" data-go-route="#/modules">Prepare by module</button>
-            <button class="secondary-btn" data-go-route="#/topics">Open topic library</button>
-          </div>
-          <div class="tag-row" style="margin-top:14px;">
-            <span class="tag">ITSM</span><span class="tag">UEM</span><span class="tag alt">MDM</span><span class="tag soft">ITAM</span><span class="tag">Discovery</span><span class="tag alt">Velocity</span>
+            <button class="primary-btn" data-go-route="#/roles">Browse by role</button>
+            <button class="secondary-btn" data-go-route="#/modules">Browse by module</button>
+            <button class="secondary-btn" data-go-route="#/topics">Browse by topic</button>
           </div>
         </article>
         <article class="detail-card">
-          <h3>How this hub works</h3>
+          <h3>Preparation flow</h3>
           <ul class="clean-list">
-            <li>Open a role to see the exact modules, topics, coding, use cases, skills, and tricky questions for that role.</li>
-            <li>Open a module to see what the module does, what topics belong to it, and what scenarios or questions matter most.</li>
-            <li>Open any topic to understand what it means, why it matters, what to prepare, and what related questions to practice.</li>
+            <li>Open a role to see required topics first, then coding and scenario questions.</li>
+            <li>Open a topic page for concept explanation and interview question angles.</li>
+            <li>Use quiz and bookmarks to revise before interview rounds.</li>
           </ul>
         </article>
       </div>
@@ -180,15 +178,19 @@ function homePage() {
       <article class="stat-card"><div class="stat-value">${state.roles.length}</div><div class="stat-label">Roles</div></article>
       <article class="stat-card"><div class="stat-value">${state.modules.length}</div><div class="stat-label">Modules</div></article>
       <article class="stat-card"><div class="stat-value">${state.topics.length}</div><div class="stat-label">Topics</div></article>
-      <article class="stat-card"><div class="stat-value">${state.questions.length}</div><div class="stat-label">Questions</div></article>
+      <article class="stat-card"><div class="stat-value">${state.questions.length}</div><div class="stat-label">Tricky Questions</div></article>
     </section>
     <section class="card">
-      <div class="section-header"><div><h2>Start by role</h2><p>Open the role path that matches the interview you are preparing for.</p></div></div>
-      <div class="grid-3 home-route-grid">${featuredRoles.map((role) => tileLink(role.name, role.summary, `#/roles/${role.slug}`, `<span class="tag">${role.moduleIds.length} modules</span><span class="tag alt">${role.topicIds.length} topics</span>`, 'route-card')).join('')}</div>
+      <div class="section-header"><div><h2>Browse by role</h2><p>Pick your interview role and open a focused preparation path.</p></div></div>
+      <div class="grid-3 home-route-grid">${featuredRoles.map((role) => tileLink(role.name, role.summary, `#/roles/${role.slug}`, `<span class="tag alt">${role.topicIds.length} topics</span><span class="tag">${role.codingIds.length} coding</span>`, 'route-card')).join('')}</div>
     </section>
     <section class="card">
-      <div class="section-header"><div><h2>Or jump by module</h2><p>Use modules when you want a product-area-first learning path.</p></div></div>
+      <div class="section-header"><div><h2>Browse by module</h2><p>Go product-area first and then dive into mapped topics.</p></div></div>
       <div class="grid-3">${featuredModules.map((module) => tileLink(module.name, module.summary, `#/modules/${module.slug}`, `<span class="tag">${module.topicIds.length} topics</span>`, 'route-card')).join('')}</div>
+    </section>
+    <section class="card">
+      <div class="section-header"><div><h2>Browse by topic</h2><p>Direct concept revision with related questions and use cases.</p></div></div>
+      <div class="grid-3">${featuredTopics.map((topic) => tileLink(topic.name, topic.summary, `#/topics/${topic.slug}`, `<span class="tag">${topic.questionIds.length} questions</span>`, 'route-card')).join('')}</div>
     </section>
   `);
 }
@@ -207,13 +209,13 @@ function roleDetailPage(slug) {
   const codingItems = role.codingIds.map(codingById).filter(Boolean);
   const useCases = role.useCaseIds.map(useCaseById).filter(Boolean);
   render(role.name, `${breadcrumbs([{ label: 'Roles', href: '#/roles' }, { label: role.name }])}${pageBack('#/roles')}
-    <section class="detail-banner"><span class="section-kicker">${esc(role.category)}</span><h2>${esc(role.name)}</h2><p>${esc(role.summary)}</p><div class="detail-meta"><span class="tag">${role.moduleIds.length} modules</span><span class="tag alt">${role.topicIds.length} topics</span><span class="tag soft">${role.questionIds.length} questions</span></div><div class="action-row" style="margin-top:14px;">${bookmarkButton('role', role.id, role.name)}</div></section>
+    <section class="detail-banner"><span class="section-kicker">${esc(role.category)}</span><h2>${esc(role.name)}</h2><p>${esc(role.summary)}</p><div class="detail-meta"><span class="tag alt">${role.topicIds.length} topics</span><span class="tag">${codingItems.length} coding</span><span class="tag soft">${role.questionIds.length} tricky questions</span></div><div class="action-row" style="margin-top:14px;">${bookmarkButton('role', role.id, role.name)}</div></section>
     <section class="details-stack">
       ${accordion('What this role mainly focuses on', 'Role overview', `<div class="quote-box">${esc(role.summary)}</div>`, true)}
-      ${accordion('Skills to prepare', `${role.skillIds.length} mapped skills`, skillCards(role.skillIds))}
-      ${accordion('Modules to prepare', `${modules.length} modules`, `<div class="list-stack">${modules.map((module) => rowLink(module.name, module.summary, `#/modules/${module.slug}`)).join('') || '<p>No modules mapped yet.</p>'}</div>`)}
-      ${accordion('Topics to prepare', `${topics.length} topics`, `<div class="list-stack">${topics.map((topic) => rowLink(topic.name, topic.summary, `#/topics/${topic.slug}`)).join('') || '<p>No topics mapped yet.</p>'}</div>`)}
+      ${accordion('Topics to prepare first', `${topics.length} topics`, `<div class="list-stack">${topics.map((topic) => rowLink(topic.name, topic.summary, `#/topics/${topic.slug}`)).join('') || '<p>No topics mapped yet.</p>'}</div>`, true)}
       ${accordion('Coding and technical questions', `${codingItems.length} items`, `<div class="list-stack">${codingItems.map((item) => rowLink(item.title, item.summary, `#/coding/${item.slug}`)).join('') || '<p>No coding items mapped yet.</p>'}</div>`)}
+      ${accordion('Skills to prepare', `${role.skillIds.length} mapped skills`, skillCards(role.skillIds))}
+      ${accordion('Mapped modules (reference)', `${modules.length} modules`, `<div class="list-stack">${modules.map((module) => rowLink(module.name, module.summary, `#/modules/${module.slug}`)).join('') || '<p>No modules mapped yet.</p>'}</div>`)}
       ${accordion('Use case scenarios', `${useCases.length} scenarios`, `<div class="list-stack">${useCases.map((item) => rowLink(item.title, item.problem, `#/use-cases/${item.slug}`)).join('') || '<p>No use cases mapped yet.</p>'}</div>`)}
       ${accordion('Tricky questions to practice', `${role.questionIds.length} questions`, answerCards(role.questionIds))}
     </section>`);
