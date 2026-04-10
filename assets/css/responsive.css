@@ -1,7 +1,9 @@
 @media (max-width: 1220px) {
   .hero-split,
   .stats-grid,
-  .grid-3 {
+  .grid-4,
+  .grid-3,
+  .sources-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -13,16 +15,14 @@
 
   .sidebar {
     position: fixed;
-    left: 14px;
-    right: 14px;
-    top: 14px;
-    bottom: 14px;
-    width: auto;
-    max-width: 340px;
-    height: auto;
+    left: 16px;
+    top: 16px;
+    bottom: 16px;
+    width: min(330px, calc(100vw - 32px));
     z-index: 40;
-    transform: translateX(-130%);
-    transition: transform 0.2s ease;
+    transform: translateX(-120%);
+    transition: transform 0.22s ease;
+    height: auto;
   }
 
   .sidebar.open {
@@ -45,29 +45,31 @@
   .hero-split,
   .stats-grid,
   .grid-2,
-  .grid-3 {
+  .grid-3,
+  .grid-4,
+  .sources-grid {
     grid-template-columns: 1fr;
   }
 }
 
 @media (max-width: 640px) {
   .app-shell {
-    padding: 12px;
-    gap: 12px;
+    padding: 14px;
+    gap: 14px;
   }
 
+  .sidebar,
   .topbar,
   .card,
   .hero-card,
-  .detail-banner,
-  .sidebar {
-    border-radius: 14px;
+  .detail-banner {
+    border-radius: 18px;
   }
 
   .topbar,
   .card,
   .hero-card,
   .detail-banner {
-    padding: 16px;
+    padding: 18px;
   }
 }
