@@ -150,6 +150,7 @@ function accordion(title, subtitle, content, open = false) {
 function homePage() {
   const featuredRoles = state.roles.slice(0, 6);
   const featuredModules = state.modules.slice(0, 6);
+  const featuredTopics = state.topics.slice(0, 6);
   render('Ivanti Neurons Interview Hub', `
     <section class="hero-card">
       <div class="hero-split">
@@ -207,6 +208,10 @@ function homePage() {
       <div class="section-header"><div><h2>Module jump-start</h2><p>Optional path when you want module-first revision.</p></div></div>
       <div class="grid-3">${featuredModules.map((module) => tileLink(module.name, module.summary, `#/modules/${module.slug}`, `<span class="tag">${module.topicIds.length} topics</span>`, 'route-card')).join('')}</div>
     </section>
+    <section class="card">
+      <div class="section-header"><div><h2>Browse by topic</h2><p>Direct concept revision with related questions and use cases.</p></div></div>
+      <div class="grid-3">${featuredTopics.map((topic) => tileLink(topic.name, topic.summary, `#/topics/${topic.slug}`, `<span class="tag">${topic.questionIds.length} questions</span>`, 'route-card')).join('')}</div>
+    </section>
   `);
 }
 
@@ -230,6 +235,8 @@ function roleDetailPage(slug) {
       ${accordion('Skills to prepare', `${role.skillIds.length} mapped skills`, skillCards(role.skillIds))}
       ${accordion('Topics to prepare first', `${topics.length} topics`, `<div class="list-stack">${topics.map((topic) => rowLink(topic.name, topic.summary, `#/topics/${topic.slug}`)).join('') || '<p>No topics mapped yet.</p>'}</div>`, true)}
       ${accordion('Coding and technical questions', `${codingItems.length} items`, `<div class="list-stack">${codingItems.map((item) => rowLink(item.title, item.summary, `#/coding/${item.slug}`)).join('') || '<p>No coding items mapped yet.</p>'}</div>`)}
+      ${accordion('Skills to prepare', `${role.skillIds.length} mapped skills`, skillCards(role.skillIds))}
+      ${accordion('Mapped modules (reference)', `${modules.length} modules`, `<div class="list-stack">${modules.map((module) => rowLink(module.name, module.summary, `#/modules/${module.slug}`)).join('') || '<p>No modules mapped yet.</p>'}</div>`)}
       ${accordion('Use case scenarios', `${useCases.length} scenarios`, `<div class="list-stack">${useCases.map((item) => rowLink(item.title, item.problem, `#/use-cases/${item.slug}`)).join('') || '<p>No use cases mapped yet.</p>'}</div>`)}
       ${accordion('Tricky questions to practice', `${role.questionIds.length} questions`, answerCards(role.questionIds))}
       ${accordion('Modules to learn after topics', `${modules.length} modules`, `<div class="list-stack">${modules.map((module) => rowLink(module.name, module.summary, `#/modules/${module.slug}`)).join('') || '<p>No modules mapped yet.</p>'}</div>`)}
