@@ -1,0 +1,98 @@
+[
+  {
+    "id": "q1",
+    "question": "What best describes Ivanti Neurons Platform?",
+    "choices": [
+      "A single product only for MDM",
+      "A cloud-native platform connecting ITSM, endpoint, automation, and security workflows",
+      "A reporting-only add-on",
+      "A warehouse-only tool"
+    ],
+    "answerIndex": 1,
+    "explanation": "Official Ivanti positioning describes Neurons Platform as a unified cloud-native platform connecting major IT and security capabilities."
+  },
+  {
+    "id": "q2",
+    "question": "What is the role of saved searches in an interview answer?",
+    "choices": [
+      "They replace dashboards completely",
+      "They provide reusable filtered datasets used in views, reports, and automation",
+      "They are only for administrators to hide records",
+      "They are only for mobile devices"
+    ],
+    "answerIndex": 1,
+    "explanation": "Saved searches are a reusable data slice that often powers reporting and scheduled communication."
+  },
+  {
+    "id": "q3",
+    "question": "Why would a patch engineer use patch rings?",
+    "choices": [
+      "To increase risk",
+      "To stage rollout and validate results before broad deployment",
+      "To avoid compliance reporting",
+      "To replace device groups"
+    ],
+    "answerIndex": 1,
+    "explanation": "Patch rings reduce rollout risk by enabling pilot validation first."
+  },
+  {
+    "id": "q4",
+    "question": "Which topic is most relevant when discussing secure Ivanti integrations?",
+    "choices": [
+      "Wallpaper branding",
+      "Authentication patterns",
+      "Browser zoom",
+      "Office seating"
+    ],
+    "answerIndex": 1,
+    "explanation": "Authentication is central to secure integration design."
+  },
+  {
+    "id": "q5",
+    "question": "In MDM, what changes the control strategy most?",
+    "choices": [
+      "Ownership model",
+      "Color theme",
+      "Dashboard font",
+      "Time zone"
+    ],
+    "answerIndex": 0,
+    "explanation": "BYOD vs corporate-owned heavily affects policy, privacy, and app strategy."
+  },
+  {
+    "id": "q6",
+    "question": "What is the main difference between discovery and ITAM?",
+    "choices": [
+      "They are identical",
+      "Discovery finds/normalizes assets; ITAM governs lifecycle and ownership",
+      "ITAM only works for laptops",
+      "Discovery is only manual"
+    ],
+    "answerIndex": 1,
+    "explanation": "Discovery improves visibility while ITAM provides lifecycle and governance context."
+  },
+  {
+    "id": "q7",
+    "question": "Why does Workspace matter for analyst efficiency?",
+    "choices": [
+      "It changes logo colors",
+      "It provides unified context and quick actions for faster triage",
+      "It replaces all incidents",
+      "It removes audit trails"
+    ],
+    "answerIndex": 1,
+    "explanation": "Workspace is designed to give analysts contextual visibility and quick actions."
+  },
+  {
+    "id": "q8",
+    "question": "What should a strong use-case answer include?",
+    "choices": [
+      "Only a product name",
+      "Problem, approach, steps, and outcome",
+      "Only screenshots",
+      "Only pricing"
+    ],
+    "answerIndex": 1,
+    "explanation": "Interview use-case answers should show structured implementation thinking."
+  }
+]

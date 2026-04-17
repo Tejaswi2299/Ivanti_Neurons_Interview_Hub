@@ -1,0 +1,593 @@
+[
+  {
+    "id": "ivanti-itsm-administrator",
+    "name": "Ivanti ITSM Administrator",
+    "group": "Service Management",
+    "summary": "Owns configuration, forms, workflows, communications, dashboards, and day-to-day platform administration for Ivanti Neurons for ITSM.",
+    "moduleIds": [
+      "ivanti-neurons-for-itsm",
+      "incident-management",
+      "problem-management",
+      "change-management",
+      "service-request-management",
+      "knowledge-management",
+      "reporting-and-dashboards",
+      "ivanti-neurons-ipaas"
+    ],
+    "skills": [
+      "configuration design",
+      "workflow thinking",
+      "reporting",
+      "operational governance",
+      "user support"
+    ],
+    "topicIds": [
+      "approvals",
+      "authentication-patterns",
+      "business-objects",
+      "change-governance",
+      "dashboards-and-kpis",
+      "data-mapping",
+      "email-templates",
+      "error-handling-and-retries",
+      "escalations",
+      "forms-and-layouts",
+      "incident-lifecycle",
+      "knowledge-lifecycle",
+      "problem-lifecycle",
+      "quick-actions",
+      "relationships",
+      "request-fulfillment",
+      "rest-api-basics",
+      "saved-searches",
+      "validations",
+      "workflows"
+    ],
+    "codingIds": [
+      "rest-integration-walk-through",
+      "notification-automation-with-saved-searches",
+      "approval-routing-logic",
+      "validation-logic-design",
+      "workflow-exception-handling",
+      "data-mapping-strategy",
+      "retry-and-backoff-patterns"
+    ],
+    "useCaseIds": [
+      "weekly-open-incident-summary",
+      "customer-response-reactivation",
+      "multi-step-request-approvals",
+      "change-approval-and-scheduling",
+      "knowledge-deflection-for-support",
+      "external-approval-sync",
+      "scheduled-report-push-to-external-endpoint",
+      "pilot-based-patch-rollout",
+      "asset-refresh-planning",
+      "workspace-shift-left-triage"
+    ],
+    "trickyIds": [
+      "quick-action-vs-workflow",
+      "incident-vs-problem",
+      "saved-search-vs-dashboard",
+      "knowledge-article-vs-workaround",
+      "ipaas-connector-vs-custom-integration"
+    ]
+  },
+  {
+    "id": "ivanti-itsm-developer",
+    "name": "Ivanti ITSM Developer",
+    "group": "Service Management",
+    "summary": "Builds advanced automations, integrations, validation logic, and extensibility patterns across the service platform.",
+    "moduleIds": [
+      "ivanti-neurons-for-itsm",
+      "incident-management",
+      "change-management",
+      "service-request-management",
+      "ivanti-neurons-ipaas",
+      "ivanti-neurons-platform"
+    ],
+    "skills": [
+      "integration design",
+      "automation logic",
+      "data modeling",
+      "troubleshooting",
+      "secure API design"
+    ],
+    "topicIds": [
+      "approvals",
+      "authentication-patterns",
+      "business-objects",
+      "change-governance",
+      "data-mapping",
+      "email-templates",
+      "error-handling-and-retries",
+      "escalations",
+      "forms-and-layouts",
+      "incident-lifecycle",
+      "quick-actions",
+      "relationships",
+      "request-fulfillment",
+      "rest-api-basics",
+      "validations",
+      "workflows"
+    ],
+    "codingIds": [
+      "rest-integration-walk-through",
+      "approval-routing-logic",
+      "validation-logic-design",
+      "workflow-exception-handling",
+      "data-mapping-strategy",
+      "retry-and-backoff-patterns"
+    ],
+    "useCaseIds": [
+      "weekly-open-incident-summary",
+      "customer-response-reactivation",
+      "multi-step-request-approvals",
+      "change-approval-and-scheduling",
+      "knowledge-deflection-for-support",
+      "external-approval-sync",
+      "scheduled-report-push-to-external-endpoint",
+      "workspace-shift-left-triage"
+    ],
+    "trickyIds": [
+      "quick-action-vs-workflow",
+      "ipaas-connector-vs-custom-integration"
+    ]
+  },
+  {
+    "id": "ivanti-uem-engineer",
+    "name": "Ivanti UEM Engineer",
+    "group": "Endpoint",
+    "summary": "Supports unified endpoint management across inventory, compliance, policy, software, and lifecycle management.",
+    "moduleIds": [
+      "ivanti-neurons-for-uem",
+      "ivanti-endpoint-manager",
+      "patch-management",
+      "software-distribution",
+      "compliance-and-policy",
+      "ivanti-neurons-for-discovery"
+    ],
+    "skills": [
+      "device governance",
+      "policy control",
+      "distribution planning",
+      "remediation",
+      "operational reporting"
+    ],
+    "topicIds": [
+      "compliance-rules",
+      "device-groups-and-targeting",
+      "discovery-and-inventory",
+      "endpoint-troubleshooting",
+      "patch-rings",
+      "software-distribution-jobs"
+    ],
+    "codingIds": [
+      "endpoint-targeting-strategy",
+      "patch-ring-rollout-design",
+      "software-deployment-failure-triage",
+      "compliance-remediation-design"
+    ],
+    "useCaseIds": [
+      "pilot-based-patch-rollout",
+      "targeted-software-rollout",
+      "byod-enrollment-program",
+      "non-compliant-device-response",
+      "managed-mobile-app-rollout",
+      "discovery-reconciliation-improvement"
+    ],
+    "trickyIds": [
+      "discovery-vs-itam-record",
+      "patch-ring-vs-broad-rollout",
+      "compliance-state-vs-remediation-action"
+    ]
+  },
+  {
+    "id": "ivanti-endpoint-manager-engineer",
+    "name": "Ivanti Endpoint Manager Engineer",
+    "group": "Endpoint",
+    "summary": "Handles package deployment, targeting, inventory, and endpoint operations using Endpoint Manager.",
+    "moduleIds": [
+      "ivanti-endpoint-manager",
+      "software-distribution",
+      "patch-management",
+      "ivanti-neurons-for-discovery"
+    ],
+    "skills": [
+      "deployment design",
+      "endpoint troubleshooting",
+      "targeting strategy",
+      "job monitoring",
+      "inventory validation"
+    ],
+    "topicIds": [
+      "device-groups-and-targeting",
+      "discovery-and-inventory",
+      "endpoint-troubleshooting",
+      "patch-rings",
+      "software-distribution-jobs"
+    ],
+    "codingIds": [
+      "endpoint-targeting-strategy",
+      "patch-ring-rollout-design",
+      "software-deployment-failure-triage"
+    ],
+    "useCaseIds": [
+      "pilot-based-patch-rollout",
+      "targeted-software-rollout",
+      "discovery-reconciliation-improvement"
+    ],
+    "trickyIds": [
+      "discovery-vs-itam-record",
+      "patch-ring-vs-broad-rollout"
+    ]
+  },
+  {
+    "id": "ivanti-patch-management-engineer",
+    "name": "Ivanti Patch Management Engineer",
+    "group": "Endpoint",
+    "summary": "Designs patch rings, pilot waves, compliance monitoring, and exception handling strategies.",
+    "moduleIds": [
+      "patch-management",
+      "ivanti-endpoint-manager",
+      "ivanti-neurons-for-uem",
+      "reporting-and-dashboards"
+    ],
+    "skills": [
+      "risk-aware rollout",
+      "patch governance",
+      "exception management",
+      "compliance analysis",
+      "stakeholder communication"
+    ],
+    "topicIds": [
+      "dashboards-and-kpis",
+      "device-groups-and-targeting",
+      "endpoint-troubleshooting",
+      "patch-rings",
+      "saved-searches"
+    ],
+    "codingIds": [
+      "notification-automation-with-saved-searches",
+      "endpoint-targeting-strategy",
+      "patch-ring-rollout-design",
+      "software-deployment-failure-triage"
+    ],
+    "useCaseIds": [
+      "weekly-open-incident-summary",
+      "scheduled-report-push-to-external-endpoint",
+      "pilot-based-patch-rollout",
+      "targeted-software-rollout",
+      "asset-refresh-planning"
+    ],
+    "trickyIds": [
+      "patch-ring-vs-broad-rollout",
+      "saved-search-vs-dashboard"
+    ]
+  },
+  {
+    "id": "ivanti-mdm-engineer",
+    "name": "Ivanti MDM Engineer",
+    "group": "Mobility",
+    "summary": "Manages enrollment, compliance, app rollout, ownership models, and managed device controls.",
+    "moduleIds": [
+      "ivanti-neurons-for-mdm",
+      "compliance-and-policy",
+      "mobile-app-distribution",
+      "reporting-and-dashboards"
+    ],
+    "skills": [
+      "enrollment strategy",
+      "policy governance",
+      "mobile rollout planning",
+      "security baselines",
+      "user experience"
+    ],
+    "topicIds": [
+      "compliance-rules",
+      "dashboards-and-kpis",
+      "enrollment",
+      "mobile-app-deployment",
+      "ownership-models",
+      "saved-searches"
+    ],
+    "codingIds": [
+      "notification-automation-with-saved-searches",
+      "enrollment-troubleshooting",
+      "compliance-remediation-design"
+    ],
+    "useCaseIds": [
+      "weekly-open-incident-summary",
+      "scheduled-report-push-to-external-endpoint",
+      "pilot-based-patch-rollout",
+      "byod-enrollment-program",
+      "non-compliant-device-response",
+      "managed-mobile-app-rollout",
+      "asset-refresh-planning"
+    ],
+    "trickyIds": [
+      "byod-vs-corporate-owned",
+      "saved-search-vs-dashboard",
+      "compliance-state-vs-remediation-action"
+    ]
+  },
+  {
+    "id": "ivanti-itam-engineer",
+    "name": "Ivanti ITAM Engineer",
+    "group": "Asset",
+    "summary": "Focuses on lifecycle tracking, normalization, inventory alignment, and asset reporting.",
+    "moduleIds": [
+      "ivanti-neurons-for-itam",
+      "ivanti-neurons-for-discovery",
+      "reporting-and-dashboards",
+      "ivanti-neurons-ipaas"
+    ],
+    "skills": [
+      "lifecycle management",
+      "inventory trust",
+      "reconciliation",
+      "reporting",
+      "data quality"
+    ],
+    "topicIds": [
+      "asset-lifecycle",
+      "authentication-patterns",
+      "dashboards-and-kpis",
+      "data-mapping",
+      "discovery-and-inventory",
+      "error-handling-and-retries",
+      "normalization-and-reconciliation",
+      "rest-api-basics",
+      "saved-searches"
+    ],
+    "codingIds": [
+      "rest-integration-walk-through",
+      "notification-automation-with-saved-searches",
+      "data-mapping-strategy",
+      "retry-and-backoff-patterns",
+      "asset-reconciliation-approach"
+    ],
+    "useCaseIds": [
+      "weekly-open-incident-summary",
+      "external-approval-sync",
+      "scheduled-report-push-to-external-endpoint",
+      "pilot-based-patch-rollout",
+      "asset-refresh-planning",
+      "discovery-reconciliation-improvement"
+    ],
+    "trickyIds": [
+      "discovery-vs-itam-record",
+      "saved-search-vs-dashboard",
+      "ipaas-connector-vs-custom-integration"
+    ]
+  },
+  {
+    "id": "ivanti-discovery-engineer",
+    "name": "Ivanti Discovery Engineer",
+    "group": "Asset",
+    "summary": "Builds and supports discovery, connectors, normalized inventory, and reconciliation-ready visibility.",
+    "moduleIds": [
+      "ivanti-neurons-for-discovery",
+      "ivanti-neurons-for-itam",
+      "reporting-and-dashboards"
+    ],
+    "skills": [
+      "connector strategy",
+      "normalization",
+      "inventory visibility",
+      "reconciliation",
+      "source-of-truth thinking"
+    ],
+    "topicIds": [
+      "asset-lifecycle",
+      "dashboards-and-kpis",
+      "discovery-and-inventory",
+      "normalization-and-reconciliation",
+      "saved-searches"
+    ],
+    "codingIds": [
+      "notification-automation-with-saved-searches",
+      "asset-reconciliation-approach"
+    ],
+    "useCaseIds": [
+      "weekly-open-incident-summary",
+      "scheduled-report-push-to-external-endpoint",
+      "pilot-based-patch-rollout",
+      "asset-refresh-planning",
+      "discovery-reconciliation-improvement"
+    ],
+    "trickyIds": [
+      "discovery-vs-itam-record",
+      "saved-search-vs-dashboard"
+    ]
+  },
+  {
+    "id": "ivanti-grc-analyst",
+    "name": "Ivanti GRC Analyst",
+    "group": "Governance",
+    "summary": "Supports controls, risks, authority documents, assessments, and corrective-action workflows.",
+    "moduleIds": [
+      "ivanti-neurons-for-grc",
+      "reporting-and-dashboards",
+      "ivanti-neurons-ipaas"
+    ],
+    "skills": [
+      "control mapping",
+      "risk thinking",
+      "assessment design",
+      "auditability",
+      "corrective action tracking"
+    ],
+    "topicIds": [
+      "authentication-patterns",
+      "authority-documents-and-citations",
+      "controls-and-risks",
+      "dashboards-and-kpis",
+      "data-mapping",
+      "error-handling-and-retries",
+      "rest-api-basics",
+      "saved-searches"
+    ],
+    "codingIds": [
+      "rest-integration-walk-through",
+      "notification-automation-with-saved-searches",
+      "data-mapping-strategy",
+      "retry-and-backoff-patterns",
+      "grc-control-mapping-approach"
+    ],
+    "useCaseIds": [
+      "weekly-open-incident-summary",
+      "external-approval-sync",
+      "scheduled-report-push-to-external-endpoint",
+      "pilot-based-patch-rollout",
+      "asset-refresh-planning",
+      "control-assessment-cycle"
+    ],
+    "trickyIds": [
+      "saved-search-vs-dashboard",
+      "ipaas-connector-vs-custom-integration"
+    ]
+  },
+  {
+    "id": "ivanti-integration-architect",
+    "name": "Ivanti Integration Architect",
+    "group": "Integrations",
+    "summary": "Designs secure, maintainable, and scalable integrations between Ivanti and external systems.",
+    "moduleIds": [
+      "ivanti-neurons-ipaas",
+      "ivanti-neurons-for-itsm",
+      "ivanti-neurons-for-itam",
+      "ivanti-neurons-for-grc",
+      "ivanti-neurons-platform"
+    ],
+    "skills": [
+      "API architecture",
+      "authentication",
+      "mapping",
+      "retry strategy",
+      "governance"
+    ],
+    "topicIds": [
+      "asset-lifecycle",
+      "authentication-patterns",
+      "authority-documents-and-citations",
+      "business-objects",
+      "controls-and-risks",
+      "data-mapping",
+      "email-templates",
+      "error-handling-and-retries",
+      "forms-and-layouts",
+      "normalization-and-reconciliation",
+      "quick-actions",
+      "relationships",
+      "rest-api-basics",
+      "validations",
+      "workflows"
+    ],
+    "codingIds": [
+      "rest-integration-walk-through",
+      "validation-logic-design",
+      "workflow-exception-handling",
+      "data-mapping-strategy",
+      "retry-and-backoff-patterns",
+      "asset-reconciliation-approach",
+      "grc-control-mapping-approach"
+    ],
+    "useCaseIds": [
+      "weekly-open-incident-summary",
+      "customer-response-reactivation",
+      "multi-step-request-approvals",
+      "change-approval-and-scheduling",
+      "external-approval-sync",
+      "scheduled-report-push-to-external-endpoint",
+      "asset-refresh-planning",
+      "discovery-reconciliation-improvement",
+      "control-assessment-cycle"
+    ],
+    "trickyIds": [
+      "quick-action-vs-workflow",
+      "ipaas-connector-vs-custom-integration"
+    ]
+  },
+  {
+    "id": "ivanti-workspace-analyst",
+    "name": "Ivanti Workspace Analyst",
+    "group": "Experience",
+    "summary": "Uses Workspace context and quick actions to accelerate triage and resolution.",
+    "moduleIds": [
+      "ivanti-neurons-workspace",
+      "ivanti-neurons-for-itsm",
+      "incident-management",
+      "reporting-and-dashboards"
+    ],
+    "skills": [
+      "triage efficiency",
+      "workspace actions",
+      "shift-left operations",
+      "contextual troubleshooting",
+      "knowledge reuse"
+    ],
+    "topicIds": [
+      "business-objects",
+      "dashboards-and-kpis",
+      "email-templates",
+      "forms-and-layouts",
+      "incident-lifecycle",
+      "quick-actions",
+      "relationships",
+      "saved-searches",
+      "validations",
+      "workflows",
+      "workspace-triage"
+    ],
+    "codingIds": [
+      "notification-automation-with-saved-searches",
+      "validation-logic-design",
+      "workflow-exception-handling",
+      "workspace-quick-action-thinking"
+    ],
+    "useCaseIds": [
+      "weekly-open-incident-summary",
+      "customer-response-reactivation",
+      "multi-step-request-approvals",
+      "change-approval-and-scheduling",
+      "knowledge-deflection-for-support",
+      "scheduled-report-push-to-external-endpoint",
+      "pilot-based-patch-rollout",
+      "asset-refresh-planning",
+      "workspace-shift-left-triage"
+    ],
+    "trickyIds": [
+      "quick-action-vs-workflow",
+      "saved-search-vs-dashboard",
+      "workspace-context-vs-ticket-notes"
+    ]
+  },
+  {
+    "id": "ivanti-velocity-consultant",
+    "name": "Ivanti Velocity Consultant",
+    "group": "Frontline",
+    "summary": "Designs browser- and scan-optimized frontline workflows for warehouse and field teams.",
+    "moduleIds": [
+      "ivanti-velocity",
+      "ivanti-neurons-platform"
+    ],
+    "skills": [
+      "frontline UX",
+      "workflow simplification",
+      "scan-first design",
+      "change adoption",
+      "operational efficiency"
+    ],
+    "topicIds": [
+      "scan-first-workflow-design",
+      "velocity-browser-sessions"
+    ],
+    "codingIds": [
+      "velocity-flow-redesign"
+    ],
+    "useCaseIds": [
+      "warehouse-picking-redesign"
+    ],
+    "trickyIds": []
+  }
+]

@@ -1,0 +1,391 @@
+[
+  {
+    "id": "ivanti-neurons-platform",
+    "name": "Ivanti Neurons Platform",
+    "family": "Platform",
+    "summary": "Unified cloud-native platform connecting ITSM, endpoint management, automation, and security-oriented workflows.",
+    "whyItMatters": "One cohesive platform. Unified IT and security. Powered by AI.",
+    "topicIds": [],
+    "codingIds": [],
+    "useCaseIds": [],
+    "trickyIds": []
+  },
+  {
+    "id": "ivanti-neurons-for-itsm",
+    "name": "Ivanti Neurons for ITSM",
+    "family": "ITSM",
+    "summary": "Service management foundation for tickets, requests, approvals, self-service, and workflow automation.",
+    "whyItMatters": "Modern IT service management software with automation and no-code configuration.",
+    "topicIds": [
+      "business-objects",
+      "relationships",
+      "forms-and-layouts",
+      "validations",
+      "quick-actions",
+      "workflows",
+      "email-templates"
+    ],
+    "codingIds": [
+      "validation-logic-design",
+      "workflow-exception-handling"
+    ],
+    "useCaseIds": [
+      "weekly-open-incident-summary",
+      "customer-response-reactivation",
+      "multi-step-request-approvals",
+      "change-approval-and-scheduling"
+    ],
+    "trickyIds": [
+      "quick-action-vs-workflow"
+    ]
+  },
+  {
+    "id": "incident-management",
+    "name": "Incident Management",
+    "family": "ITSM",
+    "summary": "Operational handling of incidents, assignment, communication, prioritization, and restoration of service.",
+    "whyItMatters": "Core service desk process for incident intake, ownership, and resolution.",
+    "topicIds": [
+      "incident-lifecycle"
+    ],
+    "codingIds": [],
+    "useCaseIds": [
+      "weekly-open-incident-summary",
+      "customer-response-reactivation",
+      "knowledge-deflection-for-support",
+      "workspace-shift-left-triage"
+    ],
+    "trickyIds": []
+  },
+  {
+    "id": "problem-management",
+    "name": "Problem Management",
+    "family": "ITSM",
+    "summary": "Root-cause investigation, trend analysis, known error handling, and recurrence reduction.",
+    "whyItMatters": "Problem analysis and prevention oriented process area.",
+    "topicIds": [
+      "problem-lifecycle"
+    ],
+    "codingIds": [],
+    "useCaseIds": [],
+    "trickyIds": [
+      "incident-vs-problem"
+    ]
+  },
+  {
+    "id": "change-management",
+    "name": "Change Management",
+    "family": "ITSM",
+    "summary": "Change planning, approvals, risk visibility, and controlled deployment governance.",
+    "whyItMatters": "Structured control for change review and execution.",
+    "topicIds": [
+      "escalations",
+      "change-governance"
+    ],
+    "codingIds": [],
+    "useCaseIds": [
+      "change-approval-and-scheduling"
+    ],
+    "trickyIds": []
+  },
+  {
+    "id": "service-request-management",
+    "name": "Service Request Management",
+    "family": "ITSM",
+    "summary": "Request catalog design, fulfillment, approvals, and service delivery workflows.",
+    "whyItMatters": "Standard request intake and fulfillment for IT and enterprise services.",
+    "topicIds": [
+      "approvals",
+      "request-fulfillment"
+    ],
+    "codingIds": [
+      "approval-routing-logic"
+    ],
+    "useCaseIds": [
+      "multi-step-request-approvals",
+      "change-approval-and-scheduling"
+    ],
+    "trickyIds": []
+  },
+  {
+    "id": "knowledge-management",
+    "name": "Knowledge Management",
+    "family": "ITSM",
+    "summary": "Knowledge article lifecycle, reuse, visibility, and support efficiency improvement.",
+    "whyItMatters": "Knowledge authoring, publishing, and support reuse.",
+    "topicIds": [
+      "knowledge-lifecycle"
+    ],
+    "codingIds": [],
+    "useCaseIds": [
+      "knowledge-deflection-for-support",
+      "workspace-shift-left-triage"
+    ],
+    "trickyIds": [
+      "knowledge-article-vs-workaround"
+    ]
+  },
+  {
+    "id": "reporting-and-dashboards",
+    "name": "Reporting and Dashboards",
+    "family": "Analytics",
+    "summary": "Operational dashboards, KPI views, trend reporting, and saved-search-based visibility.",
+    "whyItMatters": "Reporting surfaces for operational visibility and stakeholder metrics.",
+    "topicIds": [
+      "saved-searches",
+      "dashboards-and-kpis"
+    ],
+    "codingIds": [
+      "notification-automation-with-saved-searches"
+    ],
+    "useCaseIds": [
+      "weekly-open-incident-summary",
+      "scheduled-report-push-to-external-endpoint",
+      "pilot-based-patch-rollout",
+      "asset-refresh-planning"
+    ],
+    "trickyIds": [
+      "saved-search-vs-dashboard"
+    ]
+  },
+  {
+    "id": "ivanti-neurons-for-uem",
+    "name": "Ivanti Neurons for UEM",
+    "family": "Endpoint",
+    "summary": "Unified endpoint management for discovery, management, securing, and healing of endpoints.",
+    "whyItMatters": "Single-pane UEM for desktop, mobile, and IoT endpoints.",
+    "topicIds": [],
+    "codingIds": [],
+    "useCaseIds": [],
+    "trickyIds": []
+  },
+  {
+    "id": "ivanti-endpoint-manager",
+    "name": "Ivanti Endpoint Manager",
+    "family": "Endpoint",
+    "summary": "Client-based endpoint administration for distribution, patching, inventory, and endpoint control.",
+    "whyItMatters": "Enterprise endpoint management with software distribution and lifecycle actions.",
+    "topicIds": [
+      "device-groups-and-targeting",
+      "endpoint-troubleshooting"
+    ],
+    "codingIds": [
+      "endpoint-targeting-strategy",
+      "software-deployment-failure-triage"
+    ],
+    "useCaseIds": [
+      "pilot-based-patch-rollout",
+      "targeted-software-rollout"
+    ],
+    "trickyIds": []
+  },
+  {
+    "id": "patch-management",
+    "name": "Patch Management",
+    "family": "Endpoint",
+    "summary": "Patch assessment, staged rollout, compliance visibility, and remediation workflows.",
+    "whyItMatters": "Controlled patch deployment and risk reduction.",
+    "topicIds": [
+      "patch-rings"
+    ],
+    "codingIds": [
+      "patch-ring-rollout-design"
+    ],
+    "useCaseIds": [
+      "pilot-based-patch-rollout"
+    ],
+    "trickyIds": [
+      "patch-ring-vs-broad-rollout"
+    ]
+  },
+  {
+    "id": "software-distribution",
+    "name": "Software Distribution",
+    "family": "Endpoint",
+    "summary": "Application/package rollout, targeting, scheduling, and deployment validation.",
+    "whyItMatters": "Managed software delivery to endpoint groups.",
+    "topicIds": [
+      "software-distribution-jobs"
+    ],
+    "codingIds": [],
+    "useCaseIds": [
+      "targeted-software-rollout"
+    ],
+    "trickyIds": []
+  },
+  {
+    "id": "ivanti-neurons-for-mdm",
+    "name": "Ivanti Neurons for MDM",
+    "family": "Mobility",
+    "summary": "Modern device management across iOS, Android, macOS, ChromeOS, and Windows.",
+    "whyItMatters": "Cloud mobile device management and lifecycle control.",
+    "topicIds": [
+      "enrollment",
+      "ownership-models"
+    ],
+    "codingIds": [
+      "enrollment-troubleshooting"
+    ],
+    "useCaseIds": [
+      "byod-enrollment-program",
+      "non-compliant-device-response",
+      "managed-mobile-app-rollout"
+    ],
+    "trickyIds": [
+      "byod-vs-corporate-owned"
+    ]
+  },
+  {
+    "id": "compliance-and-policy",
+    "name": "Compliance and Policy",
+    "family": "Mobility",
+    "summary": "Policy design, compliance states, remediation, and governance across managed devices.",
+    "whyItMatters": "Rules, restrictions, and remediation for endpoint/mobile governance.",
+    "topicIds": [
+      "compliance-rules"
+    ],
+    "codingIds": [
+      "compliance-remediation-design"
+    ],
+    "useCaseIds": [
+      "byod-enrollment-program",
+      "non-compliant-device-response",
+      "managed-mobile-app-rollout"
+    ],
+    "trickyIds": [
+      "compliance-state-vs-remediation-action"
+    ]
+  },
+  {
+    "id": "mobile-app-distribution",
+    "name": "Mobile App Distribution",
+    "family": "Mobility",
+    "summary": "Managed application rollout, ownership-aware delivery, and lifecycle support.",
+    "whyItMatters": "Controlled app deployment to managed mobile devices.",
+    "topicIds": [
+      "mobile-app-deployment"
+    ],
+    "codingIds": [],
+    "useCaseIds": [
+      "managed-mobile-app-rollout"
+    ],
+    "trickyIds": []
+  },
+  {
+    "id": "ivanti-neurons-for-itam",
+    "name": "Ivanti Neurons for ITAM",
+    "family": "Asset",
+    "summary": "Lifecycle tracking, visibility, repository alignment, and cost/risk-aware asset management.",
+    "whyItMatters": "IT asset visibility from acquisition through retirement.",
+    "topicIds": [
+      "asset-lifecycle",
+      "normalization-and-reconciliation"
+    ],
+    "codingIds": [
+      "asset-reconciliation-approach"
+    ],
+    "useCaseIds": [
+      "asset-refresh-planning",
+      "discovery-reconciliation-improvement"
+    ],
+    "trickyIds": []
+  },
+  {
+    "id": "ivanti-neurons-for-discovery",
+    "name": "Ivanti Neurons for Discovery",
+    "family": "Asset",
+    "summary": "Network and endpoint discovery, normalized inventory, connectors, and visibility.",
+    "whyItMatters": "Discovery and normalized visibility into assets and services.",
+    "topicIds": [
+      "discovery-and-inventory"
+    ],
+    "codingIds": [],
+    "useCaseIds": [
+      "discovery-reconciliation-improvement"
+    ],
+    "trickyIds": [
+      "discovery-vs-itam-record"
+    ]
+  },
+  {
+    "id": "ivanti-neurons-for-grc",
+    "name": "Ivanti Neurons for GRC",
+    "family": "Governance",
+    "summary": "Authority documents, citations, controls, risks, assessments, and corrective actions.",
+    "whyItMatters": "Governance, risk, and compliance workflows.",
+    "topicIds": [
+      "controls-and-risks",
+      "authority-documents-and-citations"
+    ],
+    "codingIds": [
+      "grc-control-mapping-approach"
+    ],
+    "useCaseIds": [
+      "control-assessment-cycle"
+    ],
+    "trickyIds": []
+  },
+  {
+    "id": "ivanti-neurons-workspace",
+    "name": "Ivanti Neurons Workspace",
+    "family": "Experience",
+    "summary": "Analyst workspace for faster issue resolution with 360-degree context and quick actions.",
+    "whyItMatters": "Shift-left support experience with unified context.",
+    "topicIds": [
+      "workspace-triage"
+    ],
+    "codingIds": [
+      "workspace-quick-action-thinking"
+    ],
+    "useCaseIds": [
+      "knowledge-deflection-for-support",
+      "workspace-shift-left-triage"
+    ],
+    "trickyIds": [
+      "workspace-context-vs-ticket-notes"
+    ]
+  },
+  {
+    "id": "ivanti-neurons-ipaas",
+    "name": "Ivanti Neurons iPaaS",
+    "family": "Integrations",
+    "summary": "Low-code/no-code integration with prebuilt connectors and bidirectional workflows.",
+    "whyItMatters": "Embedded iPaaS with hundreds of connectors and workflow automation.",
+    "topicIds": [
+      "rest-api-basics",
+      "authentication-patterns",
+      "data-mapping",
+      "error-handling-and-retries"
+    ],
+    "codingIds": [
+      "rest-integration-walk-through",
+      "data-mapping-strategy",
+      "retry-and-backoff-patterns"
+    ],
+    "useCaseIds": [
+      "external-approval-sync",
+      "scheduled-report-push-to-external-endpoint"
+    ],
+    "trickyIds": [
+      "ipaas-connector-vs-custom-integration"
+    ]
+  },
+  {
+    "id": "ivanti-velocity",
+    "name": "Ivanti Velocity",
+    "family": "Frontline",
+    "summary": "Browser-based and scan-driven workflow optimization for frontline and warehouse teams.",
+    "whyItMatters": "Frontline productivity through optimized mobile/browser workflows.",
+    "topicIds": [
+      "velocity-browser-sessions",
+      "scan-first-workflow-design"
+    ],
+    "codingIds": [
+      "velocity-flow-redesign"
+    ],
+    "useCaseIds": [
+      "warehouse-picking-redesign"
+    ],
+    "trickyIds": []
+  }
+]

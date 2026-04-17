@@ -1,0 +1,1135 @@
+[
+  {
+    "id": "business-objects",
+    "name": "Business Objects",
+    "moduleId": "ivanti-neurons-for-itsm",
+    "summary": "How Ivanti models records, entities, and process data inside the platform.",
+    "questions": [
+      "What is a business object?",
+      "When would you extend or customize an object?",
+      "How does object design affect reporting and automation?"
+    ],
+    "patterns": [
+      "object structure",
+      "customization boundaries",
+      "reporting impact"
+    ],
+    "definition": "How Ivanti models records, entities, and process data inside the platform.",
+    "whyItMatters": "Interviewers often use this topic to judge whether you can connect configuration or process design to real operational outcomes.",
+    "types": [
+      "standard objects",
+      "extended/custom objects",
+      "field model considerations"
+    ],
+    "codingIds": [
+      "validation-logic-design",
+      "workflow-exception-handling"
+    ],
+    "useCaseIds": [],
+    "trickyIds": [
+      "quick-action-vs-workflow"
+    ]
+  },
+  {
+    "id": "relationships",
+    "name": "Relationships",
+    "moduleId": "ivanti-neurons-for-itsm",
+    "summary": "How records connect to each other for process flow, ownership, and reporting.",
+    "questions": [
+      "Why do relationships matter?",
+      "How do related records improve process design?",
+      "What can go wrong with weak relationship design?"
+    ],
+    "patterns": [
+      "parent-child design",
+      "traceability",
+      "cross-record navigation"
+    ],
+    "definition": "How records connect to each other for process flow, ownership, and reporting.",
+    "whyItMatters": "Interviewers often use this topic to judge whether you can connect configuration or process design to real operational outcomes.",
+    "types": [
+      "parent-child relationships",
+      "lookup/reference relationships",
+      "many-to-many style links"
+    ],
+    "codingIds": [
+      "validation-logic-design",
+      "workflow-exception-handling"
+    ],
+    "useCaseIds": [],
+    "trickyIds": [
+      "quick-action-vs-workflow"
+    ]
+  },
+  {
+    "id": "forms-and-layouts",
+    "name": "Forms and Layouts",
+    "moduleId": "ivanti-neurons-for-itsm",
+    "summary": "How user-facing record views are organized for clarity, role-based visibility, and efficiency.",
+    "questions": [
+      "How do you design a good form?",
+      "Why does layout matter for adoption?",
+      "How do you reduce clutter while preserving key data?"
+    ],
+    "patterns": [
+      "role-based views",
+      "clarity",
+      "usability"
+    ],
+    "definition": "How user-facing record views are organized for clarity, role-based visibility, and efficiency.",
+    "whyItMatters": "Interviewers often use this topic to judge whether you can connect configuration or process design to real operational outcomes.",
+    "types": [
+      "role-based layouts",
+      "data-entry optimization",
+      "context-specific visibility"
+    ],
+    "codingIds": [
+      "validation-logic-design",
+      "workflow-exception-handling"
+    ],
+    "useCaseIds": [],
+    "trickyIds": [
+      "quick-action-vs-workflow"
+    ]
+  },
+  {
+    "id": "validations",
+    "name": "Validations",
+    "moduleId": "ivanti-neurons-for-itsm",
+    "summary": "How data quality and process rules are enforced before saving or progressing work.",
+    "questions": [
+      "How do validations improve quality?",
+      "Where do you place validation logic?",
+      "How do you avoid breaking existing flows?"
+    ],
+    "patterns": [
+      "data quality",
+      "guardrails",
+      "maintainability"
+    ],
+    "definition": "How data quality and process rules are enforced before saving or progressing work.",
+    "whyItMatters": "Interviewers often use this topic to judge whether you can connect configuration or process design to real operational outcomes.",
+    "types": [
+      "required-field checks",
+      "conditional validations",
+      "process-stage validations"
+    ],
+    "codingIds": [
+      "validation-logic-design",
+      "workflow-exception-handling"
+    ],
+    "useCaseIds": [],
+    "trickyIds": [
+      "quick-action-vs-workflow"
+    ]
+  },
+  {
+    "id": "quick-actions",
+    "name": "Quick Actions",
+    "moduleId": "ivanti-neurons-for-itsm",
+    "summary": "Targeted actions for repeatable record operations such as notifications, updates, and saved-search-driven automation.",
+    "questions": [
+      "When would you use a quick action?",
+      "Quick action vs workflow: how do you choose?",
+      "How do quick actions support reporting or notifications?"
+    ],
+    "patterns": [
+      "focused automation",
+      "reusability",
+      "operational actions"
+    ],
+    "definition": "Targeted actions for repeatable record operations such as notifications, updates, and saved-search-driven automation.",
+    "whyItMatters": "Interviewers often use this topic to judge whether you can connect configuration or process design to real operational outcomes.",
+    "types": [
+      "record actions",
+      "saved-search actions",
+      "notification actions"
+    ],
+    "codingIds": [
+      "validation-logic-design",
+      "workflow-exception-handling"
+    ],
+    "useCaseIds": [],
+    "trickyIds": [
+      "quick-action-vs-workflow"
+    ]
+  },
+  {
+    "id": "workflows",
+    "name": "Workflows",
+    "moduleId": "ivanti-neurons-for-itsm",
+    "summary": "End-to-end automation for approvals, routing, escalations, and fulfillment logic.",
+    "questions": [
+      "How do you design a workflow?",
+      "How do you handle branching and approvals?",
+      "How do you test workflow edge cases?"
+    ],
+    "patterns": [
+      "approvals",
+      "branching",
+      "exception paths"
+    ],
+    "definition": "End-to-end automation for approvals, routing, escalations, and fulfillment logic.",
+    "whyItMatters": "Interviewers often use this topic to judge whether you can connect configuration or process design to real operational outcomes.",
+    "types": [
+      "approval flows",
+      "routing/assignment flows",
+      "escalation paths"
+    ],
+    "codingIds": [
+      "validation-logic-design",
+      "workflow-exception-handling"
+    ],
+    "useCaseIds": [
+      "customer-response-reactivation",
+      "multi-step-request-approvals",
+      "change-approval-and-scheduling"
+    ],
+    "trickyIds": [
+      "quick-action-vs-workflow"
+    ]
+  },
+  {
+    "id": "saved-searches",
+    "name": "Saved Searches",
+    "moduleId": "reporting-and-dashboards",
+    "summary": "Reusable filtered datasets that power dashboards, operational views, and automation.",
+    "questions": [
+      "How are saved searches used?",
+      "How do you build an effective search?",
+      "Why are saved searches useful in scheduled reporting?"
+    ],
+    "patterns": [
+      "reusability",
+      "filters",
+      "reporting foundation"
+    ],
+    "definition": "Reusable filtered datasets that power dashboards, operational views, and automation.",
+    "whyItMatters": "Interviewers often use this topic to judge whether you can connect configuration or process design to real operational outcomes.",
+    "types": [
+      "operational searches",
+      "dashboard sources",
+      "scheduled reporting inputs"
+    ],
+    "codingIds": [
+      "notification-automation-with-saved-searches"
+    ],
+    "useCaseIds": [
+      "weekly-open-incident-summary",
+      "scheduled-report-push-to-external-endpoint"
+    ],
+    "trickyIds": [
+      "saved-search-vs-dashboard"
+    ]
+  },
+  {
+    "id": "email-templates",
+    "name": "Email Templates",
+    "moduleId": "ivanti-neurons-for-itsm",
+    "summary": "Structured communication templates used in notifications, escalations, and scheduled communications.",
+    "questions": [
+      "Why do email templates matter?",
+      "What should templates include?",
+      "How do you keep communication consistent?"
+    ],
+    "patterns": [
+      "communication quality",
+      "dynamic fields",
+      "consistency"
+    ],
+    "definition": "Structured communication templates used in notifications, escalations, and scheduled communications.",
+    "whyItMatters": "Interviewers often use this topic to judge whether you can connect configuration or process design to real operational outcomes.",
+    "types": [
+      "status notifications",
+      "approval emails",
+      "scheduled summaries"
+    ],
+    "codingIds": [
+      "validation-logic-design",
+      "workflow-exception-handling"
+    ],
+    "useCaseIds": [
+      "weekly-open-incident-summary",
+      "customer-response-reactivation"
+    ],
+    "trickyIds": [
+      "quick-action-vs-workflow"
+    ]
+  },
+  {
+    "id": "escalations",
+    "name": "Escalations",
+    "moduleId": "change-management",
+    "summary": "Time- or state-driven follow-up logic that prevents work from stalling.",
+    "questions": [
+      "How do you design escalations?",
+      "What should trigger an escalation?",
+      "How do you balance noise vs visibility?"
+    ],
+    "patterns": [
+      "timing logic",
+      "thresholds",
+      "ownership"
+    ],
+    "definition": "Time- or state-driven follow-up logic that prevents work from stalling.",
+    "whyItMatters": "Interviewers often use this topic to judge whether you can connect configuration or process design to real operational outcomes.",
+    "types": [
+      "time-based escalations",
+      "state-based escalations",
+      "ownership escalations"
+    ],
+    "codingIds": [],
+    "useCaseIds": [
+      "change-approval-and-scheduling"
+    ],
+    "trickyIds": []
+  },
+  {
+    "id": "approvals",
+    "name": "Approvals",
+    "moduleId": "service-request-management",
+    "summary": "Approval paths, approver determination, and response handling for governed changes and requests.",
+    "questions": [
+      "How do you design multi-step approvals?",
+      "How do you handle approver changes?",
+      "What are common approval design mistakes?"
+    ],
+    "patterns": [
+      "sequencing",
+      "governance",
+      "fallbacks"
+    ],
+    "definition": "Approval paths, approver determination, and response handling for governed changes and requests.",
+    "whyItMatters": "Interviewers often use this topic to judge whether you can connect configuration or process design to real operational outcomes.",
+    "types": [
+      "single-step approvals",
+      "multi-step approvals",
+      "conditional approvals"
+    ],
+    "codingIds": [
+      "approval-routing-logic"
+    ],
+    "useCaseIds": [
+      "multi-step-request-approvals",
+      "change-approval-and-scheduling"
+    ],
+    "trickyIds": []
+  },
+  {
+    "id": "incident-lifecycle",
+    "name": "Incident Lifecycle",
+    "moduleId": "incident-management",
+    "summary": "Core incident process from intake through assignment, communication, resolution, and closure.",
+    "questions": [
+      "How do you explain incident lifecycle?",
+      "How do you manage ownership changes?",
+      "How do you improve resolution speed?"
+    ],
+    "patterns": [
+      "triage",
+      "communication",
+      "resolution"
+    ],
+    "definition": "Core incident process from intake through assignment, communication, resolution, and closure.",
+    "whyItMatters": "Interviewers often use this topic to judge whether you can connect configuration or process design to real operational outcomes.",
+    "types": [
+      "intake and triage",
+      "assignment and communication",
+      "resolution and closure"
+    ],
+    "codingIds": [],
+    "useCaseIds": [
+      "weekly-open-incident-summary",
+      "customer-response-reactivation",
+      "knowledge-deflection-for-support",
+      "workspace-shift-left-triage"
+    ],
+    "trickyIds": []
+  },
+  {
+    "id": "problem-lifecycle",
+    "name": "Problem Lifecycle",
+    "moduleId": "problem-management",
+    "summary": "Root-cause and known-error process for reducing recurring incidents.",
+    "questions": [
+      "What is the difference between incident and problem?",
+      "How do known errors help support?",
+      "Why do trend reviews matter?"
+    ],
+    "patterns": [
+      "prevention",
+      "root cause",
+      "trend analysis"
+    ],
+    "definition": "Root-cause and known-error process for reducing recurring incidents.",
+    "whyItMatters": "Interviewers often use this topic to judge whether you can connect configuration or process design to real operational outcomes.",
+    "types": [
+      "trend review",
+      "root cause analysis",
+      "known error management"
+    ],
+    "codingIds": [],
+    "useCaseIds": [],
+    "trickyIds": [
+      "incident-vs-problem"
+    ]
+  },
+  {
+    "id": "change-governance",
+    "name": "Change Governance",
+    "moduleId": "change-management",
+    "summary": "Risk-aware review, approvals, scheduling, and execution control for changes.",
+    "questions": [
+      "How do you assess change risk?",
+      "What makes change governance strong?",
+      "How do you explain standard vs normal changes?"
+    ],
+    "patterns": [
+      "risk awareness",
+      "control",
+      "execution discipline"
+    ],
+    "definition": "Risk-aware review, approvals, scheduling, and execution control for changes.",
+    "whyItMatters": "Interviewers often use this topic to judge whether you can connect configuration or process design to real operational outcomes.",
+    "types": [
+      "standard changes",
+      "normal changes",
+      "approval and scheduling controls"
+    ],
+    "codingIds": [],
+    "useCaseIds": [
+      "change-approval-and-scheduling"
+    ],
+    "trickyIds": []
+  },
+  {
+    "id": "request-fulfillment",
+    "name": "Request Fulfillment",
+    "moduleId": "service-request-management",
+    "summary": "The request intake and fulfillment model for catalog-style services and standard asks.",
+    "questions": [
+      "How do you structure request fulfillment?",
+      "How do approvals fit in?",
+      "How do you keep request tracking clear?"
+    ],
+    "patterns": [
+      "catalog thinking",
+      "fulfillment",
+      "visibility"
+    ],
+    "definition": "The request intake and fulfillment model for catalog-style services and standard asks.",
+    "whyItMatters": "Interviewers often use this topic to judge whether you can connect configuration or process design to real operational outcomes.",
+    "types": [
+      "catalog-style requests",
+      "approval-led requests",
+      "task-based fulfillment"
+    ],
+    "codingIds": [
+      "approval-routing-logic"
+    ],
+    "useCaseIds": [
+      "multi-step-request-approvals"
+    ],
+    "trickyIds": []
+  },
+  {
+    "id": "knowledge-lifecycle",
+    "name": "Knowledge Lifecycle",
+    "moduleId": "knowledge-management",
+    "summary": "The lifecycle for creating, reviewing, publishing, and improving knowledge content.",
+    "questions": [
+      "Why is knowledge important?",
+      "How do you keep knowledge current?",
+      "How does knowledge support shift-left?"
+    ],
+    "patterns": [
+      "authoring",
+      "review",
+      "reuse"
+    ],
+    "definition": "The lifecycle for creating, reviewing, publishing, and improving knowledge content.",
+    "whyItMatters": "Interviewers often use this topic to judge whether you can connect configuration or process design to real operational outcomes.",
+    "types": [
+      "draft/review/publish",
+      "ownership and governance",
+      "continuous improvement"
+    ],
+    "codingIds": [],
+    "useCaseIds": [
+      "knowledge-deflection-for-support",
+      "workspace-shift-left-triage"
+    ],
+    "trickyIds": [
+      "knowledge-article-vs-workaround"
+    ]
+  },
+  {
+    "id": "dashboards-and-kpis",
+    "name": "Dashboards and KPIs",
+    "moduleId": "reporting-and-dashboards",
+    "summary": "How operational metrics and dashboards support leadership visibility and continuous improvement.",
+    "questions": [
+      "Which KPIs matter?",
+      "How do dashboards help operations?",
+      "How do you avoid vanity metrics?"
+    ],
+    "patterns": [
+      "visibility",
+      "trends",
+      "decision support"
+    ],
+    "definition": "How operational metrics and dashboards support leadership visibility and continuous improvement.",
+    "whyItMatters": "Interviewers often use this topic to judge whether you can connect configuration or process design to real operational outcomes.",
+    "types": [
+      "operational KPIs",
+      "management dashboards",
+      "trend and backlog views"
+    ],
+    "codingIds": [
+      "notification-automation-with-saved-searches"
+    ],
+    "useCaseIds": [
+      "weekly-open-incident-summary",
+      "pilot-based-patch-rollout",
+      "asset-refresh-planning"
+    ],
+    "trickyIds": [
+      "saved-search-vs-dashboard"
+    ]
+  },
+  {
+    "id": "rest-api-basics",
+    "name": "REST API Basics",
+    "moduleId": "ivanti-neurons-ipaas",
+    "summary": "HTTP-based integration fundamentals, endpoints, methods, payloads, and operational reliability.",
+    "questions": [
+      "How do you explain a REST integration?",
+      "What should you validate in payloads?",
+      "How do you talk about secure API design?"
+    ],
+    "patterns": [
+      "methods",
+      "payloads",
+      "monitoring"
+    ],
+    "definition": "HTTP-based integration fundamentals, endpoints, methods, payloads, and operational reliability.",
+    "whyItMatters": "Interviewers often use this topic to judge whether you can connect configuration or process design to real operational outcomes.",
+    "types": [
+      "GET/POST/PUT/DELETE patterns",
+      "request/response design",
+      "integration monitoring"
+    ],
+    "codingIds": [
+      "rest-integration-walk-through",
+      "data-mapping-strategy",
+      "retry-and-backoff-patterns"
+    ],
+    "useCaseIds": [
+      "external-approval-sync",
+      "scheduled-report-push-to-external-endpoint"
+    ],
+    "trickyIds": [
+      "ipaas-connector-vs-custom-integration"
+    ]
+  },
+  {
+    "id": "authentication-patterns",
+    "name": "Authentication Patterns",
+    "moduleId": "ivanti-neurons-ipaas",
+    "summary": "How integrations authenticate securely using tokens, keys, or service identities.",
+    "questions": [
+      "Why does authentication design matter?",
+      "How do you reduce credential risk?",
+      "What does least privilege mean in integrations?"
+    ],
+    "patterns": [
+      "secure access",
+      "service identities",
+      "credential handling"
+    ],
+    "definition": "How integrations authenticate securely using tokens, keys, or service identities.",
+    "whyItMatters": "Interviewers often use this topic to judge whether you can connect configuration or process design to real operational outcomes.",
+    "types": [
+      "API key patterns",
+      "token-based auth",
+      "service-account governance"
+    ],
+    "codingIds": [
+      "rest-integration-walk-through",
+      "data-mapping-strategy",
+      "retry-and-backoff-patterns"
+    ],
+    "useCaseIds": [
+      "external-approval-sync",
+      "scheduled-report-push-to-external-endpoint"
+    ],
+    "trickyIds": [
+      "ipaas-connector-vs-custom-integration"
+    ]
+  },
+  {
+    "id": "data-mapping",
+    "name": "Data Mapping",
+    "moduleId": "ivanti-neurons-ipaas",
+    "summary": "Transforming fields and values between Ivanti and external systems safely and consistently.",
+    "questions": [
+      "What matters in mapping?",
+      "How do you handle nulls and defaults?",
+      "How do you prevent duplicate or bad syncs?"
+    ],
+    "patterns": [
+      "transformation",
+      "identifiers",
+      "quality"
+    ],
+    "definition": "Transforming fields and values between Ivanti and external systems safely and consistently.",
+    "whyItMatters": "Interviewers often use this topic to judge whether you can connect configuration or process design to real operational outcomes.",
+    "types": [
+      "field transformations",
+      "lookup resolution",
+      "default/null handling"
+    ],
+    "codingIds": [
+      "rest-integration-walk-through",
+      "data-mapping-strategy",
+      "retry-and-backoff-patterns"
+    ],
+    "useCaseIds": [
+      "external-approval-sync",
+      "scheduled-report-push-to-external-endpoint"
+    ],
+    "trickyIds": [
+      "ipaas-connector-vs-custom-integration"
+    ]
+  },
+  {
+    "id": "error-handling-and-retries",
+    "name": "Error Handling and Retries",
+    "moduleId": "ivanti-neurons-ipaas",
+    "summary": "Resilience patterns for automation and integrations when downstream systems fail or respond slowly.",
+    "questions": [
+      "How do you design retries?",
+      "How do you avoid duplicate execution?",
+      "What should you log?"
+    ],
+    "patterns": [
+      "retry strategy",
+      "resilience",
+      "observability"
+    ],
+    "definition": "Resilience patterns for automation and integrations when downstream systems fail or respond slowly.",
+    "whyItMatters": "Interviewers often use this topic to judge whether you can connect configuration or process design to real operational outcomes.",
+    "types": [
+      "retry logic",
+      "backoff",
+      "duplicate prevention"
+    ],
+    "codingIds": [
+      "rest-integration-walk-through",
+      "data-mapping-strategy",
+      "retry-and-backoff-patterns"
+    ],
+    "useCaseIds": [
+      "external-approval-sync",
+      "scheduled-report-push-to-external-endpoint"
+    ],
+    "trickyIds": [
+      "ipaas-connector-vs-custom-integration"
+    ]
+  },
+  {
+    "id": "device-groups-and-targeting",
+    "name": "Device Groups and Targeting",
+    "moduleId": "ivanti-endpoint-manager",
+    "summary": "Grouping endpoints for policy, patching, and deployment control.",
+    "questions": [
+      "Why are device groups important?",
+      "How do you design targeting?",
+      "What makes group drift dangerous?"
+    ],
+    "patterns": [
+      "segmentation",
+      "targeting",
+      "control"
+    ],
+    "definition": "Grouping endpoints for policy, patching, and deployment control.",
+    "whyItMatters": "Interviewers often use this topic to judge whether you can connect configuration or process design to real operational outcomes.",
+    "types": [
+      "pilot groups",
+      "departmental groups",
+      "exception/exclusion groups"
+    ],
+    "codingIds": [
+      "endpoint-targeting-strategy",
+      "software-deployment-failure-triage"
+    ],
+    "useCaseIds": [
+      "pilot-based-patch-rollout",
+      "targeted-software-rollout"
+    ],
+    "trickyIds": []
+  },
+  {
+    "id": "software-distribution-jobs",
+    "name": "Software Distribution Jobs",
+    "moduleId": "software-distribution",
+    "summary": "Packaging, scheduling, delivering, and validating software deployments to target devices.",
+    "questions": [
+      "How do you explain software distribution?",
+      "What causes deployment misses?",
+      "How do you monitor rollout success?"
+    ],
+    "patterns": [
+      "packaging",
+      "delivery",
+      "validation"
+    ],
+    "definition": "Packaging, scheduling, delivering, and validating software deployments to target devices.",
+    "whyItMatters": "Interviewers often use this topic to judge whether you can connect configuration or process design to real operational outcomes.",
+    "types": [
+      "targeting and schedules",
+      "install validation",
+      "retry/remediation"
+    ],
+    "codingIds": [],
+    "useCaseIds": [
+      "targeted-software-rollout"
+    ],
+    "trickyIds": []
+  },
+  {
+    "id": "patch-rings",
+    "name": "Patch Rings",
+    "moduleId": "patch-management",
+    "summary": "Pilot and phased patch rollout strategy to reduce risk and improve control.",
+    "questions": [
+      "Why use patch rings?",
+      "How do you choose pilot devices?",
+      "How do you decide when to expand rollout?"
+    ],
+    "patterns": [
+      "pilot waves",
+      "risk reduction",
+      "compliance"
+    ],
+    "definition": "Pilot and phased patch rollout strategy to reduce risk and improve control.",
+    "whyItMatters": "Interviewers often use this topic to judge whether you can connect configuration or process design to real operational outcomes.",
+    "types": [
+      "pilot ring",
+      "broader rollout rings",
+      "exception handling"
+    ],
+    "codingIds": [
+      "patch-ring-rollout-design"
+    ],
+    "useCaseIds": [
+      "pilot-based-patch-rollout"
+    ],
+    "trickyIds": [
+      "patch-ring-vs-broad-rollout"
+    ]
+  },
+  {
+    "id": "endpoint-troubleshooting",
+    "name": "Endpoint Troubleshooting",
+    "moduleId": "ivanti-endpoint-manager",
+    "summary": "Operational debugging for agent communication, distribution failures, and endpoint execution issues.",
+    "questions": [
+      "How do you troubleshoot failed jobs?",
+      "What do you check first?",
+      "How do you separate targeting from execution issues?"
+    ],
+    "patterns": [
+      "agent health",
+      "logs",
+      "root cause"
+    ],
+    "definition": "Operational debugging for agent communication, distribution failures, and endpoint execution issues.",
+    "whyItMatters": "Interviewers often use this topic to judge whether you can connect configuration or process design to real operational outcomes.",
+    "types": [
+      "agent health",
+      "job execution",
+      "log and status analysis"
+    ],
+    "codingIds": [
+      "endpoint-targeting-strategy",
+      "software-deployment-failure-triage"
+    ],
+    "useCaseIds": [
+      "targeted-software-rollout"
+    ],
+    "trickyIds": []
+  },
+  {
+    "id": "enrollment",
+    "name": "Enrollment",
+    "moduleId": "ivanti-neurons-for-mdm",
+    "summary": "Bringing devices under management with the right ownership model and baseline control set.",
+    "questions": [
+      "How do you explain enrollment?",
+      "What changes after enrollment?",
+      "What are common enrollment concerns?"
+    ],
+    "patterns": [
+      "onboarding",
+      "baseline control",
+      "device trust"
+    ],
+    "definition": "Bringing devices under management with the right ownership model and baseline control set.",
+    "whyItMatters": "Interviewers often use this topic to judge whether you can connect configuration or process design to real operational outcomes.",
+    "types": [
+      "corporate enrollment",
+      "BYOD enrollment",
+      "baseline post-enroll steps"
+    ],
+    "codingIds": [
+      "enrollment-troubleshooting"
+    ],
+    "useCaseIds": [
+      "byod-enrollment-program"
+    ],
+    "trickyIds": [
+      "byod-vs-corporate-owned"
+    ]
+  },
+  {
+    "id": "ownership-models",
+    "name": "Ownership Models",
+    "moduleId": "ivanti-neurons-for-mdm",
+    "summary": "Corporate-owned versus BYOD device management and the privacy/governance balance between them.",
+    "questions": [
+      "How do you explain BYOD vs corporate-owned?",
+      "How do ownership models affect policy?",
+      "Why does ownership change app strategy?"
+    ],
+    "patterns": [
+      "privacy",
+      "governance",
+      "experience"
+    ],
+    "definition": "Corporate-owned versus BYOD device management and the privacy/governance balance between them.",
+    "whyItMatters": "Interviewers often use this topic to judge whether you can connect configuration or process design to real operational outcomes.",
+    "types": [
+      "BYOD",
+      "corporate-owned personally enabled",
+      "fully corporate-owned"
+    ],
+    "codingIds": [
+      "enrollment-troubleshooting"
+    ],
+    "useCaseIds": [
+      "byod-enrollment-program",
+      "non-compliant-device-response",
+      "managed-mobile-app-rollout"
+    ],
+    "trickyIds": [
+      "byod-vs-corporate-owned"
+    ]
+  },
+  {
+    "id": "compliance-rules",
+    "name": "Compliance Rules",
+    "moduleId": "compliance-and-policy",
+    "summary": "Rules that define device compliance state and drive remediation or restriction actions.",
+    "questions": [
+      "What is a compliance rule?",
+      "What happens when a device is non-compliant?",
+      "How do you explain remediation?"
+    ],
+    "patterns": [
+      "state evaluation",
+      "remediation",
+      "governance"
+    ],
+    "definition": "Rules that define device compliance state and drive remediation or restriction actions.",
+    "whyItMatters": "Interviewers often use this topic to judge whether you can connect configuration or process design to real operational outcomes.",
+    "types": [
+      "state rules",
+      "grace periods",
+      "remediation responses"
+    ],
+    "codingIds": [
+      "compliance-remediation-design"
+    ],
+    "useCaseIds": [
+      "byod-enrollment-program",
+      "non-compliant-device-response",
+      "managed-mobile-app-rollout"
+    ],
+    "trickyIds": [
+      "compliance-state-vs-remediation-action"
+    ]
+  },
+  {
+    "id": "mobile-app-deployment",
+    "name": "Mobile App Deployment",
+    "moduleId": "mobile-app-distribution",
+    "summary": "Deploying managed applications to the right devices and user groups with visibility and supportability.",
+    "questions": [
+      "How do you plan app rollout?",
+      "How do compliance and ownership affect deployment?",
+      "How do you support failed installs?"
+    ],
+    "patterns": [
+      "targeting",
+      "rollout",
+      "support"
+    ],
+    "definition": "Deploying managed applications to the right devices and user groups with visibility and supportability.",
+    "whyItMatters": "Interviewers often use this topic to judge whether you can connect configuration or process design to real operational outcomes.",
+    "types": [
+      "required apps",
+      "available apps",
+      "version/update handling"
+    ],
+    "codingIds": [],
+    "useCaseIds": [
+      "managed-mobile-app-rollout"
+    ],
+    "trickyIds": []
+  },
+  {
+    "id": "asset-lifecycle",
+    "name": "Asset Lifecycle",
+    "moduleId": "ivanti-neurons-for-itam",
+    "summary": "Tracking assets from acquisition through assignment, refresh, and retirement.",
+    "questions": [
+      "How do you explain lifecycle?",
+      "Why do lifecycle states matter?",
+      "How does lifecycle help reporting?"
+    ],
+    "patterns": [
+      "ownership",
+      "refresh",
+      "retirement"
+    ],
+    "definition": "Tracking assets from acquisition through assignment, refresh, and retirement.",
+    "whyItMatters": "Interviewers often use this topic to judge whether you can connect configuration or process design to real operational outcomes.",
+    "types": [
+      "procure and assign",
+      "refresh",
+      "retire/dispose"
+    ],
+    "codingIds": [
+      "asset-reconciliation-approach"
+    ],
+    "useCaseIds": [
+      "asset-refresh-planning"
+    ],
+    "trickyIds": []
+  },
+  {
+    "id": "discovery-and-inventory",
+    "name": "Discovery and Inventory",
+    "moduleId": "ivanti-neurons-for-discovery",
+    "summary": "Collecting and normalizing asset visibility to improve trust in device and service data.",
+    "questions": [
+      "Why is discovery important?",
+      "What improves inventory trust?",
+      "How do you explain discovery vs asset records?"
+    ],
+    "patterns": [
+      "visibility",
+      "source data",
+      "normalized inventory"
+    ],
+    "definition": "Collecting and normalizing asset visibility to improve trust in device and service data.",
+    "whyItMatters": "Interviewers often use this topic to judge whether you can connect configuration or process design to real operational outcomes.",
+    "types": [
+      "active discovery",
+      "connector-fed discovery",
+      "normalized inventory views"
+    ],
+    "codingIds": [],
+    "useCaseIds": [
+      "discovery-reconciliation-improvement"
+    ],
+    "trickyIds": [
+      "discovery-vs-itam-record"
+    ]
+  },
+  {
+    "id": "normalization-and-reconciliation",
+    "name": "Normalization and Reconciliation",
+    "moduleId": "ivanti-neurons-for-itam",
+    "summary": "Aligning discovered, managed, and asset records into a more trustworthy operating dataset.",
+    "questions": [
+      "What is normalization?",
+      "How do you improve reconciliation?",
+      "Why do identifiers matter?"
+    ],
+    "patterns": [
+      "data trust",
+      "matching logic",
+      "deduplication"
+    ],
+    "definition": "Aligning discovered, managed, and asset records into a more trustworthy operating dataset.",
+    "whyItMatters": "Interviewers often use this topic to judge whether you can connect configuration or process design to real operational outcomes.",
+    "types": [
+      "duplicate handling",
+      "source-priority matching",
+      "identifier strategy"
+    ],
+    "codingIds": [
+      "asset-reconciliation-approach"
+    ],
+    "useCaseIds": [
+      "asset-refresh-planning",
+      "discovery-reconciliation-improvement"
+    ],
+    "trickyIds": []
+  },
+  {
+    "id": "controls-and-risks",
+    "name": "Controls and Risks",
+    "moduleId": "ivanti-neurons-for-grc",
+    "summary": "The relationship between controls, risks, assessments, and corrective actions in GRC workflows.",
+    "questions": [
+      "How do controls reduce risk?",
+      "How do you explain risk assessments?",
+      "What is corrective action tracking?"
+    ],
+    "patterns": [
+      "controls",
+      "risk language",
+      "assessments"
+    ],
+    "definition": "The relationship between controls, risks, assessments, and corrective actions in GRC workflows.",
+    "whyItMatters": "Interviewers often use this topic to judge whether you can connect configuration or process design to real operational outcomes.",
+    "types": [
+      "control definition",
+      "risk assessment",
+      "corrective actions"
+    ],
+    "codingIds": [
+      "grc-control-mapping-approach"
+    ],
+    "useCaseIds": [
+      "control-assessment-cycle"
+    ],
+    "trickyIds": []
+  },
+  {
+    "id": "authority-documents-and-citations",
+    "name": "Authority Documents and Citations",
+    "moduleId": "ivanti-neurons-for-grc",
+    "summary": "Mapping authority documents to citations and controls for traceable compliance coverage.",
+    "questions": [
+      "Why do citations matter?",
+      "How do authority documents support governance?",
+      "How do you explain traceability?"
+    ],
+    "patterns": [
+      "traceability",
+      "compliance mapping",
+      "governance"
+    ],
+    "definition": "Mapping authority documents to citations and controls for traceable compliance coverage.",
+    "whyItMatters": "Interviewers often use this topic to judge whether you can connect configuration or process design to real operational outcomes.",
+    "types": [
+      "authority sources",
+      "citations",
+      "control traceability"
+    ],
+    "codingIds": [
+      "grc-control-mapping-approach"
+    ],
+    "useCaseIds": [
+      "control-assessment-cycle"
+    ],
+    "trickyIds": []
+  },
+  {
+    "id": "workspace-triage",
+    "name": "Workspace Triage",
+    "moduleId": "ivanti-neurons-workspace",
+    "summary": "Using a unified analyst view to speed triage, action, and context-driven support decisions.",
+    "questions": [
+      "What does Workspace improve?",
+      "Why does unified context matter?",
+      "How does shift-left become easier?"
+    ],
+    "patterns": [
+      "context",
+      "triage",
+      "analyst efficiency"
+    ],
+    "definition": "Using a unified analyst view to speed triage, action, and context-driven support decisions.",
+    "whyItMatters": "Interviewers often use this topic to judge whether you can connect configuration or process design to real operational outcomes.",
+    "types": [
+      "360 context review",
+      "quick actions",
+      "resolution guidance"
+    ],
+    "codingIds": [
+      "workspace-quick-action-thinking"
+    ],
+    "useCaseIds": [
+      "knowledge-deflection-for-support",
+      "workspace-shift-left-triage"
+    ],
+    "trickyIds": [
+      "workspace-context-vs-ticket-notes"
+    ]
+  },
+  {
+    "id": "velocity-browser-sessions",
+    "name": "Velocity Browser Sessions",
+    "moduleId": "ivanti-velocity",
+    "summary": "Transforming browser workflows for frontline execution with less friction and better mobile usability.",
+    "questions": [
+      "What is a Velocity browser session?",
+      "Why does browser simplification matter?",
+      "How do you redesign a desktop-heavy flow?"
+    ],
+    "patterns": [
+      "frontline UX",
+      "browser optimization",
+      "mobile practicality"
+    ],
+    "definition": "Transforming browser workflows for frontline execution with less friction and better mobile usability.",
+    "whyItMatters": "Interviewers often use this topic to judge whether you can connect configuration or process design to real operational outcomes.",
+    "types": [
+      "screen simplification",
+      "browser prompts",
+      "frontline optimization"
+    ],
+    "codingIds": [
+      "velocity-flow-redesign"
+    ],
+    "useCaseIds": [
+      "warehouse-picking-redesign"
+    ],
+    "trickyIds": []
+  },
+  {
+    "id": "scan-first-workflow-design",
+    "name": "Scan-First Workflow Design",
+    "moduleId": "ivanti-velocity",
+    "summary": "Designing warehouse and frontline flows around scanning, prompt reduction, and execution speed.",
+    "questions": [
+      "What makes a good scan workflow?",
+      "Why reduce keystrokes?",
+      "How do you balance accuracy and speed?"
+    ],
+    "patterns": [
+      "scan-first",
+      "efficiency",
+      "error reduction"
+    ],
+    "definition": "Designing warehouse and frontline flows around scanning, prompt reduction, and execution speed.",
+    "whyItMatters": "Interviewers often use this topic to judge whether you can connect configuration or process design to real operational outcomes.",
+    "types": [
+      "scan-led tasks",
+      "prompt reduction",
+      "error prevention"
+    ],
+    "codingIds": [
+      "velocity-flow-redesign"
+    ],
+    "useCaseIds": [
+      "warehouse-picking-redesign"
+    ],
+    "trickyIds": []
+  }
+]

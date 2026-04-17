@@ -1,0 +1,238 @@
+[
+  {
+    "id": "weekly-open-incident-summary",
+    "title": "Weekly open incident summary",
+    "moduleId": "incident-management",
+    "problem": "Create a recurring summary of open incidents for operational leadership.",
+    "approach": "Use a saved search, email template, and scheduled automation to deliver the report reliably.",
+    "outcome": "Leadership gets consistent visibility without manual prep.",
+    "topicIds": [
+      "saved-searches",
+      "email-templates",
+      "incident-lifecycle",
+      "dashboards-and-kpis"
+    ],
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": "customer-response-reactivation",
+    "title": "Customer response reactivation",
+    "moduleId": "incident-management",
+    "problem": "Reactivate waiting incidents when the customer responds.",
+    "approach": "Detect the response event, update state, notify the owner, and preserve auditability.",
+    "outcome": "Support work resumes faster and customer follow-up is not lost.",
+    "topicIds": [
+      "incident-lifecycle",
+      "workflows",
+      "email-templates"
+    ],
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": "multi-step-request-approvals",
+    "title": "Multi-step request approvals",
+    "moduleId": "service-request-management",
+    "problem": "Route requests through different approvers based on request category and risk.",
+    "approach": "Use approval logic, branching, notifications, and fallback handling.",
+    "outcome": "Approvals stay structured and traceable.",
+    "topicIds": [
+      "approvals",
+      "request-fulfillment",
+      "workflows"
+    ],
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": "change-approval-and-scheduling",
+    "title": "Change approval and scheduling",
+    "moduleId": "change-management",
+    "problem": "Support governed changes with controlled approvals and execution windows.",
+    "approach": "Combine change type, approval requirements, schedule checks, and communication controls.",
+    "outcome": "Change work is better governed and lower risk.",
+    "topicIds": [
+      "change-governance",
+      "approvals",
+      "workflows"
+    ],
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": "knowledge-deflection-for-support",
+    "title": "Knowledge deflection for support",
+    "moduleId": "knowledge-management",
+    "problem": "Improve support efficiency by surfacing reusable articles during ticket handling.",
+    "approach": "Tie incident trends and agent workflows to article creation and reuse.",
+    "outcome": "Resolution becomes faster and repeat questions reduce.",
+    "topicIds": [
+      "knowledge-lifecycle",
+      "incident-lifecycle",
+      "workspace-triage"
+    ],
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": "external-approval-sync",
+    "title": "External approval sync",
+    "moduleId": "ivanti-neurons-ipaas",
+    "problem": "Keep Ivanti status synchronized with an external approval platform.",
+    "approach": "Design a secure bidirectional integration with mapping, retries, and state updates.",
+    "outcome": "Status stays aligned across systems.",
+    "topicIds": [
+      "rest-api-basics",
+      "authentication-patterns",
+      "data-mapping",
+      "error-handling-and-retries"
+    ],
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": "scheduled-report-push-to-external-endpoint",
+    "title": "Scheduled report push to external endpoint",
+    "moduleId": "ivanti-neurons-ipaas",
+    "problem": "Push recurring operational data to another platform.",
+    "approach": "Use scheduled extraction, mapping, validation, and retry/error monitoring.",
+    "outcome": "External systems receive structured data on time.",
+    "topicIds": [
+      "saved-searches",
+      "rest-api-basics",
+      "data-mapping",
+      "error-handling-and-retries"
+    ],
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": "pilot-based-patch-rollout",
+    "title": "Pilot-based patch rollout",
+    "moduleId": "patch-management",
+    "problem": "Deploy patches safely using pilot devices and phased rollout.",
+    "approach": "Use patch rings, exception tracking, and success gates before broad rollout.",
+    "outcome": "Risk is reduced while keeping progress measurable.",
+    "topicIds": [
+      "patch-rings",
+      "dashboards-and-kpis",
+      "device-groups-and-targeting"
+    ],
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": "targeted-software-rollout",
+    "title": "Targeted software rollout",
+    "moduleId": "software-distribution",
+    "problem": "Deploy software only to intended devices and validate completion.",
+    "approach": "Use carefully designed device groups, schedules, validation, and remediation.",
+    "outcome": "Deployment remains controlled and supportable.",
+    "topicIds": [
+      "software-distribution-jobs",
+      "device-groups-and-targeting",
+      "endpoint-troubleshooting"
+    ],
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": "byod-enrollment-program",
+    "title": "BYOD enrollment program",
+    "moduleId": "ivanti-neurons-for-mdm",
+    "problem": "Set up a BYOD program that balances policy with privacy.",
+    "approach": "Define ownership, enrollment path, app strategy, support guidance, and compliance behavior.",
+    "outcome": "Users can enroll while the organization maintains governance.",
+    "topicIds": [
+      "enrollment",
+      "ownership-models",
+      "compliance-rules"
+    ],
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": "non-compliant-device-response",
+    "title": "Non-compliant device response",
+    "moduleId": "compliance-and-policy",
+    "problem": "Respond consistently when a managed device violates policy.",
+    "approach": "Evaluate severity, notify the user, apply remediation/restriction, and track recovery.",
+    "outcome": "Security response is consistent and measurable.",
+    "topicIds": [
+      "compliance-rules",
+      "ownership-models"
+    ],
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": "managed-mobile-app-rollout",
+    "title": "Managed mobile app rollout",
+    "moduleId": "mobile-app-distribution",
+    "problem": "Roll out a business app to the right managed device groups.",
+    "approach": "Target by ownership/compliance, monitor installs, and support exceptions.",
+    "outcome": "Mobile rollout stays controlled and easier to support.",
+    "topicIds": [
+      "mobile-app-deployment",
+      "ownership-models",
+      "compliance-rules"
+    ],
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": "asset-refresh-planning",
+    "title": "Asset refresh planning",
+    "moduleId": "ivanti-neurons-for-itam",
+    "problem": "Identify aging assets for refresh planning and review.",
+    "approach": "Use lifecycle states, reporting, and ownership visibility to surface candidates.",
+    "outcome": "Refresh becomes data-driven.",
+    "topicIds": [
+      "asset-lifecycle",
+      "dashboards-and-kpis"
+    ],
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": "discovery-reconciliation-improvement",
+    "title": "Discovery reconciliation improvement",
+    "moduleId": "ivanti-neurons-for-discovery",
+    "problem": "Improve trust where discovered inventory and asset records do not align.",
+    "approach": "Normalize fields, review identifiers, resolve duplicates, and validate reporting.",
+    "outcome": "Inventory trust improves for operations and audit.",
+    "topicIds": [
+      "discovery-and-inventory",
+      "normalization-and-reconciliation"
+    ],
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": "control-assessment-cycle",
+    "title": "Control assessment cycle",
+    "moduleId": "ivanti-neurons-for-grc",
+    "problem": "Track an assessment from authority/citation through control review and corrective action.",
+    "approach": "Map requirements, assess controls, capture gaps, and assign corrective actions.",
+    "outcome": "Governance becomes traceable and auditable.",
+    "topicIds": [
+      "controls-and-risks",
+      "authority-documents-and-citations"
+    ],
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": "workspace-shift-left-triage",
+    "title": "Workspace shift-left triage",
+    "moduleId": "ivanti-neurons-workspace",
+    "problem": "Use unified analyst context and quick actions to reduce escalation volume.",
+    "approach": "Surface relevant context, suggest action, and document resolution patterns.",
+    "outcome": "Analysts resolve more at first touch.",
+    "topicIds": [
+      "workspace-triage",
+      "knowledge-lifecycle",
+      "incident-lifecycle"
+    ],
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": "warehouse-picking-redesign",
+    "title": "Warehouse picking redesign",
+    "moduleId": "ivanti-velocity",
+    "problem": "Simplify a warehouse picking flow that currently has too many prompts.",
+    "approach": "Reduce screens, make scanning primary, and optimize exception prompts.",
+    "outcome": "Frontline users complete work faster with fewer errors.",
+    "topicIds": [
+      "scan-first-workflow-design",
+      "velocity-browser-sessions"
+    ],
+    "difficulty": "Intermediate"
+  }
+]

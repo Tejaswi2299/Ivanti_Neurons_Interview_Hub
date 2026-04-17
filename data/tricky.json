@@ -1,0 +1,92 @@
+[
+  {
+    "id": "quick-action-vs-workflow",
+    "title": "Quick action vs workflow",
+    "topicId": "quick-actions",
+    "summary": "Know that quick actions are focused repeatable operations, while workflows coordinate broader multi-step process logic.",
+    "answer": "Use quick actions for targeted actions; use workflows for multi-step orchestration.",
+    "difficulty": "Intermediate",
+    "moduleId": "ivanti-neurons-for-itsm"
+  },
+  {
+    "id": "incident-vs-problem",
+    "title": "Incident vs problem",
+    "topicId": "problem-lifecycle",
+    "summary": "Incidents restore service now; problems focus on root cause and recurrence reduction.",
+    "answer": "Different process goals, timelines, and outputs.",
+    "difficulty": "Intermediate",
+    "moduleId": "problem-management"
+  },
+  {
+    "id": "byod-vs-corporate-owned",
+    "title": "BYOD vs corporate-owned",
+    "topicId": "ownership-models",
+    "summary": "Ownership changes policy scope, privacy expectations, and app/control strategy.",
+    "answer": "Anchor your answer in governance and user experience.",
+    "difficulty": "Intermediate",
+    "moduleId": "ivanti-neurons-for-mdm"
+  },
+  {
+    "id": "discovery-vs-itam-record",
+    "title": "Discovery vs ITAM record",
+    "topicId": "discovery-and-inventory",
+    "summary": "Discovery finds and normalizes what exists; ITAM governs lifecycle, ownership, and financial context.",
+    "answer": "Explain visibility vs lifecycle governance.",
+    "difficulty": "Intermediate",
+    "moduleId": "ivanti-neurons-for-discovery"
+  },
+  {
+    "id": "patch-ring-vs-broad-rollout",
+    "title": "Patch ring vs broad rollout",
+    "topicId": "patch-rings",
+    "summary": "Patch rings reduce risk through staged validation; broad rollout trades speed for more risk.",
+    "answer": "Always frame this as risk-aware deployment.",
+    "difficulty": "Intermediate",
+    "moduleId": "patch-management"
+  },
+  {
+    "id": "saved-search-vs-dashboard",
+    "title": "Saved search vs dashboard",
+    "topicId": "saved-searches",
+    "summary": "Saved searches are reusable filtered datasets; dashboards are presentation surfaces using those datasets.",
+    "answer": "Dataset vs visualization/use surface.",
+    "difficulty": "Intermediate",
+    "moduleId": "reporting-and-dashboards"
+  },
+  {
+    "id": "knowledge-article-vs-workaround",
+    "title": "Knowledge article vs workaround",
+    "topicId": "knowledge-lifecycle",
+    "summary": "A workaround may become part of knowledge, but knowledge must be curated, reviewed, and reusable.",
+    "answer": "Operational hint vs governed support content.",
+    "difficulty": "Intermediate",
+    "moduleId": "knowledge-management"
+  },
+  {
+    "id": "compliance-state-vs-remediation-action",
+    "title": "Compliance state vs remediation action",
+    "topicId": "compliance-rules",
+    "summary": "State evaluation marks a device non-compliant; remediation defines what happens next.",
+    "answer": "Detection vs response.",
+    "difficulty": "Intermediate",
+    "moduleId": "compliance-and-policy"
+  },
+  {
+    "id": "ipaas-connector-vs-custom-integration",
+    "title": "iPaaS connector vs custom integration",
+    "topicId": "rest-api-basics",
+    "summary": "Connectors accelerate low-code delivery, but custom logic may still be needed for special mapping or control.",
+    "answer": "Prebuilt acceleration vs custom fit.",
+    "difficulty": "Intermediate",
+    "moduleId": "ivanti-neurons-ipaas"
+  },
+  {
+    "id": "workspace-context-vs-ticket-notes",
+    "title": "Workspace context vs ticket notes",
+    "topicId": "workspace-triage",
+    "summary": "Workspace context unifies device/user/app/service signals, while notes are manual record content.",
+    "answer": "Live operational context vs human-authored record history.",
+    "difficulty": "Intermediate",
+    "moduleId": "ivanti-neurons-workspace"
+  }
+]

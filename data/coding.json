@@ -1,0 +1,226 @@
+[
+  {
+    "id": "rest-integration-walk-through",
+    "title": "REST integration walk-through",
+    "topicId": "rest-api-basics",
+    "summary": "Explain endpoints, auth, payloads, validation, logging, and retries in a simple interview-ready flow.",
+    "questions": [
+      "How would you explain a REST integration end to end?",
+      "What do you validate before calling an API?"
+    ],
+    "area": "Integration",
+    "moduleId": "ivanti-neurons-ipaas",
+    "difficulty": "Intermediate",
+    "codeSnippet": "POST /api/example\\nHeaders: Authorization, Content-Type\\nValidate payload -> send -> handle response -> log outcome"
+  },
+  {
+    "id": "notification-automation-with-saved-searches",
+    "title": "Notification automation with saved searches",
+    "topicId": "saved-searches",
+    "summary": "Describe how saved searches, email templates, and scheduled actions combine for recurring communications.",
+    "questions": [
+      "How do you send a weekly open-ticket summary?",
+      "How do you avoid sending the wrong audience?"
+    ],
+    "area": "ITSM",
+    "moduleId": "reporting-and-dashboards",
+    "difficulty": "Beginner",
+    "codeSnippet": "savedSearch -> emailTemplate -> scheduled action -> recipient validation"
+  },
+  {
+    "id": "approval-routing-logic",
+    "title": "Approval routing logic",
+    "topicId": "approvals",
+    "summary": "Talk through branching approvals, approver determination, fallback handling, and communication design.",
+    "questions": [
+      "How do you route approvals by request type?",
+      "What happens when an approver is unavailable?"
+    ],
+    "area": "ITSM",
+    "moduleId": "service-request-management",
+    "difficulty": "Beginner",
+    "codeSnippet": "if request.type == 'High Risk': approvers = CAB\\nelse: approvers = manager"
+  },
+  {
+    "id": "validation-logic-design",
+    "title": "Validation logic design",
+    "topicId": "validations",
+    "summary": "Describe how to place and scope validations so they protect data without breaking good user flow.",
+    "questions": [
+      "Where do you place validation logic?",
+      "How do you keep validation maintainable?"
+    ],
+    "area": "ITSM",
+    "moduleId": "ivanti-neurons-for-itsm",
+    "difficulty": "Beginner",
+    "codeSnippet": "if missing required value for current stage: block save and show clear message"
+  },
+  {
+    "id": "workflow-exception-handling",
+    "title": "Workflow exception handling",
+    "topicId": "workflows",
+    "summary": "Explain how you design for failed steps, missing data, rejected approvals, and manual recovery paths.",
+    "questions": [
+      "How do you handle workflow exceptions?",
+      "What should be logged for automation troubleshooting?"
+    ],
+    "area": "Automation",
+    "moduleId": "ivanti-neurons-for-itsm",
+    "difficulty": "Beginner",
+    "codeSnippet": "on failure -> capture context -> alert owner -> route to manual recovery path"
+  },
+  {
+    "id": "data-mapping-strategy",
+    "title": "Data mapping strategy",
+    "topicId": "data-mapping",
+    "summary": "Discuss identifiers, transformation, defaults, null handling, and reconciliation-safe updates.",
+    "questions": [
+      "What matters most in data mapping?",
+      "How do you avoid duplicate creation?"
+    ],
+    "area": "Integrations",
+    "moduleId": "ivanti-neurons-ipaas",
+    "difficulty": "Beginner",
+    "codeSnippet": "target.status = mapStatus(source.status)\\nif missing identifier -> hold for review"
+  },
+  {
+    "id": "retry-and-backoff-patterns",
+    "title": "Retry and backoff patterns",
+    "topicId": "error-handling-and-retries",
+    "summary": "Describe safe retries, backoff, duplicate prevention, and alerting.",
+    "questions": [
+      "When should you retry?",
+      "How do you avoid duplicate side effects?"
+    ],
+    "area": "Integrations",
+    "moduleId": "ivanti-neurons-ipaas",
+    "difficulty": "Beginner",
+    "codeSnippet": "retry 3 times with backoff; stop on permanent failure; log correlation id"
+  },
+  {
+    "id": "endpoint-targeting-strategy",
+    "title": "Endpoint targeting strategy",
+    "topicId": "device-groups-and-targeting",
+    "summary": "Explain group design, pilot selection, exclusions, and change control for endpoint actions.",
+    "questions": [
+      "How do you design targeting groups?",
+      "Why are exclusions important?"
+    ],
+    "area": "Endpoint",
+    "moduleId": "ivanti-endpoint-manager",
+    "difficulty": "Intermediate",
+    "codeSnippet": "target = pilot_group + business_group - exclusion_group"
+  },
+  {
+    "id": "patch-ring-rollout-design",
+    "title": "Patch ring rollout design",
+    "topicId": "patch-rings",
+    "summary": "Discuss pilot devices, success gates, exceptions, and phased deployment decision making.",
+    "questions": [
+      "How do you decide when to move from pilot to broad rollout?",
+      "What metrics matter in patch rollout?"
+    ],
+    "area": "Endpoint",
+    "moduleId": "patch-management",
+    "difficulty": "Intermediate",
+    "codeSnippet": "pilot -> wave1 -> wave2 with gates on success rate and critical failures"
+  },
+  {
+    "id": "software-deployment-failure-triage",
+    "title": "Software deployment failure triage",
+    "topicId": "endpoint-troubleshooting",
+    "summary": "Walk through logs, targeting, packaging, agent state, and remediation actions.",
+    "questions": [
+      "How do you troubleshoot a failed software rollout?",
+      "What do you check first?"
+    ],
+    "area": "Endpoint",
+    "moduleId": "ivanti-endpoint-manager",
+    "difficulty": "Intermediate",
+    "codeSnippet": "check target, package, agent, log, exit code, connectivity"
+  },
+  {
+    "id": "enrollment-troubleshooting",
+    "title": "Enrollment troubleshooting",
+    "topicId": "enrollment",
+    "summary": "Explain common enrollment blockers, ownership mismatches, and baseline policy issues.",
+    "questions": [
+      "What are common enrollment failures?",
+      "How do you verify a successful enroll?"
+    ],
+    "area": "Mobility",
+    "moduleId": "ivanti-neurons-for-mdm",
+    "difficulty": "Beginner",
+    "codeSnippet": "verify ownership, profile, connectivity, enrollment status, baseline policy"
+  },
+  {
+    "id": "compliance-remediation-design",
+    "title": "Compliance remediation design",
+    "topicId": "compliance-rules",
+    "summary": "Describe user notifications, grace periods, restrictions, and recovery flows.",
+    "questions": [
+      "How do you respond to a non-compliant device?",
+      "How do you balance security and usability?"
+    ],
+    "area": "Mobility",
+    "moduleId": "compliance-and-policy",
+    "difficulty": "Beginner",
+    "codeSnippet": "notify -> grace period -> restrict/remediate -> confirm return to compliant"
+  },
+  {
+    "id": "asset-reconciliation-approach",
+    "title": "Asset reconciliation approach",
+    "topicId": "normalization-and-reconciliation",
+    "summary": "Explain matching logic, duplicate handling, source priority, and data trust improvement.",
+    "questions": [
+      "How do you improve reconciliation quality?",
+      "What fields make strong identifiers?"
+    ],
+    "area": "Asset",
+    "moduleId": "ivanti-neurons-for-itam",
+    "difficulty": "Beginner",
+    "codeSnippet": "match on serial/device id -> normalize names -> merge duplicates cautiously"
+  },
+  {
+    "id": "grc-control-mapping-approach",
+    "title": "GRC control mapping approach",
+    "topicId": "controls-and-risks",
+    "summary": "Discuss how controls map to citations, risks, assessments, and follow-up actions.",
+    "questions": [
+      "How do you explain control mapping?",
+      "How do corrective actions close the loop?"
+    ],
+    "area": "GRC",
+    "moduleId": "ivanti-neurons-for-grc",
+    "difficulty": "Beginner",
+    "codeSnippet": "authority -> citation -> control -> assessment -> action"
+  },
+  {
+    "id": "workspace-quick-action-thinking",
+    "title": "Workspace quick-action thinking",
+    "topicId": "workspace-triage",
+    "summary": "Explain how analysts use context and quick actions to shorten time to resolution.",
+    "questions": [
+      "How does Workspace support shift-left?",
+      "Why does context matter in triage?"
+    ],
+    "area": "Experience",
+    "moduleId": "ivanti-neurons-workspace",
+    "difficulty": "Beginner",
+    "codeSnippet": "review 360 context -> trigger quick action -> document outcome"
+  },
+  {
+    "id": "velocity-flow-redesign",
+    "title": "Velocity flow redesign",
+    "topicId": "scan-first-workflow-design",
+    "summary": "Describe how to redesign frontline work with fewer prompts and better scan-first execution.",
+    "questions": [
+      "How do you simplify a warehouse workflow?",
+      "What makes a good scan-first experience?"
+    ],
+    "area": "Frontline",
+    "moduleId": "ivanti-velocity",
+    "difficulty": "Beginner",
+    "codeSnippet": "reduce prompts; make scan primary; optimize exception flow"
+  }
+]
