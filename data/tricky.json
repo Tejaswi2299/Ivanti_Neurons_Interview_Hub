@@ -6,7 +6,18 @@
     "summary": "Know that quick actions are focused repeatable operations, while workflows coordinate broader multi-step process logic.",
     "answer": "Use quick actions for targeted actions; use workflows for multi-step orchestration.",
     "difficulty": "Intermediate",
-    "moduleId": "ivanti-neurons-for-itsm"
+    "moduleId": "ivanti-neurons-for-itsm",
+    "whyPeopleConfuseThis": "Candidates often confuse these concepts because both show up around Quick Actions and can sound similar when explained too quickly.",
+    "howToAnswerClearly": "Define each side in one sentence, state the real difference, then give one simple practical example.",
+    "example": "In an interview, explain how this distinction changes design choices, governance, or troubleshooting in Ivanti Neurons for ITSM.",
+    "watchOut": "Do not answer with only a label comparison. The interviewer usually wants the impact on implementation or support.",
+    "priority": "Core",
+    "answerFramework": [
+      "Name both concepts clearly.",
+      "State the real difference in one sentence.",
+      "Give a practical example or decision rule.",
+      "End with the watch-out point."
+    ]
   },
   {
     "id": "incident-vs-problem",
@@ -15,7 +26,18 @@
     "summary": "Incidents restore service now; problems focus on root cause and recurrence reduction.",
     "answer": "Different process goals, timelines, and outputs.",
     "difficulty": "Intermediate",
-    "moduleId": "problem-management"
+    "moduleId": "problem-management",
+    "whyPeopleConfuseThis": "Candidates often confuse these concepts because both show up around Problem Lifecycle and can sound similar when explained too quickly.",
+    "howToAnswerClearly": "Define each side in one sentence, state the real difference, then give one simple practical example.",
+    "example": "In an interview, explain how this distinction changes design choices, governance, or troubleshooting in Problem Management.",
+    "watchOut": "Do not answer with only a label comparison. The interviewer usually wants the impact on implementation or support.",
+    "priority": "Important",
+    "answerFramework": [
+      "Name both concepts clearly.",
+      "State the real difference in one sentence.",
+      "Give a practical example or decision rule.",
+      "End with the watch-out point."
+    ]
   },
   {
     "id": "byod-vs-corporate-owned",
@@ -24,7 +46,18 @@
     "summary": "Ownership changes policy scope, privacy expectations, and app/control strategy.",
     "answer": "Anchor your answer in governance and user experience.",
     "difficulty": "Intermediate",
-    "moduleId": "ivanti-neurons-for-mdm"
+    "moduleId": "ivanti-neurons-for-mdm",
+    "whyPeopleConfuseThis": "Candidates often confuse these concepts because both show up around Ownership Models and can sound similar when explained too quickly.",
+    "howToAnswerClearly": "Define each side in one sentence, state the real difference, then give one simple practical example.",
+    "example": "In an interview, explain how this distinction changes design choices, governance, or troubleshooting in Ivanti Neurons for MDM.",
+    "watchOut": "Do not answer with only a label comparison. The interviewer usually wants the impact on implementation or support.",
+    "priority": "Important",
+    "answerFramework": [
+      "Name both concepts clearly.",
+      "State the real difference in one sentence.",
+      "Give a practical example or decision rule.",
+      "End with the watch-out point."
+    ]
   },
   {
     "id": "discovery-vs-itam-record",
@@ -33,7 +66,18 @@
     "summary": "Discovery finds and normalizes what exists; ITAM governs lifecycle, ownership, and financial context.",
     "answer": "Explain visibility vs lifecycle governance.",
     "difficulty": "Intermediate",
-    "moduleId": "ivanti-neurons-for-discovery"
+    "moduleId": "ivanti-neurons-for-discovery",
+    "whyPeopleConfuseThis": "Candidates often confuse these concepts because both show up around Discovery and Inventory and can sound similar when explained too quickly.",
+    "howToAnswerClearly": "Define each side in one sentence, state the real difference, then give one simple practical example.",
+    "example": "In an interview, explain how this distinction changes design choices, governance, or troubleshooting in Ivanti Neurons for Discovery.",
+    "watchOut": "Do not answer with only a label comparison. The interviewer usually wants the impact on implementation or support.",
+    "priority": "Important",
+    "answerFramework": [
+      "Name both concepts clearly.",
+      "State the real difference in one sentence.",
+      "Give a practical example or decision rule.",
+      "End with the watch-out point."
+    ]
   },
   {
     "id": "patch-ring-vs-broad-rollout",
@@ -42,7 +86,18 @@
     "summary": "Patch rings reduce risk through staged validation; broad rollout trades speed for more risk.",
     "answer": "Always frame this as risk-aware deployment.",
     "difficulty": "Intermediate",
-    "moduleId": "patch-management"
+    "moduleId": "patch-management",
+    "whyPeopleConfuseThis": "Candidates often confuse these concepts because both show up around Patch Rings and can sound similar when explained too quickly.",
+    "howToAnswerClearly": "Define each side in one sentence, state the real difference, then give one simple practical example.",
+    "example": "In an interview, explain how this distinction changes design choices, governance, or troubleshooting in Patch Management.",
+    "watchOut": "Do not answer with only a label comparison. The interviewer usually wants the impact on implementation or support.",
+    "priority": "Important",
+    "answerFramework": [
+      "Name both concepts clearly.",
+      "State the real difference in one sentence.",
+      "Give a practical example or decision rule.",
+      "End with the watch-out point."
+    ]
   },
   {
     "id": "saved-search-vs-dashboard",
@@ -51,7 +106,18 @@
     "summary": "Saved searches are reusable filtered datasets; dashboards are presentation surfaces using those datasets.",
     "answer": "Dataset vs visualization/use surface.",
     "difficulty": "Intermediate",
-    "moduleId": "reporting-and-dashboards"
+    "moduleId": "reporting-and-dashboards",
+    "whyPeopleConfuseThis": "Candidates often confuse these concepts because both show up around Saved Searches and can sound similar when explained too quickly.",
+    "howToAnswerClearly": "Define each side in one sentence, state the real difference, then give one simple practical example.",
+    "example": "In an interview, explain how this distinction changes design choices, governance, or troubleshooting in Reporting and Dashboards.",
+    "watchOut": "Do not answer with only a label comparison. The interviewer usually wants the impact on implementation or support.",
+    "priority": "Core",
+    "answerFramework": [
+      "Name both concepts clearly.",
+      "State the real difference in one sentence.",
+      "Give a practical example or decision rule.",
+      "End with the watch-out point."
+    ]
   },
   {
     "id": "knowledge-article-vs-workaround",
@@ -60,7 +126,18 @@
     "summary": "A workaround may become part of knowledge, but knowledge must be curated, reviewed, and reusable.",
     "answer": "Operational hint vs governed support content.",
     "difficulty": "Intermediate",
-    "moduleId": "knowledge-management"
+    "moduleId": "knowledge-management",
+    "whyPeopleConfuseThis": "Candidates often confuse these concepts because both show up around Knowledge Lifecycle and can sound similar when explained too quickly.",
+    "howToAnswerClearly": "Define each side in one sentence, state the real difference, then give one simple practical example.",
+    "example": "In an interview, explain how this distinction changes design choices, governance, or troubleshooting in Knowledge Management.",
+    "watchOut": "Do not answer with only a label comparison. The interviewer usually wants the impact on implementation or support.",
+    "priority": "Important",
+    "answerFramework": [
+      "Name both concepts clearly.",
+      "State the real difference in one sentence.",
+      "Give a practical example or decision rule.",
+      "End with the watch-out point."
+    ]
   },
   {
     "id": "compliance-state-vs-remediation-action",
@@ -69,7 +146,18 @@
     "summary": "State evaluation marks a device non-compliant; remediation defines what happens next.",
     "answer": "Detection vs response.",
     "difficulty": "Intermediate",
-    "moduleId": "compliance-and-policy"
+    "moduleId": "compliance-and-policy",
+    "whyPeopleConfuseThis": "Candidates often confuse these concepts because both show up around Compliance Rules and can sound similar when explained too quickly.",
+    "howToAnswerClearly": "Define each side in one sentence, state the real difference, then give one simple practical example.",
+    "example": "In an interview, explain how this distinction changes design choices, governance, or troubleshooting in Compliance and Policy.",
+    "watchOut": "Do not answer with only a label comparison. The interviewer usually wants the impact on implementation or support.",
+    "priority": "Core",
+    "answerFramework": [
+      "Name both concepts clearly.",
+      "State the real difference in one sentence.",
+      "Give a practical example or decision rule.",
+      "End with the watch-out point."
+    ]
   },
   {
     "id": "ipaas-connector-vs-custom-integration",
@@ -78,7 +166,18 @@
     "summary": "Connectors accelerate low-code delivery, but custom logic may still be needed for special mapping or control.",
     "answer": "Prebuilt acceleration vs custom fit.",
     "difficulty": "Intermediate",
-    "moduleId": "ivanti-neurons-ipaas"
+    "moduleId": "ivanti-neurons-ipaas",
+    "whyPeopleConfuseThis": "Candidates often confuse these concepts because both show up around REST API Basics and can sound similar when explained too quickly.",
+    "howToAnswerClearly": "Define each side in one sentence, state the real difference, then give one simple practical example.",
+    "example": "In an interview, explain how this distinction changes design choices, governance, or troubleshooting in Ivanti Neurons iPaaS.",
+    "watchOut": "Do not answer with only a label comparison. The interviewer usually wants the impact on implementation or support.",
+    "priority": "Core",
+    "answerFramework": [
+      "Name both concepts clearly.",
+      "State the real difference in one sentence.",
+      "Give a practical example or decision rule.",
+      "End with the watch-out point."
+    ]
   },
   {
     "id": "workspace-context-vs-ticket-notes",
@@ -87,6 +186,577 @@
     "summary": "Workspace context unifies device/user/app/service signals, while notes are manual record content.",
     "answer": "Live operational context vs human-authored record history.",
     "difficulty": "Intermediate",
-    "moduleId": "ivanti-neurons-workspace"
+    "moduleId": "ivanti-neurons-workspace",
+    "whyPeopleConfuseThis": "Candidates often confuse these concepts because both show up around Workspace Triage and can sound similar when explained too quickly.",
+    "howToAnswerClearly": "Define each side in one sentence, state the real difference, then give one simple practical example.",
+    "example": "In an interview, explain how this distinction changes design choices, governance, or troubleshooting in Ivanti Neurons Workspace.",
+    "watchOut": "Do not answer with only a label comparison. The interviewer usually wants the impact on implementation or support.",
+    "priority": "Important",
+    "answerFramework": [
+      "Name both concepts clearly.",
+      "State the real difference in one sentence.",
+      "Give a practical example or decision rule.",
+      "End with the watch-out point."
+    ]
+  },
+  {
+    "id": "incident-vs-service-request",
+    "title": "Incident vs service request",
+    "topicId": "incident-lifecycle",
+    "summary": "An incident restores normal service after disruption; a service request delivers a planned need or access request.",
+    "answer": "Use incident when something is broken or degraded; use request when the user needs a standard service or item.",
+    "difficulty": "Beginner",
+    "moduleId": "incident-management",
+    "whyPeopleConfuseThis": "Candidates often confuse these concepts because both show up around Incident Lifecycle and can sound similar when explained too quickly.",
+    "howToAnswerClearly": "Define each side in one sentence, state the real difference, then give one simple practical example.",
+    "example": "In an interview, explain how this distinction changes design choices, governance, or troubleshooting in Incident Management.",
+    "watchOut": "Do not answer with only a label comparison. The interviewer usually wants the impact on implementation or support.",
+    "priority": "Core",
+    "answerFramework": [
+      "Name both concepts clearly.",
+      "State the real difference in one sentence.",
+      "Give a practical example or decision rule.",
+      "End with the watch-out point."
+    ]
+  },
+  {
+    "id": "problem-vs-known-error",
+    "title": "Problem vs known error",
+    "topicId": "problem-lifecycle",
+    "summary": "A problem is under investigation; a known error is a documented cause or workaround that teams can reuse.",
+    "answer": "Use problem records for root-cause management; use known-error thinking when the cause or workaround is identified and shared.",
+    "difficulty": "Intermediate",
+    "moduleId": "problem-management",
+    "whyPeopleConfuseThis": "Candidates often confuse these concepts because both show up around Problem Lifecycle and can sound similar when explained too quickly.",
+    "howToAnswerClearly": "Define each side in one sentence, state the real difference, then give one simple practical example.",
+    "example": "In an interview, explain how this distinction changes design choices, governance, or troubleshooting in Problem Management.",
+    "watchOut": "Do not answer with only a label comparison. The interviewer usually wants the impact on implementation or support.",
+    "priority": "Important",
+    "answerFramework": [
+      "Name both concepts clearly.",
+      "State the real difference in one sentence.",
+      "Give a practical example or decision rule.",
+      "End with the watch-out point."
+    ]
+  },
+  {
+    "id": "standard-vs-normal-change",
+    "title": "Standard vs normal change",
+    "topicId": "change-governance",
+    "summary": "Standard changes are pre-approved repeatable changes; normal changes follow risk-based approval and scheduling.",
+    "answer": "Standard changes are repeatable and low-risk; normal changes need explicit review, approval, and scheduling based on risk.",
+    "difficulty": "Intermediate",
+    "moduleId": "change-management",
+    "whyPeopleConfuseThis": "Candidates often confuse these concepts because both show up around Change Governance and can sound similar when explained too quickly.",
+    "howToAnswerClearly": "Define each side in one sentence, state the real difference, then give one simple practical example.",
+    "example": "In an interview, explain how this distinction changes design choices, governance, or troubleshooting in Change Management.",
+    "watchOut": "Do not answer with only a label comparison. The interviewer usually wants the impact on implementation or support.",
+    "priority": "Important",
+    "answerFramework": [
+      "Name both concepts clearly.",
+      "State the real difference in one sentence.",
+      "Give a practical example or decision rule.",
+      "End with the watch-out point."
+    ]
+  },
+  {
+    "id": "approval-vs-fulfillment-task",
+    "title": "Approval vs fulfillment task",
+    "topicId": "approvals",
+    "summary": "Approvals govern permission to proceed; fulfillment tasks represent the work performed after approval.",
+    "answer": "Approval is a control point; fulfillment tasks are execution steps after authorization is granted.",
+    "difficulty": "Intermediate",
+    "moduleId": "service-request-management",
+    "whyPeopleConfuseThis": "Candidates often confuse these concepts because both show up around Approvals and can sound similar when explained too quickly.",
+    "howToAnswerClearly": "Define each side in one sentence, state the real difference, then give one simple practical example.",
+    "example": "In an interview, explain how this distinction changes design choices, governance, or troubleshooting in Service Request Management.",
+    "watchOut": "Do not answer with only a label comparison. The interviewer usually wants the impact on implementation or support.",
+    "priority": "Important",
+    "answerFramework": [
+      "Name both concepts clearly.",
+      "State the real difference in one sentence.",
+      "Give a practical example or decision rule.",
+      "End with the watch-out point."
+    ]
+  },
+  {
+    "id": "uem-vs-endpoint-manager",
+    "title": "UEM vs Endpoint Manager",
+    "topicId": "device-groups-and-targeting",
+    "summary": "UEM is Ivanti\u2019s cloud-based single-pane approach, while Endpoint Manager is a client-based endpoint platform with deep device operations.",
+    "answer": "Describe UEM as cloud-based unified management and Endpoint Manager as the client-based endpoint management platform for operational control.",
+    "difficulty": "Intermediate",
+    "moduleId": "ivanti-neurons-for-uem",
+    "whyPeopleConfuseThis": "Candidates often confuse these concepts because both show up around Device Groups and Targeting and can sound similar when explained too quickly.",
+    "howToAnswerClearly": "Define each side in one sentence, state the real difference, then give one simple practical example.",
+    "example": "In an interview, explain how this distinction changes design choices, governance, or troubleshooting in Ivanti Neurons for UEM.",
+    "watchOut": "Do not answer with only a label comparison. The interviewer usually wants the impact on implementation or support.",
+    "priority": "Important",
+    "answerFramework": [
+      "Name both concepts clearly.",
+      "State the real difference in one sentence.",
+      "Give a practical example or decision rule.",
+      "End with the watch-out point."
+    ]
+  },
+  {
+    "id": "distribution-vs-app-distribution",
+    "title": "Software distribution vs mobile app distribution",
+    "topicId": "software-distribution-jobs",
+    "summary": "Endpoint software distribution and mobile app distribution solve similar rollout problems but for different management planes and devices.",
+    "answer": "Use endpoint software distribution for managed client devices; use mobile app distribution for managed mobile devices and app storefront flows.",
+    "difficulty": "Intermediate",
+    "moduleId": "software-distribution",
+    "whyPeopleConfuseThis": "Candidates often confuse these concepts because both show up around Software Distribution Jobs and can sound similar when explained too quickly.",
+    "howToAnswerClearly": "Define each side in one sentence, state the real difference, then give one simple practical example.",
+    "example": "In an interview, explain how this distinction changes design choices, governance, or troubleshooting in Software Distribution.",
+    "watchOut": "Do not answer with only a label comparison. The interviewer usually wants the impact on implementation or support.",
+    "priority": "Important",
+    "answerFramework": [
+      "Name both concepts clearly.",
+      "State the real difference in one sentence.",
+      "Give a practical example or decision rule.",
+      "End with the watch-out point."
+    ]
+  },
+  {
+    "id": "itam-vs-discovery",
+    "title": "ITAM repository vs Discovery data",
+    "topicId": "normalization-and-reconciliation",
+    "summary": "Discovery finds and normalizes what is seen on the estate; ITAM governs lifecycle, ownership, financial and contract context.",
+    "answer": "Discovery improves visibility, while ITAM provides the managed lifecycle and business context for those assets.",
+    "difficulty": "Intermediate",
+    "moduleId": "ivanti-neurons-for-itam",
+    "whyPeopleConfuseThis": "Candidates often confuse these concepts because both show up around Normalization and Reconciliation and can sound similar when explained too quickly.",
+    "howToAnswerClearly": "Define each side in one sentence, state the real difference, then give one simple practical example.",
+    "example": "In an interview, explain how this distinction changes design choices, governance, or troubleshooting in Ivanti Neurons for ITAM.",
+    "watchOut": "Do not answer with only a label comparison. The interviewer usually wants the impact on implementation or support.",
+    "priority": "Important",
+    "answerFramework": [
+      "Name both concepts clearly.",
+      "State the real difference in one sentence.",
+      "Give a practical example or decision rule.",
+      "End with the watch-out point."
+    ]
+  },
+  {
+    "id": "citation-vs-control",
+    "title": "Citation vs control",
+    "topicId": "authority-documents-and-citations",
+    "summary": "A citation is a requirement from an authority source; a control is the organizational measure used to satisfy that requirement.",
+    "answer": "Map citations from authority documents to controls so compliance work can be assessed and evidenced consistently.",
+    "difficulty": "Intermediate",
+    "moduleId": "ivanti-neurons-for-grc",
+    "whyPeopleConfuseThis": "Candidates often confuse these concepts because both show up around Authority Documents and Citations and can sound similar when explained too quickly.",
+    "howToAnswerClearly": "Define each side in one sentence, state the real difference, then give one simple practical example.",
+    "example": "In an interview, explain how this distinction changes design choices, governance, or troubleshooting in Ivanti Neurons for GRC.",
+    "watchOut": "Do not answer with only a label comparison. The interviewer usually wants the impact on implementation or support.",
+    "priority": "Important",
+    "answerFramework": [
+      "Name both concepts clearly.",
+      "State the real difference in one sentence.",
+      "Give a practical example or decision rule.",
+      "End with the watch-out point."
+    ]
+  },
+  {
+    "id": "workspace-vs-service-desk-notes",
+    "title": "Workspace context vs ticket notes",
+    "topicId": "workspace-triage",
+    "summary": "Workspace provides live context and actions, while ticket notes capture the incident record and communication history.",
+    "answer": "Use Workspace for actionable real-time context and ticket notes for historical record-keeping.",
+    "difficulty": "Intermediate",
+    "moduleId": "ivanti-neurons-workspace",
+    "whyPeopleConfuseThis": "Candidates often confuse these concepts because both show up around Workspace Triage and can sound similar when explained too quickly.",
+    "howToAnswerClearly": "Define each side in one sentence, state the real difference, then give one simple practical example.",
+    "example": "In an interview, explain how this distinction changes design choices, governance, or troubleshooting in Ivanti Neurons Workspace.",
+    "watchOut": "Do not answer with only a label comparison. The interviewer usually wants the impact on implementation or support.",
+    "priority": "Important",
+    "answerFramework": [
+      "Name both concepts clearly.",
+      "State the real difference in one sentence.",
+      "Give a practical example or decision rule.",
+      "End with the watch-out point."
+    ]
+  },
+  {
+    "id": "velocity-modernize-vs-replace",
+    "title": "Velocity modernization vs full app replacement",
+    "topicId": "velocity-browser-sessions",
+    "summary": "Velocity is often used to modernize existing telnet/web workflows without replacing the underlying host application.",
+    "answer": "Use Velocity when you want to improve frontline execution while preserving the host system rather than rebuilding the application stack.",
+    "difficulty": "Intermediate",
+    "moduleId": "ivanti-velocity",
+    "whyPeopleConfuseThis": "Candidates often confuse these concepts because both show up around Velocity Browser Sessions and can sound similar when explained too quickly.",
+    "howToAnswerClearly": "Define each side in one sentence, state the real difference, then give one simple practical example.",
+    "example": "In an interview, explain how this distinction changes design choices, governance, or troubleshooting in Ivanti Velocity.",
+    "watchOut": "Do not answer with only a label comparison. The interviewer usually wants the impact on implementation or support.",
+    "priority": "Important",
+    "answerFramework": [
+      "Name both concepts clearly.",
+      "State the real difference in one sentence.",
+      "Give a practical example or decision rule.",
+      "End with the watch-out point."
+    ]
+  },
+  {
+    "id": "object-extension-vs-new-object",
+    "title": "Extending an object vs creating a new one",
+    "topicId": "business-objects",
+    "summary": "Know when to extend an existing object and when a separate object is the cleaner design choice.",
+    "answer": "Extend when the process stays closely aligned with existing structure; create a new object when lifecycle, reporting, or ownership diverges materially.",
+    "difficulty": "Advanced",
+    "moduleId": "ivanti-neurons-for-itsm",
+    "whyPeopleConfuseThis": "Candidates often confuse these concepts because both show up around Business Objects and can sound similar when explained too quickly.",
+    "howToAnswerClearly": "Define each side in one sentence, state the real difference, then give one simple practical example.",
+    "example": "In an interview, explain how this distinction changes design choices, governance, or troubleshooting in Ivanti Neurons for ITSM.",
+    "watchOut": "Do not answer with only a label comparison. The interviewer usually wants the impact on implementation or support.",
+    "priority": "Core",
+    "answerFramework": [
+      "Name both concepts clearly.",
+      "State the real difference in one sentence.",
+      "Give a practical example or decision rule.",
+      "End with the watch-out point."
+    ]
+  },
+  {
+    "id": "lookup-vs-parent-child-relationship",
+    "title": "Lookup vs parent-child relationship",
+    "topicId": "relationships",
+    "summary": "Relationships are not all the same; structure changes how reporting and lifecycle behave.",
+    "answer": "Use parent-child when lifecycle and ownership should be explicitly tied; use a lighter lookup when linkage is useful but record lifecycles remain independent.",
+    "difficulty": "Intermediate",
+    "moduleId": "ivanti-neurons-for-itsm",
+    "whyPeopleConfuseThis": "Candidates often confuse these concepts because both show up around Relationships and can sound similar when explained too quickly.",
+    "howToAnswerClearly": "Define each side in one sentence, state the real difference, then give one simple practical example.",
+    "example": "In an interview, explain how this distinction changes design choices, governance, or troubleshooting in Ivanti Neurons for ITSM.",
+    "watchOut": "Do not answer with only a label comparison. The interviewer usually wants the impact on implementation or support.",
+    "priority": "Core",
+    "answerFramework": [
+      "Name both concepts clearly.",
+      "State the real difference in one sentence.",
+      "Give a practical example or decision rule.",
+      "End with the watch-out point."
+    ]
+  },
+  {
+    "id": "single-form-vs-role-specific-layouts",
+    "title": "Single form vs role-specific layouts",
+    "topicId": "forms-and-layouts",
+    "summary": "One form for everyone sounds simple but often harms usability and data quality.",
+    "answer": "Use role-specific layouts when different users need different fields or context; keep a single form only when the process and audience are genuinely uniform.",
+    "difficulty": "Intermediate",
+    "moduleId": "ivanti-neurons-for-itsm",
+    "whyPeopleConfuseThis": "Candidates often confuse these concepts because both show up around Forms and Layouts and can sound similar when explained too quickly.",
+    "howToAnswerClearly": "Define each side in one sentence, state the real difference, then give one simple practical example.",
+    "example": "In an interview, explain how this distinction changes design choices, governance, or troubleshooting in Ivanti Neurons for ITSM.",
+    "watchOut": "Do not answer with only a label comparison. The interviewer usually wants the impact on implementation or support.",
+    "priority": "Core",
+    "answerFramework": [
+      "Name both concepts clearly.",
+      "State the real difference in one sentence.",
+      "Give a practical example or decision rule.",
+      "End with the watch-out point."
+    ]
+  },
+  {
+    "id": "ui-required-vs-business-validation",
+    "title": "UI-required field vs business validation",
+    "topicId": "validations",
+    "summary": "A field looking required on screen is not the same as reliable process validation.",
+    "answer": "UI requirement improves entry behavior, while business validation protects process integrity regardless of how the record is updated.",
+    "difficulty": "Intermediate",
+    "moduleId": "ivanti-neurons-for-itsm",
+    "whyPeopleConfuseThis": "Candidates often confuse these concepts because both show up around Validations and can sound similar when explained too quickly.",
+    "howToAnswerClearly": "Define each side in one sentence, state the real difference, then give one simple practical example.",
+    "example": "In an interview, explain how this distinction changes design choices, governance, or troubleshooting in Ivanti Neurons for ITSM.",
+    "watchOut": "Do not answer with only a label comparison. The interviewer usually wants the impact on implementation or support.",
+    "priority": "Core",
+    "answerFramework": [
+      "Name both concepts clearly.",
+      "State the real difference in one sentence.",
+      "Give a practical example or decision rule.",
+      "End with the watch-out point."
+    ]
+  },
+  {
+    "id": "workflow-vs-state-driven-routing",
+    "title": "Workflow orchestration vs simple state routing",
+    "topicId": "workflows",
+    "summary": "Not every process needs a large workflow; some can be handled with simpler record logic.",
+    "answer": "Use a full workflow when approvals, branching, and governed task progression matter; use simpler state-driven logic when the process is linear and low risk.",
+    "difficulty": "Intermediate",
+    "moduleId": "ivanti-neurons-for-itsm",
+    "whyPeopleConfuseThis": "Candidates often confuse these concepts because both show up around Workflows and can sound similar when explained too quickly.",
+    "howToAnswerClearly": "Define each side in one sentence, state the real difference, then give one simple practical example.",
+    "example": "In an interview, explain how this distinction changes design choices, governance, or troubleshooting in Ivanti Neurons for ITSM.",
+    "watchOut": "Do not answer with only a label comparison. The interviewer usually wants the impact on implementation or support.",
+    "priority": "Core",
+    "answerFramework": [
+      "Name both concepts clearly.",
+      "State the real difference in one sentence.",
+      "Give a practical example or decision rule.",
+      "End with the watch-out point."
+    ]
+  },
+  {
+    "id": "template-content-vs-recipient-logic",
+    "title": "Template content vs recipient logic",
+    "topicId": "email-templates",
+    "summary": "A strong email template can still fail if recipient logic is weak.",
+    "answer": "Template quality controls message consistency, but recipient logic determines whether the right people receive the message at the right time.",
+    "difficulty": "Beginner",
+    "moduleId": "ivanti-neurons-for-itsm",
+    "whyPeopleConfuseThis": "Candidates often confuse these concepts because both show up around Email Templates and can sound similar when explained too quickly.",
+    "howToAnswerClearly": "Define each side in one sentence, state the real difference, then give one simple practical example.",
+    "example": "In an interview, explain how this distinction changes design choices, governance, or troubleshooting in Ivanti Neurons for ITSM.",
+    "watchOut": "Do not answer with only a label comparison. The interviewer usually wants the impact on implementation or support.",
+    "priority": "Important",
+    "answerFramework": [
+      "Name both concepts clearly.",
+      "State the real difference in one sentence.",
+      "Give a practical example or decision rule.",
+      "End with the watch-out point."
+    ]
+  },
+  {
+    "id": "escalation-vs-notification",
+    "title": "Escalation vs notification",
+    "topicId": "escalations",
+    "summary": "Escalations are not just louder notifications.",
+    "answer": "A notification informs; an escalation changes urgency, ownership attention, or response expectation based on thresholds or breach conditions.",
+    "difficulty": "Beginner",
+    "moduleId": "incident-management",
+    "whyPeopleConfuseThis": "Candidates often confuse these concepts because both show up around Escalations and can sound similar when explained too quickly.",
+    "howToAnswerClearly": "Define each side in one sentence, state the real difference, then give one simple practical example.",
+    "example": "In an interview, explain how this distinction changes design choices, governance, or troubleshooting in Incident Management.",
+    "watchOut": "Do not answer with only a label comparison. The interviewer usually wants the impact on implementation or support.",
+    "priority": "Important",
+    "answerFramework": [
+      "Name both concepts clearly.",
+      "State the real difference in one sentence.",
+      "Give a practical example or decision rule.",
+      "End with the watch-out point."
+    ]
+  },
+  {
+    "id": "catalog-request-vs-fulfillment-task",
+    "title": "Catalog/request item vs fulfillment task",
+    "topicId": "request-fulfillment",
+    "summary": "Request-level visibility and task-level execution should not be confused.",
+    "answer": "The request tracks the service commitment and customer-facing progress, while fulfillment tasks track internal execution steps and ownership.",
+    "difficulty": "Intermediate",
+    "moduleId": "service-request-management",
+    "whyPeopleConfuseThis": "Candidates often confuse these concepts because both show up around Request Fulfillment and can sound similar when explained too quickly.",
+    "howToAnswerClearly": "Define each side in one sentence, state the real difference, then give one simple practical example.",
+    "example": "In an interview, explain how this distinction changes design choices, governance, or troubleshooting in Service Request Management.",
+    "watchOut": "Do not answer with only a label comparison. The interviewer usually wants the impact on implementation or support.",
+    "priority": "Core",
+    "answerFramework": [
+      "Name both concepts clearly.",
+      "State the real difference in one sentence.",
+      "Give a practical example or decision rule.",
+      "End with the watch-out point."
+    ]
+  },
+  {
+    "id": "dashboard-vs-report",
+    "title": "Dashboard vs report",
+    "topicId": "dashboards-and-kpis",
+    "summary": "Dashboards and reports serve different consumption patterns.",
+    "answer": "A report usually answers a specific analytical question; a dashboard provides ongoing operational visibility across several KPIs and trends.",
+    "difficulty": "Beginner",
+    "moduleId": "reporting-and-dashboards",
+    "whyPeopleConfuseThis": "Candidates often confuse these concepts because both show up around Dashboards and KPIs and can sound similar when explained too quickly.",
+    "howToAnswerClearly": "Define each side in one sentence, state the real difference, then give one simple practical example.",
+    "example": "In an interview, explain how this distinction changes design choices, governance, or troubleshooting in Reporting and Dashboards.",
+    "watchOut": "Do not answer with only a label comparison. The interviewer usually wants the impact on implementation or support.",
+    "priority": "Important",
+    "answerFramework": [
+      "Name both concepts clearly.",
+      "State the real difference in one sentence.",
+      "Give a practical example or decision rule.",
+      "End with the watch-out point."
+    ]
+  },
+  {
+    "id": "authn-vs-authz-in-integrations",
+    "title": "Authentication vs authorization in integrations",
+    "topicId": "authentication-patterns",
+    "summary": "Being allowed to connect is not the same as being allowed to do everything.",
+    "answer": "Authentication proves identity; authorization controls what that identity can access or perform once connected.",
+    "difficulty": "Intermediate",
+    "moduleId": "ivanti-neurons-ipaas",
+    "whyPeopleConfuseThis": "Candidates often confuse these concepts because both show up around Authentication Patterns and can sound similar when explained too quickly.",
+    "howToAnswerClearly": "Define each side in one sentence, state the real difference, then give one simple practical example.",
+    "example": "In an interview, explain how this distinction changes design choices, governance, or troubleshooting in Ivanti Neurons iPaaS.",
+    "watchOut": "Do not answer with only a label comparison. The interviewer usually wants the impact on implementation or support.",
+    "priority": "Important",
+    "answerFramework": [
+      "Name both concepts clearly.",
+      "State the real difference in one sentence.",
+      "Give a practical example or decision rule.",
+      "End with the watch-out point."
+    ]
+  },
+  {
+    "id": "mapping-vs-transformation",
+    "title": "Data mapping vs transformation",
+    "topicId": "data-mapping",
+    "summary": "Field alignment and value transformation are related but not identical.",
+    "answer": "Mapping decides which source field lands where; transformation decides how the value must change to fit the target design.",
+    "difficulty": "Intermediate",
+    "moduleId": "ivanti-neurons-ipaas",
+    "whyPeopleConfuseThis": "Candidates often confuse these concepts because both show up around Data Mapping and can sound similar when explained too quickly.",
+    "howToAnswerClearly": "Define each side in one sentence, state the real difference, then give one simple practical example.",
+    "example": "In an interview, explain how this distinction changes design choices, governance, or troubleshooting in Ivanti Neurons iPaaS.",
+    "watchOut": "Do not answer with only a label comparison. The interviewer usually wants the impact on implementation or support.",
+    "priority": "Important",
+    "answerFramework": [
+      "Name both concepts clearly.",
+      "State the real difference in one sentence.",
+      "Give a practical example or decision rule.",
+      "End with the watch-out point."
+    ]
+  },
+  {
+    "id": "retry-vs-replay",
+    "title": "Retry vs replay after integration failure",
+    "topicId": "error-handling-and-retries",
+    "summary": "A replay strategy can create duplicates if you treat it like a simple retry.",
+    "answer": "Retry repeats the same transaction safely when possible; replay often requires additional validation to avoid duplicating business actions.",
+    "difficulty": "Advanced",
+    "moduleId": "ivanti-neurons-ipaas",
+    "whyPeopleConfuseThis": "Candidates often confuse these concepts because both show up around Error Handling and Retries and can sound similar when explained too quickly.",
+    "howToAnswerClearly": "Define each side in one sentence, state the real difference, then give one simple practical example.",
+    "example": "In an interview, explain how this distinction changes design choices, governance, or troubleshooting in Ivanti Neurons iPaaS.",
+    "watchOut": "Do not answer with only a label comparison. The interviewer usually wants the impact on implementation or support.",
+    "priority": "Important",
+    "answerFramework": [
+      "Name both concepts clearly.",
+      "State the real difference in one sentence.",
+      "Give a practical example or decision rule.",
+      "End with the watch-out point."
+    ]
+  },
+  {
+    "id": "agent-issue-vs-policy-issue",
+    "title": "Agent issue vs policy issue",
+    "topicId": "endpoint-troubleshooting",
+    "summary": "Endpoints may fail because the agent cannot execute, not because the policy is wrong.",
+    "answer": "Validate communication, health, and execution context first before assuming the policy or job definition is incorrect.",
+    "difficulty": "Intermediate",
+    "moduleId": "ivanti-endpoint-manager",
+    "whyPeopleConfuseThis": "Candidates often confuse these concepts because both show up around Endpoint Troubleshooting and can sound similar when explained too quickly.",
+    "howToAnswerClearly": "Define each side in one sentence, state the real difference, then give one simple practical example.",
+    "example": "In an interview, explain how this distinction changes design choices, governance, or troubleshooting in Ivanti Endpoint Manager.",
+    "watchOut": "Do not answer with only a label comparison. The interviewer usually wants the impact on implementation or support.",
+    "priority": "Important",
+    "answerFramework": [
+      "Name both concepts clearly.",
+      "State the real difference in one sentence.",
+      "Give a practical example or decision rule.",
+      "End with the watch-out point."
+    ]
+  },
+  {
+    "id": "device-enrolled-vs-device-compliant",
+    "title": "Device enrolled vs device compliant",
+    "topicId": "enrollment",
+    "summary": "Enrollment alone does not prove a device meets enterprise standards.",
+    "answer": "Enrollment establishes management; compliance confirms the device currently meets defined policy and security expectations.",
+    "difficulty": "Beginner",
+    "moduleId": "ivanti-neurons-for-mdm",
+    "whyPeopleConfuseThis": "Candidates often confuse these concepts because both show up around Enrollment and can sound similar when explained too quickly.",
+    "howToAnswerClearly": "Define each side in one sentence, state the real difference, then give one simple practical example.",
+    "example": "In an interview, explain how this distinction changes design choices, governance, or troubleshooting in Ivanti Neurons for MDM.",
+    "watchOut": "Do not answer with only a label comparison. The interviewer usually wants the impact on implementation or support.",
+    "priority": "Core",
+    "answerFramework": [
+      "Name both concepts clearly.",
+      "State the real difference in one sentence.",
+      "Give a practical example or decision rule.",
+      "End with the watch-out point."
+    ]
+  },
+  {
+    "id": "required-vs-available-mobile-app",
+    "title": "Required app vs available app",
+    "topicId": "mobile-app-deployment",
+    "summary": "Deployment intent changes support expectations and rollout control.",
+    "answer": "A required app is pushed as part of managed policy; an available app is exposed for optional user install under controlled access.",
+    "difficulty": "Intermediate",
+    "moduleId": "mobile-app-distribution",
+    "whyPeopleConfuseThis": "Candidates often confuse these concepts because both show up around Mobile App Deployment and can sound similar when explained too quickly.",
+    "howToAnswerClearly": "Define each side in one sentence, state the real difference, then give one simple practical example.",
+    "example": "In an interview, explain how this distinction changes design choices, governance, or troubleshooting in Mobile App Distribution.",
+    "watchOut": "Do not answer with only a label comparison. The interviewer usually wants the impact on implementation or support.",
+    "priority": "Important",
+    "answerFramework": [
+      "Name both concepts clearly.",
+      "State the real difference in one sentence.",
+      "Give a practical example or decision rule.",
+      "End with the watch-out point."
+    ]
+  },
+  {
+    "id": "asset-record-vs-discovered-record",
+    "title": "Asset record vs discovered record",
+    "topicId": "asset-lifecycle",
+    "summary": "A discovered device is not automatically a fully governed asset record.",
+    "answer": "Discovery improves visibility, while asset records carry lifecycle, ownership, cost, and governance context needed for ITAM decisions.",
+    "difficulty": "Intermediate",
+    "moduleId": "ivanti-neurons-for-itam",
+    "whyPeopleConfuseThis": "Candidates often confuse these concepts because both show up around Asset Lifecycle and can sound similar when explained too quickly.",
+    "howToAnswerClearly": "Define each side in one sentence, state the real difference, then give one simple practical example.",
+    "example": "In an interview, explain how this distinction changes design choices, governance, or troubleshooting in Ivanti Neurons for ITAM.",
+    "watchOut": "Do not answer with only a label comparison. The interviewer usually wants the impact on implementation or support.",
+    "priority": "Core",
+    "answerFramework": [
+      "Name both concepts clearly.",
+      "State the real difference in one sentence.",
+      "Give a practical example or decision rule.",
+      "End with the watch-out point."
+    ]
+  },
+  {
+    "id": "control-vs-risk",
+    "title": "Control vs risk",
+    "topicId": "controls-and-risks",
+    "summary": "Controls respond to risk but should not be described as the same thing.",
+    "answer": "Risk is the exposure or uncertainty being managed; a control is the designed measure used to reduce likelihood, impact, or detect issues.",
+    "difficulty": "Beginner",
+    "moduleId": "ivanti-neurons-for-grc",
+    "whyPeopleConfuseThis": "Candidates often confuse these concepts because both show up around Controls and Risks and can sound similar when explained too quickly.",
+    "howToAnswerClearly": "Define each side in one sentence, state the real difference, then give one simple practical example.",
+    "example": "In an interview, explain how this distinction changes design choices, governance, or troubleshooting in Ivanti Neurons for GRC.",
+    "watchOut": "Do not answer with only a label comparison. The interviewer usually wants the impact on implementation or support.",
+    "priority": "Important",
+    "answerFramework": [
+      "Name both concepts clearly.",
+      "State the real difference in one sentence.",
+      "Give a practical example or decision rule.",
+      "End with the watch-out point."
+    ]
+  },
+  {
+    "id": "scan-speed-vs-data-quality",
+    "title": "Scan speed vs data quality in frontline flows",
+    "topicId": "scan-first-workflow-design",
+    "summary": "Faster is not always better if the worker can move quickly but capture poor data.",
+    "answer": "A good scan-first design reduces friction while still preserving accuracy, validation, and operator confidence.",
+    "difficulty": "Intermediate",
+    "moduleId": "ivanti-velocity",
+    "whyPeopleConfuseThis": "Candidates often confuse these concepts because both show up around Scan-First Workflow Design and can sound similar when explained too quickly.",
+    "howToAnswerClearly": "Define each side in one sentence, state the real difference, then give one simple practical example.",
+    "example": "In an interview, explain how this distinction changes design choices, governance, or troubleshooting in Ivanti Velocity.",
+    "watchOut": "Do not answer with only a label comparison. The interviewer usually wants the impact on implementation or support.",
+    "priority": "Important",
+    "answerFramework": [
+      "Name both concepts clearly.",
+      "State the real difference in one sentence.",
+      "Give a practical example or decision rule.",
+      "End with the watch-out point."
+    ]
   }
 ]

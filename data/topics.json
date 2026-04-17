@@ -15,19 +15,62 @@
       "reporting impact"
     ],
     "definition": "How Ivanti models records, entities, and process data inside the platform.",
-    "whyItMatters": "Interviewers often use this topic to judge whether you can connect configuration or process design to real operational outcomes.",
+    "whyItMatters": "This is a core ITSM design topic because interviews often test whether you understand how data modeling affects forms, workflows, reporting, and future extensibility.",
     "types": [
       "standard objects",
       "extended/custom objects",
       "field model considerations"
     ],
     "codingIds": [
-      "validation-logic-design",
-      "workflow-exception-handling"
+      "business-object-extension-plan"
     ],
-    "useCaseIds": [],
+    "useCaseIds": [
+      "custom-object-design-review"
+    ],
     "trickyIds": [
-      "quick-action-vs-workflow"
+      "object-extension-vs-new-object"
+    ],
+    "interviewContext": "Interviewers use this topic to check whether you can explain business objects in Ivanti terms, connect it to Ivanti Neurons for ITSM, and translate the concept into a practical implementation answer.",
+    "whatGoodAnswersShow": [
+      "You can define Business Objects clearly without drifting into vague platform language.",
+      "You can connect Business Objects to business impact such as support efficiency, governance, reporting, or automation quality.",
+      "You can give one practical Ivanti-style example instead of speaking only in theory."
+    ],
+    "commonMistakes": [
+      "Giving a generic IT answer without tying it back to Ivanti Neurons for ITSM.",
+      "Confusing configuration concepts with process design or governance.",
+      "Describing the feature but not explaining when or why you would use it."
+    ],
+    "relatedRoleNames": [
+      "Ivanti ITSM Administrator",
+      "Ivanti ITSM Developer",
+      "Ivanti Integration Architect",
+      "Ivanti Workspace Analyst"
+    ],
+    "prepChecklist": [
+      "Be ready to define Business Objects in one or two sentences.",
+      "Prepare one realistic scenario where the concept matters.",
+      "Know one tricky distinction or edge case the interviewer might ask next."
+    ],
+    "priority": "Core",
+    "whatInterviewersUsuallyAsk": {
+      "direct": [
+        "What is a business object?",
+        "When would you extend or customize an object?",
+        "How does object design affect reporting and automation?"
+      ],
+      "followUp": [
+        "How would you implement or explain business object extension planning?"
+      ],
+      "trapQuestions": [
+        "What is the trap in extending an object vs creating a new one?"
+      ]
+    },
+    "answerFramework": [
+      "Define the topic in one or two sentences.",
+      "Explain why it matters in Ivanti interviews.",
+      "Mention one pattern, type, or design rule.",
+      "Close with one practical example or related use case."
     ]
   },
   {
@@ -46,19 +89,63 @@
       "cross-record navigation"
     ],
     "definition": "How records connect to each other for process flow, ownership, and reporting.",
-    "whyItMatters": "Interviewers often use this topic to judge whether you can connect configuration or process design to real operational outcomes.",
+    "whyItMatters": "Interviewers use this topic to see whether you can connect records cleanly, avoid orphaned process design, and support reporting across related entities.",
     "types": [
       "parent-child relationships",
       "lookup/reference relationships",
       "many-to-many style links"
     ],
     "codingIds": [
-      "validation-logic-design",
-      "workflow-exception-handling"
+      "relationship-impact-walk-through"
     ],
-    "useCaseIds": [],
+    "useCaseIds": [
+      "custom-object-design-review",
+      "relationship-driven-task-model"
+    ],
     "trickyIds": [
-      "quick-action-vs-workflow"
+      "lookup-vs-parent-child-relationship"
+    ],
+    "interviewContext": "Interviewers use this topic to check whether you can explain relationships in Ivanti terms, connect it to Ivanti Neurons for ITSM, and translate the concept into a practical implementation answer.",
+    "whatGoodAnswersShow": [
+      "You can define Relationships clearly without drifting into vague platform language.",
+      "You can connect Relationships to business impact such as support efficiency, governance, reporting, or automation quality.",
+      "You can give one practical Ivanti-style example instead of speaking only in theory."
+    ],
+    "commonMistakes": [
+      "Giving a generic IT answer without tying it back to Ivanti Neurons for ITSM.",
+      "Confusing configuration concepts with process design or governance.",
+      "Describing the feature but not explaining when or why you would use it."
+    ],
+    "relatedRoleNames": [
+      "Ivanti ITSM Administrator",
+      "Ivanti ITSM Developer",
+      "Ivanti Integration Architect",
+      "Ivanti Workspace Analyst"
+    ],
+    "prepChecklist": [
+      "Be ready to define Relationships in one or two sentences.",
+      "Prepare one realistic scenario where the concept matters.",
+      "Know one tricky distinction or edge case the interviewer might ask next."
+    ],
+    "priority": "Core",
+    "whatInterviewersUsuallyAsk": {
+      "direct": [
+        "Why do relationships matter?",
+        "How do related records improve process design?",
+        "What can go wrong with weak relationship design?"
+      ],
+      "followUp": [
+        "How would you implement or explain relationship impact walk-through?"
+      ],
+      "trapQuestions": [
+        "What is the trap in lookup vs parent-child relationship?"
+      ]
+    },
+    "answerFramework": [
+      "Define the topic in one or two sentences.",
+      "Explain why it matters in Ivanti interviews.",
+      "Mention one pattern, type, or design rule.",
+      "Close with one practical example or related use case."
     ]
   },
   {
@@ -77,19 +164,63 @@
       "usability"
     ],
     "definition": "How user-facing record views are organized for clarity, role-based visibility, and efficiency.",
-    "whyItMatters": "Interviewers often use this topic to judge whether you can connect configuration or process design to real operational outcomes.",
+    "whyItMatters": "This topic shows whether you can design an admin experience that improves usability without over-customizing the platform.",
     "types": [
       "role-based layouts",
       "data-entry optimization",
       "context-specific visibility"
     ],
     "codingIds": [
-      "validation-logic-design",
-      "workflow-exception-handling"
+      "form-layout-design-review"
     ],
-    "useCaseIds": [],
+    "useCaseIds": [
+      "custom-object-design-review",
+      "persona-based-form-redesign"
+    ],
     "trickyIds": [
-      "quick-action-vs-workflow"
+      "single-form-vs-role-specific-layouts"
+    ],
+    "interviewContext": "Interviewers use this topic to check whether you can explain forms and layouts in Ivanti terms, connect it to Ivanti Neurons for ITSM, and translate the concept into a practical implementation answer.",
+    "whatGoodAnswersShow": [
+      "You can define Forms and Layouts clearly without drifting into vague platform language.",
+      "You can connect Forms and Layouts to business impact such as support efficiency, governance, reporting, or automation quality.",
+      "You can give one practical Ivanti-style example instead of speaking only in theory."
+    ],
+    "commonMistakes": [
+      "Giving a generic IT answer without tying it back to Ivanti Neurons for ITSM.",
+      "Confusing configuration concepts with process design or governance.",
+      "Describing the feature but not explaining when or why you would use it."
+    ],
+    "relatedRoleNames": [
+      "Ivanti ITSM Administrator",
+      "Ivanti ITSM Developer",
+      "Ivanti Integration Architect",
+      "Ivanti Workspace Analyst"
+    ],
+    "prepChecklist": [
+      "Be ready to define Forms and Layouts in one or two sentences.",
+      "Prepare one realistic scenario where the concept matters.",
+      "Know one tricky distinction or edge case the interviewer might ask next."
+    ],
+    "priority": "Core",
+    "whatInterviewersUsuallyAsk": {
+      "direct": [
+        "How do you design a good form?",
+        "Why does layout matter for adoption?",
+        "How do you reduce clutter while preserving key data?"
+      ],
+      "followUp": [
+        "How would you implement or explain form and layout design review?"
+      ],
+      "trapQuestions": [
+        "What is the trap in single form vs role-specific layouts?"
+      ]
+    },
+    "answerFramework": [
+      "Define the topic in one or two sentences.",
+      "Explain why it matters in Ivanti interviews.",
+      "Mention one pattern, type, or design rule.",
+      "Close with one practical example or related use case."
     ]
   },
   {
@@ -108,19 +239,63 @@
       "maintainability"
     ],
     "definition": "How data quality and process rules are enforced before saving or progressing work.",
-    "whyItMatters": "Interviewers often use this topic to judge whether you can connect configuration or process design to real operational outcomes.",
+    "whyItMatters": "Validation design matters because interviewers want to know how you prevent bad data while keeping user experience and maintainability under control.",
     "types": [
       "required-field checks",
       "conditional validations",
       "process-stage validations"
     ],
     "codingIds": [
-      "validation-logic-design",
-      "workflow-exception-handling"
+      "validation-logic-design"
     ],
-    "useCaseIds": [],
+    "useCaseIds": [
+      "persona-based-form-redesign",
+      "validation-guardrail-rollout"
+    ],
     "trickyIds": [
-      "quick-action-vs-workflow"
+      "ui-required-vs-business-validation"
+    ],
+    "interviewContext": "Interviewers use this topic to check whether you can explain validations in Ivanti terms, connect it to Ivanti Neurons for ITSM, and translate the concept into a practical implementation answer.",
+    "whatGoodAnswersShow": [
+      "You can define Validations clearly without drifting into vague platform language.",
+      "You can connect Validations to business impact such as support efficiency, governance, reporting, or automation quality.",
+      "You can give one practical Ivanti-style example instead of speaking only in theory."
+    ],
+    "commonMistakes": [
+      "Giving a generic IT answer without tying it back to Ivanti Neurons for ITSM.",
+      "Confusing configuration concepts with process design or governance.",
+      "Describing the feature but not explaining when or why you would use it."
+    ],
+    "relatedRoleNames": [
+      "Ivanti ITSM Administrator",
+      "Ivanti ITSM Developer",
+      "Ivanti Integration Architect",
+      "Ivanti Workspace Analyst"
+    ],
+    "prepChecklist": [
+      "Be ready to define Validations in one or two sentences.",
+      "Prepare one realistic scenario where the concept matters.",
+      "Know one tricky distinction or edge case the interviewer might ask next."
+    ],
+    "priority": "Core",
+    "whatInterviewersUsuallyAsk": {
+      "direct": [
+        "How do validations improve quality?",
+        "Where do you place validation logic?",
+        "How do you avoid breaking existing flows?"
+      ],
+      "followUp": [
+        "How would you implement or explain validation logic design?"
+      ],
+      "trapQuestions": [
+        "What is the trap in ui-required field vs business validation?"
+      ]
+    },
+    "answerFramework": [
+      "Define the topic in one or two sentences.",
+      "Explain why it matters in Ivanti interviews.",
+      "Mention one pattern, type, or design rule.",
+      "Close with one practical example or related use case."
     ]
   },
   {
@@ -139,19 +314,62 @@
       "operational actions"
     ],
     "definition": "Targeted actions for repeatable record operations such as notifications, updates, and saved-search-driven automation.",
-    "whyItMatters": "Interviewers often use this topic to judge whether you can connect configuration or process design to real operational outcomes.",
+    "whyItMatters": "Quick actions are a practical admin topic and often come up when discussing repeatable automations, saved-search processing, and analyst productivity.",
     "types": [
       "record actions",
       "saved-search actions",
       "notification actions"
     ],
     "codingIds": [
-      "validation-logic-design",
-      "workflow-exception-handling"
+      "quick-action-design-pattern"
     ],
-    "useCaseIds": [],
+    "useCaseIds": [
+      "quick-action-notification-pack"
+    ],
     "trickyIds": [
       "quick-action-vs-workflow"
+    ],
+    "interviewContext": "Interviewers use this topic to check whether you can explain quick actions in Ivanti terms, connect it to Ivanti Neurons for ITSM, and translate the concept into a practical implementation answer.",
+    "whatGoodAnswersShow": [
+      "You can define Quick Actions clearly without drifting into vague platform language.",
+      "You can connect Quick Actions to business impact such as support efficiency, governance, reporting, or automation quality.",
+      "You can give one practical Ivanti-style example instead of speaking only in theory."
+    ],
+    "commonMistakes": [
+      "Giving a generic IT answer without tying it back to Ivanti Neurons for ITSM.",
+      "Confusing configuration concepts with process design or governance.",
+      "Describing the feature but not explaining when or why you would use it."
+    ],
+    "relatedRoleNames": [
+      "Ivanti ITSM Administrator",
+      "Ivanti ITSM Developer",
+      "Ivanti Integration Architect",
+      "Ivanti Workspace Analyst"
+    ],
+    "prepChecklist": [
+      "Be ready to define Quick Actions in one or two sentences.",
+      "Prepare one realistic scenario where the concept matters.",
+      "Know one tricky distinction or edge case the interviewer might ask next."
+    ],
+    "priority": "Core",
+    "whatInterviewersUsuallyAsk": {
+      "direct": [
+        "When would you use a quick action?",
+        "Quick action vs workflow: how do you choose?",
+        "How do quick actions support reporting or notifications?"
+      ],
+      "followUp": [
+        "How would you implement or explain quick action design pattern?"
+      ],
+      "trapQuestions": [
+        "What is the trap in quick action vs workflow?"
+      ]
+    },
+    "answerFramework": [
+      "Define the topic in one or two sentences.",
+      "Explain why it matters in Ivanti interviews.",
+      "Mention one pattern, type, or design rule.",
+      "Close with one practical example or related use case."
     ]
   },
   {
@@ -170,23 +388,65 @@
       "exception paths"
     ],
     "definition": "End-to-end automation for approvals, routing, escalations, and fulfillment logic.",
-    "whyItMatters": "Interviewers often use this topic to judge whether you can connect configuration or process design to real operational outcomes.",
+    "whyItMatters": "Workflow design is a high-signal interview area because it reveals whether you can translate business process into governed, supportable automation.",
     "types": [
       "approval flows",
       "routing/assignment flows",
       "escalation paths"
     ],
     "codingIds": [
-      "validation-logic-design",
       "workflow-exception-handling"
     ],
     "useCaseIds": [
+      "change-approval-and-scheduling",
       "customer-response-reactivation",
       "multi-step-request-approvals",
-      "change-approval-and-scheduling"
+      "validation-guardrail-rollout"
     ],
     "trickyIds": [
-      "quick-action-vs-workflow"
+      "workflow-vs-state-driven-routing"
+    ],
+    "interviewContext": "Interviewers use this topic to check whether you can explain workflows in Ivanti terms, connect it to Ivanti Neurons for ITSM, and translate the concept into a practical implementation answer.",
+    "whatGoodAnswersShow": [
+      "You can define Workflows clearly without drifting into vague platform language.",
+      "You can connect Workflows to business impact such as support efficiency, governance, reporting, or automation quality.",
+      "You can give one practical Ivanti-style example instead of speaking only in theory."
+    ],
+    "commonMistakes": [
+      "Giving a generic IT answer without tying it back to Ivanti Neurons for ITSM.",
+      "Confusing configuration concepts with process design or governance.",
+      "Describing the feature but not explaining when or why you would use it."
+    ],
+    "relatedRoleNames": [
+      "Ivanti ITSM Administrator",
+      "Ivanti ITSM Developer",
+      "Ivanti Integration Architect",
+      "Ivanti Workspace Analyst"
+    ],
+    "prepChecklist": [
+      "Be ready to define Workflows in one or two sentences.",
+      "Prepare one realistic scenario where the concept matters.",
+      "Know one tricky distinction or edge case the interviewer might ask next."
+    ],
+    "priority": "Core",
+    "whatInterviewersUsuallyAsk": {
+      "direct": [
+        "How do you design a workflow?",
+        "How do you handle branching and approvals?",
+        "How do you test workflow edge cases?"
+      ],
+      "followUp": [
+        "How would you implement or explain workflow exception handling?"
+      ],
+      "trapQuestions": [
+        "What is the trap in workflow orchestration vs simple state routing?"
+      ]
+    },
+    "answerFramework": [
+      "Define the topic in one or two sentences.",
+      "Explain why it matters in Ivanti interviews.",
+      "Mention one pattern, type, or design rule.",
+      "Close with one practical example or related use case."
     ]
   },
   {
@@ -205,7 +465,7 @@
       "reporting foundation"
     ],
     "definition": "Reusable filtered datasets that power dashboards, operational views, and automation.",
-    "whyItMatters": "Interviewers often use this topic to judge whether you can connect configuration or process design to real operational outcomes.",
+    "whyItMatters": "Saved searches are central to reporting, dashboards, and scheduled actions, so interviewers often use them to test operational thinking rather than pure configuration recall.",
     "types": [
       "operational searches",
       "dashboard sources",
@@ -215,11 +475,55 @@
       "notification-automation-with-saved-searches"
     ],
     "useCaseIds": [
-      "weekly-open-incident-summary",
-      "scheduled-report-push-to-external-endpoint"
+      "quick-action-notification-pack",
+      "scheduled-report-push-to-external-endpoint",
+      "validation-guardrail-rollout",
+      "weekly-open-incident-summary"
     ],
     "trickyIds": [
       "saved-search-vs-dashboard"
+    ],
+    "interviewContext": "Interviewers use this topic to check whether you can explain saved searches in Ivanti terms, connect it to Reporting and Dashboards, and translate the concept into a practical implementation answer.",
+    "whatGoodAnswersShow": [
+      "You can define Saved Searches clearly without drifting into vague platform language.",
+      "You can connect Saved Searches to business impact such as support efficiency, governance, reporting, or automation quality.",
+      "You can give one practical Ivanti-style example instead of speaking only in theory."
+    ],
+    "commonMistakes": [
+      "Giving a generic IT answer without tying it back to Reporting and Dashboards.",
+      "Confusing configuration concepts with process design or governance.",
+      "Describing the feature but not explaining when or why you would use it."
+    ],
+    "relatedRoleNames": [
+      "Ivanti ITSM Administrator",
+      "Ivanti Patch Management Engineer",
+      "Ivanti MDM Engineer",
+      "Ivanti ITAM Engineer"
+    ],
+    "prepChecklist": [
+      "Be ready to define Saved Searches in one or two sentences.",
+      "Prepare one realistic scenario where the concept matters.",
+      "Know one tricky distinction or edge case the interviewer might ask next."
+    ],
+    "priority": "Core",
+    "whatInterviewersUsuallyAsk": {
+      "direct": [
+        "How are saved searches used?",
+        "How do you build an effective search?",
+        "Why are saved searches useful in scheduled reporting?"
+      ],
+      "followUp": [
+        "How would you implement or explain notification automation with saved searches?"
+      ],
+      "trapQuestions": [
+        "What is the trap in saved search vs dashboard?"
+      ]
+    },
+    "answerFramework": [
+      "Define the topic in one or two sentences.",
+      "Explain why it matters in Ivanti interviews.",
+      "Mention one pattern, type, or design rule.",
+      "Close with one practical example or related use case."
     ]
   },
   {
@@ -238,22 +542,64 @@
       "consistency"
     ],
     "definition": "Structured communication templates used in notifications, escalations, and scheduled communications.",
-    "whyItMatters": "Interviewers often use this topic to judge whether you can connect configuration or process design to real operational outcomes.",
+    "whyItMatters": "Good notification design shows that you understand communication quality, reuse, and how to keep stakeholders informed without creating noise.",
     "types": [
       "status notifications",
       "approval emails",
       "scheduled summaries"
     ],
     "codingIds": [
-      "validation-logic-design",
-      "workflow-exception-handling"
+      "email-template-dynamic-fields"
     ],
     "useCaseIds": [
-      "weekly-open-incident-summary",
-      "customer-response-reactivation"
+      "customer-response-reactivation",
+      "quick-action-notification-pack",
+      "weekly-open-incident-summary"
     ],
     "trickyIds": [
-      "quick-action-vs-workflow"
+      "template-content-vs-recipient-logic"
+    ],
+    "interviewContext": "Interviewers use this topic to check whether you can explain email templates in Ivanti terms, connect it to Ivanti Neurons for ITSM, and translate the concept into a practical implementation answer.",
+    "whatGoodAnswersShow": [
+      "You can define Email Templates clearly without drifting into vague platform language.",
+      "You can connect Email Templates to business impact such as support efficiency, governance, reporting, or automation quality.",
+      "You can give one practical Ivanti-style example instead of speaking only in theory."
+    ],
+    "commonMistakes": [
+      "Giving a generic IT answer without tying it back to Ivanti Neurons for ITSM.",
+      "Confusing configuration concepts with process design or governance.",
+      "Describing the feature but not explaining when or why you would use it."
+    ],
+    "relatedRoleNames": [
+      "Ivanti ITSM Administrator",
+      "Ivanti ITSM Developer",
+      "Ivanti Integration Architect",
+      "Ivanti Workspace Analyst"
+    ],
+    "prepChecklist": [
+      "Be ready to define Email Templates in one or two sentences.",
+      "Prepare one realistic scenario where the concept matters.",
+      "Know one tricky distinction or edge case the interviewer might ask next."
+    ],
+    "priority": "Important",
+    "whatInterviewersUsuallyAsk": {
+      "direct": [
+        "Why do email templates matter?",
+        "What should templates include?",
+        "How do you keep communication consistent?"
+      ],
+      "followUp": [
+        "How would you implement or explain email template dynamic field strategy?"
+      ],
+      "trapQuestions": [
+        "What is the trap in template content vs recipient logic?"
+      ]
+    },
+    "answerFramework": [
+      "Define the topic in one or two sentences.",
+      "Explain why it matters in Ivanti interviews.",
+      "Mention one pattern, type, or design rule.",
+      "Close with one practical example or related use case."
     ]
   },
   {
@@ -272,17 +618,61 @@
       "ownership"
     ],
     "definition": "Time- or state-driven follow-up logic that prevents work from stalling.",
-    "whyItMatters": "Interviewers often use this topic to judge whether you can connect configuration or process design to real operational outcomes.",
+    "whyItMatters": "Escalation logic is a practical way to judge whether you understand service commitments, trigger timing, and ownership when work stalls.",
     "types": [
       "time-based escalations",
-      "state-based escalations",
+      "SLA-related escalations",
       "ownership escalations"
     ],
-    "codingIds": [],
-    "useCaseIds": [
-      "change-approval-and-scheduling"
+    "codingIds": [
+      "escalation-trigger-design"
     ],
-    "trickyIds": []
+    "useCaseIds": [
+      "escalation-schedule-tuning"
+    ],
+    "trickyIds": [
+      "escalation-vs-notification"
+    ],
+    "interviewContext": "Interviewers use this topic to check whether you can explain escalations in Ivanti terms, connect it to Change Management, and translate the concept into a practical implementation answer.",
+    "whatGoodAnswersShow": [
+      "You can define Escalations clearly without drifting into vague platform language.",
+      "You can connect Escalations to business impact such as support efficiency, governance, reporting, or automation quality.",
+      "You can give one practical Ivanti-style example instead of speaking only in theory."
+    ],
+    "commonMistakes": [
+      "Giving a generic IT answer without tying it back to Change Management.",
+      "Confusing configuration concepts with process design or governance.",
+      "Describing the feature but not explaining when or why you would use it."
+    ],
+    "relatedRoleNames": [
+      "Ivanti ITSM Administrator",
+      "Ivanti ITSM Developer"
+    ],
+    "prepChecklist": [
+      "Be ready to define Escalations in one or two sentences.",
+      "Prepare one realistic scenario where the concept matters.",
+      "Know one tricky distinction or edge case the interviewer might ask next."
+    ],
+    "priority": "Important",
+    "whatInterviewersUsuallyAsk": {
+      "direct": [
+        "How do you design escalations?",
+        "What should trigger an escalation?",
+        "How do you balance noise vs visibility?"
+      ],
+      "followUp": [
+        "How would you implement or explain escalation trigger design?"
+      ],
+      "trapQuestions": [
+        "What is the trap in escalation vs notification?"
+      ]
+    },
+    "answerFramework": [
+      "Define the topic in one or two sentences.",
+      "Explain why it matters in Ivanti interviews.",
+      "Mention one pattern, type, or design rule.",
+      "Close with one practical example or related use case."
+    ]
   },
   {
     "id": "approvals",
@@ -300,7 +690,7 @@
       "fallbacks"
     ],
     "definition": "Approval paths, approver determination, and response handling for governed changes and requests.",
-    "whyItMatters": "Interviewers often use this topic to judge whether you can connect configuration or process design to real operational outcomes.",
+    "whyItMatters": "Approval questions reveal whether you can handle governance, approver routing, sequencing, and the edge cases that slow down fulfillment.",
     "types": [
       "single-step approvals",
       "multi-step approvals",
@@ -310,10 +700,53 @@
       "approval-routing-logic"
     ],
     "useCaseIds": [
+      "change-approval-and-scheduling",
       "multi-step-request-approvals",
-      "change-approval-and-scheduling"
+      "relationship-driven-task-model"
     ],
-    "trickyIds": []
+    "trickyIds": [
+      "approval-vs-fulfillment-task"
+    ],
+    "interviewContext": "Interviewers use this topic to check whether you can explain approvals in Ivanti terms, connect it to Service Request Management, and translate the concept into a practical implementation answer.",
+    "whatGoodAnswersShow": [
+      "You can define Approvals clearly without drifting into vague platform language.",
+      "You can connect Approvals to business impact such as support efficiency, governance, reporting, or automation quality.",
+      "You can give one practical Ivanti-style example instead of speaking only in theory."
+    ],
+    "commonMistakes": [
+      "Giving a generic IT answer without tying it back to Service Request Management.",
+      "Confusing configuration concepts with process design or governance.",
+      "Describing the feature but not explaining when or why you would use it."
+    ],
+    "relatedRoleNames": [
+      "Ivanti ITSM Administrator",
+      "Ivanti ITSM Developer"
+    ],
+    "prepChecklist": [
+      "Be ready to define Approvals in one or two sentences.",
+      "Prepare one realistic scenario where the concept matters.",
+      "Know one tricky distinction or edge case the interviewer might ask next."
+    ],
+    "priority": "Important",
+    "whatInterviewersUsuallyAsk": {
+      "direct": [
+        "How do you design multi-step approvals?",
+        "How do you handle approver changes?",
+        "What are common approval design mistakes?"
+      ],
+      "followUp": [
+        "How would you implement or explain approval routing logic?"
+      ],
+      "trapQuestions": [
+        "What is the trap in approval vs fulfillment task?"
+      ]
+    },
+    "answerFramework": [
+      "Define the topic in one or two sentences.",
+      "Explain why it matters in Ivanti interviews.",
+      "Mention one pattern, type, or design rule.",
+      "Close with one practical example or related use case."
+    ]
   },
   {
     "id": "incident-lifecycle",
@@ -331,20 +764,66 @@
       "resolution"
     ],
     "definition": "Core incident process from intake through assignment, communication, resolution, and closure.",
-    "whyItMatters": "Interviewers often use this topic to judge whether you can connect configuration or process design to real operational outcomes.",
+    "whyItMatters": "Interviewers look for structured thinking here: how incidents are logged, triaged, routed, updated, and resolved with the right level of communication.",
     "types": [
-      "intake and triage",
-      "assignment and communication",
-      "resolution and closure"
+      "logging and categorization",
+      "triage and assignment",
+      "communication through resolution"
     ],
-    "codingIds": [],
+    "codingIds": [
+      "incident-priority-and-routing"
+    ],
     "useCaseIds": [
-      "weekly-open-incident-summary",
       "customer-response-reactivation",
+      "escalation-schedule-tuning",
       "knowledge-deflection-for-support",
+      "weekly-open-incident-summary",
       "workspace-shift-left-triage"
     ],
-    "trickyIds": []
+    "trickyIds": [
+      "incident-vs-service-request"
+    ],
+    "interviewContext": "Interviewers use this topic to check whether you can explain incident lifecycle in Ivanti terms, connect it to Incident Management, and translate the concept into a practical implementation answer.",
+    "whatGoodAnswersShow": [
+      "You can define Incident Lifecycle clearly without drifting into vague platform language.",
+      "You can connect Incident Lifecycle to business impact such as support efficiency, governance, reporting, or automation quality.",
+      "You can give one practical Ivanti-style example instead of speaking only in theory."
+    ],
+    "commonMistakes": [
+      "Giving a generic IT answer without tying it back to Incident Management.",
+      "Confusing configuration concepts with process design or governance.",
+      "Describing the feature but not explaining when or why you would use it."
+    ],
+    "relatedRoleNames": [
+      "Ivanti ITSM Administrator",
+      "Ivanti ITSM Developer",
+      "Ivanti Workspace Analyst"
+    ],
+    "prepChecklist": [
+      "Be ready to define Incident Lifecycle in one or two sentences.",
+      "Prepare one realistic scenario where the concept matters.",
+      "Know one tricky distinction or edge case the interviewer might ask next."
+    ],
+    "priority": "Core",
+    "whatInterviewersUsuallyAsk": {
+      "direct": [
+        "How do you explain incident lifecycle?",
+        "How do you manage ownership changes?",
+        "How do you improve resolution speed?"
+      ],
+      "followUp": [
+        "How would you implement or explain incident priority and routing logic?"
+      ],
+      "trapQuestions": [
+        "What is the trap in incident vs service request?"
+      ]
+    },
+    "answerFramework": [
+      "Define the topic in one or two sentences.",
+      "Explain why it matters in Ivanti interviews.",
+      "Mention one pattern, type, or design rule.",
+      "Close with one practical example or related use case."
+    ]
   },
   {
     "id": "problem-lifecycle",
@@ -362,16 +841,61 @@
       "trend analysis"
     ],
     "definition": "Root-cause and known-error process for reducing recurring incidents.",
-    "whyItMatters": "Interviewers often use this topic to judge whether you can connect configuration or process design to real operational outcomes.",
+    "whyItMatters": "Problem management distinguishes reactive support from root-cause thinking, so this topic helps show process maturity and trend analysis skills.",
     "types": [
-      "trend review",
-      "root cause analysis",
-      "known error management"
+      "trend identification",
+      "root-cause investigation",
+      "known error and corrective action"
     ],
-    "codingIds": [],
-    "useCaseIds": [],
+    "codingIds": [
+      "problem-trend-analysis"
+    ],
+    "useCaseIds": [
+      "problem-review-and-corrective-action"
+    ],
     "trickyIds": [
-      "incident-vs-problem"
+      "incident-vs-problem",
+      "problem-vs-known-error"
+    ],
+    "interviewContext": "Interviewers use this topic to check whether you can explain problem lifecycle in Ivanti terms, connect it to Problem Management, and translate the concept into a practical implementation answer.",
+    "whatGoodAnswersShow": [
+      "You can define Problem Lifecycle clearly without drifting into vague platform language.",
+      "You can connect Problem Lifecycle to business impact such as support efficiency, governance, reporting, or automation quality.",
+      "You can give one practical Ivanti-style example instead of speaking only in theory."
+    ],
+    "commonMistakes": [
+      "Giving a generic IT answer without tying it back to Problem Management.",
+      "Confusing configuration concepts with process design or governance.",
+      "Describing the feature but not explaining when or why you would use it."
+    ],
+    "relatedRoleNames": [
+      "Ivanti ITSM Administrator"
+    ],
+    "prepChecklist": [
+      "Be ready to define Problem Lifecycle in one or two sentences.",
+      "Prepare one realistic scenario where the concept matters.",
+      "Know one tricky distinction or edge case the interviewer might ask next."
+    ],
+    "priority": "Important",
+    "whatInterviewersUsuallyAsk": {
+      "direct": [
+        "What is the difference between incident and problem?",
+        "How do known errors help support?",
+        "Why do trend reviews matter?"
+      ],
+      "followUp": [
+        "How would you implement or explain problem trend analysis approach?"
+      ],
+      "trapQuestions": [
+        "What is the trap in incident vs problem?",
+        "What is the trap in problem vs known error?"
+      ]
+    },
+    "answerFramework": [
+      "Define the topic in one or two sentences.",
+      "Explain why it matters in Ivanti interviews.",
+      "Mention one pattern, type, or design rule.",
+      "Close with one practical example or related use case."
     ]
   },
   {
@@ -390,17 +914,61 @@
       "execution discipline"
     ],
     "definition": "Risk-aware review, approvals, scheduling, and execution control for changes.",
-    "whyItMatters": "Interviewers often use this topic to judge whether you can connect configuration or process design to real operational outcomes.",
+    "whyItMatters": "Change governance questions measure whether you understand approvals, scheduling, risk, communication, and the controls needed for safer production changes.",
     "types": [
-      "standard changes",
-      "normal changes",
-      "approval and scheduling controls"
+      "risk classification",
+      "approval and CAB review",
+      "scheduling and communication"
     ],
-    "codingIds": [],
+    "codingIds": [
+      "change-risk-and-approval-design"
+    ],
     "useCaseIds": [
       "change-approval-and-scheduling"
     ],
-    "trickyIds": []
+    "trickyIds": [
+      "standard-vs-normal-change"
+    ],
+    "interviewContext": "Interviewers use this topic to check whether you can explain change governance in Ivanti terms, connect it to Change Management, and translate the concept into a practical implementation answer.",
+    "whatGoodAnswersShow": [
+      "You can define Change Governance clearly without drifting into vague platform language.",
+      "You can connect Change Governance to business impact such as support efficiency, governance, reporting, or automation quality.",
+      "You can give one practical Ivanti-style example instead of speaking only in theory."
+    ],
+    "commonMistakes": [
+      "Giving a generic IT answer without tying it back to Change Management.",
+      "Confusing configuration concepts with process design or governance.",
+      "Describing the feature but not explaining when or why you would use it."
+    ],
+    "relatedRoleNames": [
+      "Ivanti ITSM Administrator",
+      "Ivanti ITSM Developer"
+    ],
+    "prepChecklist": [
+      "Be ready to define Change Governance in one or two sentences.",
+      "Prepare one realistic scenario where the concept matters.",
+      "Know one tricky distinction or edge case the interviewer might ask next."
+    ],
+    "priority": "Important",
+    "whatInterviewersUsuallyAsk": {
+      "direct": [
+        "How do you assess change risk?",
+        "What makes change governance strong?",
+        "How do you explain standard vs normal changes?"
+      ],
+      "followUp": [
+        "How would you implement or explain change risk and approval design?"
+      ],
+      "trapQuestions": [
+        "What is the trap in standard vs normal change?"
+      ]
+    },
+    "answerFramework": [
+      "Define the topic in one or two sentences.",
+      "Explain why it matters in Ivanti interviews.",
+      "Mention one pattern, type, or design rule.",
+      "Close with one practical example or related use case."
+    ]
   },
   {
     "id": "request-fulfillment",
@@ -418,19 +986,63 @@
       "visibility"
     ],
     "definition": "The request intake and fulfillment model for catalog-style services and standard asks.",
-    "whyItMatters": "Interviewers often use this topic to judge whether you can connect configuration or process design to real operational outcomes.",
+    "whyItMatters": "Service request interviews often focus on whether you can turn catalog demand into a clean, trackable fulfillment workflow.",
     "types": [
       "catalog-style requests",
       "approval-led requests",
       "task-based fulfillment"
     ],
     "codingIds": [
-      "approval-routing-logic"
+      "request-fulfillment-task-design"
     ],
     "useCaseIds": [
-      "multi-step-request-approvals"
+      "multi-step-request-approvals",
+      "persona-based-form-redesign",
+      "relationship-driven-task-model"
     ],
-    "trickyIds": []
+    "trickyIds": [
+      "catalog-request-vs-fulfillment-task"
+    ],
+    "interviewContext": "Interviewers use this topic to check whether you can explain request fulfillment in Ivanti terms, connect it to Service Request Management, and translate the concept into a practical implementation answer.",
+    "whatGoodAnswersShow": [
+      "You can define Request Fulfillment clearly without drifting into vague platform language.",
+      "You can connect Request Fulfillment to business impact such as support efficiency, governance, reporting, or automation quality.",
+      "You can give one practical Ivanti-style example instead of speaking only in theory."
+    ],
+    "commonMistakes": [
+      "Giving a generic IT answer without tying it back to Service Request Management.",
+      "Confusing configuration concepts with process design or governance.",
+      "Describing the feature but not explaining when or why you would use it."
+    ],
+    "relatedRoleNames": [
+      "Ivanti ITSM Administrator",
+      "Ivanti ITSM Developer"
+    ],
+    "prepChecklist": [
+      "Be ready to define Request Fulfillment in one or two sentences.",
+      "Prepare one realistic scenario where the concept matters.",
+      "Know one tricky distinction or edge case the interviewer might ask next."
+    ],
+    "priority": "Core",
+    "whatInterviewersUsuallyAsk": {
+      "direct": [
+        "How do you structure request fulfillment?",
+        "How do approvals fit in?",
+        "How do you keep request tracking clear?"
+      ],
+      "followUp": [
+        "How would you implement or explain request fulfillment task design?"
+      ],
+      "trapQuestions": [
+        "What is the trap in catalog/request item vs fulfillment task?"
+      ]
+    },
+    "answerFramework": [
+      "Define the topic in one or two sentences.",
+      "Explain why it matters in Ivanti interviews.",
+      "Mention one pattern, type, or design rule.",
+      "Close with one practical example or related use case."
+    ]
   },
   {
     "id": "knowledge-lifecycle",
@@ -448,19 +1060,60 @@
       "reuse"
     ],
     "definition": "The lifecycle for creating, reviewing, publishing, and improving knowledge content.",
-    "whyItMatters": "Interviewers often use this topic to judge whether you can connect configuration or process design to real operational outcomes.",
+    "whyItMatters": "Knowledge topics help assess whether you can reduce repeat contacts, improve self-service, and maintain useful content over time.",
     "types": [
-      "draft/review/publish",
-      "ownership and governance",
-      "continuous improvement"
+      "article creation",
+      "review and publication",
+      "retirement and continuous improvement"
     ],
-    "codingIds": [],
+    "codingIds": [
+      "knowledge-feedback-loop"
+    ],
     "useCaseIds": [
       "knowledge-deflection-for-support",
       "workspace-shift-left-triage"
     ],
     "trickyIds": [
       "knowledge-article-vs-workaround"
+    ],
+    "interviewContext": "Interviewers use this topic to check whether you can explain knowledge lifecycle in Ivanti terms, connect it to Knowledge Management, and translate the concept into a practical implementation answer.",
+    "whatGoodAnswersShow": [
+      "You can define Knowledge Lifecycle clearly without drifting into vague platform language.",
+      "You can connect Knowledge Lifecycle to business impact such as support efficiency, governance, reporting, or automation quality.",
+      "You can give one practical Ivanti-style example instead of speaking only in theory."
+    ],
+    "commonMistakes": [
+      "Giving a generic IT answer without tying it back to Knowledge Management.",
+      "Confusing configuration concepts with process design or governance.",
+      "Describing the feature but not explaining when or why you would use it."
+    ],
+    "relatedRoleNames": [
+      "Ivanti ITSM Administrator"
+    ],
+    "prepChecklist": [
+      "Be ready to define Knowledge Lifecycle in one or two sentences.",
+      "Prepare one realistic scenario where the concept matters.",
+      "Know one tricky distinction or edge case the interviewer might ask next."
+    ],
+    "priority": "Important",
+    "whatInterviewersUsuallyAsk": {
+      "direct": [
+        "Why is knowledge important?",
+        "How do you keep knowledge current?",
+        "How does knowledge support shift-left?"
+      ],
+      "followUp": [
+        "How would you implement or explain knowledge feedback loop design?"
+      ],
+      "trapQuestions": [
+        "What is the trap in knowledge article vs workaround?"
+      ]
+    },
+    "answerFramework": [
+      "Define the topic in one or two sentences.",
+      "Explain why it matters in Ivanti interviews.",
+      "Mention one pattern, type, or design rule.",
+      "Close with one practical example or related use case."
     ]
   },
   {
@@ -479,22 +1132,66 @@
       "decision support"
     ],
     "definition": "How operational metrics and dashboards support leadership visibility and continuous improvement.",
-    "whyItMatters": "Interviewers often use this topic to judge whether you can connect configuration or process design to real operational outcomes.",
+    "whyItMatters": "Dashboards and KPIs matter because candidates are expected to explain what good service visibility looks like for analysts, managers, and stakeholders.",
     "types": [
       "operational KPIs",
       "management dashboards",
       "trend and backlog views"
     ],
     "codingIds": [
-      "notification-automation-with-saved-searches"
+      "dashboard-kpi-design"
     ],
     "useCaseIds": [
-      "weekly-open-incident-summary",
+      "asset-refresh-planning",
+      "escalation-schedule-tuning",
       "pilot-based-patch-rollout",
-      "asset-refresh-planning"
+      "problem-review-and-corrective-action",
+      "weekly-open-incident-summary"
     ],
     "trickyIds": [
-      "saved-search-vs-dashboard"
+      "dashboard-vs-report"
+    ],
+    "interviewContext": "Interviewers use this topic to check whether you can explain dashboards and kpis in Ivanti terms, connect it to Reporting and Dashboards, and translate the concept into a practical implementation answer.",
+    "whatGoodAnswersShow": [
+      "You can define Dashboards and KPIs clearly without drifting into vague platform language.",
+      "You can connect Dashboards and KPIs to business impact such as support efficiency, governance, reporting, or automation quality.",
+      "You can give one practical Ivanti-style example instead of speaking only in theory."
+    ],
+    "commonMistakes": [
+      "Giving a generic IT answer without tying it back to Reporting and Dashboards.",
+      "Confusing configuration concepts with process design or governance.",
+      "Describing the feature but not explaining when or why you would use it."
+    ],
+    "relatedRoleNames": [
+      "Ivanti ITSM Administrator",
+      "Ivanti Patch Management Engineer",
+      "Ivanti MDM Engineer",
+      "Ivanti ITAM Engineer"
+    ],
+    "prepChecklist": [
+      "Be ready to define Dashboards and KPIs in one or two sentences.",
+      "Prepare one realistic scenario where the concept matters.",
+      "Know one tricky distinction or edge case the interviewer might ask next."
+    ],
+    "priority": "Important",
+    "whatInterviewersUsuallyAsk": {
+      "direct": [
+        "Which KPIs matter?",
+        "How do dashboards help operations?",
+        "How do you avoid vanity metrics?"
+      ],
+      "followUp": [
+        "How would you implement or explain dashboard kpi design?"
+      ],
+      "trapQuestions": [
+        "What is the trap in dashboard vs report?"
+      ]
+    },
+    "answerFramework": [
+      "Define the topic in one or two sentences.",
+      "Explain why it matters in Ivanti interviews.",
+      "Mention one pattern, type, or design rule.",
+      "Close with one practical example or related use case."
     ]
   },
   {
@@ -513,16 +1210,14 @@
       "monitoring"
     ],
     "definition": "HTTP-based integration fundamentals, endpoints, methods, payloads, and operational reliability.",
-    "whyItMatters": "Interviewers often use this topic to judge whether you can connect configuration or process design to real operational outcomes.",
+    "whyItMatters": "This is a must-have technical topic because many interviews expect you to explain secure, reliable API integrations in clear business terms.",
     "types": [
       "GET/POST/PUT/DELETE patterns",
       "request/response design",
       "integration monitoring"
     ],
     "codingIds": [
-      "rest-integration-walk-through",
-      "data-mapping-strategy",
-      "retry-and-backoff-patterns"
+      "rest-integration-walk-through"
     ],
     "useCaseIds": [
       "external-approval-sync",
@@ -530,6 +1225,48 @@
     ],
     "trickyIds": [
       "ipaas-connector-vs-custom-integration"
+    ],
+    "interviewContext": "Interviewers use this topic to check whether you can explain rest api basics in Ivanti terms, connect it to Ivanti Neurons iPaaS, and translate the concept into a practical implementation answer.",
+    "whatGoodAnswersShow": [
+      "You can define REST API Basics clearly without drifting into vague platform language.",
+      "You can connect REST API Basics to business impact such as support efficiency, governance, reporting, or automation quality.",
+      "You can give one practical Ivanti-style example instead of speaking only in theory."
+    ],
+    "commonMistakes": [
+      "Giving a generic IT answer without tying it back to Ivanti Neurons iPaaS.",
+      "Confusing configuration concepts with process design or governance.",
+      "Describing the feature but not explaining when or why you would use it."
+    ],
+    "relatedRoleNames": [
+      "Ivanti ITSM Administrator",
+      "Ivanti ITSM Developer",
+      "Ivanti ITAM Engineer",
+      "Ivanti GRC Analyst"
+    ],
+    "prepChecklist": [
+      "Be ready to define REST API Basics in one or two sentences.",
+      "Prepare one realistic scenario where the concept matters.",
+      "Know one tricky distinction or edge case the interviewer might ask next."
+    ],
+    "priority": "Core",
+    "whatInterviewersUsuallyAsk": {
+      "direct": [
+        "How do you explain a REST integration?",
+        "What should you validate in payloads?",
+        "How do you talk about secure API design?"
+      ],
+      "followUp": [
+        "How would you implement or explain rest integration walk-through?"
+      ],
+      "trapQuestions": [
+        "What is the trap in ipaas connector vs custom integration?"
+      ]
+    },
+    "answerFramework": [
+      "Define the topic in one or two sentences.",
+      "Explain why it matters in Ivanti interviews.",
+      "Mention one pattern, type, or design rule.",
+      "Close with one practical example or related use case."
     ]
   },
   {
@@ -548,23 +1285,62 @@
       "credential handling"
     ],
     "definition": "How integrations authenticate securely using tokens, keys, or service identities.",
-    "whyItMatters": "Interviewers often use this topic to judge whether you can connect configuration or process design to real operational outcomes.",
+    "whyItMatters": "Authentication design is a reliability and security topic, and interviewers use it to see whether you understand how integrations are protected and operated safely.",
     "types": [
       "API key patterns",
       "token-based auth",
       "service-account governance"
     ],
     "codingIds": [
-      "rest-integration-walk-through",
-      "data-mapping-strategy",
-      "retry-and-backoff-patterns"
+      "auth-token-flow-review"
     ],
     "useCaseIds": [
-      "external-approval-sync",
-      "scheduled-report-push-to-external-endpoint"
+      "external-approval-sync"
     ],
     "trickyIds": [
-      "ipaas-connector-vs-custom-integration"
+      "authn-vs-authz-in-integrations"
+    ],
+    "interviewContext": "Interviewers use this topic to check whether you can explain authentication patterns in Ivanti terms, connect it to Ivanti Neurons iPaaS, and translate the concept into a practical implementation answer.",
+    "whatGoodAnswersShow": [
+      "You can define Authentication Patterns clearly without drifting into vague platform language.",
+      "You can connect Authentication Patterns to business impact such as support efficiency, governance, reporting, or automation quality.",
+      "You can give one practical Ivanti-style example instead of speaking only in theory."
+    ],
+    "commonMistakes": [
+      "Giving a generic IT answer without tying it back to Ivanti Neurons iPaaS.",
+      "Confusing configuration concepts with process design or governance.",
+      "Describing the feature but not explaining when or why you would use it."
+    ],
+    "relatedRoleNames": [
+      "Ivanti ITSM Administrator",
+      "Ivanti ITSM Developer",
+      "Ivanti ITAM Engineer",
+      "Ivanti GRC Analyst"
+    ],
+    "prepChecklist": [
+      "Be ready to define Authentication Patterns in one or two sentences.",
+      "Prepare one realistic scenario where the concept matters.",
+      "Know one tricky distinction or edge case the interviewer might ask next."
+    ],
+    "priority": "Important",
+    "whatInterviewersUsuallyAsk": {
+      "direct": [
+        "Why does authentication design matter?",
+        "How do you reduce credential risk?",
+        "What does least privilege mean in integrations?"
+      ],
+      "followUp": [
+        "How would you implement or explain authentication token flow review?"
+      ],
+      "trapQuestions": [
+        "What is the trap in authentication vs authorization in integrations?"
+      ]
+    },
+    "answerFramework": [
+      "Define the topic in one or two sentences.",
+      "Explain why it matters in Ivanti interviews.",
+      "Mention one pattern, type, or design rule.",
+      "Close with one practical example or related use case."
     ]
   },
   {
@@ -583,23 +1359,63 @@
       "quality"
     ],
     "definition": "Transforming fields and values between Ivanti and external systems safely and consistently.",
-    "whyItMatters": "Interviewers often use this topic to judge whether you can connect configuration or process design to real operational outcomes.",
+    "whyItMatters": "Data mapping questions test whether you can integrate systems without creating duplicate, partial, or misleading records.",
     "types": [
       "field transformations",
       "lookup resolution",
       "default/null handling"
     ],
     "codingIds": [
-      "rest-integration-walk-through",
-      "data-mapping-strategy",
-      "retry-and-backoff-patterns"
+      "data-mapping-strategy"
     ],
     "useCaseIds": [
       "external-approval-sync",
       "scheduled-report-push-to-external-endpoint"
     ],
     "trickyIds": [
-      "ipaas-connector-vs-custom-integration"
+      "mapping-vs-transformation"
+    ],
+    "interviewContext": "Interviewers use this topic to check whether you can explain data mapping in Ivanti terms, connect it to Ivanti Neurons iPaaS, and translate the concept into a practical implementation answer.",
+    "whatGoodAnswersShow": [
+      "You can define Data Mapping clearly without drifting into vague platform language.",
+      "You can connect Data Mapping to business impact such as support efficiency, governance, reporting, or automation quality.",
+      "You can give one practical Ivanti-style example instead of speaking only in theory."
+    ],
+    "commonMistakes": [
+      "Giving a generic IT answer without tying it back to Ivanti Neurons iPaaS.",
+      "Confusing configuration concepts with process design or governance.",
+      "Describing the feature but not explaining when or why you would use it."
+    ],
+    "relatedRoleNames": [
+      "Ivanti ITSM Administrator",
+      "Ivanti ITSM Developer",
+      "Ivanti ITAM Engineer",
+      "Ivanti GRC Analyst"
+    ],
+    "prepChecklist": [
+      "Be ready to define Data Mapping in one or two sentences.",
+      "Prepare one realistic scenario where the concept matters.",
+      "Know one tricky distinction or edge case the interviewer might ask next."
+    ],
+    "priority": "Important",
+    "whatInterviewersUsuallyAsk": {
+      "direct": [
+        "What matters in mapping?",
+        "How do you handle nulls and defaults?",
+        "How do you prevent duplicate or bad syncs?"
+      ],
+      "followUp": [
+        "How would you implement or explain data mapping strategy?"
+      ],
+      "trapQuestions": [
+        "What is the trap in data mapping vs transformation?"
+      ]
+    },
+    "answerFramework": [
+      "Define the topic in one or two sentences.",
+      "Explain why it matters in Ivanti interviews.",
+      "Mention one pattern, type, or design rule.",
+      "Close with one practical example or related use case."
     ]
   },
   {
@@ -618,15 +1434,13 @@
       "observability"
     ],
     "definition": "Resilience patterns for automation and integrations when downstream systems fail or respond slowly.",
-    "whyItMatters": "Interviewers often use this topic to judge whether you can connect configuration or process design to real operational outcomes.",
+    "whyItMatters": "This topic is where candidates show operational maturity: good integrations fail safely, retry intelligently, and leave useful diagnostics behind.",
     "types": [
       "retry logic",
       "backoff",
       "duplicate prevention"
     ],
     "codingIds": [
-      "rest-integration-walk-through",
-      "data-mapping-strategy",
       "retry-and-backoff-patterns"
     ],
     "useCaseIds": [
@@ -634,7 +1448,49 @@
       "scheduled-report-push-to-external-endpoint"
     ],
     "trickyIds": [
-      "ipaas-connector-vs-custom-integration"
+      "retry-vs-replay"
+    ],
+    "interviewContext": "Interviewers use this topic to check whether you can explain error handling and retries in Ivanti terms, connect it to Ivanti Neurons iPaaS, and translate the concept into a practical implementation answer.",
+    "whatGoodAnswersShow": [
+      "You can define Error Handling and Retries clearly without drifting into vague platform language.",
+      "You can connect Error Handling and Retries to business impact such as support efficiency, governance, reporting, or automation quality.",
+      "You can give one practical Ivanti-style example instead of speaking only in theory."
+    ],
+    "commonMistakes": [
+      "Giving a generic IT answer without tying it back to Ivanti Neurons iPaaS.",
+      "Confusing configuration concepts with process design or governance.",
+      "Describing the feature but not explaining when or why you would use it."
+    ],
+    "relatedRoleNames": [
+      "Ivanti ITSM Administrator",
+      "Ivanti ITSM Developer",
+      "Ivanti ITAM Engineer",
+      "Ivanti GRC Analyst"
+    ],
+    "prepChecklist": [
+      "Be ready to define Error Handling and Retries in one or two sentences.",
+      "Prepare one realistic scenario where the concept matters.",
+      "Know one tricky distinction or edge case the interviewer might ask next."
+    ],
+    "priority": "Important",
+    "whatInterviewersUsuallyAsk": {
+      "direct": [
+        "How do you design retries?",
+        "How do you avoid duplicate execution?",
+        "What should you log?"
+      ],
+      "followUp": [
+        "How would you implement or explain retry and backoff patterns?"
+      ],
+      "trapQuestions": [
+        "What is the trap in retry vs replay after integration failure?"
+      ]
+    },
+    "answerFramework": [
+      "Define the topic in one or two sentences.",
+      "Explain why it matters in Ivanti interviews.",
+      "Mention one pattern, type, or design rule.",
+      "Close with one practical example or related use case."
     ]
   },
   {
@@ -653,7 +1509,7 @@
       "control"
     ],
     "definition": "Grouping endpoints for policy, patching, and deployment control.",
-    "whyItMatters": "Interviewers often use this topic to judge whether you can connect configuration or process design to real operational outcomes.",
+    "whyItMatters": "Endpoint interviews often test whether you can target the right users and devices without creating unnecessary deployment risk.",
     "types": [
       "pilot groups",
       "departmental groups",
@@ -661,13 +1517,58 @@
     ],
     "codingIds": [
       "endpoint-targeting-strategy",
-      "software-deployment-failure-triage"
+      "uem-policy-baseline-review"
     ],
     "useCaseIds": [
       "pilot-based-patch-rollout",
-      "targeted-software-rollout"
+      "targeted-software-rollout",
+      "uem-device-lifecycle-control"
     ],
-    "trickyIds": []
+    "trickyIds": [
+      "uem-vs-endpoint-manager"
+    ],
+    "interviewContext": "Interviewers use this topic to check whether you can explain device groups and targeting in Ivanti terms, connect it to Ivanti Endpoint Manager, and translate the concept into a practical implementation answer.",
+    "whatGoodAnswersShow": [
+      "You can define Device Groups and Targeting clearly without drifting into vague platform language.",
+      "You can connect Device Groups and Targeting to business impact such as support efficiency, governance, reporting, or automation quality.",
+      "You can give one practical Ivanti-style example instead of speaking only in theory."
+    ],
+    "commonMistakes": [
+      "Giving a generic IT answer without tying it back to Ivanti Endpoint Manager.",
+      "Confusing configuration concepts with process design or governance.",
+      "Describing the feature but not explaining when or why you would use it."
+    ],
+    "relatedRoleNames": [
+      "Ivanti UEM Engineer",
+      "Ivanti Endpoint Manager Engineer",
+      "Ivanti Patch Management Engineer"
+    ],
+    "prepChecklist": [
+      "Be ready to define Device Groups and Targeting in one or two sentences.",
+      "Prepare one realistic scenario where the concept matters.",
+      "Know one tricky distinction or edge case the interviewer might ask next."
+    ],
+    "priority": "Important",
+    "whatInterviewersUsuallyAsk": {
+      "direct": [
+        "Why are device groups important?",
+        "How do you design targeting?",
+        "What makes group drift dangerous?"
+      ],
+      "followUp": [
+        "How would you implement or explain endpoint targeting strategy?",
+        "How would you implement or explain uem policy baseline review?"
+      ],
+      "trapQuestions": [
+        "What is the trap in uem vs endpoint manager?"
+      ]
+    },
+    "answerFramework": [
+      "Define the topic in one or two sentences.",
+      "Explain why it matters in Ivanti interviews.",
+      "Mention one pattern, type, or design rule.",
+      "Close with one practical example or related use case."
+    ]
   },
   {
     "id": "software-distribution-jobs",
@@ -685,17 +1586,62 @@
       "validation"
     ],
     "definition": "Packaging, scheduling, delivering, and validating software deployments to target devices.",
-    "whyItMatters": "Interviewers often use this topic to judge whether you can connect configuration or process design to real operational outcomes.",
+    "whyItMatters": "This topic is practical and operational; interviewers want to hear how you schedule, target, monitor, and troubleshoot distribution work.",
     "types": [
-      "targeting and schedules",
-      "install validation",
-      "retry/remediation"
+      "required deployment",
+      "available deployment",
+      "retry and remediation handling"
     ],
-    "codingIds": [],
+    "codingIds": [
+      "software-distribution-wave-design"
+    ],
     "useCaseIds": [
+      "software-distribution-validation",
       "targeted-software-rollout"
     ],
-    "trickyIds": []
+    "trickyIds": [
+      "distribution-vs-app-distribution"
+    ],
+    "interviewContext": "Interviewers use this topic to check whether you can explain software distribution jobs in Ivanti terms, connect it to Software Distribution, and translate the concept into a practical implementation answer.",
+    "whatGoodAnswersShow": [
+      "You can define Software Distribution Jobs clearly without drifting into vague platform language.",
+      "You can connect Software Distribution Jobs to business impact such as support efficiency, governance, reporting, or automation quality.",
+      "You can give one practical Ivanti-style example instead of speaking only in theory."
+    ],
+    "commonMistakes": [
+      "Giving a generic IT answer without tying it back to Software Distribution.",
+      "Confusing configuration concepts with process design or governance.",
+      "Describing the feature but not explaining when or why you would use it."
+    ],
+    "relatedRoleNames": [
+      "Ivanti UEM Engineer",
+      "Ivanti Endpoint Manager Engineer"
+    ],
+    "prepChecklist": [
+      "Be ready to define Software Distribution Jobs in one or two sentences.",
+      "Prepare one realistic scenario where the concept matters.",
+      "Know one tricky distinction or edge case the interviewer might ask next."
+    ],
+    "priority": "Important",
+    "whatInterviewersUsuallyAsk": {
+      "direct": [
+        "How do you explain software distribution?",
+        "What causes deployment misses?",
+        "How do you monitor rollout success?"
+      ],
+      "followUp": [
+        "How would you implement or explain software distribution wave design?"
+      ],
+      "trapQuestions": [
+        "What is the trap in software distribution vs mobile app distribution?"
+      ]
+    },
+    "answerFramework": [
+      "Define the topic in one or two sentences.",
+      "Explain why it matters in Ivanti interviews.",
+      "Mention one pattern, type, or design rule.",
+      "Close with one practical example or related use case."
+    ]
   },
   {
     "id": "patch-rings",
@@ -713,7 +1659,7 @@
       "compliance"
     ],
     "definition": "Pilot and phased patch rollout strategy to reduce risk and improve control.",
-    "whyItMatters": "Interviewers often use this topic to judge whether you can connect configuration or process design to real operational outcomes.",
+    "whyItMatters": "Patch rings are a strong interview topic because they show whether you understand phased rollout, pilot validation, and risk reduction.",
     "types": [
       "pilot ring",
       "broader rollout rings",
@@ -727,6 +1673,47 @@
     ],
     "trickyIds": [
       "patch-ring-vs-broad-rollout"
+    ],
+    "interviewContext": "Interviewers use this topic to check whether you can explain patch rings in Ivanti terms, connect it to Patch Management, and translate the concept into a practical implementation answer.",
+    "whatGoodAnswersShow": [
+      "You can define Patch Rings clearly without drifting into vague platform language.",
+      "You can connect Patch Rings to business impact such as support efficiency, governance, reporting, or automation quality.",
+      "You can give one practical Ivanti-style example instead of speaking only in theory."
+    ],
+    "commonMistakes": [
+      "Giving a generic IT answer without tying it back to Patch Management.",
+      "Confusing configuration concepts with process design or governance.",
+      "Describing the feature but not explaining when or why you would use it."
+    ],
+    "relatedRoleNames": [
+      "Ivanti UEM Engineer",
+      "Ivanti Endpoint Manager Engineer",
+      "Ivanti Patch Management Engineer"
+    ],
+    "prepChecklist": [
+      "Be ready to define Patch Rings in one or two sentences.",
+      "Prepare one realistic scenario where the concept matters.",
+      "Know one tricky distinction or edge case the interviewer might ask next."
+    ],
+    "priority": "Important",
+    "whatInterviewersUsuallyAsk": {
+      "direct": [
+        "Why use patch rings?",
+        "How do you choose pilot devices?",
+        "How do you decide when to expand rollout?"
+      ],
+      "followUp": [
+        "How would you implement or explain patch ring rollout design?"
+      ],
+      "trapQuestions": [
+        "What is the trap in patch ring vs broad rollout?"
+      ]
+    },
+    "answerFramework": [
+      "Define the topic in one or two sentences.",
+      "Explain why it matters in Ivanti interviews.",
+      "Mention one pattern, type, or design rule.",
+      "Close with one practical example or related use case."
     ]
   },
   {
@@ -745,20 +1732,64 @@
       "root cause"
     ],
     "definition": "Operational debugging for agent communication, distribution failures, and endpoint execution issues.",
-    "whyItMatters": "Interviewers often use this topic to judge whether you can connect configuration or process design to real operational outcomes.",
+    "whyItMatters": "Troubleshooting shows whether you can move beyond configuration and deal with what actually breaks in live environments.",
     "types": [
       "agent health",
       "job execution",
       "log and status analysis"
     ],
     "codingIds": [
-      "endpoint-targeting-strategy",
       "software-deployment-failure-triage"
     ],
     "useCaseIds": [
-      "targeted-software-rollout"
+      "software-distribution-validation",
+      "targeted-software-rollout",
+      "uem-device-lifecycle-control"
     ],
-    "trickyIds": []
+    "trickyIds": [
+      "agent-issue-vs-policy-issue"
+    ],
+    "interviewContext": "Interviewers use this topic to check whether you can explain endpoint troubleshooting in Ivanti terms, connect it to Ivanti Endpoint Manager, and translate the concept into a practical implementation answer.",
+    "whatGoodAnswersShow": [
+      "You can define Endpoint Troubleshooting clearly without drifting into vague platform language.",
+      "You can connect Endpoint Troubleshooting to business impact such as support efficiency, governance, reporting, or automation quality.",
+      "You can give one practical Ivanti-style example instead of speaking only in theory."
+    ],
+    "commonMistakes": [
+      "Giving a generic IT answer without tying it back to Ivanti Endpoint Manager.",
+      "Confusing configuration concepts with process design or governance.",
+      "Describing the feature but not explaining when or why you would use it."
+    ],
+    "relatedRoleNames": [
+      "Ivanti UEM Engineer",
+      "Ivanti Endpoint Manager Engineer",
+      "Ivanti Patch Management Engineer"
+    ],
+    "prepChecklist": [
+      "Be ready to define Endpoint Troubleshooting in one or two sentences.",
+      "Prepare one realistic scenario where the concept matters.",
+      "Know one tricky distinction or edge case the interviewer might ask next."
+    ],
+    "priority": "Important",
+    "whatInterviewersUsuallyAsk": {
+      "direct": [
+        "How do you troubleshoot failed jobs?",
+        "What do you check first?",
+        "How do you separate targeting from execution issues?"
+      ],
+      "followUp": [
+        "How would you implement or explain software deployment failure triage?"
+      ],
+      "trapQuestions": [
+        "What is the trap in agent issue vs policy issue?"
+      ]
+    },
+    "answerFramework": [
+      "Define the topic in one or two sentences.",
+      "Explain why it matters in Ivanti interviews.",
+      "Mention one pattern, type, or design rule.",
+      "Close with one practical example or related use case."
+    ]
   },
   {
     "id": "enrollment",
@@ -776,7 +1807,7 @@
       "device trust"
     ],
     "definition": "Bringing devices under management with the right ownership model and baseline control set.",
-    "whyItMatters": "Interviewers often use this topic to judge whether you can connect configuration or process design to real operational outcomes.",
+    "whyItMatters": "Enrollment is foundational in MDM interviews because it proves whether you understand onboarding, ownership, and baseline management controls.",
     "types": [
       "corporate enrollment",
       "BYOD enrollment",
@@ -789,7 +1820,46 @@
       "byod-enrollment-program"
     ],
     "trickyIds": [
-      "byod-vs-corporate-owned"
+      "device-enrolled-vs-device-compliant"
+    ],
+    "interviewContext": "Interviewers use this topic to check whether you can explain enrollment in Ivanti terms, connect it to Ivanti Neurons for MDM, and translate the concept into a practical implementation answer.",
+    "whatGoodAnswersShow": [
+      "You can define Enrollment clearly without drifting into vague platform language.",
+      "You can connect Enrollment to business impact such as support efficiency, governance, reporting, or automation quality.",
+      "You can give one practical Ivanti-style example instead of speaking only in theory."
+    ],
+    "commonMistakes": [
+      "Giving a generic IT answer without tying it back to Ivanti Neurons for MDM.",
+      "Confusing configuration concepts with process design or governance.",
+      "Describing the feature but not explaining when or why you would use it."
+    ],
+    "relatedRoleNames": [
+      "Ivanti MDM Engineer"
+    ],
+    "prepChecklist": [
+      "Be ready to define Enrollment in one or two sentences.",
+      "Prepare one realistic scenario where the concept matters.",
+      "Know one tricky distinction or edge case the interviewer might ask next."
+    ],
+    "priority": "Core",
+    "whatInterviewersUsuallyAsk": {
+      "direct": [
+        "How do you explain enrollment?",
+        "What changes after enrollment?",
+        "What are common enrollment concerns?"
+      ],
+      "followUp": [
+        "How would you implement or explain enrollment troubleshooting?"
+      ],
+      "trapQuestions": [
+        "What is the trap in device enrolled vs device compliant?"
+      ]
+    },
+    "answerFramework": [
+      "Define the topic in one or two sentences.",
+      "Explain why it matters in Ivanti interviews.",
+      "Mention one pattern, type, or design rule.",
+      "Close with one practical example or related use case."
     ]
   },
   {
@@ -808,22 +1878,61 @@
       "experience"
     ],
     "definition": "Corporate-owned versus BYOD device management and the privacy/governance balance between them.",
-    "whyItMatters": "Interviewers often use this topic to judge whether you can connect configuration or process design to real operational outcomes.",
+    "whyItMatters": "BYOD versus corporate-owned is a frequent interview distinction because it affects privacy, policy scope, and app delivery design.",
     "types": [
       "BYOD",
       "corporate-owned personally enabled",
       "fully corporate-owned"
     ],
     "codingIds": [
-      "enrollment-troubleshooting"
+      "ownership-model-policy-mapping"
     ],
     "useCaseIds": [
       "byod-enrollment-program",
-      "non-compliant-device-response",
-      "managed-mobile-app-rollout"
+      "managed-mobile-app-rollout",
+      "non-compliant-device-response"
     ],
     "trickyIds": [
       "byod-vs-corporate-owned"
+    ],
+    "interviewContext": "Interviewers use this topic to check whether you can explain ownership models in Ivanti terms, connect it to Ivanti Neurons for MDM, and translate the concept into a practical implementation answer.",
+    "whatGoodAnswersShow": [
+      "You can define Ownership Models clearly without drifting into vague platform language.",
+      "You can connect Ownership Models to business impact such as support efficiency, governance, reporting, or automation quality.",
+      "You can give one practical Ivanti-style example instead of speaking only in theory."
+    ],
+    "commonMistakes": [
+      "Giving a generic IT answer without tying it back to Ivanti Neurons for MDM.",
+      "Confusing configuration concepts with process design or governance.",
+      "Describing the feature but not explaining when or why you would use it."
+    ],
+    "relatedRoleNames": [
+      "Ivanti MDM Engineer"
+    ],
+    "prepChecklist": [
+      "Be ready to define Ownership Models in one or two sentences.",
+      "Prepare one realistic scenario where the concept matters.",
+      "Know one tricky distinction or edge case the interviewer might ask next."
+    ],
+    "priority": "Important",
+    "whatInterviewersUsuallyAsk": {
+      "direct": [
+        "How do you explain BYOD vs corporate-owned?",
+        "How do ownership models affect policy?",
+        "Why does ownership change app strategy?"
+      ],
+      "followUp": [
+        "How would you implement or explain ownership model policy mapping?"
+      ],
+      "trapQuestions": [
+        "What is the trap in byod vs corporate-owned?"
+      ]
+    },
+    "answerFramework": [
+      "Define the topic in one or two sentences.",
+      "Explain why it matters in Ivanti interviews.",
+      "Mention one pattern, type, or design rule.",
+      "Close with one practical example or related use case."
     ]
   },
   {
@@ -842,7 +1951,7 @@
       "governance"
     ],
     "definition": "Rules that define device compliance state and drive remediation or restriction actions.",
-    "whyItMatters": "Interviewers often use this topic to judge whether you can connect configuration or process design to real operational outcomes.",
+    "whyItMatters": "Compliance questions test whether you can define policy, evaluate device state, and decide what remediation or access response should follow.",
     "types": [
       "state rules",
       "grace periods",
@@ -853,11 +1962,51 @@
     ],
     "useCaseIds": [
       "byod-enrollment-program",
-      "non-compliant-device-response",
-      "managed-mobile-app-rollout"
+      "managed-mobile-app-rollout",
+      "non-compliant-device-response"
     ],
     "trickyIds": [
       "compliance-state-vs-remediation-action"
+    ],
+    "interviewContext": "Interviewers use this topic to check whether you can explain compliance rules in Ivanti terms, connect it to Compliance and Policy, and translate the concept into a practical implementation answer.",
+    "whatGoodAnswersShow": [
+      "You can define Compliance Rules clearly without drifting into vague platform language.",
+      "You can connect Compliance Rules to business impact such as support efficiency, governance, reporting, or automation quality.",
+      "You can give one practical Ivanti-style example instead of speaking only in theory."
+    ],
+    "commonMistakes": [
+      "Giving a generic IT answer without tying it back to Compliance and Policy.",
+      "Confusing configuration concepts with process design or governance.",
+      "Describing the feature but not explaining when or why you would use it."
+    ],
+    "relatedRoleNames": [
+      "Ivanti UEM Engineer",
+      "Ivanti MDM Engineer"
+    ],
+    "prepChecklist": [
+      "Be ready to define Compliance Rules in one or two sentences.",
+      "Prepare one realistic scenario where the concept matters.",
+      "Know one tricky distinction or edge case the interviewer might ask next."
+    ],
+    "priority": "Core",
+    "whatInterviewersUsuallyAsk": {
+      "direct": [
+        "What is a compliance rule?",
+        "What happens when a device is non-compliant?",
+        "How do you explain remediation?"
+      ],
+      "followUp": [
+        "How would you implement or explain compliance remediation design?"
+      ],
+      "trapQuestions": [
+        "What is the trap in compliance state vs remediation action?"
+      ]
+    },
+    "answerFramework": [
+      "Define the topic in one or two sentences.",
+      "Explain why it matters in Ivanti interviews.",
+      "Mention one pattern, type, or design rule.",
+      "Close with one practical example or related use case."
     ]
   },
   {
@@ -876,17 +2025,60 @@
       "support"
     ],
     "definition": "Deploying managed applications to the right devices and user groups with visibility and supportability.",
-    "whyItMatters": "Interviewers often use this topic to judge whether you can connect configuration or process design to real operational outcomes.",
+    "whyItMatters": "App rollout questions help interviewers judge whether you can manage targeting, app lifecycle, and user impact in a governed way.",
     "types": [
-      "required apps",
-      "available apps",
-      "version/update handling"
+      "required app rollout",
+      "available app storefront",
+      "configuration and update strategy"
     ],
-    "codingIds": [],
+    "codingIds": [
+      "mobile-app-rollout-planning"
+    ],
     "useCaseIds": [
       "managed-mobile-app-rollout"
     ],
-    "trickyIds": []
+    "trickyIds": [
+      "required-vs-available-mobile-app"
+    ],
+    "interviewContext": "Interviewers use this topic to check whether you can explain mobile app deployment in Ivanti terms, connect it to Mobile App Distribution, and translate the concept into a practical implementation answer.",
+    "whatGoodAnswersShow": [
+      "You can define Mobile App Deployment clearly without drifting into vague platform language.",
+      "You can connect Mobile App Deployment to business impact such as support efficiency, governance, reporting, or automation quality.",
+      "You can give one practical Ivanti-style example instead of speaking only in theory."
+    ],
+    "commonMistakes": [
+      "Giving a generic IT answer without tying it back to Mobile App Distribution.",
+      "Confusing configuration concepts with process design or governance.",
+      "Describing the feature but not explaining when or why you would use it."
+    ],
+    "relatedRoleNames": [
+      "Ivanti MDM Engineer"
+    ],
+    "prepChecklist": [
+      "Be ready to define Mobile App Deployment in one or two sentences.",
+      "Prepare one realistic scenario where the concept matters.",
+      "Know one tricky distinction or edge case the interviewer might ask next."
+    ],
+    "priority": "Important",
+    "whatInterviewersUsuallyAsk": {
+      "direct": [
+        "How do you plan app rollout?",
+        "How do compliance and ownership affect deployment?",
+        "How do you support failed installs?"
+      ],
+      "followUp": [
+        "How would you implement or explain mobile app rollout planning?"
+      ],
+      "trapQuestions": [
+        "What is the trap in required app vs available app?"
+      ]
+    },
+    "answerFramework": [
+      "Define the topic in one or two sentences.",
+      "Explain why it matters in Ivanti interviews.",
+      "Mention one pattern, type, or design rule.",
+      "Close with one practical example or related use case."
+    ]
   },
   {
     "id": "asset-lifecycle",
@@ -904,48 +2096,138 @@
       "retirement"
     ],
     "definition": "Tracking assets from acquisition through assignment, refresh, and retirement.",
-    "whyItMatters": "Interviewers often use this topic to judge whether you can connect configuration or process design to real operational outcomes.",
+    "whyItMatters": "ITAM interviews often use lifecycle topics to test whether you can think strategically from procurement through retirement, not just inventory collection.",
     "types": [
       "procure and assign",
       "refresh",
       "retire/dispose"
     ],
     "codingIds": [
-      "asset-reconciliation-approach"
+      "asset-lifecycle-state-model"
     ],
     "useCaseIds": [
       "asset-refresh-planning"
     ],
-    "trickyIds": []
+    "trickyIds": [
+      "asset-record-vs-discovered-record"
+    ],
+    "interviewContext": "Interviewers use this topic to check whether you can explain asset lifecycle in Ivanti terms, connect it to Ivanti Neurons for ITAM, and translate the concept into a practical implementation answer.",
+    "whatGoodAnswersShow": [
+      "You can define Asset Lifecycle clearly without drifting into vague platform language.",
+      "You can connect Asset Lifecycle to business impact such as support efficiency, governance, reporting, or automation quality.",
+      "You can give one practical Ivanti-style example instead of speaking only in theory."
+    ],
+    "commonMistakes": [
+      "Giving a generic IT answer without tying it back to Ivanti Neurons for ITAM.",
+      "Confusing configuration concepts with process design or governance.",
+      "Describing the feature but not explaining when or why you would use it."
+    ],
+    "relatedRoleNames": [
+      "Ivanti ITAM Engineer",
+      "Ivanti Discovery Engineer",
+      "Ivanti Integration Architect"
+    ],
+    "prepChecklist": [
+      "Be ready to define Asset Lifecycle in one or two sentences.",
+      "Prepare one realistic scenario where the concept matters.",
+      "Know one tricky distinction or edge case the interviewer might ask next."
+    ],
+    "priority": "Core",
+    "whatInterviewersUsuallyAsk": {
+      "direct": [
+        "How do you explain lifecycle?",
+        "Why do lifecycle states matter?",
+        "How does lifecycle help reporting?"
+      ],
+      "followUp": [
+        "How would you implement or explain asset lifecycle state model?"
+      ],
+      "trapQuestions": [
+        "What is the trap in asset record vs discovered record?"
+      ]
+    },
+    "answerFramework": [
+      "Define the topic in one or two sentences.",
+      "Explain why it matters in Ivanti interviews.",
+      "Mention one pattern, type, or design rule.",
+      "Close with one practical example or related use case."
+    ]
   },
   {
     "id": "discovery-and-inventory",
     "name": "Discovery and Inventory",
     "moduleId": "ivanti-neurons-for-discovery",
-    "summary": "Collecting and normalizing asset visibility to improve trust in device and service data.",
+    "summary": "Discovery and inventory in Ivanti identify devices on the network, capture useful attributes, normalize the data, and support a single unified asset view.",
     "questions": [
       "Why is discovery important?",
       "What improves inventory trust?",
-      "How do you explain discovery vs asset records?"
+      "How do you explain discovery vs asset records?",
+      "How is discovery enabled and where does the data go?",
+      "Why do normalization and reconciliation matter after discovery?"
     ],
     "patterns": [
       "visibility",
       "source data",
       "normalized inventory"
     ],
-    "definition": "Collecting and normalizing asset visibility to improve trust in device and service data.",
-    "whyItMatters": "Interviewers often use this topic to judge whether you can connect configuration or process design to real operational outcomes.",
+    "definition": "Discovery and inventory in Ivanti identify devices on the network, capture useful attributes, normalize the data, and support a single unified asset view.",
+    "whyItMatters": "Discovery topics show whether you understand visibility, source quality, and how inventory becomes useful operational data.",
     "types": [
-      "active discovery",
-      "connector-fed discovery",
-      "normalized inventory views"
+      "always-on/passive detection",
+      "active discovery settings",
+      "normalization and reconciliation"
     ],
-    "codingIds": [],
+    "codingIds": [
+      "discovery-scan-and-reconciliation"
+    ],
     "useCaseIds": [
+      "discovery-policy-rollout",
       "discovery-reconciliation-improvement"
     ],
     "trickyIds": [
       "discovery-vs-itam-record"
+    ],
+    "interviewContext": "Interviewers use this topic to check whether you can explain discovery and inventory in Ivanti terms, connect it to Ivanti Neurons for Discovery, and translate the concept into a practical implementation answer.",
+    "whatGoodAnswersShow": [
+      "You can define Discovery and Inventory clearly without drifting into vague platform language.",
+      "You can connect Discovery and Inventory to business impact such as support efficiency, governance, reporting, or automation quality.",
+      "You can give one practical Ivanti-style example instead of speaking only in theory."
+    ],
+    "commonMistakes": [
+      "Giving a generic IT answer without tying it back to Ivanti Neurons for Discovery.",
+      "Confusing configuration concepts with process design or governance.",
+      "Describing the feature but not explaining when or why you would use it."
+    ],
+    "relatedRoleNames": [
+      "Ivanti UEM Engineer",
+      "Ivanti Endpoint Manager Engineer",
+      "Ivanti ITAM Engineer",
+      "Ivanti Discovery Engineer"
+    ],
+    "prepChecklist": [
+      "Be ready to define Discovery and Inventory in one or two sentences.",
+      "Prepare one realistic scenario where the concept matters.",
+      "Know one tricky distinction or edge case the interviewer might ask next."
+    ],
+    "priority": "Important",
+    "whatInterviewersUsuallyAsk": {
+      "direct": [
+        "Why is discovery important?",
+        "What improves inventory trust?",
+        "How do you explain discovery vs asset records?"
+      ],
+      "followUp": [
+        "How would you implement or explain discovery scan and reconciliation flow?"
+      ],
+      "trapQuestions": [
+        "What is the trap in discovery vs itam record?"
+      ]
+    },
+    "answerFramework": [
+      "Define the topic in one or two sentences.",
+      "Explain why it matters in Ivanti interviews.",
+      "Mention one pattern, type, or design rule.",
+      "Close with one practical example or related use case."
     ]
   },
   {
@@ -964,7 +2246,7 @@
       "deduplication"
     ],
     "definition": "Aligning discovered, managed, and asset records into a more trustworthy operating dataset.",
-    "whyItMatters": "Interviewers often use this topic to judge whether you can connect configuration or process design to real operational outcomes.",
+    "whyItMatters": "Normalization and reconciliation are high-value topics because they determine whether your reporting and asset insights are actually trustworthy.",
     "types": [
       "duplicate handling",
       "source-priority matching",
@@ -974,10 +2256,53 @@
       "asset-reconciliation-approach"
     ],
     "useCaseIds": [
-      "asset-refresh-planning",
+      "discovery-policy-rollout",
       "discovery-reconciliation-improvement"
     ],
-    "trickyIds": []
+    "trickyIds": [
+      "itam-vs-discovery"
+    ],
+    "interviewContext": "Interviewers use this topic to check whether you can explain normalization and reconciliation in Ivanti terms, connect it to Ivanti Neurons for ITAM, and translate the concept into a practical implementation answer.",
+    "whatGoodAnswersShow": [
+      "You can define Normalization and Reconciliation clearly without drifting into vague platform language.",
+      "You can connect Normalization and Reconciliation to business impact such as support efficiency, governance, reporting, or automation quality.",
+      "You can give one practical Ivanti-style example instead of speaking only in theory."
+    ],
+    "commonMistakes": [
+      "Giving a generic IT answer without tying it back to Ivanti Neurons for ITAM.",
+      "Confusing configuration concepts with process design or governance.",
+      "Describing the feature but not explaining when or why you would use it."
+    ],
+    "relatedRoleNames": [
+      "Ivanti ITAM Engineer",
+      "Ivanti Discovery Engineer",
+      "Ivanti Integration Architect"
+    ],
+    "prepChecklist": [
+      "Be ready to define Normalization and Reconciliation in one or two sentences.",
+      "Prepare one realistic scenario where the concept matters.",
+      "Know one tricky distinction or edge case the interviewer might ask next."
+    ],
+    "priority": "Important",
+    "whatInterviewersUsuallyAsk": {
+      "direct": [
+        "What is normalization?",
+        "How do you improve reconciliation?",
+        "Why do identifiers matter?"
+      ],
+      "followUp": [
+        "How would you implement or explain asset reconciliation approach?"
+      ],
+      "trapQuestions": [
+        "What is the trap in itam repository vs discovery data?"
+      ]
+    },
+    "answerFramework": [
+      "Define the topic in one or two sentences.",
+      "Explain why it matters in Ivanti interviews.",
+      "Mention one pattern, type, or design rule.",
+      "Close with one practical example or related use case."
+    ]
   },
   {
     "id": "controls-and-risks",
@@ -995,118 +2320,296 @@
       "assessments"
     ],
     "definition": "The relationship between controls, risks, assessments, and corrective actions in GRC workflows.",
-    "whyItMatters": "Interviewers often use this topic to judge whether you can connect configuration or process design to real operational outcomes.",
+    "whyItMatters": "GRC interviews use this area to evaluate whether you understand how controls, risk, assessments, and remediation connect into one operating model.",
     "types": [
       "control definition",
       "risk assessment",
-      "corrective actions"
+      "corrective/preventive action"
     ],
     "codingIds": [
       "grc-control-mapping-approach"
     ],
     "useCaseIds": [
-      "control-assessment-cycle"
+      "control-assessment-cycle",
+      "grc-authority-import-and-control-map"
     ],
-    "trickyIds": []
+    "trickyIds": [
+      "control-vs-risk"
+    ],
+    "interviewContext": "Interviewers use this topic to check whether you can explain controls and risks in Ivanti terms, connect it to Ivanti Neurons for GRC, and translate the concept into a practical implementation answer.",
+    "whatGoodAnswersShow": [
+      "You can define Controls and Risks clearly without drifting into vague platform language.",
+      "You can connect Controls and Risks to business impact such as support efficiency, governance, reporting, or automation quality.",
+      "You can give one practical Ivanti-style example instead of speaking only in theory."
+    ],
+    "commonMistakes": [
+      "Giving a generic IT answer without tying it back to Ivanti Neurons for GRC.",
+      "Confusing configuration concepts with process design or governance.",
+      "Describing the feature but not explaining when or why you would use it."
+    ],
+    "relatedRoleNames": [
+      "Ivanti GRC Analyst",
+      "Ivanti Integration Architect"
+    ],
+    "prepChecklist": [
+      "Be ready to define Controls and Risks in one or two sentences.",
+      "Prepare one realistic scenario where the concept matters.",
+      "Know one tricky distinction or edge case the interviewer might ask next."
+    ],
+    "priority": "Important",
+    "whatInterviewersUsuallyAsk": {
+      "direct": [
+        "How do controls reduce risk?",
+        "How do you explain risk assessments?",
+        "What is corrective action tracking?"
+      ],
+      "followUp": [
+        "How would you implement or explain grc control mapping approach?"
+      ],
+      "trapQuestions": [
+        "What is the trap in control vs risk?"
+      ]
+    },
+    "answerFramework": [
+      "Define the topic in one or two sentences.",
+      "Explain why it matters in Ivanti interviews.",
+      "Mention one pattern, type, or design rule.",
+      "Close with one practical example or related use case."
+    ]
   },
   {
     "id": "authority-documents-and-citations",
     "name": "Authority Documents and Citations",
     "moduleId": "ivanti-neurons-for-grc",
-    "summary": "Mapping authority documents to citations and controls for traceable compliance coverage.",
+    "summary": "Authority documents and citations represent the external requirements that are imported and mapped into controls, assessments, and compliance activities.",
     "questions": [
       "Why do citations matter?",
       "How do authority documents support governance?",
-      "How do you explain traceability?"
+      "How do you explain traceability?",
+      "What is a citation and how does it map to a control?",
+      "Why are authority imports useful in a GRC operating model?"
     ],
     "patterns": [
       "traceability",
       "compliance mapping",
       "governance"
     ],
-    "definition": "Mapping authority documents to citations and controls for traceable compliance coverage.",
-    "whyItMatters": "Interviewers often use this topic to judge whether you can connect configuration or process design to real operational outcomes.",
+    "definition": "Authority documents and citations represent the external requirements that are imported and mapped into controls, assessments, and compliance activities.",
+    "whyItMatters": "This topic matters because it tests whether you can explain how requirements map into controls, audits, and repeatable compliance activities.",
     "types": [
-      "authority sources",
-      "citations",
-      "control traceability"
+      "authority import",
+      "citation mapping",
+      "policy/control linkage"
     ],
     "codingIds": [
-      "grc-control-mapping-approach"
+      "authority-document-structure"
     ],
     "useCaseIds": [
-      "control-assessment-cycle"
+      "control-assessment-cycle",
+      "grc-authority-import-and-control-map"
     ],
-    "trickyIds": []
+    "trickyIds": [
+      "citation-vs-control"
+    ],
+    "interviewContext": "Interviewers use this topic to check whether you can explain authority documents and citations in Ivanti terms, connect it to Ivanti Neurons for GRC, and translate the concept into a practical implementation answer.",
+    "whatGoodAnswersShow": [
+      "You can define Authority Documents and Citations clearly without drifting into vague platform language.",
+      "You can connect Authority Documents and Citations to business impact such as support efficiency, governance, reporting, or automation quality.",
+      "You can give one practical Ivanti-style example instead of speaking only in theory."
+    ],
+    "commonMistakes": [
+      "Giving a generic IT answer without tying it back to Ivanti Neurons for GRC.",
+      "Confusing configuration concepts with process design or governance.",
+      "Describing the feature but not explaining when or why you would use it."
+    ],
+    "relatedRoleNames": [
+      "Ivanti GRC Analyst",
+      "Ivanti Integration Architect"
+    ],
+    "prepChecklist": [
+      "Be ready to define Authority Documents and Citations in one or two sentences.",
+      "Prepare one realistic scenario where the concept matters.",
+      "Know one tricky distinction or edge case the interviewer might ask next."
+    ],
+    "priority": "Advanced",
+    "whatInterviewersUsuallyAsk": {
+      "direct": [
+        "Why do citations matter?",
+        "How do authority documents support governance?",
+        "How do you explain traceability?"
+      ],
+      "followUp": [
+        "How would you implement or explain authority document structure and citation design?"
+      ],
+      "trapQuestions": [
+        "What is the trap in citation vs control?"
+      ]
+    },
+    "answerFramework": [
+      "Define the topic in one or two sentences.",
+      "Explain why it matters in Ivanti interviews.",
+      "Mention one pattern, type, or design rule.",
+      "Close with one practical example or related use case."
+    ]
   },
   {
     "id": "workspace-triage",
     "name": "Workspace Triage",
     "moduleId": "ivanti-neurons-workspace",
-    "summary": "Using a unified analyst view to speed triage, action, and context-driven support decisions.",
+    "summary": "Workspace triage uses a 360-degree analyst view of users, devices, applications, and services plus quick actions to improve first-line support.",
     "questions": [
       "What does Workspace improve?",
       "Why does unified context matter?",
-      "How does shift-left become easier?"
+      "How does shift-left become easier?",
+      "How does Workspace support shift-left?",
+      "What makes 360-degree context valuable for analysts?"
     ],
     "patterns": [
       "context",
       "triage",
       "analyst efficiency"
     ],
-    "definition": "Using a unified analyst view to speed triage, action, and context-driven support decisions.",
-    "whyItMatters": "Interviewers often use this topic to judge whether you can connect configuration or process design to real operational outcomes.",
+    "definition": "Workspace triage uses a 360-degree analyst view of users, devices, applications, and services plus quick actions to improve first-line support.",
+    "whyItMatters": "Workspace is about shift-left outcomes, so interviews often focus on whether you can use context and quick actions to reduce escalations.",
     "types": [
-      "360 context review",
-      "quick actions",
-      "resolution guidance"
+      "360-degree context review",
+      "specialist-level quick actions",
+      "shift-left remediation"
     ],
     "codingIds": [
+      "workspace-first-line-remediation",
       "workspace-quick-action-thinking"
     ],
     "useCaseIds": [
       "knowledge-deflection-for-support",
+      "workspace-first-call-resolution",
       "workspace-shift-left-triage"
     ],
     "trickyIds": [
-      "workspace-context-vs-ticket-notes"
+      "workspace-context-vs-ticket-notes",
+      "workspace-vs-service-desk-notes"
+    ],
+    "interviewContext": "Interviewers use this topic to check whether you can explain workspace triage in Ivanti terms, connect it to Ivanti Neurons Workspace, and translate the concept into a practical implementation answer.",
+    "whatGoodAnswersShow": [
+      "You can define Workspace Triage clearly without drifting into vague platform language.",
+      "You can connect Workspace Triage to business impact such as support efficiency, governance, reporting, or automation quality.",
+      "You can give one practical Ivanti-style example instead of speaking only in theory."
+    ],
+    "commonMistakes": [
+      "Giving a generic IT answer without tying it back to Ivanti Neurons Workspace.",
+      "Confusing configuration concepts with process design or governance.",
+      "Describing the feature but not explaining when or why you would use it."
+    ],
+    "relatedRoleNames": [
+      "Ivanti Workspace Analyst"
+    ],
+    "prepChecklist": [
+      "Be ready to define Workspace Triage in one or two sentences.",
+      "Prepare one realistic scenario where the concept matters.",
+      "Know one tricky distinction or edge case the interviewer might ask next."
+    ],
+    "priority": "Important",
+    "whatInterviewersUsuallyAsk": {
+      "direct": [
+        "What does Workspace improve?",
+        "Why does unified context matter?",
+        "How does shift-left become easier?"
+      ],
+      "followUp": [
+        "How would you implement or explain workspace first-line remediation thinking?",
+        "How would you implement or explain workspace quick-action thinking?"
+      ],
+      "trapQuestions": [
+        "What is the trap in workspace context vs ticket notes?",
+        "What is the trap in workspace context vs ticket notes?"
+      ]
+    },
+    "answerFramework": [
+      "Define the topic in one or two sentences.",
+      "Explain why it matters in Ivanti interviews.",
+      "Mention one pattern, type, or design rule.",
+      "Close with one practical example or related use case."
     ]
   },
   {
     "id": "velocity-browser-sessions",
     "name": "Velocity Browser Sessions",
     "moduleId": "ivanti-velocity",
-    "summary": "Transforming browser workflows for frontline execution with less friction and better mobile usability.",
+    "summary": "Velocity browser sessions modernize existing browser, telnet, or host-driven workflows for frontline users without replacing the backend application.",
     "questions": [
       "What is a Velocity browser session?",
       "Why does browser simplification matter?",
-      "How do you redesign a desktop-heavy flow?"
+      "How do you redesign a desktop-heavy flow?",
+      "Why use Velocity instead of replacing the host app?",
+      "How do browser sessions improve frontline execution?"
     ],
     "patterns": [
       "frontline UX",
       "browser optimization",
       "mobile practicality"
     ],
-    "definition": "Transforming browser workflows for frontline execution with less friction and better mobile usability.",
-    "whyItMatters": "Interviewers often use this topic to judge whether you can connect configuration or process design to real operational outcomes.",
+    "definition": "Velocity browser sessions modernize existing browser, telnet, or host-driven workflows for frontline users without replacing the backend application.",
+    "whyItMatters": "Velocity topics assess whether you can modernize existing frontline workflows without rewriting the host system.",
     "types": [
+      "web/telnet modernization",
       "screen simplification",
-      "browser prompts",
-      "frontline optimization"
+      "device-adaptive session design"
     ],
     "codingIds": [
-      "velocity-flow-redesign"
+      "velocity-session-optimization"
     ],
     "useCaseIds": [
+      "velocity-web-modernization",
       "warehouse-picking-redesign"
     ],
-    "trickyIds": []
+    "trickyIds": [
+      "velocity-modernize-vs-replace"
+    ],
+    "interviewContext": "Interviewers use this topic to check whether you can explain velocity browser sessions in Ivanti terms, connect it to Ivanti Velocity, and translate the concept into a practical implementation answer.",
+    "whatGoodAnswersShow": [
+      "You can define Velocity Browser Sessions clearly without drifting into vague platform language.",
+      "You can connect Velocity Browser Sessions to business impact such as support efficiency, governance, reporting, or automation quality.",
+      "You can give one practical Ivanti-style example instead of speaking only in theory."
+    ],
+    "commonMistakes": [
+      "Giving a generic IT answer without tying it back to Ivanti Velocity.",
+      "Confusing configuration concepts with process design or governance.",
+      "Describing the feature but not explaining when or why you would use it."
+    ],
+    "relatedRoleNames": [
+      "Ivanti Velocity Consultant"
+    ],
+    "prepChecklist": [
+      "Be ready to define Velocity Browser Sessions in one or two sentences.",
+      "Prepare one realistic scenario where the concept matters.",
+      "Know one tricky distinction or edge case the interviewer might ask next."
+    ],
+    "priority": "Advanced",
+    "whatInterviewersUsuallyAsk": {
+      "direct": [
+        "What is a Velocity browser session?",
+        "Why does browser simplification matter?",
+        "How do you redesign a desktop-heavy flow?"
+      ],
+      "followUp": [
+        "How would you implement or explain velocity session optimization?"
+      ],
+      "trapQuestions": [
+        "What is the trap in velocity modernization vs full app replacement?"
+      ]
+    },
+    "answerFramework": [
+      "Define the topic in one or two sentences.",
+      "Explain why it matters in Ivanti interviews.",
+      "Mention one pattern, type, or design rule.",
+      "Close with one practical example or related use case."
+    ]
   },
   {
     "id": "scan-first-workflow-design",
     "name": "Scan-First Workflow Design",
     "moduleId": "ivanti-velocity",
-    "summary": "Designing warehouse and frontline flows around scanning, prompt reduction, and execution speed.",
+    "summary": "Scan-first workflow design reduces manual input by structuring frontline tasks around fast, accurate scanning and simplified prompts.",
     "questions": [
       "What makes a good scan workflow?",
       "Why reduce keystrokes?",
@@ -1117,19 +2620,61 @@
       "efficiency",
       "error reduction"
     ],
-    "definition": "Designing warehouse and frontline flows around scanning, prompt reduction, and execution speed.",
-    "whyItMatters": "Interviewers often use this topic to judge whether you can connect configuration or process design to real operational outcomes.",
+    "definition": "Scan-first workflow design reduces manual input by structuring frontline tasks around fast, accurate scanning and simplified prompts.",
+    "whyItMatters": "Scan-first design is a strong practical topic because it shows whether you understand frontline speed, accuracy, and low-friction execution.",
     "types": [
-      "scan-led tasks",
-      "prompt reduction",
-      "error prevention"
+      "scan-driven prompts",
+      "exception handling",
+      "training-time reduction"
     ],
     "codingIds": [
       "velocity-flow-redesign"
     ],
     "useCaseIds": [
+      "velocity-web-modernization",
       "warehouse-picking-redesign"
     ],
-    "trickyIds": []
+    "trickyIds": [
+      "scan-speed-vs-data-quality"
+    ],
+    "interviewContext": "Interviewers use this topic to check whether you can explain scan-first workflow design in Ivanti terms, connect it to Ivanti Velocity, and translate the concept into a practical implementation answer.",
+    "whatGoodAnswersShow": [
+      "You can define Scan-First Workflow Design clearly without drifting into vague platform language.",
+      "You can connect Scan-First Workflow Design to business impact such as support efficiency, governance, reporting, or automation quality.",
+      "You can give one practical Ivanti-style example instead of speaking only in theory."
+    ],
+    "commonMistakes": [
+      "Giving a generic IT answer without tying it back to Ivanti Velocity.",
+      "Confusing configuration concepts with process design or governance.",
+      "Describing the feature but not explaining when or why you would use it."
+    ],
+    "relatedRoleNames": [
+      "Ivanti Velocity Consultant"
+    ],
+    "prepChecklist": [
+      "Be ready to define Scan-First Workflow Design in one or two sentences.",
+      "Prepare one realistic scenario where the concept matters.",
+      "Know one tricky distinction or edge case the interviewer might ask next."
+    ],
+    "priority": "Important",
+    "whatInterviewersUsuallyAsk": {
+      "direct": [
+        "What makes a good scan workflow?",
+        "Why reduce keystrokes?",
+        "How do you balance accuracy and speed?"
+      ],
+      "followUp": [
+        "How would you implement or explain velocity flow redesign?"
+      ],
+      "trapQuestions": [
+        "What is the trap in scan speed vs data quality in frontline flows?"
+      ]
+    },
+    "answerFramework": [
+      "Define the topic in one or two sentences.",
+      "Explain why it matters in Ivanti interviews.",
+      "Mention one pattern, type, or design rule.",
+      "Close with one practical example or related use case."
+    ]
   }
 ]

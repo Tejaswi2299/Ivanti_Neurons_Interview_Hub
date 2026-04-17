@@ -44,32 +44,89 @@
       "workflows"
     ],
     "codingIds": [
-      "rest-integration-walk-through",
-      "notification-automation-with-saved-searches",
       "approval-routing-logic",
-      "validation-logic-design",
-      "workflow-exception-handling",
+      "auth-token-flow-review",
+      "business-object-extension-plan",
+      "change-risk-and-approval-design",
+      "dashboard-kpi-design",
       "data-mapping-strategy",
-      "retry-and-backoff-patterns"
+      "email-template-dynamic-fields",
+      "escalation-trigger-design",
+      "form-layout-design-review",
+      "incident-priority-and-routing",
+      "knowledge-feedback-loop",
+      "notification-automation-with-saved-searches",
+      "problem-trend-analysis",
+      "quick-action-design-pattern",
+      "relationship-impact-walk-through",
+      "request-fulfillment-task-design",
+      "rest-integration-walk-through",
+      "retry-and-backoff-patterns",
+      "validation-logic-design",
+      "workflow-exception-handling"
     ],
     "useCaseIds": [
-      "weekly-open-incident-summary",
-      "customer-response-reactivation",
-      "multi-step-request-approvals",
-      "change-approval-and-scheduling",
-      "knowledge-deflection-for-support",
-      "external-approval-sync",
-      "scheduled-report-push-to-external-endpoint",
-      "pilot-based-patch-rollout",
       "asset-refresh-planning",
+      "change-approval-and-scheduling",
+      "custom-object-design-review",
+      "customer-response-reactivation",
+      "escalation-schedule-tuning",
+      "external-approval-sync",
+      "knowledge-deflection-for-support",
+      "multi-step-request-approvals",
+      "persona-based-form-redesign",
+      "pilot-based-patch-rollout",
+      "problem-review-and-corrective-action",
+      "quick-action-notification-pack",
+      "relationship-driven-task-model",
+      "scheduled-report-push-to-external-endpoint",
+      "validation-guardrail-rollout",
+      "weekly-open-incident-summary",
       "workspace-shift-left-triage"
     ],
     "trickyIds": [
-      "quick-action-vs-workflow",
+      "approval-vs-fulfillment-task",
+      "authn-vs-authz-in-integrations",
+      "catalog-request-vs-fulfillment-task",
+      "dashboard-vs-report",
+      "escalation-vs-notification",
       "incident-vs-problem",
-      "saved-search-vs-dashboard",
+      "incident-vs-service-request",
+      "ipaas-connector-vs-custom-integration",
       "knowledge-article-vs-workaround",
-      "ipaas-connector-vs-custom-integration"
+      "lookup-vs-parent-child-relationship",
+      "mapping-vs-transformation",
+      "object-extension-vs-new-object",
+      "problem-vs-known-error",
+      "quick-action-vs-workflow",
+      "retry-vs-replay",
+      "saved-search-vs-dashboard",
+      "single-form-vs-role-specific-layouts",
+      "standard-vs-normal-change",
+      "template-content-vs-recipient-logic",
+      "ui-required-vs-business-validation",
+      "workflow-vs-state-driven-routing"
+    ],
+    "priority": "Core",
+    "whatInterviewersUsuallyAsk": [
+      "How do you design multi-step approvals?",
+      "Why does authentication design matter?",
+      "What is a business object?",
+      "How do you assess change risk?",
+      "How do you route approvals by request type?",
+      "How do you store credentials safely?"
+    ],
+    "answerFramework": [
+      "Start with what the role owns day to day.",
+      "Mention the highest-priority modules you would focus on first.",
+      "Name the topics interviewers usually probe for this role.",
+      "Close with one implementation example or support scenario."
+    ],
+    "studyOrder": [
+      "Core topics first",
+      "Then coding or automation questions",
+      "Then use cases",
+      "Finish with tricky distinctions and quiz review"
     ]
   },
   {
@@ -111,26 +168,78 @@
       "workflows"
     ],
     "codingIds": [
-      "rest-integration-walk-through",
       "approval-routing-logic",
-      "validation-logic-design",
-      "workflow-exception-handling",
+      "auth-token-flow-review",
+      "business-object-extension-plan",
+      "change-risk-and-approval-design",
       "data-mapping-strategy",
-      "retry-and-backoff-patterns"
+      "email-template-dynamic-fields",
+      "escalation-trigger-design",
+      "form-layout-design-review",
+      "incident-priority-and-routing",
+      "quick-action-design-pattern",
+      "relationship-impact-walk-through",
+      "request-fulfillment-task-design",
+      "rest-integration-walk-through",
+      "retry-and-backoff-patterns",
+      "validation-logic-design",
+      "workflow-exception-handling"
     ],
     "useCaseIds": [
-      "weekly-open-incident-summary",
-      "customer-response-reactivation",
-      "multi-step-request-approvals",
       "change-approval-and-scheduling",
-      "knowledge-deflection-for-support",
+      "custom-object-design-review",
+      "customer-response-reactivation",
+      "escalation-schedule-tuning",
       "external-approval-sync",
+      "knowledge-deflection-for-support",
+      "multi-step-request-approvals",
+      "persona-based-form-redesign",
+      "platform-cross-workflow-automation",
+      "quick-action-notification-pack",
+      "relationship-driven-task-model",
       "scheduled-report-push-to-external-endpoint",
+      "validation-guardrail-rollout",
+      "weekly-open-incident-summary",
       "workspace-shift-left-triage"
     ],
     "trickyIds": [
+      "approval-vs-fulfillment-task",
+      "authn-vs-authz-in-integrations",
+      "catalog-request-vs-fulfillment-task",
+      "escalation-vs-notification",
+      "incident-vs-service-request",
+      "ipaas-connector-vs-custom-integration",
+      "lookup-vs-parent-child-relationship",
+      "mapping-vs-transformation",
+      "object-extension-vs-new-object",
       "quick-action-vs-workflow",
-      "ipaas-connector-vs-custom-integration"
+      "retry-vs-replay",
+      "single-form-vs-role-specific-layouts",
+      "standard-vs-normal-change",
+      "template-content-vs-recipient-logic",
+      "ui-required-vs-business-validation",
+      "workflow-vs-state-driven-routing"
+    ],
+    "priority": "Core",
+    "whatInterviewersUsuallyAsk": [
+      "How do you design multi-step approvals?",
+      "Why does authentication design matter?",
+      "What is a business object?",
+      "How do you assess change risk?",
+      "How do you route approvals by request type?",
+      "How do you store credentials safely?"
+    ],
+    "answerFramework": [
+      "Start with what the role owns day to day.",
+      "Mention the highest-priority modules you would focus on first.",
+      "Name the topics interviewers usually probe for this role.",
+      "Close with one implementation example or support scenario."
+    ],
+    "studyOrder": [
+      "Core topics first",
+      "Then coding or automation questions",
+      "Then use cases",
+      "Finish with tricky distinctions and quiz review"
     ]
   },
   {
@@ -162,23 +271,53 @@
       "software-distribution-jobs"
     ],
     "codingIds": [
+      "compliance-remediation-design",
+      "discovery-scan-and-reconciliation",
       "endpoint-targeting-strategy",
       "patch-ring-rollout-design",
       "software-deployment-failure-triage",
-      "compliance-remediation-design"
+      "software-distribution-wave-design",
+      "uem-policy-baseline-review"
     ],
     "useCaseIds": [
-      "pilot-based-patch-rollout",
-      "targeted-software-rollout",
       "byod-enrollment-program",
-      "non-compliant-device-response",
+      "discovery-policy-rollout",
+      "discovery-reconciliation-improvement",
       "managed-mobile-app-rollout",
-      "discovery-reconciliation-improvement"
+      "non-compliant-device-response",
+      "pilot-based-patch-rollout",
+      "software-distribution-validation",
+      "targeted-software-rollout",
+      "uem-device-lifecycle-control"
     ],
     "trickyIds": [
+      "agent-issue-vs-policy-issue",
+      "compliance-state-vs-remediation-action",
       "discovery-vs-itam-record",
+      "distribution-vs-app-distribution",
       "patch-ring-vs-broad-rollout",
-      "compliance-state-vs-remediation-action"
+      "uem-vs-endpoint-manager"
+    ],
+    "priority": "Core",
+    "whatInterviewersUsuallyAsk": [
+      "What is a compliance rule?",
+      "Why are device groups important?",
+      "Why is discovery important?",
+      "How do you troubleshoot failed jobs?",
+      "How do you respond to a non-compliant device?",
+      "How do you describe discovery at a high level?"
+    ],
+    "answerFramework": [
+      "Start with what the role owns day to day.",
+      "Mention the highest-priority modules you would focus on first.",
+      "Name the topics interviewers usually probe for this role.",
+      "Close with one implementation example or support scenario."
+    ],
+    "studyOrder": [
+      "Core topics first",
+      "Then coding or automation questions",
+      "Then use cases",
+      "Finish with tricky distinctions and quiz review"
     ]
   },
   {
@@ -207,18 +346,48 @@
       "software-distribution-jobs"
     ],
     "codingIds": [
+      "discovery-scan-and-reconciliation",
       "endpoint-targeting-strategy",
       "patch-ring-rollout-design",
-      "software-deployment-failure-triage"
+      "software-deployment-failure-triage",
+      "software-distribution-wave-design",
+      "uem-policy-baseline-review"
     ],
     "useCaseIds": [
+      "discovery-policy-rollout",
+      "discovery-reconciliation-improvement",
       "pilot-based-patch-rollout",
+      "software-distribution-validation",
       "targeted-software-rollout",
-      "discovery-reconciliation-improvement"
+      "uem-device-lifecycle-control"
     ],
     "trickyIds": [
+      "agent-issue-vs-policy-issue",
       "discovery-vs-itam-record",
-      "patch-ring-vs-broad-rollout"
+      "distribution-vs-app-distribution",
+      "patch-ring-vs-broad-rollout",
+      "uem-vs-endpoint-manager"
+    ],
+    "priority": "Important",
+    "whatInterviewersUsuallyAsk": [
+      "Why are device groups important?",
+      "Why is discovery important?",
+      "How do you troubleshoot failed jobs?",
+      "Why use patch rings?",
+      "How do you describe discovery at a high level?",
+      "How do you design targeting groups?"
+    ],
+    "answerFramework": [
+      "Start with what the role owns day to day.",
+      "Mention the highest-priority modules you would focus on first.",
+      "Name the topics interviewers usually probe for this role.",
+      "Close with one implementation example or support scenario."
+    ],
+    "studyOrder": [
+      "Core topics first",
+      "Then coding or automation questions",
+      "Then use cases",
+      "Finish with tricky distinctions and quiz review"
     ]
   },
   {
@@ -247,21 +416,53 @@
       "saved-searches"
     ],
     "codingIds": [
-      "notification-automation-with-saved-searches",
+      "dashboard-kpi-design",
       "endpoint-targeting-strategy",
+      "notification-automation-with-saved-searches",
       "patch-ring-rollout-design",
-      "software-deployment-failure-triage"
+      "software-deployment-failure-triage",
+      "uem-policy-baseline-review"
     ],
     "useCaseIds": [
-      "weekly-open-incident-summary",
-      "scheduled-report-push-to-external-endpoint",
+      "asset-refresh-planning",
+      "escalation-schedule-tuning",
       "pilot-based-patch-rollout",
+      "problem-review-and-corrective-action",
+      "quick-action-notification-pack",
+      "scheduled-report-push-to-external-endpoint",
+      "software-distribution-validation",
       "targeted-software-rollout",
-      "asset-refresh-planning"
+      "uem-device-lifecycle-control",
+      "validation-guardrail-rollout",
+      "weekly-open-incident-summary"
     ],
     "trickyIds": [
+      "agent-issue-vs-policy-issue",
+      "dashboard-vs-report",
       "patch-ring-vs-broad-rollout",
-      "saved-search-vs-dashboard"
+      "saved-search-vs-dashboard",
+      "uem-vs-endpoint-manager"
+    ],
+    "priority": "Important",
+    "whatInterviewersUsuallyAsk": [
+      "Which KPIs matter?",
+      "Why are device groups important?",
+      "How do you troubleshoot failed jobs?",
+      "Why use patch rings?",
+      "How do you choose KPIs?",
+      "How do you design targeting groups?"
+    ],
+    "answerFramework": [
+      "Start with what the role owns day to day.",
+      "Mention the highest-priority modules you would focus on first.",
+      "Name the topics interviewers usually probe for this role.",
+      "Close with one implementation example or support scenario."
+    ],
+    "studyOrder": [
+      "Core topics first",
+      "Then coding or automation questions",
+      "Then use cases",
+      "Finish with tricky distinctions and quiz review"
     ]
   },
   {
@@ -291,23 +492,54 @@
       "saved-searches"
     ],
     "codingIds": [
-      "notification-automation-with-saved-searches",
+      "compliance-remediation-design",
+      "dashboard-kpi-design",
       "enrollment-troubleshooting",
-      "compliance-remediation-design"
+      "mobile-app-rollout-planning",
+      "notification-automation-with-saved-searches",
+      "ownership-model-policy-mapping"
     ],
     "useCaseIds": [
-      "weekly-open-incident-summary",
-      "scheduled-report-push-to-external-endpoint",
-      "pilot-based-patch-rollout",
+      "asset-refresh-planning",
       "byod-enrollment-program",
-      "non-compliant-device-response",
+      "escalation-schedule-tuning",
       "managed-mobile-app-rollout",
-      "asset-refresh-planning"
+      "non-compliant-device-response",
+      "pilot-based-patch-rollout",
+      "problem-review-and-corrective-action",
+      "quick-action-notification-pack",
+      "scheduled-report-push-to-external-endpoint",
+      "validation-guardrail-rollout",
+      "weekly-open-incident-summary"
     ],
     "trickyIds": [
       "byod-vs-corporate-owned",
-      "saved-search-vs-dashboard",
-      "compliance-state-vs-remediation-action"
+      "compliance-state-vs-remediation-action",
+      "dashboard-vs-report",
+      "device-enrolled-vs-device-compliant",
+      "required-vs-available-mobile-app",
+      "saved-search-vs-dashboard"
+    ],
+    "priority": "Core",
+    "whatInterviewersUsuallyAsk": [
+      "What is a compliance rule?",
+      "Which KPIs matter?",
+      "How do you explain enrollment?",
+      "How do you plan app rollout?",
+      "How do you respond to a non-compliant device?",
+      "How do you choose KPIs?"
+    ],
+    "answerFramework": [
+      "Start with what the role owns day to day.",
+      "Mention the highest-priority modules you would focus on first.",
+      "Name the topics interviewers usually probe for this role.",
+      "Close with one implementation example or support scenario."
+    ],
+    "studyOrder": [
+      "Core topics first",
+      "Then coding or automation questions",
+      "Then use cases",
+      "Finish with tricky distinctions and quiz review"
     ]
   },
   {
@@ -340,24 +572,60 @@
       "saved-searches"
     ],
     "codingIds": [
-      "rest-integration-walk-through",
-      "notification-automation-with-saved-searches",
+      "asset-lifecycle-state-model",
+      "asset-reconciliation-approach",
+      "auth-token-flow-review",
+      "dashboard-kpi-design",
       "data-mapping-strategy",
-      "retry-and-backoff-patterns",
-      "asset-reconciliation-approach"
+      "discovery-scan-and-reconciliation",
+      "notification-automation-with-saved-searches",
+      "rest-integration-walk-through",
+      "retry-and-backoff-patterns"
     ],
     "useCaseIds": [
-      "weekly-open-incident-summary",
-      "external-approval-sync",
-      "scheduled-report-push-to-external-endpoint",
-      "pilot-based-patch-rollout",
       "asset-refresh-planning",
-      "discovery-reconciliation-improvement"
+      "discovery-policy-rollout",
+      "discovery-reconciliation-improvement",
+      "escalation-schedule-tuning",
+      "external-approval-sync",
+      "pilot-based-patch-rollout",
+      "problem-review-and-corrective-action",
+      "quick-action-notification-pack",
+      "scheduled-report-push-to-external-endpoint",
+      "validation-guardrail-rollout",
+      "weekly-open-incident-summary"
     ],
     "trickyIds": [
+      "asset-record-vs-discovered-record",
+      "authn-vs-authz-in-integrations",
+      "dashboard-vs-report",
       "discovery-vs-itam-record",
-      "saved-search-vs-dashboard",
-      "ipaas-connector-vs-custom-integration"
+      "ipaas-connector-vs-custom-integration",
+      "itam-vs-discovery",
+      "mapping-vs-transformation",
+      "retry-vs-replay",
+      "saved-search-vs-dashboard"
+    ],
+    "priority": "Core",
+    "whatInterviewersUsuallyAsk": [
+      "How do you explain lifecycle?",
+      "Why does authentication design matter?",
+      "Which KPIs matter?",
+      "What matters in mapping?",
+      "What lifecycle states matter most?",
+      "How do you improve reconciliation quality?"
+    ],
+    "answerFramework": [
+      "Start with what the role owns day to day.",
+      "Mention the highest-priority modules you would focus on first.",
+      "Name the topics interviewers usually probe for this role.",
+      "Close with one implementation example or support scenario."
+    ],
+    "studyOrder": [
+      "Core topics first",
+      "Then coding or automation questions",
+      "Then use cases",
+      "Finish with tricky distinctions and quiz review"
     ]
   },
   {
@@ -385,19 +653,51 @@
       "saved-searches"
     ],
     "codingIds": [
-      "notification-automation-with-saved-searches",
-      "asset-reconciliation-approach"
+      "asset-lifecycle-state-model",
+      "asset-reconciliation-approach",
+      "dashboard-kpi-design",
+      "discovery-scan-and-reconciliation",
+      "notification-automation-with-saved-searches"
     ],
     "useCaseIds": [
-      "weekly-open-incident-summary",
-      "scheduled-report-push-to-external-endpoint",
-      "pilot-based-patch-rollout",
       "asset-refresh-planning",
-      "discovery-reconciliation-improvement"
+      "discovery-policy-rollout",
+      "discovery-reconciliation-improvement",
+      "escalation-schedule-tuning",
+      "pilot-based-patch-rollout",
+      "problem-review-and-corrective-action",
+      "quick-action-notification-pack",
+      "scheduled-report-push-to-external-endpoint",
+      "validation-guardrail-rollout",
+      "weekly-open-incident-summary"
     ],
     "trickyIds": [
+      "asset-record-vs-discovered-record",
+      "dashboard-vs-report",
       "discovery-vs-itam-record",
+      "itam-vs-discovery",
       "saved-search-vs-dashboard"
+    ],
+    "priority": "Advanced",
+    "whatInterviewersUsuallyAsk": [
+      "How do you explain lifecycle?",
+      "Which KPIs matter?",
+      "Why is discovery important?",
+      "What is normalization?",
+      "What lifecycle states matter most?",
+      "How do you improve reconciliation quality?"
+    ],
+    "answerFramework": [
+      "Start with what the role owns day to day.",
+      "Mention the highest-priority modules you would focus on first.",
+      "Name the topics interviewers usually probe for this role.",
+      "Close with one implementation example or support scenario."
+    ],
+    "studyOrder": [
+      "Core topics first",
+      "Then coding or automation questions",
+      "Then use cases",
+      "Finish with tricky distinctions and quiz review"
     ]
   },
   {
@@ -428,23 +728,58 @@
       "saved-searches"
     ],
     "codingIds": [
-      "rest-integration-walk-through",
-      "notification-automation-with-saved-searches",
+      "auth-token-flow-review",
+      "authority-document-structure",
+      "dashboard-kpi-design",
       "data-mapping-strategy",
-      "retry-and-backoff-patterns",
-      "grc-control-mapping-approach"
+      "grc-control-mapping-approach",
+      "notification-automation-with-saved-searches",
+      "rest-integration-walk-through",
+      "retry-and-backoff-patterns"
     ],
     "useCaseIds": [
-      "weekly-open-incident-summary",
-      "external-approval-sync",
-      "scheduled-report-push-to-external-endpoint",
-      "pilot-based-patch-rollout",
       "asset-refresh-planning",
-      "control-assessment-cycle"
+      "control-assessment-cycle",
+      "escalation-schedule-tuning",
+      "external-approval-sync",
+      "grc-authority-import-and-control-map",
+      "pilot-based-patch-rollout",
+      "problem-review-and-corrective-action",
+      "quick-action-notification-pack",
+      "scheduled-report-push-to-external-endpoint",
+      "validation-guardrail-rollout",
+      "weekly-open-incident-summary"
     ],
     "trickyIds": [
-      "saved-search-vs-dashboard",
-      "ipaas-connector-vs-custom-integration"
+      "authn-vs-authz-in-integrations",
+      "citation-vs-control",
+      "control-vs-risk",
+      "dashboard-vs-report",
+      "ipaas-connector-vs-custom-integration",
+      "mapping-vs-transformation",
+      "retry-vs-replay",
+      "saved-search-vs-dashboard"
+    ],
+    "priority": "Advanced",
+    "whatInterviewersUsuallyAsk": [
+      "Why does authentication design matter?",
+      "Why do citations matter?",
+      "How do controls reduce risk?",
+      "Which KPIs matter?",
+      "How do you store credentials safely?",
+      "How do citations connect requirements to controls?"
+    ],
+    "answerFramework": [
+      "Start with what the role owns day to day.",
+      "Mention the highest-priority modules you would focus on first.",
+      "Name the topics interviewers usually probe for this role.",
+      "Close with one implementation example or support scenario."
+    ],
+    "studyOrder": [
+      "Core topics first",
+      "Then coding or automation questions",
+      "Then use cases",
+      "Finish with tricky distinctions and quiz review"
     ]
   },
   {
@@ -484,28 +819,78 @@
       "workflows"
     ],
     "codingIds": [
-      "rest-integration-walk-through",
-      "validation-logic-design",
-      "workflow-exception-handling",
-      "data-mapping-strategy",
-      "retry-and-backoff-patterns",
+      "asset-lifecycle-state-model",
       "asset-reconciliation-approach",
-      "grc-control-mapping-approach"
+      "auth-token-flow-review",
+      "authority-document-structure",
+      "business-object-extension-plan",
+      "data-mapping-strategy",
+      "email-template-dynamic-fields",
+      "form-layout-design-review",
+      "grc-control-mapping-approach",
+      "quick-action-design-pattern",
+      "relationship-impact-walk-through",
+      "rest-integration-walk-through",
+      "retry-and-backoff-patterns",
+      "validation-logic-design",
+      "workflow-exception-handling"
     ],
     "useCaseIds": [
-      "weekly-open-incident-summary",
-      "customer-response-reactivation",
-      "multi-step-request-approvals",
-      "change-approval-and-scheduling",
-      "external-approval-sync",
-      "scheduled-report-push-to-external-endpoint",
       "asset-refresh-planning",
+      "change-approval-and-scheduling",
+      "control-assessment-cycle",
+      "custom-object-design-review",
+      "customer-response-reactivation",
+      "discovery-policy-rollout",
       "discovery-reconciliation-improvement",
-      "control-assessment-cycle"
+      "external-approval-sync",
+      "grc-authority-import-and-control-map",
+      "multi-step-request-approvals",
+      "persona-based-form-redesign",
+      "platform-cross-workflow-automation",
+      "quick-action-notification-pack",
+      "relationship-driven-task-model",
+      "scheduled-report-push-to-external-endpoint",
+      "validation-guardrail-rollout",
+      "weekly-open-incident-summary"
     ],
     "trickyIds": [
+      "asset-record-vs-discovered-record",
+      "authn-vs-authz-in-integrations",
+      "citation-vs-control",
+      "control-vs-risk",
+      "ipaas-connector-vs-custom-integration",
+      "itam-vs-discovery",
+      "lookup-vs-parent-child-relationship",
+      "mapping-vs-transformation",
+      "object-extension-vs-new-object",
       "quick-action-vs-workflow",
-      "ipaas-connector-vs-custom-integration"
+      "retry-vs-replay",
+      "single-form-vs-role-specific-layouts",
+      "template-content-vs-recipient-logic",
+      "ui-required-vs-business-validation",
+      "workflow-vs-state-driven-routing"
+    ],
+    "priority": "Core",
+    "whatInterviewersUsuallyAsk": [
+      "How do you explain lifecycle?",
+      "Why does authentication design matter?",
+      "Why do citations matter?",
+      "What is a business object?",
+      "What lifecycle states matter most?",
+      "How do you improve reconciliation quality?"
+    ],
+    "answerFramework": [
+      "Start with what the role owns day to day.",
+      "Mention the highest-priority modules you would focus on first.",
+      "Name the topics interviewers usually probe for this role.",
+      "Close with one implementation example or support scenario."
+    ],
+    "studyOrder": [
+      "Core topics first",
+      "Then coding or automation questions",
+      "Then use cases",
+      "Finish with tricky distinctions and quiz review"
     ]
   },
   {
@@ -540,26 +925,73 @@
       "workspace-triage"
     ],
     "codingIds": [
+      "business-object-extension-plan",
+      "dashboard-kpi-design",
+      "email-template-dynamic-fields",
+      "form-layout-design-review",
+      "incident-priority-and-routing",
       "notification-automation-with-saved-searches",
+      "quick-action-design-pattern",
+      "relationship-impact-walk-through",
       "validation-logic-design",
       "workflow-exception-handling",
+      "workspace-first-line-remediation",
       "workspace-quick-action-thinking"
     ],
     "useCaseIds": [
-      "weekly-open-incident-summary",
-      "customer-response-reactivation",
-      "multi-step-request-approvals",
-      "change-approval-and-scheduling",
-      "knowledge-deflection-for-support",
-      "scheduled-report-push-to-external-endpoint",
-      "pilot-based-patch-rollout",
       "asset-refresh-planning",
+      "change-approval-and-scheduling",
+      "custom-object-design-review",
+      "customer-response-reactivation",
+      "escalation-schedule-tuning",
+      "knowledge-deflection-for-support",
+      "multi-step-request-approvals",
+      "persona-based-form-redesign",
+      "pilot-based-patch-rollout",
+      "problem-review-and-corrective-action",
+      "quick-action-notification-pack",
+      "relationship-driven-task-model",
+      "scheduled-report-push-to-external-endpoint",
+      "validation-guardrail-rollout",
+      "weekly-open-incident-summary",
+      "workspace-first-call-resolution",
       "workspace-shift-left-triage"
     ],
     "trickyIds": [
+      "dashboard-vs-report",
+      "escalation-vs-notification",
+      "incident-vs-service-request",
+      "lookup-vs-parent-child-relationship",
+      "object-extension-vs-new-object",
       "quick-action-vs-workflow",
       "saved-search-vs-dashboard",
-      "workspace-context-vs-ticket-notes"
+      "single-form-vs-role-specific-layouts",
+      "template-content-vs-recipient-logic",
+      "ui-required-vs-business-validation",
+      "workflow-vs-state-driven-routing",
+      "workspace-context-vs-ticket-notes",
+      "workspace-vs-service-desk-notes"
+    ],
+    "priority": "Important",
+    "whatInterviewersUsuallyAsk": [
+      "What is a business object?",
+      "Which KPIs matter?",
+      "Why do email templates matter?",
+      "How do you design a good form?",
+      "When would you extend an object versus creating a separate one?",
+      "How do you choose KPIs?"
+    ],
+    "answerFramework": [
+      "Start with what the role owns day to day.",
+      "Mention the highest-priority modules you would focus on first.",
+      "Name the topics interviewers usually probe for this role.",
+      "Close with one implementation example or support scenario."
+    ],
+    "studyOrder": [
+      "Core topics first",
+      "Then coding or automation questions",
+      "Then use cases",
+      "Finish with tricky distinctions and quiz review"
     ]
   },
   {
@@ -583,11 +1015,38 @@
       "velocity-browser-sessions"
     ],
     "codingIds": [
-      "velocity-flow-redesign"
+      "velocity-flow-redesign",
+      "velocity-session-optimization"
     ],
     "useCaseIds": [
+      "platform-cross-workflow-automation",
+      "velocity-web-modernization",
       "warehouse-picking-redesign"
     ],
-    "trickyIds": []
+    "trickyIds": [
+      "scan-speed-vs-data-quality",
+      "velocity-modernize-vs-replace"
+    ],
+    "priority": "Advanced",
+    "whatInterviewersUsuallyAsk": [
+      "What makes a good scan workflow?",
+      "What is a Velocity browser session?",
+      "How do you simplify a warehouse workflow?",
+      "What makes a session redesign successful?",
+      "Explain the difference in scan speed vs data quality in frontline flows.",
+      "Explain the difference in velocity modernization vs full app replacement."
+    ],
+    "answerFramework": [
+      "Start with what the role owns day to day.",
+      "Mention the highest-priority modules you would focus on first.",
+      "Name the topics interviewers usually probe for this role.",
+      "Close with one implementation example or support scenario."
+    ],
+    "studyOrder": [
+      "Core topics first",
+      "Then coding or automation questions",
+      "Then use cases",
+      "Finish with tricky distinctions and quiz review"
+    ]
   }
 ]

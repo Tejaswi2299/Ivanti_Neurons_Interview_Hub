@@ -11,7 +11,34 @@
     "area": "Integration",
     "moduleId": "ivanti-neurons-ipaas",
     "difficulty": "Intermediate",
-    "codeSnippet": "POST /api/example\\nHeaders: Authorization, Content-Type\\nValidate payload -> send -> handle response -> log outcome"
+    "codeSnippet": "POST /api/example\\nHeaders: Authorization, Content-Type\\nValidate payload -> send -> handle response -> log outcome",
+    "interviewerIsTesting": "integration design, security awareness, payload thinking, and failure handling",
+    "whenToUse": "Use this answer pattern when the discussion moves from concept into implementation and the interviewer wants to know how you would handle REST API Basics in Ivanti Neurons iPaaS.",
+    "implementationSteps": [
+      "Clarify the business or operational goal behind REST API Basics.",
+      "Identify the records, trigger points, inputs, or target audience involved.",
+      "Explain the logic or flow in a clean sequence: validate, execute, monitor, and handle exceptions.",
+      "Describe how you would test success, capture failures, and avoid unintended side effects."
+    ],
+    "commonMistakes": [
+      "Jumping straight into pseudo code without explaining the business intent.",
+      "Ignoring validation, logging, permissions, or exception handling.",
+      "Answering as if there is only one possible implementation approach."
+    ],
+    "verbalAnswerFramework": [
+      "Start with the business problem.",
+      "Name the Ivanti area or feature you would use.",
+      "Describe the sequence of logic or actions.",
+      "Close with testing, monitoring, and expected outcome."
+    ],
+    "expectedOutcome": "A strong answer shows you can connect REST API Basics to execution, explain the control points, and speak confidently about validation and supportability.",
+    "followUpQuestions": [
+      "How would you test this before release?",
+      "What could fail and how would you handle it?",
+      "When would you choose a lighter or simpler approach?"
+    ],
+    "priority": "Core",
+    "bookmarkPrompt": "Bookmark this if you want to revise the verbal explanation later."
   },
   {
     "id": "notification-automation-with-saved-searches",
@@ -25,7 +52,34 @@
     "area": "ITSM",
     "moduleId": "reporting-and-dashboards",
     "difficulty": "Beginner",
-    "codeSnippet": "savedSearch -> emailTemplate -> scheduled action -> recipient validation"
+    "codeSnippet": "savedSearch -> emailTemplate -> scheduled action -> recipient validation",
+    "interviewerIsTesting": "practical implementation thinking, explanation clarity, and real-world tradeoff awareness",
+    "whenToUse": "Use this answer pattern when the discussion moves from concept into implementation and the interviewer wants to know how you would handle Saved Searches in Reporting and Dashboards.",
+    "implementationSteps": [
+      "Clarify the business or operational goal behind Saved Searches.",
+      "Identify the records, trigger points, inputs, or target audience involved.",
+      "Explain the logic or flow in a clean sequence: validate, execute, monitor, and handle exceptions.",
+      "Describe how you would test success, capture failures, and avoid unintended side effects."
+    ],
+    "commonMistakes": [
+      "Jumping straight into pseudo code without explaining the business intent.",
+      "Ignoring validation, logging, permissions, or exception handling.",
+      "Answering as if there is only one possible implementation approach."
+    ],
+    "verbalAnswerFramework": [
+      "Start with the business problem.",
+      "Name the Ivanti area or feature you would use.",
+      "Describe the sequence of logic or actions.",
+      "Close with testing, monitoring, and expected outcome."
+    ],
+    "expectedOutcome": "A strong answer shows you can connect Saved Searches to execution, explain the control points, and speak confidently about validation and supportability.",
+    "followUpQuestions": [
+      "How would you test this before release?",
+      "What could fail and how would you handle it?",
+      "When would you choose a lighter or simpler approach?"
+    ],
+    "priority": "Core",
+    "bookmarkPrompt": "Bookmark this if you want to revise the verbal explanation later."
   },
   {
     "id": "approval-routing-logic",
@@ -39,7 +93,34 @@
     "area": "ITSM",
     "moduleId": "service-request-management",
     "difficulty": "Beginner",
-    "codeSnippet": "if request.type == 'High Risk': approvers = CAB\\nelse: approvers = manager"
+    "codeSnippet": "if request.type == 'High Risk': approvers = CAB\\nelse: approvers = manager",
+    "interviewerIsTesting": "process design, branching logic, exception handling, and maintainability",
+    "whenToUse": "Use this answer pattern when the discussion moves from concept into implementation and the interviewer wants to know how you would handle Approvals in Service Request Management.",
+    "implementationSteps": [
+      "Clarify the business or operational goal behind Approvals.",
+      "Identify the records, trigger points, inputs, or target audience involved.",
+      "Explain the logic or flow in a clean sequence: validate, execute, monitor, and handle exceptions.",
+      "Describe how you would test success, capture failures, and avoid unintended side effects."
+    ],
+    "commonMistakes": [
+      "Jumping straight into pseudo code without explaining the business intent.",
+      "Ignoring validation, logging, permissions, or exception handling.",
+      "Answering as if there is only one possible implementation approach."
+    ],
+    "verbalAnswerFramework": [
+      "Start with the business problem.",
+      "Name the Ivanti area or feature you would use.",
+      "Describe the sequence of logic or actions.",
+      "Close with testing, monitoring, and expected outcome."
+    ],
+    "expectedOutcome": "A strong answer shows you can connect Approvals to execution, explain the control points, and speak confidently about validation and supportability.",
+    "followUpQuestions": [
+      "How would you test this before release?",
+      "What could fail and how would you handle it?",
+      "When would you choose a lighter or simpler approach?"
+    ],
+    "priority": "Important",
+    "bookmarkPrompt": "Bookmark this if you want to revise the verbal explanation later."
   },
   {
     "id": "validation-logic-design",
@@ -53,7 +134,34 @@
     "area": "ITSM",
     "moduleId": "ivanti-neurons-for-itsm",
     "difficulty": "Beginner",
-    "codeSnippet": "if missing required value for current stage: block save and show clear message"
+    "codeSnippet": "if missing required value for current stage: block save and show clear message",
+    "interviewerIsTesting": "data quality control, user experience judgment, and safe rule placement",
+    "whenToUse": "Use this answer pattern when the discussion moves from concept into implementation and the interviewer wants to know how you would handle Validations in Ivanti Neurons for ITSM.",
+    "implementationSteps": [
+      "Clarify the business or operational goal behind Validations.",
+      "Identify the records, trigger points, inputs, or target audience involved.",
+      "Explain the logic or flow in a clean sequence: validate, execute, monitor, and handle exceptions.",
+      "Describe how you would test success, capture failures, and avoid unintended side effects."
+    ],
+    "commonMistakes": [
+      "Jumping straight into pseudo code without explaining the business intent.",
+      "Ignoring validation, logging, permissions, or exception handling.",
+      "Answering as if there is only one possible implementation approach."
+    ],
+    "verbalAnswerFramework": [
+      "Start with the business problem.",
+      "Name the Ivanti area or feature you would use.",
+      "Describe the sequence of logic or actions.",
+      "Close with testing, monitoring, and expected outcome."
+    ],
+    "expectedOutcome": "A strong answer shows you can connect Validations to execution, explain the control points, and speak confidently about validation and supportability.",
+    "followUpQuestions": [
+      "How would you test this before release?",
+      "What could fail and how would you handle it?",
+      "When would you choose a lighter or simpler approach?"
+    ],
+    "priority": "Core",
+    "bookmarkPrompt": "Bookmark this if you want to revise the verbal explanation later."
   },
   {
     "id": "workflow-exception-handling",
@@ -67,7 +175,34 @@
     "area": "Automation",
     "moduleId": "ivanti-neurons-for-itsm",
     "difficulty": "Beginner",
-    "codeSnippet": "on failure -> capture context -> alert owner -> route to manual recovery path"
+    "codeSnippet": "on failure -> capture context -> alert owner -> route to manual recovery path",
+    "interviewerIsTesting": "process design, branching logic, exception handling, and maintainability",
+    "whenToUse": "Use this answer pattern when the discussion moves from concept into implementation and the interviewer wants to know how you would handle Workflows in Ivanti Neurons for ITSM.",
+    "implementationSteps": [
+      "Clarify the business or operational goal behind Workflows.",
+      "Identify the records, trigger points, inputs, or target audience involved.",
+      "Explain the logic or flow in a clean sequence: validate, execute, monitor, and handle exceptions.",
+      "Describe how you would test success, capture failures, and avoid unintended side effects."
+    ],
+    "commonMistakes": [
+      "Jumping straight into pseudo code without explaining the business intent.",
+      "Ignoring validation, logging, permissions, or exception handling.",
+      "Answering as if there is only one possible implementation approach."
+    ],
+    "verbalAnswerFramework": [
+      "Start with the business problem.",
+      "Name the Ivanti area or feature you would use.",
+      "Describe the sequence of logic or actions.",
+      "Close with testing, monitoring, and expected outcome."
+    ],
+    "expectedOutcome": "A strong answer shows you can connect Workflows to execution, explain the control points, and speak confidently about validation and supportability.",
+    "followUpQuestions": [
+      "How would you test this before release?",
+      "What could fail and how would you handle it?",
+      "When would you choose a lighter or simpler approach?"
+    ],
+    "priority": "Core",
+    "bookmarkPrompt": "Bookmark this if you want to revise the verbal explanation later."
   },
   {
     "id": "data-mapping-strategy",
@@ -81,7 +216,34 @@
     "area": "Integrations",
     "moduleId": "ivanti-neurons-ipaas",
     "difficulty": "Beginner",
-    "codeSnippet": "target.status = mapStatus(source.status)\\nif missing identifier -> hold for review"
+    "codeSnippet": "target.status = mapStatus(source.status)\\nif missing identifier -> hold for review",
+    "interviewerIsTesting": "practical implementation thinking, explanation clarity, and real-world tradeoff awareness",
+    "whenToUse": "Use this answer pattern when the discussion moves from concept into implementation and the interviewer wants to know how you would handle Data Mapping in Ivanti Neurons iPaaS.",
+    "implementationSteps": [
+      "Clarify the business or operational goal behind Data Mapping.",
+      "Identify the records, trigger points, inputs, or target audience involved.",
+      "Explain the logic or flow in a clean sequence: validate, execute, monitor, and handle exceptions.",
+      "Describe how you would test success, capture failures, and avoid unintended side effects."
+    ],
+    "commonMistakes": [
+      "Jumping straight into pseudo code without explaining the business intent.",
+      "Ignoring validation, logging, permissions, or exception handling.",
+      "Answering as if there is only one possible implementation approach."
+    ],
+    "verbalAnswerFramework": [
+      "Start with the business problem.",
+      "Name the Ivanti area or feature you would use.",
+      "Describe the sequence of logic or actions.",
+      "Close with testing, monitoring, and expected outcome."
+    ],
+    "expectedOutcome": "A strong answer shows you can connect Data Mapping to execution, explain the control points, and speak confidently about validation and supportability.",
+    "followUpQuestions": [
+      "How would you test this before release?",
+      "What could fail and how would you handle it?",
+      "When would you choose a lighter or simpler approach?"
+    ],
+    "priority": "Important",
+    "bookmarkPrompt": "Bookmark this if you want to revise the verbal explanation later."
   },
   {
     "id": "retry-and-backoff-patterns",
@@ -95,7 +257,34 @@
     "area": "Integrations",
     "moduleId": "ivanti-neurons-ipaas",
     "difficulty": "Beginner",
-    "codeSnippet": "retry 3 times with backoff; stop on permanent failure; log correlation id"
+    "codeSnippet": "retry 3 times with backoff; stop on permanent failure; log correlation id",
+    "interviewerIsTesting": "practical implementation thinking, explanation clarity, and real-world tradeoff awareness",
+    "whenToUse": "Use this answer pattern when the discussion moves from concept into implementation and the interviewer wants to know how you would handle Error Handling and Retries in Ivanti Neurons iPaaS.",
+    "implementationSteps": [
+      "Clarify the business or operational goal behind Error Handling and Retries.",
+      "Identify the records, trigger points, inputs, or target audience involved.",
+      "Explain the logic or flow in a clean sequence: validate, execute, monitor, and handle exceptions.",
+      "Describe how you would test success, capture failures, and avoid unintended side effects."
+    ],
+    "commonMistakes": [
+      "Jumping straight into pseudo code without explaining the business intent.",
+      "Ignoring validation, logging, permissions, or exception handling.",
+      "Answering as if there is only one possible implementation approach."
+    ],
+    "verbalAnswerFramework": [
+      "Start with the business problem.",
+      "Name the Ivanti area or feature you would use.",
+      "Describe the sequence of logic or actions.",
+      "Close with testing, monitoring, and expected outcome."
+    ],
+    "expectedOutcome": "A strong answer shows you can connect Error Handling and Retries to execution, explain the control points, and speak confidently about validation and supportability.",
+    "followUpQuestions": [
+      "How would you test this before release?",
+      "What could fail and how would you handle it?",
+      "When would you choose a lighter or simpler approach?"
+    ],
+    "priority": "Important",
+    "bookmarkPrompt": "Bookmark this if you want to revise the verbal explanation later."
   },
   {
     "id": "endpoint-targeting-strategy",
@@ -109,7 +298,34 @@
     "area": "Endpoint",
     "moduleId": "ivanti-endpoint-manager",
     "difficulty": "Intermediate",
-    "codeSnippet": "target = pilot_group + business_group - exclusion_group"
+    "codeSnippet": "target = pilot_group + business_group - exclusion_group",
+    "interviewerIsTesting": "practical implementation thinking, explanation clarity, and real-world tradeoff awareness",
+    "whenToUse": "Use this answer pattern when the discussion moves from concept into implementation and the interviewer wants to know how you would handle Device Groups and Targeting in Ivanti Endpoint Manager.",
+    "implementationSteps": [
+      "Clarify the business or operational goal behind Device Groups and Targeting.",
+      "Identify the records, trigger points, inputs, or target audience involved.",
+      "Explain the logic or flow in a clean sequence: validate, execute, monitor, and handle exceptions.",
+      "Describe how you would test success, capture failures, and avoid unintended side effects."
+    ],
+    "commonMistakes": [
+      "Jumping straight into pseudo code without explaining the business intent.",
+      "Ignoring validation, logging, permissions, or exception handling.",
+      "Answering as if there is only one possible implementation approach."
+    ],
+    "verbalAnswerFramework": [
+      "Start with the business problem.",
+      "Name the Ivanti area or feature you would use.",
+      "Describe the sequence of logic or actions.",
+      "Close with testing, monitoring, and expected outcome."
+    ],
+    "expectedOutcome": "A strong answer shows you can connect Device Groups and Targeting to execution, explain the control points, and speak confidently about validation and supportability.",
+    "followUpQuestions": [
+      "How would you test this before release?",
+      "What could fail and how would you handle it?",
+      "When would you choose a lighter or simpler approach?"
+    ],
+    "priority": "Important",
+    "bookmarkPrompt": "Bookmark this if you want to revise the verbal explanation later."
   },
   {
     "id": "patch-ring-rollout-design",
@@ -123,7 +339,34 @@
     "area": "Endpoint",
     "moduleId": "patch-management",
     "difficulty": "Intermediate",
-    "codeSnippet": "pilot -> wave1 -> wave2 with gates on success rate and critical failures"
+    "codeSnippet": "pilot -> wave1 -> wave2 with gates on success rate and critical failures",
+    "interviewerIsTesting": "practical implementation thinking, explanation clarity, and real-world tradeoff awareness",
+    "whenToUse": "Use this answer pattern when the discussion moves from concept into implementation and the interviewer wants to know how you would handle Patch Rings in Patch Management.",
+    "implementationSteps": [
+      "Clarify the business or operational goal behind Patch Rings.",
+      "Identify the records, trigger points, inputs, or target audience involved.",
+      "Explain the logic or flow in a clean sequence: validate, execute, monitor, and handle exceptions.",
+      "Describe how you would test success, capture failures, and avoid unintended side effects."
+    ],
+    "commonMistakes": [
+      "Jumping straight into pseudo code without explaining the business intent.",
+      "Ignoring validation, logging, permissions, or exception handling.",
+      "Answering as if there is only one possible implementation approach."
+    ],
+    "verbalAnswerFramework": [
+      "Start with the business problem.",
+      "Name the Ivanti area or feature you would use.",
+      "Describe the sequence of logic or actions.",
+      "Close with testing, monitoring, and expected outcome."
+    ],
+    "expectedOutcome": "A strong answer shows you can connect Patch Rings to execution, explain the control points, and speak confidently about validation and supportability.",
+    "followUpQuestions": [
+      "How would you test this before release?",
+      "What could fail and how would you handle it?",
+      "When would you choose a lighter or simpler approach?"
+    ],
+    "priority": "Important",
+    "bookmarkPrompt": "Bookmark this if you want to revise the verbal explanation later."
   },
   {
     "id": "software-deployment-failure-triage",
@@ -137,7 +380,34 @@
     "area": "Endpoint",
     "moduleId": "ivanti-endpoint-manager",
     "difficulty": "Intermediate",
-    "codeSnippet": "check target, package, agent, log, exit code, connectivity"
+    "codeSnippet": "check target, package, agent, log, exit code, connectivity",
+    "interviewerIsTesting": "practical implementation thinking, explanation clarity, and real-world tradeoff awareness",
+    "whenToUse": "Use this answer pattern when the discussion moves from concept into implementation and the interviewer wants to know how you would handle Endpoint Troubleshooting in Ivanti Endpoint Manager.",
+    "implementationSteps": [
+      "Clarify the business or operational goal behind Endpoint Troubleshooting.",
+      "Identify the records, trigger points, inputs, or target audience involved.",
+      "Explain the logic or flow in a clean sequence: validate, execute, monitor, and handle exceptions.",
+      "Describe how you would test success, capture failures, and avoid unintended side effects."
+    ],
+    "commonMistakes": [
+      "Jumping straight into pseudo code without explaining the business intent.",
+      "Ignoring validation, logging, permissions, or exception handling.",
+      "Answering as if there is only one possible implementation approach."
+    ],
+    "verbalAnswerFramework": [
+      "Start with the business problem.",
+      "Name the Ivanti area or feature you would use.",
+      "Describe the sequence of logic or actions.",
+      "Close with testing, monitoring, and expected outcome."
+    ],
+    "expectedOutcome": "A strong answer shows you can connect Endpoint Troubleshooting to execution, explain the control points, and speak confidently about validation and supportability.",
+    "followUpQuestions": [
+      "How would you test this before release?",
+      "What could fail and how would you handle it?",
+      "When would you choose a lighter or simpler approach?"
+    ],
+    "priority": "Important",
+    "bookmarkPrompt": "Bookmark this if you want to revise the verbal explanation later."
   },
   {
     "id": "enrollment-troubleshooting",
@@ -151,7 +421,34 @@
     "area": "Mobility",
     "moduleId": "ivanti-neurons-for-mdm",
     "difficulty": "Beginner",
-    "codeSnippet": "verify ownership, profile, connectivity, enrollment status, baseline policy"
+    "codeSnippet": "verify ownership, profile, connectivity, enrollment status, baseline policy",
+    "interviewerIsTesting": "practical implementation thinking, explanation clarity, and real-world tradeoff awareness",
+    "whenToUse": "Use this answer pattern when the discussion moves from concept into implementation and the interviewer wants to know how you would handle Enrollment in Ivanti Neurons for MDM.",
+    "implementationSteps": [
+      "Clarify the business or operational goal behind Enrollment.",
+      "Identify the records, trigger points, inputs, or target audience involved.",
+      "Explain the logic or flow in a clean sequence: validate, execute, monitor, and handle exceptions.",
+      "Describe how you would test success, capture failures, and avoid unintended side effects."
+    ],
+    "commonMistakes": [
+      "Jumping straight into pseudo code without explaining the business intent.",
+      "Ignoring validation, logging, permissions, or exception handling.",
+      "Answering as if there is only one possible implementation approach."
+    ],
+    "verbalAnswerFramework": [
+      "Start with the business problem.",
+      "Name the Ivanti area or feature you would use.",
+      "Describe the sequence of logic or actions.",
+      "Close with testing, monitoring, and expected outcome."
+    ],
+    "expectedOutcome": "A strong answer shows you can connect Enrollment to execution, explain the control points, and speak confidently about validation and supportability.",
+    "followUpQuestions": [
+      "How would you test this before release?",
+      "What could fail and how would you handle it?",
+      "When would you choose a lighter or simpler approach?"
+    ],
+    "priority": "Core",
+    "bookmarkPrompt": "Bookmark this if you want to revise the verbal explanation later."
   },
   {
     "id": "compliance-remediation-design",
@@ -165,7 +462,34 @@
     "area": "Mobility",
     "moduleId": "compliance-and-policy",
     "difficulty": "Beginner",
-    "codeSnippet": "notify -> grace period -> restrict/remediate -> confirm return to compliant"
+    "codeSnippet": "notify -> grace period -> restrict/remediate -> confirm return to compliant",
+    "interviewerIsTesting": "practical implementation thinking, explanation clarity, and real-world tradeoff awareness",
+    "whenToUse": "Use this answer pattern when the discussion moves from concept into implementation and the interviewer wants to know how you would handle Compliance Rules in Compliance and Policy.",
+    "implementationSteps": [
+      "Clarify the business or operational goal behind Compliance Rules.",
+      "Identify the records, trigger points, inputs, or target audience involved.",
+      "Explain the logic or flow in a clean sequence: validate, execute, monitor, and handle exceptions.",
+      "Describe how you would test success, capture failures, and avoid unintended side effects."
+    ],
+    "commonMistakes": [
+      "Jumping straight into pseudo code without explaining the business intent.",
+      "Ignoring validation, logging, permissions, or exception handling.",
+      "Answering as if there is only one possible implementation approach."
+    ],
+    "verbalAnswerFramework": [
+      "Start with the business problem.",
+      "Name the Ivanti area or feature you would use.",
+      "Describe the sequence of logic or actions.",
+      "Close with testing, monitoring, and expected outcome."
+    ],
+    "expectedOutcome": "A strong answer shows you can connect Compliance Rules to execution, explain the control points, and speak confidently about validation and supportability.",
+    "followUpQuestions": [
+      "How would you test this before release?",
+      "What could fail and how would you handle it?",
+      "When would you choose a lighter or simpler approach?"
+    ],
+    "priority": "Core",
+    "bookmarkPrompt": "Bookmark this if you want to revise the verbal explanation later."
   },
   {
     "id": "asset-reconciliation-approach",
@@ -179,7 +503,34 @@
     "area": "Asset",
     "moduleId": "ivanti-neurons-for-itam",
     "difficulty": "Beginner",
-    "codeSnippet": "match on serial/device id -> normalize names -> merge duplicates cautiously"
+    "codeSnippet": "match on serial/device id -> normalize names -> merge duplicates cautiously",
+    "interviewerIsTesting": "practical implementation thinking, explanation clarity, and real-world tradeoff awareness",
+    "whenToUse": "Use this answer pattern when the discussion moves from concept into implementation and the interviewer wants to know how you would handle Normalization and Reconciliation in Ivanti Neurons for ITAM.",
+    "implementationSteps": [
+      "Clarify the business or operational goal behind Normalization and Reconciliation.",
+      "Identify the records, trigger points, inputs, or target audience involved.",
+      "Explain the logic or flow in a clean sequence: validate, execute, monitor, and handle exceptions.",
+      "Describe how you would test success, capture failures, and avoid unintended side effects."
+    ],
+    "commonMistakes": [
+      "Jumping straight into pseudo code without explaining the business intent.",
+      "Ignoring validation, logging, permissions, or exception handling.",
+      "Answering as if there is only one possible implementation approach."
+    ],
+    "verbalAnswerFramework": [
+      "Start with the business problem.",
+      "Name the Ivanti area or feature you would use.",
+      "Describe the sequence of logic or actions.",
+      "Close with testing, monitoring, and expected outcome."
+    ],
+    "expectedOutcome": "A strong answer shows you can connect Normalization and Reconciliation to execution, explain the control points, and speak confidently about validation and supportability.",
+    "followUpQuestions": [
+      "How would you test this before release?",
+      "What could fail and how would you handle it?",
+      "When would you choose a lighter or simpler approach?"
+    ],
+    "priority": "Important",
+    "bookmarkPrompt": "Bookmark this if you want to revise the verbal explanation later."
   },
   {
     "id": "grc-control-mapping-approach",
@@ -193,7 +544,34 @@
     "area": "GRC",
     "moduleId": "ivanti-neurons-for-grc",
     "difficulty": "Beginner",
-    "codeSnippet": "authority -> citation -> control -> assessment -> action"
+    "codeSnippet": "authority -> citation -> control -> assessment -> action",
+    "interviewerIsTesting": "practical implementation thinking, explanation clarity, and real-world tradeoff awareness",
+    "whenToUse": "Use this answer pattern when the discussion moves from concept into implementation and the interviewer wants to know how you would handle Controls and Risks in Ivanti Neurons for GRC.",
+    "implementationSteps": [
+      "Clarify the business or operational goal behind Controls and Risks.",
+      "Identify the records, trigger points, inputs, or target audience involved.",
+      "Explain the logic or flow in a clean sequence: validate, execute, monitor, and handle exceptions.",
+      "Describe how you would test success, capture failures, and avoid unintended side effects."
+    ],
+    "commonMistakes": [
+      "Jumping straight into pseudo code without explaining the business intent.",
+      "Ignoring validation, logging, permissions, or exception handling.",
+      "Answering as if there is only one possible implementation approach."
+    ],
+    "verbalAnswerFramework": [
+      "Start with the business problem.",
+      "Name the Ivanti area or feature you would use.",
+      "Describe the sequence of logic or actions.",
+      "Close with testing, monitoring, and expected outcome."
+    ],
+    "expectedOutcome": "A strong answer shows you can connect Controls and Risks to execution, explain the control points, and speak confidently about validation and supportability.",
+    "followUpQuestions": [
+      "How would you test this before release?",
+      "What could fail and how would you handle it?",
+      "When would you choose a lighter or simpler approach?"
+    ],
+    "priority": "Important",
+    "bookmarkPrompt": "Bookmark this if you want to revise the verbal explanation later."
   },
   {
     "id": "workspace-quick-action-thinking",
@@ -207,7 +585,34 @@
     "area": "Experience",
     "moduleId": "ivanti-neurons-workspace",
     "difficulty": "Beginner",
-    "codeSnippet": "review 360 context -> trigger quick action -> document outcome"
+    "codeSnippet": "review 360 context -> trigger quick action -> document outcome",
+    "interviewerIsTesting": "practical implementation thinking, explanation clarity, and real-world tradeoff awareness",
+    "whenToUse": "Use this answer pattern when the discussion moves from concept into implementation and the interviewer wants to know how you would handle Workspace Triage in Ivanti Neurons Workspace.",
+    "implementationSteps": [
+      "Clarify the business or operational goal behind Workspace Triage.",
+      "Identify the records, trigger points, inputs, or target audience involved.",
+      "Explain the logic or flow in a clean sequence: validate, execute, monitor, and handle exceptions.",
+      "Describe how you would test success, capture failures, and avoid unintended side effects."
+    ],
+    "commonMistakes": [
+      "Jumping straight into pseudo code without explaining the business intent.",
+      "Ignoring validation, logging, permissions, or exception handling.",
+      "Answering as if there is only one possible implementation approach."
+    ],
+    "verbalAnswerFramework": [
+      "Start with the business problem.",
+      "Name the Ivanti area or feature you would use.",
+      "Describe the sequence of logic or actions.",
+      "Close with testing, monitoring, and expected outcome."
+    ],
+    "expectedOutcome": "A strong answer shows you can connect Workspace Triage to execution, explain the control points, and speak confidently about validation and supportability.",
+    "followUpQuestions": [
+      "How would you test this before release?",
+      "What could fail and how would you handle it?",
+      "When would you choose a lighter or simpler approach?"
+    ],
+    "priority": "Important",
+    "bookmarkPrompt": "Bookmark this if you want to revise the verbal explanation later."
   },
   {
     "id": "velocity-flow-redesign",
@@ -221,6 +626,935 @@
     "area": "Frontline",
     "moduleId": "ivanti-velocity",
     "difficulty": "Beginner",
-    "codeSnippet": "reduce prompts; make scan primary; optimize exception flow"
+    "codeSnippet": "reduce prompts; make scan primary; optimize exception flow",
+    "interviewerIsTesting": "practical implementation thinking, explanation clarity, and real-world tradeoff awareness",
+    "whenToUse": "Use this answer pattern when the discussion moves from concept into implementation and the interviewer wants to know how you would handle Scan-First Workflow Design in Ivanti Velocity.",
+    "implementationSteps": [
+      "Clarify the business or operational goal behind Scan-First Workflow Design.",
+      "Identify the records, trigger points, inputs, or target audience involved.",
+      "Explain the logic or flow in a clean sequence: validate, execute, monitor, and handle exceptions.",
+      "Describe how you would test success, capture failures, and avoid unintended side effects."
+    ],
+    "commonMistakes": [
+      "Jumping straight into pseudo code without explaining the business intent.",
+      "Ignoring validation, logging, permissions, or exception handling.",
+      "Answering as if there is only one possible implementation approach."
+    ],
+    "verbalAnswerFramework": [
+      "Start with the business problem.",
+      "Name the Ivanti area or feature you would use.",
+      "Describe the sequence of logic or actions.",
+      "Close with testing, monitoring, and expected outcome."
+    ],
+    "expectedOutcome": "A strong answer shows you can connect Scan-First Workflow Design to execution, explain the control points, and speak confidently about validation and supportability.",
+    "followUpQuestions": [
+      "How would you test this before release?",
+      "What could fail and how would you handle it?",
+      "When would you choose a lighter or simpler approach?"
+    ],
+    "priority": "Important",
+    "bookmarkPrompt": "Bookmark this if you want to revise the verbal explanation later."
+  },
+  {
+    "id": "incident-priority-and-routing",
+    "title": "Incident priority and routing logic",
+    "topicId": "incident-lifecycle",
+    "summary": "Explain how categorization, impact, urgency, and assignment rules work together in an interview-ready support flow.",
+    "questions": [
+      "How do you explain incident priority calculation?",
+      "How do you route incidents without creating noisy queues?"
+    ],
+    "area": "ITSM",
+    "moduleId": "incident-management",
+    "difficulty": "Intermediate",
+    "codeSnippet": "Capture category + impact + urgency -> calculate priority -> set assignment group -> notify owner",
+    "interviewerIsTesting": "process design, branching logic, exception handling, and maintainability",
+    "whenToUse": "Use this answer pattern when the discussion moves from concept into implementation and the interviewer wants to know how you would handle Incident Lifecycle in Incident Management.",
+    "implementationSteps": [
+      "Clarify the business or operational goal behind Incident Lifecycle.",
+      "Identify the records, trigger points, inputs, or target audience involved.",
+      "Explain the logic or flow in a clean sequence: validate, execute, monitor, and handle exceptions.",
+      "Describe how you would test success, capture failures, and avoid unintended side effects."
+    ],
+    "commonMistakes": [
+      "Jumping straight into pseudo code without explaining the business intent.",
+      "Ignoring validation, logging, permissions, or exception handling.",
+      "Answering as if there is only one possible implementation approach."
+    ],
+    "verbalAnswerFramework": [
+      "Start with the business problem.",
+      "Name the Ivanti area or feature you would use.",
+      "Describe the sequence of logic or actions.",
+      "Close with testing, monitoring, and expected outcome."
+    ],
+    "expectedOutcome": "A strong answer shows you can connect Incident Lifecycle to execution, explain the control points, and speak confidently about validation and supportability.",
+    "followUpQuestions": [
+      "How would you test this before release?",
+      "What could fail and how would you handle it?",
+      "When would you choose a lighter or simpler approach?"
+    ],
+    "priority": "Core",
+    "bookmarkPrompt": "Bookmark this if you want to revise the verbal explanation later."
+  },
+  {
+    "id": "problem-trend-analysis",
+    "title": "Problem trend analysis approach",
+    "topicId": "problem-lifecycle",
+    "summary": "Show how recurring incidents, trend reporting, and known-error tracking support problem management discussions.",
+    "questions": [
+      "How do you know when incidents should become a problem?",
+      "What do you monitor in a problem trend review?"
+    ],
+    "area": "ITSM",
+    "moduleId": "problem-management",
+    "difficulty": "Intermediate",
+    "codeSnippet": "Group recurring incidents -> identify pattern -> open problem record -> link corrective action",
+    "interviewerIsTesting": "practical implementation thinking, explanation clarity, and real-world tradeoff awareness",
+    "whenToUse": "Use this answer pattern when the discussion moves from concept into implementation and the interviewer wants to know how you would handle Problem Lifecycle in Problem Management.",
+    "implementationSteps": [
+      "Clarify the business or operational goal behind Problem Lifecycle.",
+      "Identify the records, trigger points, inputs, or target audience involved.",
+      "Explain the logic or flow in a clean sequence: validate, execute, monitor, and handle exceptions.",
+      "Describe how you would test success, capture failures, and avoid unintended side effects."
+    ],
+    "commonMistakes": [
+      "Jumping straight into pseudo code without explaining the business intent.",
+      "Ignoring validation, logging, permissions, or exception handling.",
+      "Answering as if there is only one possible implementation approach."
+    ],
+    "verbalAnswerFramework": [
+      "Start with the business problem.",
+      "Name the Ivanti area or feature you would use.",
+      "Describe the sequence of logic or actions.",
+      "Close with testing, monitoring, and expected outcome."
+    ],
+    "expectedOutcome": "A strong answer shows you can connect Problem Lifecycle to execution, explain the control points, and speak confidently about validation and supportability.",
+    "followUpQuestions": [
+      "How would you test this before release?",
+      "What could fail and how would you handle it?",
+      "When would you choose a lighter or simpler approach?"
+    ],
+    "priority": "Important",
+    "bookmarkPrompt": "Bookmark this if you want to revise the verbal explanation later."
+  },
+  {
+    "id": "change-risk-and-approval-design",
+    "title": "Change risk and approval design",
+    "topicId": "change-governance",
+    "summary": "Describe a safe change workflow with risk classification, approvals, schedule windows, and stakeholder communication.",
+    "questions": [
+      "How would you design a normal change path?",
+      "How do you distinguish low-risk versus high-risk approval paths?"
+    ],
+    "area": "ITSM",
+    "moduleId": "change-management",
+    "difficulty": "Intermediate",
+    "codeSnippet": "Classify change -> assign risk -> route approvals -> schedule window -> notify stakeholders",
+    "interviewerIsTesting": "process design, branching logic, exception handling, and maintainability",
+    "whenToUse": "Use this answer pattern when the discussion moves from concept into implementation and the interviewer wants to know how you would handle Change Governance in Change Management.",
+    "implementationSteps": [
+      "Clarify the business or operational goal behind Change Governance.",
+      "Identify the records, trigger points, inputs, or target audience involved.",
+      "Explain the logic or flow in a clean sequence: validate, execute, monitor, and handle exceptions.",
+      "Describe how you would test success, capture failures, and avoid unintended side effects."
+    ],
+    "commonMistakes": [
+      "Jumping straight into pseudo code without explaining the business intent.",
+      "Ignoring validation, logging, permissions, or exception handling.",
+      "Answering as if there is only one possible implementation approach."
+    ],
+    "verbalAnswerFramework": [
+      "Start with the business problem.",
+      "Name the Ivanti area or feature you would use.",
+      "Describe the sequence of logic or actions.",
+      "Close with testing, monitoring, and expected outcome."
+    ],
+    "expectedOutcome": "A strong answer shows you can connect Change Governance to execution, explain the control points, and speak confidently about validation and supportability.",
+    "followUpQuestions": [
+      "How would you test this before release?",
+      "What could fail and how would you handle it?",
+      "When would you choose a lighter or simpler approach?"
+    ],
+    "priority": "Important",
+    "bookmarkPrompt": "Bookmark this if you want to revise the verbal explanation later."
+  },
+  {
+    "id": "escalation-trigger-design",
+    "title": "Escalation trigger design",
+    "topicId": "escalations",
+    "summary": "Explain how to configure time- or state-driven escalation logic without flooding teams with duplicate noise.",
+    "questions": [
+      "What should trigger an escalation?",
+      "How do you reduce alert fatigue?"
+    ],
+    "area": "ITSM",
+    "moduleId": "change-management",
+    "difficulty": "Intermediate",
+    "codeSnippet": "If state unchanged beyond threshold -> notify owner/escalation group -> log escalation event",
+    "interviewerIsTesting": "practical implementation thinking, explanation clarity, and real-world tradeoff awareness",
+    "whenToUse": "Use this answer pattern when the discussion moves from concept into implementation and the interviewer wants to know how you would handle Escalations in Change Management.",
+    "implementationSteps": [
+      "Clarify the business or operational goal behind Escalations.",
+      "Identify the records, trigger points, inputs, or target audience involved.",
+      "Explain the logic or flow in a clean sequence: validate, execute, monitor, and handle exceptions.",
+      "Describe how you would test success, capture failures, and avoid unintended side effects."
+    ],
+    "commonMistakes": [
+      "Jumping straight into pseudo code without explaining the business intent.",
+      "Ignoring validation, logging, permissions, or exception handling.",
+      "Answering as if there is only one possible implementation approach."
+    ],
+    "verbalAnswerFramework": [
+      "Start with the business problem.",
+      "Name the Ivanti area or feature you would use.",
+      "Describe the sequence of logic or actions.",
+      "Close with testing, monitoring, and expected outcome."
+    ],
+    "expectedOutcome": "A strong answer shows you can connect Escalations to execution, explain the control points, and speak confidently about validation and supportability.",
+    "followUpQuestions": [
+      "How would you test this before release?",
+      "What could fail and how would you handle it?",
+      "When would you choose a lighter or simpler approach?"
+    ],
+    "priority": "Important",
+    "bookmarkPrompt": "Bookmark this if you want to revise the verbal explanation later."
+  },
+  {
+    "id": "software-distribution-wave-design",
+    "title": "Software distribution wave design",
+    "topicId": "software-distribution-jobs",
+    "summary": "Frame software rollout as a staged, targeted operation with validation and remediation checkpoints.",
+    "questions": [
+      "How do you phase software delivery?",
+      "What do you check before broad rollout?"
+    ],
+    "area": "Endpoint",
+    "moduleId": "software-distribution",
+    "difficulty": "Intermediate",
+    "codeSnippet": "Pilot group -> validate install outcome -> expand target groups -> retry/remediate failed devices",
+    "interviewerIsTesting": "practical implementation thinking, explanation clarity, and real-world tradeoff awareness",
+    "whenToUse": "Use this answer pattern when the discussion moves from concept into implementation and the interviewer wants to know how you would handle Software Distribution Jobs in Software Distribution.",
+    "implementationSteps": [
+      "Clarify the business or operational goal behind Software Distribution Jobs.",
+      "Identify the records, trigger points, inputs, or target audience involved.",
+      "Explain the logic or flow in a clean sequence: validate, execute, monitor, and handle exceptions.",
+      "Describe how you would test success, capture failures, and avoid unintended side effects."
+    ],
+    "commonMistakes": [
+      "Jumping straight into pseudo code without explaining the business intent.",
+      "Ignoring validation, logging, permissions, or exception handling.",
+      "Answering as if there is only one possible implementation approach."
+    ],
+    "verbalAnswerFramework": [
+      "Start with the business problem.",
+      "Name the Ivanti area or feature you would use.",
+      "Describe the sequence of logic or actions.",
+      "Close with testing, monitoring, and expected outcome."
+    ],
+    "expectedOutcome": "A strong answer shows you can connect Software Distribution Jobs to execution, explain the control points, and speak confidently about validation and supportability.",
+    "followUpQuestions": [
+      "How would you test this before release?",
+      "What could fail and how would you handle it?",
+      "When would you choose a lighter or simpler approach?"
+    ],
+    "priority": "Important",
+    "bookmarkPrompt": "Bookmark this if you want to revise the verbal explanation later."
+  },
+  {
+    "id": "mobile-app-rollout-planning",
+    "title": "Mobile app rollout planning",
+    "topicId": "mobile-app-deployment",
+    "summary": "Discuss managed app delivery, ownership considerations, and how you validate the rollout result.",
+    "questions": [
+      "How do you roll out a managed mobile app?",
+      "What changes when devices are BYOD?"
+    ],
+    "area": "MDM",
+    "moduleId": "mobile-app-distribution",
+    "difficulty": "Intermediate",
+    "codeSnippet": "Select target devices -> assign app policy -> push config -> monitor install/compliance status",
+    "interviewerIsTesting": "practical implementation thinking, explanation clarity, and real-world tradeoff awareness",
+    "whenToUse": "Use this answer pattern when the discussion moves from concept into implementation and the interviewer wants to know how you would handle Mobile App Deployment in Mobile App Distribution.",
+    "implementationSteps": [
+      "Clarify the business or operational goal behind Mobile App Deployment.",
+      "Identify the records, trigger points, inputs, or target audience involved.",
+      "Explain the logic or flow in a clean sequence: validate, execute, monitor, and handle exceptions.",
+      "Describe how you would test success, capture failures, and avoid unintended side effects."
+    ],
+    "commonMistakes": [
+      "Jumping straight into pseudo code without explaining the business intent.",
+      "Ignoring validation, logging, permissions, or exception handling.",
+      "Answering as if there is only one possible implementation approach."
+    ],
+    "verbalAnswerFramework": [
+      "Start with the business problem.",
+      "Name the Ivanti area or feature you would use.",
+      "Describe the sequence of logic or actions.",
+      "Close with testing, monitoring, and expected outcome."
+    ],
+    "expectedOutcome": "A strong answer shows you can connect Mobile App Deployment to execution, explain the control points, and speak confidently about validation and supportability.",
+    "followUpQuestions": [
+      "How would you test this before release?",
+      "What could fail and how would you handle it?",
+      "When would you choose a lighter or simpler approach?"
+    ],
+    "priority": "Important",
+    "bookmarkPrompt": "Bookmark this if you want to revise the verbal explanation later."
+  },
+  {
+    "id": "discovery-scan-and-reconciliation",
+    "title": "Discovery scan and reconciliation flow",
+    "topicId": "discovery-and-inventory",
+    "summary": "Explain how discovery data is captured, normalized, and reconciled into a single trustworthy record.",
+    "questions": [
+      "How do you describe discovery at a high level?",
+      "Why is normalization important after discovery?"
+    ],
+    "area": "Asset",
+    "moduleId": "ivanti-neurons-for-discovery",
+    "difficulty": "Intermediate",
+    "codeSnippet": "Enable discovery policy -> collect device data -> normalize attributes -> reconcile into repository",
+    "interviewerIsTesting": "practical implementation thinking, explanation clarity, and real-world tradeoff awareness",
+    "whenToUse": "Use this answer pattern when the discussion moves from concept into implementation and the interviewer wants to know how you would handle Discovery and Inventory in Ivanti Neurons for Discovery.",
+    "implementationSteps": [
+      "Clarify the business or operational goal behind Discovery and Inventory.",
+      "Identify the records, trigger points, inputs, or target audience involved.",
+      "Explain the logic or flow in a clean sequence: validate, execute, monitor, and handle exceptions.",
+      "Describe how you would test success, capture failures, and avoid unintended side effects."
+    ],
+    "commonMistakes": [
+      "Jumping straight into pseudo code without explaining the business intent.",
+      "Ignoring validation, logging, permissions, or exception handling.",
+      "Answering as if there is only one possible implementation approach."
+    ],
+    "verbalAnswerFramework": [
+      "Start with the business problem.",
+      "Name the Ivanti area or feature you would use.",
+      "Describe the sequence of logic or actions.",
+      "Close with testing, monitoring, and expected outcome."
+    ],
+    "expectedOutcome": "A strong answer shows you can connect Discovery and Inventory to execution, explain the control points, and speak confidently about validation and supportability.",
+    "followUpQuestions": [
+      "How would you test this before release?",
+      "What could fail and how would you handle it?",
+      "When would you choose a lighter or simpler approach?"
+    ],
+    "priority": "Important",
+    "bookmarkPrompt": "Bookmark this if you want to revise the verbal explanation later."
+  },
+  {
+    "id": "workspace-first-line-remediation",
+    "title": "Workspace first-line remediation thinking",
+    "topicId": "workspace-triage",
+    "summary": "Show how a first-line analyst uses context, quick actions, and device insight to resolve more issues without escalation.",
+    "questions": [
+      "How does Workspace help shift-left?",
+      "What actions become possible with 360-degree context?"
+    ],
+    "area": "Workspace",
+    "moduleId": "ivanti-neurons-workspace",
+    "difficulty": "Beginner",
+    "codeSnippet": "Open user/device context -> review telemetry -> run quick action -> confirm issue resolved",
+    "interviewerIsTesting": "practical implementation thinking, explanation clarity, and real-world tradeoff awareness",
+    "whenToUse": "Use this answer pattern when the discussion moves from concept into implementation and the interviewer wants to know how you would handle Workspace Triage in Ivanti Neurons Workspace.",
+    "implementationSteps": [
+      "Clarify the business or operational goal behind Workspace Triage.",
+      "Identify the records, trigger points, inputs, or target audience involved.",
+      "Explain the logic or flow in a clean sequence: validate, execute, monitor, and handle exceptions.",
+      "Describe how you would test success, capture failures, and avoid unintended side effects."
+    ],
+    "commonMistakes": [
+      "Jumping straight into pseudo code without explaining the business intent.",
+      "Ignoring validation, logging, permissions, or exception handling.",
+      "Answering as if there is only one possible implementation approach."
+    ],
+    "verbalAnswerFramework": [
+      "Start with the business problem.",
+      "Name the Ivanti area or feature you would use.",
+      "Describe the sequence of logic or actions.",
+      "Close with testing, monitoring, and expected outcome."
+    ],
+    "expectedOutcome": "A strong answer shows you can connect Workspace Triage to execution, explain the control points, and speak confidently about validation and supportability.",
+    "followUpQuestions": [
+      "How would you test this before release?",
+      "What could fail and how would you handle it?",
+      "When would you choose a lighter or simpler approach?"
+    ],
+    "priority": "Important",
+    "bookmarkPrompt": "Bookmark this if you want to revise the verbal explanation later."
+  },
+  {
+    "id": "business-object-extension-plan",
+    "title": "Business object extension planning",
+    "topicId": "business-objects",
+    "summary": "Explain how to extend an object safely without breaking supportability, reporting, or future automation.",
+    "questions": [
+      "When would you extend an object versus creating a separate one?",
+      "What checks do you perform before changing object structure?"
+    ],
+    "area": "ITSM Design",
+    "moduleId": "ivanti-neurons-for-itsm",
+    "difficulty": "Intermediate",
+    "codeSnippet": "Review current object -> validate reporting impact -> add fields or extend object -> test forms, searches, workflows",
+    "interviewerIsTesting": "practical implementation thinking, explanation clarity, and real-world tradeoff awareness",
+    "whenToUse": "Use this answer pattern when the discussion moves from concept into implementation and the interviewer wants to know how you would handle Business Objects in Ivanti Neurons for ITSM.",
+    "implementationSteps": [
+      "Clarify the business or operational goal behind Business Objects.",
+      "Identify the records, trigger points, inputs, or target audience involved.",
+      "Explain the logic or flow in a clean sequence: validate, execute, monitor, and handle exceptions.",
+      "Describe how you would test success, capture failures, and avoid unintended side effects."
+    ],
+    "commonMistakes": [
+      "Jumping straight into pseudo code without explaining the business intent.",
+      "Ignoring validation, logging, permissions, or exception handling.",
+      "Answering as if there is only one possible implementation approach."
+    ],
+    "verbalAnswerFramework": [
+      "Start with the business problem.",
+      "Name the Ivanti area or feature you would use.",
+      "Describe the sequence of logic or actions.",
+      "Close with testing, monitoring, and expected outcome."
+    ],
+    "expectedOutcome": "A strong answer shows you can connect Business Objects to execution, explain the control points, and speak confidently about validation and supportability.",
+    "followUpQuestions": [
+      "How would you test this before release?",
+      "What could fail and how would you handle it?",
+      "When would you choose a lighter or simpler approach?"
+    ],
+    "priority": "Core",
+    "bookmarkPrompt": "Bookmark this if you want to revise the verbal explanation later."
+  },
+  {
+    "id": "relationship-impact-walk-through",
+    "title": "Relationship impact walk-through",
+    "topicId": "relationships",
+    "summary": "Show how parent-child or related-record design affects navigation, reporting, automation, and ownership visibility.",
+    "questions": [
+      "How do relationships change reporting quality?",
+      "How do you test relationship-driven designs?"
+    ],
+    "area": "ITSM Design",
+    "moduleId": "ivanti-neurons-for-itsm",
+    "difficulty": "Intermediate",
+    "codeSnippet": "Define parent/child or lookup relation -> validate related lists -> test reporting and automation paths",
+    "interviewerIsTesting": "practical implementation thinking, explanation clarity, and real-world tradeoff awareness",
+    "whenToUse": "Use this answer pattern when the discussion moves from concept into implementation and the interviewer wants to know how you would handle Relationships in Ivanti Neurons for ITSM.",
+    "implementationSteps": [
+      "Clarify the business or operational goal behind Relationships.",
+      "Identify the records, trigger points, inputs, or target audience involved.",
+      "Explain the logic or flow in a clean sequence: validate, execute, monitor, and handle exceptions.",
+      "Describe how you would test success, capture failures, and avoid unintended side effects."
+    ],
+    "commonMistakes": [
+      "Jumping straight into pseudo code without explaining the business intent.",
+      "Ignoring validation, logging, permissions, or exception handling.",
+      "Answering as if there is only one possible implementation approach."
+    ],
+    "verbalAnswerFramework": [
+      "Start with the business problem.",
+      "Name the Ivanti area or feature you would use.",
+      "Describe the sequence of logic or actions.",
+      "Close with testing, monitoring, and expected outcome."
+    ],
+    "expectedOutcome": "A strong answer shows you can connect Relationships to execution, explain the control points, and speak confidently about validation and supportability.",
+    "followUpQuestions": [
+      "How would you test this before release?",
+      "What could fail and how would you handle it?",
+      "When would you choose a lighter or simpler approach?"
+    ],
+    "priority": "Core",
+    "bookmarkPrompt": "Bookmark this if you want to revise the verbal explanation later."
+  },
+  {
+    "id": "form-layout-design-review",
+    "title": "Form and layout design review",
+    "topicId": "forms-and-layouts",
+    "summary": "Explain how you redesign a form for different personas while keeping data capture clean and supportable.",
+    "questions": [
+      "How do you simplify a cluttered form?",
+      "How do layouts support different user groups?"
+    ],
+    "area": "UX Configuration",
+    "moduleId": "ivanti-neurons-for-itsm",
+    "difficulty": "Beginner",
+    "codeSnippet": "Review audience -> group fields by task -> simplify sections -> test with requester and fulfiller personas",
+    "interviewerIsTesting": "data quality control, user experience judgment, and safe rule placement",
+    "whenToUse": "Use this answer pattern when the discussion moves from concept into implementation and the interviewer wants to know how you would handle Forms and Layouts in Ivanti Neurons for ITSM.",
+    "implementationSteps": [
+      "Clarify the business or operational goal behind Forms and Layouts.",
+      "Identify the records, trigger points, inputs, or target audience involved.",
+      "Explain the logic or flow in a clean sequence: validate, execute, monitor, and handle exceptions.",
+      "Describe how you would test success, capture failures, and avoid unintended side effects."
+    ],
+    "commonMistakes": [
+      "Jumping straight into pseudo code without explaining the business intent.",
+      "Ignoring validation, logging, permissions, or exception handling.",
+      "Answering as if there is only one possible implementation approach."
+    ],
+    "verbalAnswerFramework": [
+      "Start with the business problem.",
+      "Name the Ivanti area or feature you would use.",
+      "Describe the sequence of logic or actions.",
+      "Close with testing, monitoring, and expected outcome."
+    ],
+    "expectedOutcome": "A strong answer shows you can connect Forms and Layouts to execution, explain the control points, and speak confidently about validation and supportability.",
+    "followUpQuestions": [
+      "How would you test this before release?",
+      "What could fail and how would you handle it?",
+      "When would you choose a lighter or simpler approach?"
+    ],
+    "priority": "Core",
+    "bookmarkPrompt": "Bookmark this if you want to revise the verbal explanation later."
+  },
+  {
+    "id": "quick-action-design-pattern",
+    "title": "Quick action design pattern",
+    "topicId": "quick-actions",
+    "summary": "Describe how to create repeatable quick actions for operational tasks such as notifications, updates, and saved-search processing.",
+    "questions": [
+      "When is a quick action better than a workflow?",
+      "How do you make a quick action safe for repeated use?"
+    ],
+    "area": "Automation",
+    "moduleId": "ivanti-neurons-for-itsm",
+    "difficulty": "Intermediate",
+    "codeSnippet": "Define trigger context -> build action -> validate output -> test on sample records and saved search results",
+    "interviewerIsTesting": "practical implementation thinking, explanation clarity, and real-world tradeoff awareness",
+    "whenToUse": "Use this answer pattern when the discussion moves from concept into implementation and the interviewer wants to know how you would handle Quick Actions in Ivanti Neurons for ITSM.",
+    "implementationSteps": [
+      "Clarify the business or operational goal behind Quick Actions.",
+      "Identify the records, trigger points, inputs, or target audience involved.",
+      "Explain the logic or flow in a clean sequence: validate, execute, monitor, and handle exceptions.",
+      "Describe how you would test success, capture failures, and avoid unintended side effects."
+    ],
+    "commonMistakes": [
+      "Jumping straight into pseudo code without explaining the business intent.",
+      "Ignoring validation, logging, permissions, or exception handling.",
+      "Answering as if there is only one possible implementation approach."
+    ],
+    "verbalAnswerFramework": [
+      "Start with the business problem.",
+      "Name the Ivanti area or feature you would use.",
+      "Describe the sequence of logic or actions.",
+      "Close with testing, monitoring, and expected outcome."
+    ],
+    "expectedOutcome": "A strong answer shows you can connect Quick Actions to execution, explain the control points, and speak confidently about validation and supportability.",
+    "followUpQuestions": [
+      "How would you test this before release?",
+      "What could fail and how would you handle it?",
+      "When would you choose a lighter or simpler approach?"
+    ],
+    "priority": "Core",
+    "bookmarkPrompt": "Bookmark this if you want to revise the verbal explanation later."
+  },
+  {
+    "id": "email-template-dynamic-fields",
+    "title": "Email template dynamic field strategy",
+    "topicId": "email-templates",
+    "summary": "Explain how you build templates with dynamic content, recipients, and consistent messaging for service teams.",
+    "questions": [
+      "How do you standardize email quality?",
+      "What should you test before sending scheduled emails?"
+    ],
+    "area": "Communications",
+    "moduleId": "ivanti-neurons-for-itsm",
+    "difficulty": "Beginner",
+    "codeSnippet": "Select template context -> insert dynamic fields -> validate recipients -> preview output -> send",
+    "interviewerIsTesting": "practical implementation thinking, explanation clarity, and real-world tradeoff awareness",
+    "whenToUse": "Use this answer pattern when the discussion moves from concept into implementation and the interviewer wants to know how you would handle Email Templates in Ivanti Neurons for ITSM.",
+    "implementationSteps": [
+      "Clarify the business or operational goal behind Email Templates.",
+      "Identify the records, trigger points, inputs, or target audience involved.",
+      "Explain the logic or flow in a clean sequence: validate, execute, monitor, and handle exceptions.",
+      "Describe how you would test success, capture failures, and avoid unintended side effects."
+    ],
+    "commonMistakes": [
+      "Jumping straight into pseudo code without explaining the business intent.",
+      "Ignoring validation, logging, permissions, or exception handling.",
+      "Answering as if there is only one possible implementation approach."
+    ],
+    "verbalAnswerFramework": [
+      "Start with the business problem.",
+      "Name the Ivanti area or feature you would use.",
+      "Describe the sequence of logic or actions.",
+      "Close with testing, monitoring, and expected outcome."
+    ],
+    "expectedOutcome": "A strong answer shows you can connect Email Templates to execution, explain the control points, and speak confidently about validation and supportability.",
+    "followUpQuestions": [
+      "How would you test this before release?",
+      "What could fail and how would you handle it?",
+      "When would you choose a lighter or simpler approach?"
+    ],
+    "priority": "Important",
+    "bookmarkPrompt": "Bookmark this if you want to revise the verbal explanation later."
+  },
+  {
+    "id": "request-fulfillment-task-design",
+    "title": "Request fulfillment task design",
+    "topicId": "request-fulfillment",
+    "summary": "Discuss how request flows become tasks, approvals, and status updates without losing visibility.",
+    "questions": [
+      "How do you break a request into child tasks?",
+      "How do you keep request status aligned with fulfillment?"
+    ],
+    "area": "Request Management",
+    "moduleId": "service-request-management",
+    "difficulty": "Intermediate",
+    "codeSnippet": "Capture request -> create approval/task chain -> map parent status logic -> test closure and rejection paths",
+    "interviewerIsTesting": "practical implementation thinking, explanation clarity, and real-world tradeoff awareness",
+    "whenToUse": "Use this answer pattern when the discussion moves from concept into implementation and the interviewer wants to know how you would handle Request Fulfillment in Service Request Management.",
+    "implementationSteps": [
+      "Clarify the business or operational goal behind Request Fulfillment.",
+      "Identify the records, trigger points, inputs, or target audience involved.",
+      "Explain the logic or flow in a clean sequence: validate, execute, monitor, and handle exceptions.",
+      "Describe how you would test success, capture failures, and avoid unintended side effects."
+    ],
+    "commonMistakes": [
+      "Jumping straight into pseudo code without explaining the business intent.",
+      "Ignoring validation, logging, permissions, or exception handling.",
+      "Answering as if there is only one possible implementation approach."
+    ],
+    "verbalAnswerFramework": [
+      "Start with the business problem.",
+      "Name the Ivanti area or feature you would use.",
+      "Describe the sequence of logic or actions.",
+      "Close with testing, monitoring, and expected outcome."
+    ],
+    "expectedOutcome": "A strong answer shows you can connect Request Fulfillment to execution, explain the control points, and speak confidently about validation and supportability.",
+    "followUpQuestions": [
+      "How would you test this before release?",
+      "What could fail and how would you handle it?",
+      "When would you choose a lighter or simpler approach?"
+    ],
+    "priority": "Core",
+    "bookmarkPrompt": "Bookmark this if you want to revise the verbal explanation later."
+  },
+  {
+    "id": "knowledge-feedback-loop",
+    "title": "Knowledge feedback loop design",
+    "topicId": "knowledge-lifecycle",
+    "summary": "Show how support teams create, review, publish, and improve knowledge based on recurring incidents and request volume.",
+    "questions": [
+      "How do you decide when to create an article?",
+      "How do you keep knowledge current?"
+    ],
+    "area": "Knowledge",
+    "moduleId": "knowledge-management",
+    "difficulty": "Beginner",
+    "codeSnippet": "Identify repeat issue -> draft article -> review/publish -> monitor usage -> revise based on feedback",
+    "interviewerIsTesting": "practical implementation thinking, explanation clarity, and real-world tradeoff awareness",
+    "whenToUse": "Use this answer pattern when the discussion moves from concept into implementation and the interviewer wants to know how you would handle Knowledge Lifecycle in Knowledge Management.",
+    "implementationSteps": [
+      "Clarify the business or operational goal behind Knowledge Lifecycle.",
+      "Identify the records, trigger points, inputs, or target audience involved.",
+      "Explain the logic or flow in a clean sequence: validate, execute, monitor, and handle exceptions.",
+      "Describe how you would test success, capture failures, and avoid unintended side effects."
+    ],
+    "commonMistakes": [
+      "Jumping straight into pseudo code without explaining the business intent.",
+      "Ignoring validation, logging, permissions, or exception handling.",
+      "Answering as if there is only one possible implementation approach."
+    ],
+    "verbalAnswerFramework": [
+      "Start with the business problem.",
+      "Name the Ivanti area or feature you would use.",
+      "Describe the sequence of logic or actions.",
+      "Close with testing, monitoring, and expected outcome."
+    ],
+    "expectedOutcome": "A strong answer shows you can connect Knowledge Lifecycle to execution, explain the control points, and speak confidently about validation and supportability.",
+    "followUpQuestions": [
+      "How would you test this before release?",
+      "What could fail and how would you handle it?",
+      "When would you choose a lighter or simpler approach?"
+    ],
+    "priority": "Important",
+    "bookmarkPrompt": "Bookmark this if you want to revise the verbal explanation later."
+  },
+  {
+    "id": "dashboard-kpi-design",
+    "title": "Dashboard KPI design",
+    "topicId": "dashboards-and-kpis",
+    "summary": "Explain how to build dashboards that are relevant to operational audiences rather than just listing raw counts.",
+    "questions": [
+      "How do you choose KPIs?",
+      "How do dashboards differ for managers versus analysts?"
+    ],
+    "area": "Reporting",
+    "moduleId": "reporting-and-dashboards",
+    "difficulty": "Intermediate",
+    "codeSnippet": "Define audience -> map KPIs -> use saved searches/data sources -> validate trends and exceptions",
+    "interviewerIsTesting": "operational visibility thinking and metric design",
+    "whenToUse": "Use this answer pattern when the discussion moves from concept into implementation and the interviewer wants to know how you would handle Dashboards and KPIs in Reporting and Dashboards.",
+    "implementationSteps": [
+      "Clarify the business or operational goal behind Dashboards and KPIs.",
+      "Identify the records, trigger points, inputs, or target audience involved.",
+      "Explain the logic or flow in a clean sequence: validate, execute, monitor, and handle exceptions.",
+      "Describe how you would test success, capture failures, and avoid unintended side effects."
+    ],
+    "commonMistakes": [
+      "Jumping straight into pseudo code without explaining the business intent.",
+      "Ignoring validation, logging, permissions, or exception handling.",
+      "Answering as if there is only one possible implementation approach."
+    ],
+    "verbalAnswerFramework": [
+      "Start with the business problem.",
+      "Name the Ivanti area or feature you would use.",
+      "Describe the sequence of logic or actions.",
+      "Close with testing, monitoring, and expected outcome."
+    ],
+    "expectedOutcome": "A strong answer shows you can connect Dashboards and KPIs to execution, explain the control points, and speak confidently about validation and supportability.",
+    "followUpQuestions": [
+      "How would you test this before release?",
+      "What could fail and how would you handle it?",
+      "When would you choose a lighter or simpler approach?"
+    ],
+    "priority": "Important",
+    "bookmarkPrompt": "Bookmark this if you want to revise the verbal explanation later."
+  },
+  {
+    "id": "auth-token-flow-review",
+    "title": "Authentication token flow review",
+    "topicId": "authentication-patterns",
+    "summary": "Walk through how secure authentication is handled in integrations without exposing secrets or weakening governance.",
+    "questions": [
+      "How do you store credentials safely?",
+      "What makes authentication design interview-worthy?"
+    ],
+    "area": "Integration Security",
+    "moduleId": "ivanti-neurons-ipaas",
+    "difficulty": "Intermediate",
+    "codeSnippet": "Obtain token or key from secure store -> attach to request -> validate expiry/error handling -> log securely",
+    "interviewerIsTesting": "integration design, security awareness, payload thinking, and failure handling",
+    "whenToUse": "Use this answer pattern when the discussion moves from concept into implementation and the interviewer wants to know how you would handle Authentication Patterns in Ivanti Neurons iPaaS.",
+    "implementationSteps": [
+      "Clarify the business or operational goal behind Authentication Patterns.",
+      "Identify the records, trigger points, inputs, or target audience involved.",
+      "Explain the logic or flow in a clean sequence: validate, execute, monitor, and handle exceptions.",
+      "Describe how you would test success, capture failures, and avoid unintended side effects."
+    ],
+    "commonMistakes": [
+      "Jumping straight into pseudo code without explaining the business intent.",
+      "Ignoring validation, logging, permissions, or exception handling.",
+      "Answering as if there is only one possible implementation approach."
+    ],
+    "verbalAnswerFramework": [
+      "Start with the business problem.",
+      "Name the Ivanti area or feature you would use.",
+      "Describe the sequence of logic or actions.",
+      "Close with testing, monitoring, and expected outcome."
+    ],
+    "expectedOutcome": "A strong answer shows you can connect Authentication Patterns to execution, explain the control points, and speak confidently about validation and supportability.",
+    "followUpQuestions": [
+      "How would you test this before release?",
+      "What could fail and how would you handle it?",
+      "When would you choose a lighter or simpler approach?"
+    ],
+    "priority": "Important",
+    "bookmarkPrompt": "Bookmark this if you want to revise the verbal explanation later."
+  },
+  {
+    "id": "ownership-model-policy-mapping",
+    "title": "Ownership model policy mapping",
+    "topicId": "ownership-models",
+    "summary": "Explain how ownership choice affects app delivery, privacy expectations, compliance, and support boundaries.",
+    "questions": [
+      "Why do BYOD and corporate-owned devices need different policy approaches?",
+      "How does ownership affect app strategy?"
+    ],
+    "area": "MDM",
+    "moduleId": "ivanti-neurons-for-mdm",
+    "difficulty": "Beginner",
+    "codeSnippet": "Identify ownership model -> assign correct policy/app set -> validate privacy and compliance experience",
+    "interviewerIsTesting": "practical implementation thinking, explanation clarity, and real-world tradeoff awareness",
+    "whenToUse": "Use this answer pattern when the discussion moves from concept into implementation and the interviewer wants to know how you would handle Ownership Models in Ivanti Neurons for MDM.",
+    "implementationSteps": [
+      "Clarify the business or operational goal behind Ownership Models.",
+      "Identify the records, trigger points, inputs, or target audience involved.",
+      "Explain the logic or flow in a clean sequence: validate, execute, monitor, and handle exceptions.",
+      "Describe how you would test success, capture failures, and avoid unintended side effects."
+    ],
+    "commonMistakes": [
+      "Jumping straight into pseudo code without explaining the business intent.",
+      "Ignoring validation, logging, permissions, or exception handling.",
+      "Answering as if there is only one possible implementation approach."
+    ],
+    "verbalAnswerFramework": [
+      "Start with the business problem.",
+      "Name the Ivanti area or feature you would use.",
+      "Describe the sequence of logic or actions.",
+      "Close with testing, monitoring, and expected outcome."
+    ],
+    "expectedOutcome": "A strong answer shows you can connect Ownership Models to execution, explain the control points, and speak confidently about validation and supportability.",
+    "followUpQuestions": [
+      "How would you test this before release?",
+      "What could fail and how would you handle it?",
+      "When would you choose a lighter or simpler approach?"
+    ],
+    "priority": "Important",
+    "bookmarkPrompt": "Bookmark this if you want to revise the verbal explanation later."
+  },
+  {
+    "id": "asset-lifecycle-state-model",
+    "title": "Asset lifecycle state model",
+    "topicId": "asset-lifecycle",
+    "summary": "Describe how lifecycle states drive reporting, ownership, refresh planning, and retirement governance.",
+    "questions": [
+      "What lifecycle states matter most?",
+      "How do lifecycle changes affect operational reporting?"
+    ],
+    "area": "ITAM",
+    "moduleId": "ivanti-neurons-for-itam",
+    "difficulty": "Beginner",
+    "codeSnippet": "Define lifecycle states -> map transitions -> align discovery and ownership updates -> report on refresh/retirement",
+    "interviewerIsTesting": "practical implementation thinking, explanation clarity, and real-world tradeoff awareness",
+    "whenToUse": "Use this answer pattern when the discussion moves from concept into implementation and the interviewer wants to know how you would handle Asset Lifecycle in Ivanti Neurons for ITAM.",
+    "implementationSteps": [
+      "Clarify the business or operational goal behind Asset Lifecycle.",
+      "Identify the records, trigger points, inputs, or target audience involved.",
+      "Explain the logic or flow in a clean sequence: validate, execute, monitor, and handle exceptions.",
+      "Describe how you would test success, capture failures, and avoid unintended side effects."
+    ],
+    "commonMistakes": [
+      "Jumping straight into pseudo code without explaining the business intent.",
+      "Ignoring validation, logging, permissions, or exception handling.",
+      "Answering as if there is only one possible implementation approach."
+    ],
+    "verbalAnswerFramework": [
+      "Start with the business problem.",
+      "Name the Ivanti area or feature you would use.",
+      "Describe the sequence of logic or actions.",
+      "Close with testing, monitoring, and expected outcome."
+    ],
+    "expectedOutcome": "A strong answer shows you can connect Asset Lifecycle to execution, explain the control points, and speak confidently about validation and supportability.",
+    "followUpQuestions": [
+      "How would you test this before release?",
+      "What could fail and how would you handle it?",
+      "When would you choose a lighter or simpler approach?"
+    ],
+    "priority": "Core",
+    "bookmarkPrompt": "Bookmark this if you want to revise the verbal explanation later."
+  },
+  {
+    "id": "authority-document-structure",
+    "title": "Authority document structure and citation design",
+    "topicId": "authority-documents-and-citations",
+    "summary": "Explain how authority documents, citations, and controls are structured to keep GRC content traceable and auditable.",
+    "questions": [
+      "How do citations connect requirements to controls?",
+      "Why is traceability important in GRC interviews?"
+    ],
+    "area": "GRC",
+    "moduleId": "ivanti-neurons-for-grc",
+    "difficulty": "Intermediate",
+    "codeSnippet": "Create authority source -> define citations -> map controls -> verify traceability into assessments and actions",
+    "interviewerIsTesting": "integration design, security awareness, payload thinking, and failure handling",
+    "whenToUse": "Use this answer pattern when the discussion moves from concept into implementation and the interviewer wants to know how you would handle Authority Documents and Citations in Ivanti Neurons for GRC.",
+    "implementationSteps": [
+      "Clarify the business or operational goal behind Authority Documents and Citations.",
+      "Identify the records, trigger points, inputs, or target audience involved.",
+      "Explain the logic or flow in a clean sequence: validate, execute, monitor, and handle exceptions.",
+      "Describe how you would test success, capture failures, and avoid unintended side effects."
+    ],
+    "commonMistakes": [
+      "Jumping straight into pseudo code without explaining the business intent.",
+      "Ignoring validation, logging, permissions, or exception handling.",
+      "Answering as if there is only one possible implementation approach."
+    ],
+    "verbalAnswerFramework": [
+      "Start with the business problem.",
+      "Name the Ivanti area or feature you would use.",
+      "Describe the sequence of logic or actions.",
+      "Close with testing, monitoring, and expected outcome."
+    ],
+    "expectedOutcome": "A strong answer shows you can connect Authority Documents and Citations to execution, explain the control points, and speak confidently about validation and supportability.",
+    "followUpQuestions": [
+      "How would you test this before release?",
+      "What could fail and how would you handle it?",
+      "When would you choose a lighter or simpler approach?"
+    ],
+    "priority": "Important",
+    "bookmarkPrompt": "Bookmark this if you want to revise the verbal explanation later."
+  },
+  {
+    "id": "velocity-session-optimization",
+    "title": "Velocity session optimization",
+    "topicId": "velocity-browser-sessions",
+    "summary": "Show how you improve browser or telnet session usability for frontline workers without replacing the backend application.",
+    "questions": [
+      "What makes a session redesign successful?",
+      "How do you reduce friction on handheld devices?"
+    ],
+    "area": "Velocity",
+    "moduleId": "ivanti-velocity",
+    "difficulty": "Intermediate",
+    "codeSnippet": "Review current session -> remove unnecessary prompts -> optimize navigation and scanning flow -> validate worker speed",
+    "interviewerIsTesting": "practical implementation thinking, explanation clarity, and real-world tradeoff awareness",
+    "whenToUse": "Use this answer pattern when the discussion moves from concept into implementation and the interviewer wants to know how you would handle Velocity Browser Sessions in Ivanti Velocity.",
+    "implementationSteps": [
+      "Clarify the business or operational goal behind Velocity Browser Sessions.",
+      "Identify the records, trigger points, inputs, or target audience involved.",
+      "Explain the logic or flow in a clean sequence: validate, execute, monitor, and handle exceptions.",
+      "Describe how you would test success, capture failures, and avoid unintended side effects."
+    ],
+    "commonMistakes": [
+      "Jumping straight into pseudo code without explaining the business intent.",
+      "Ignoring validation, logging, permissions, or exception handling.",
+      "Answering as if there is only one possible implementation approach."
+    ],
+    "verbalAnswerFramework": [
+      "Start with the business problem.",
+      "Name the Ivanti area or feature you would use.",
+      "Describe the sequence of logic or actions.",
+      "Close with testing, monitoring, and expected outcome."
+    ],
+    "expectedOutcome": "A strong answer shows you can connect Velocity Browser Sessions to execution, explain the control points, and speak confidently about validation and supportability.",
+    "followUpQuestions": [
+      "How would you test this before release?",
+      "What could fail and how would you handle it?",
+      "When would you choose a lighter or simpler approach?"
+    ],
+    "priority": "Important",
+    "bookmarkPrompt": "Bookmark this if you want to revise the verbal explanation later."
+  },
+  {
+    "id": "uem-policy-baseline-review",
+    "title": "UEM policy baseline review",
+    "topicId": "device-groups-and-targeting",
+    "summary": "Explain how you establish a manageable UEM baseline using groups, targeting logic, and rollout control.",
+    "questions": [
+      "How do you structure a UEM baseline?",
+      "Why do grouping and targeting matter before deployment?"
+    ],
+    "area": "UEM",
+    "moduleId": "ivanti-neurons-for-uem",
+    "difficulty": "Intermediate",
+    "codeSnippet": "Identify baseline population -> create device groups -> map policies/jobs -> validate rollout order and reporting",
+    "interviewerIsTesting": "practical implementation thinking, explanation clarity, and real-world tradeoff awareness",
+    "whenToUse": "Use this answer pattern when the discussion moves from concept into implementation and the interviewer wants to know how you would handle Device Groups and Targeting in Ivanti Neurons for UEM.",
+    "implementationSteps": [
+      "Clarify the business or operational goal behind Device Groups and Targeting.",
+      "Identify the records, trigger points, inputs, or target audience involved.",
+      "Explain the logic or flow in a clean sequence: validate, execute, monitor, and handle exceptions.",
+      "Describe how you would test success, capture failures, and avoid unintended side effects."
+    ],
+    "commonMistakes": [
+      "Jumping straight into pseudo code without explaining the business intent.",
+      "Ignoring validation, logging, permissions, or exception handling.",
+      "Answering as if there is only one possible implementation approach."
+    ],
+    "verbalAnswerFramework": [
+      "Start with the business problem.",
+      "Name the Ivanti area or feature you would use.",
+      "Describe the sequence of logic or actions.",
+      "Close with testing, monitoring, and expected outcome."
+    ],
+    "expectedOutcome": "A strong answer shows you can connect Device Groups and Targeting to execution, explain the control points, and speak confidently about validation and supportability.",
+    "followUpQuestions": [
+      "How would you test this before release?",
+      "What could fail and how would you handle it?",
+      "When would you choose a lighter or simpler approach?"
+    ],
+    "priority": "Important",
+    "bookmarkPrompt": "Bookmark this if you want to revise the verbal explanation later."
   }
 ]

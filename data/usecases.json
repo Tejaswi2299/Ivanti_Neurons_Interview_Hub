@@ -12,7 +12,38 @@
       "incident-lifecycle",
       "dashboards-and-kpis"
     ],
-    "difficulty": "Intermediate"
+    "difficulty": "Intermediate",
+    "interviewerIsTesting": "This scenario tests whether you can translate Incident Management into a real operational design, not just repeat product terminology.",
+    "implementationSteps": [
+      "Restate the problem in business terms and identify why Incident Management is the right area to solve it.",
+      "Identify the data source, trigger, approvals, ownership, or target population involved.",
+      "Describe the record flow, automation steps, notifications, and exception path.",
+      "Explain how you would validate the outcome and measure whether the scenario solved the problem."
+    ],
+    "validationChecklist": [
+      "Confirm the target records or devices are in scope.",
+      "Validate the trigger condition and expected downstream action.",
+      "Check notification, audit, and reporting visibility.",
+      "Test at least one exception or failure path."
+    ],
+    "commonPitfalls": [
+      "Explaining the scenario too abstractly without a concrete flow.",
+      "Skipping approvals, ownership, or exception handling.",
+      "Not saying how success would be validated after configuration or rollout."
+    ],
+    "howToAnswerInInterview": "Frame your answer as problem -> Ivanti capability -> implementation flow -> validation -> business outcome.",
+    "relatedTopicNames": [
+      "Saved Searches",
+      "Email Templates",
+      "Incident Lifecycle"
+    ],
+    "priority": "Core",
+    "answerFramework": [
+      "State the problem clearly.",
+      "Name the Ivanti area or module you would use.",
+      "Walk through the implementation sequence.",
+      "Close with validation and business outcome."
+    ]
   },
   {
     "id": "customer-response-reactivation",
@@ -26,7 +57,38 @@
       "workflows",
       "email-templates"
     ],
-    "difficulty": "Intermediate"
+    "difficulty": "Intermediate",
+    "interviewerIsTesting": "This scenario tests whether you can translate Incident Management into a real operational design, not just repeat product terminology.",
+    "implementationSteps": [
+      "Restate the problem in business terms and identify why Incident Management is the right area to solve it.",
+      "Identify the data source, trigger, approvals, ownership, or target population involved.",
+      "Describe the record flow, automation steps, notifications, and exception path.",
+      "Explain how you would validate the outcome and measure whether the scenario solved the problem."
+    ],
+    "validationChecklist": [
+      "Confirm the target records or devices are in scope.",
+      "Validate the trigger condition and expected downstream action.",
+      "Check notification, audit, and reporting visibility.",
+      "Test at least one exception or failure path."
+    ],
+    "commonPitfalls": [
+      "Explaining the scenario too abstractly without a concrete flow.",
+      "Skipping approvals, ownership, or exception handling.",
+      "Not saying how success would be validated after configuration or rollout."
+    ],
+    "howToAnswerInInterview": "Frame your answer as problem -> Ivanti capability -> implementation flow -> validation -> business outcome.",
+    "relatedTopicNames": [
+      "Incident Lifecycle",
+      "Workflows",
+      "Email Templates"
+    ],
+    "priority": "Core",
+    "answerFramework": [
+      "State the problem clearly.",
+      "Name the Ivanti area or module you would use.",
+      "Walk through the implementation sequence.",
+      "Close with validation and business outcome."
+    ]
   },
   {
     "id": "multi-step-request-approvals",
@@ -40,7 +102,38 @@
       "request-fulfillment",
       "workflows"
     ],
-    "difficulty": "Intermediate"
+    "difficulty": "Intermediate",
+    "interviewerIsTesting": "This scenario tests whether you can translate Service Request Management into a real operational design, not just repeat product terminology.",
+    "implementationSteps": [
+      "Restate the problem in business terms and identify why Service Request Management is the right area to solve it.",
+      "Identify the data source, trigger, approvals, ownership, or target population involved.",
+      "Describe the record flow, automation steps, notifications, and exception path.",
+      "Explain how you would validate the outcome and measure whether the scenario solved the problem."
+    ],
+    "validationChecklist": [
+      "Confirm the target records or devices are in scope.",
+      "Validate the trigger condition and expected downstream action.",
+      "Check notification, audit, and reporting visibility.",
+      "Test at least one exception or failure path."
+    ],
+    "commonPitfalls": [
+      "Explaining the scenario too abstractly without a concrete flow.",
+      "Skipping approvals, ownership, or exception handling.",
+      "Not saying how success would be validated after configuration or rollout."
+    ],
+    "howToAnswerInInterview": "Frame your answer as problem -> Ivanti capability -> implementation flow -> validation -> business outcome.",
+    "relatedTopicNames": [
+      "Approvals",
+      "Request Fulfillment",
+      "Workflows"
+    ],
+    "priority": "Core",
+    "answerFramework": [
+      "State the problem clearly.",
+      "Name the Ivanti area or module you would use.",
+      "Walk through the implementation sequence.",
+      "Close with validation and business outcome."
+    ]
   },
   {
     "id": "change-approval-and-scheduling",
@@ -54,7 +147,38 @@
       "approvals",
       "workflows"
     ],
-    "difficulty": "Intermediate"
+    "difficulty": "Intermediate",
+    "interviewerIsTesting": "This scenario tests whether you can translate Change Management into a real operational design, not just repeat product terminology.",
+    "implementationSteps": [
+      "Restate the problem in business terms and identify why Change Management is the right area to solve it.",
+      "Identify the data source, trigger, approvals, ownership, or target population involved.",
+      "Describe the record flow, automation steps, notifications, and exception path.",
+      "Explain how you would validate the outcome and measure whether the scenario solved the problem."
+    ],
+    "validationChecklist": [
+      "Confirm the target records or devices are in scope.",
+      "Validate the trigger condition and expected downstream action.",
+      "Check notification, audit, and reporting visibility.",
+      "Test at least one exception or failure path."
+    ],
+    "commonPitfalls": [
+      "Explaining the scenario too abstractly without a concrete flow.",
+      "Skipping approvals, ownership, or exception handling.",
+      "Not saying how success would be validated after configuration or rollout."
+    ],
+    "howToAnswerInInterview": "Frame your answer as problem -> Ivanti capability -> implementation flow -> validation -> business outcome.",
+    "relatedTopicNames": [
+      "Change Governance",
+      "Approvals",
+      "Workflows"
+    ],
+    "priority": "Core",
+    "answerFramework": [
+      "State the problem clearly.",
+      "Name the Ivanti area or module you would use.",
+      "Walk through the implementation sequence.",
+      "Close with validation and business outcome."
+    ]
   },
   {
     "id": "knowledge-deflection-for-support",
@@ -68,7 +192,38 @@
       "incident-lifecycle",
       "workspace-triage"
     ],
-    "difficulty": "Intermediate"
+    "difficulty": "Intermediate",
+    "interviewerIsTesting": "This scenario tests whether you can translate Knowledge Management into a real operational design, not just repeat product terminology.",
+    "implementationSteps": [
+      "Restate the problem in business terms and identify why Knowledge Management is the right area to solve it.",
+      "Identify the data source, trigger, approvals, ownership, or target population involved.",
+      "Describe the record flow, automation steps, notifications, and exception path.",
+      "Explain how you would validate the outcome and measure whether the scenario solved the problem."
+    ],
+    "validationChecklist": [
+      "Confirm the target records or devices are in scope.",
+      "Validate the trigger condition and expected downstream action.",
+      "Check notification, audit, and reporting visibility.",
+      "Test at least one exception or failure path."
+    ],
+    "commonPitfalls": [
+      "Explaining the scenario too abstractly without a concrete flow.",
+      "Skipping approvals, ownership, or exception handling.",
+      "Not saying how success would be validated after configuration or rollout."
+    ],
+    "howToAnswerInInterview": "Frame your answer as problem -> Ivanti capability -> implementation flow -> validation -> business outcome.",
+    "relatedTopicNames": [
+      "Knowledge Lifecycle",
+      "Incident Lifecycle",
+      "Workspace Triage"
+    ],
+    "priority": "Core",
+    "answerFramework": [
+      "State the problem clearly.",
+      "Name the Ivanti area or module you would use.",
+      "Walk through the implementation sequence.",
+      "Close with validation and business outcome."
+    ]
   },
   {
     "id": "external-approval-sync",
@@ -83,7 +238,38 @@
       "data-mapping",
       "error-handling-and-retries"
     ],
-    "difficulty": "Intermediate"
+    "difficulty": "Intermediate",
+    "interviewerIsTesting": "This scenario tests whether you can translate Ivanti Neurons iPaaS into a real operational design, not just repeat product terminology.",
+    "implementationSteps": [
+      "Restate the problem in business terms and identify why Ivanti Neurons iPaaS is the right area to solve it.",
+      "Identify the data source, trigger, approvals, ownership, or target population involved.",
+      "Describe the record flow, automation steps, notifications, and exception path.",
+      "Explain how you would validate the outcome and measure whether the scenario solved the problem."
+    ],
+    "validationChecklist": [
+      "Confirm the target records or devices are in scope.",
+      "Validate the trigger condition and expected downstream action.",
+      "Check notification, audit, and reporting visibility.",
+      "Test at least one exception or failure path."
+    ],
+    "commonPitfalls": [
+      "Explaining the scenario too abstractly without a concrete flow.",
+      "Skipping approvals, ownership, or exception handling.",
+      "Not saying how success would be validated after configuration or rollout."
+    ],
+    "howToAnswerInInterview": "Frame your answer as problem -> Ivanti capability -> implementation flow -> validation -> business outcome.",
+    "relatedTopicNames": [
+      "REST API Basics",
+      "Authentication Patterns",
+      "Data Mapping"
+    ],
+    "priority": "Core",
+    "answerFramework": [
+      "State the problem clearly.",
+      "Name the Ivanti area or module you would use.",
+      "Walk through the implementation sequence.",
+      "Close with validation and business outcome."
+    ]
   },
   {
     "id": "scheduled-report-push-to-external-endpoint",
@@ -98,7 +284,38 @@
       "data-mapping",
       "error-handling-and-retries"
     ],
-    "difficulty": "Intermediate"
+    "difficulty": "Intermediate",
+    "interviewerIsTesting": "This scenario tests whether you can translate Ivanti Neurons iPaaS into a real operational design, not just repeat product terminology.",
+    "implementationSteps": [
+      "Restate the problem in business terms and identify why Ivanti Neurons iPaaS is the right area to solve it.",
+      "Identify the data source, trigger, approvals, ownership, or target population involved.",
+      "Describe the record flow, automation steps, notifications, and exception path.",
+      "Explain how you would validate the outcome and measure whether the scenario solved the problem."
+    ],
+    "validationChecklist": [
+      "Confirm the target records or devices are in scope.",
+      "Validate the trigger condition and expected downstream action.",
+      "Check notification, audit, and reporting visibility.",
+      "Test at least one exception or failure path."
+    ],
+    "commonPitfalls": [
+      "Explaining the scenario too abstractly without a concrete flow.",
+      "Skipping approvals, ownership, or exception handling.",
+      "Not saying how success would be validated after configuration or rollout."
+    ],
+    "howToAnswerInInterview": "Frame your answer as problem -> Ivanti capability -> implementation flow -> validation -> business outcome.",
+    "relatedTopicNames": [
+      "Saved Searches",
+      "REST API Basics",
+      "Data Mapping"
+    ],
+    "priority": "Core",
+    "answerFramework": [
+      "State the problem clearly.",
+      "Name the Ivanti area or module you would use.",
+      "Walk through the implementation sequence.",
+      "Close with validation and business outcome."
+    ]
   },
   {
     "id": "pilot-based-patch-rollout",
@@ -112,7 +329,38 @@
       "dashboards-and-kpis",
       "device-groups-and-targeting"
     ],
-    "difficulty": "Intermediate"
+    "difficulty": "Intermediate",
+    "interviewerIsTesting": "This scenario tests whether you can translate Patch Management into a real operational design, not just repeat product terminology.",
+    "implementationSteps": [
+      "Restate the problem in business terms and identify why Patch Management is the right area to solve it.",
+      "Identify the data source, trigger, approvals, ownership, or target population involved.",
+      "Describe the record flow, automation steps, notifications, and exception path.",
+      "Explain how you would validate the outcome and measure whether the scenario solved the problem."
+    ],
+    "validationChecklist": [
+      "Confirm the target records or devices are in scope.",
+      "Validate the trigger condition and expected downstream action.",
+      "Check notification, audit, and reporting visibility.",
+      "Test at least one exception or failure path."
+    ],
+    "commonPitfalls": [
+      "Explaining the scenario too abstractly without a concrete flow.",
+      "Skipping approvals, ownership, or exception handling.",
+      "Not saying how success would be validated after configuration or rollout."
+    ],
+    "howToAnswerInInterview": "Frame your answer as problem -> Ivanti capability -> implementation flow -> validation -> business outcome.",
+    "relatedTopicNames": [
+      "Patch Rings",
+      "Dashboards and KPIs",
+      "Device Groups and Targeting"
+    ],
+    "priority": "Important",
+    "answerFramework": [
+      "State the problem clearly.",
+      "Name the Ivanti area or module you would use.",
+      "Walk through the implementation sequence.",
+      "Close with validation and business outcome."
+    ]
   },
   {
     "id": "targeted-software-rollout",
@@ -126,7 +374,38 @@
       "device-groups-and-targeting",
       "endpoint-troubleshooting"
     ],
-    "difficulty": "Intermediate"
+    "difficulty": "Intermediate",
+    "interviewerIsTesting": "This scenario tests whether you can translate Software Distribution into a real operational design, not just repeat product terminology.",
+    "implementationSteps": [
+      "Restate the problem in business terms and identify why Software Distribution is the right area to solve it.",
+      "Identify the data source, trigger, approvals, ownership, or target population involved.",
+      "Describe the record flow, automation steps, notifications, and exception path.",
+      "Explain how you would validate the outcome and measure whether the scenario solved the problem."
+    ],
+    "validationChecklist": [
+      "Confirm the target records or devices are in scope.",
+      "Validate the trigger condition and expected downstream action.",
+      "Check notification, audit, and reporting visibility.",
+      "Test at least one exception or failure path."
+    ],
+    "commonPitfalls": [
+      "Explaining the scenario too abstractly without a concrete flow.",
+      "Skipping approvals, ownership, or exception handling.",
+      "Not saying how success would be validated after configuration or rollout."
+    ],
+    "howToAnswerInInterview": "Frame your answer as problem -> Ivanti capability -> implementation flow -> validation -> business outcome.",
+    "relatedTopicNames": [
+      "Software Distribution Jobs",
+      "Device Groups and Targeting",
+      "Endpoint Troubleshooting"
+    ],
+    "priority": "Important",
+    "answerFramework": [
+      "State the problem clearly.",
+      "Name the Ivanti area or module you would use.",
+      "Walk through the implementation sequence.",
+      "Close with validation and business outcome."
+    ]
   },
   {
     "id": "byod-enrollment-program",
@@ -140,7 +419,38 @@
       "ownership-models",
       "compliance-rules"
     ],
-    "difficulty": "Intermediate"
+    "difficulty": "Intermediate",
+    "interviewerIsTesting": "This scenario tests whether you can translate Ivanti Neurons for MDM into a real operational design, not just repeat product terminology.",
+    "implementationSteps": [
+      "Restate the problem in business terms and identify why Ivanti Neurons for MDM is the right area to solve it.",
+      "Identify the data source, trigger, approvals, ownership, or target population involved.",
+      "Describe the record flow, automation steps, notifications, and exception path.",
+      "Explain how you would validate the outcome and measure whether the scenario solved the problem."
+    ],
+    "validationChecklist": [
+      "Confirm the target records or devices are in scope.",
+      "Validate the trigger condition and expected downstream action.",
+      "Check notification, audit, and reporting visibility.",
+      "Test at least one exception or failure path."
+    ],
+    "commonPitfalls": [
+      "Explaining the scenario too abstractly without a concrete flow.",
+      "Skipping approvals, ownership, or exception handling.",
+      "Not saying how success would be validated after configuration or rollout."
+    ],
+    "howToAnswerInInterview": "Frame your answer as problem -> Ivanti capability -> implementation flow -> validation -> business outcome.",
+    "relatedTopicNames": [
+      "Enrollment",
+      "Ownership Models",
+      "Compliance Rules"
+    ],
+    "priority": "Core",
+    "answerFramework": [
+      "State the problem clearly.",
+      "Name the Ivanti area or module you would use.",
+      "Walk through the implementation sequence.",
+      "Close with validation and business outcome."
+    ]
   },
   {
     "id": "non-compliant-device-response",
@@ -153,7 +463,37 @@
       "compliance-rules",
       "ownership-models"
     ],
-    "difficulty": "Intermediate"
+    "difficulty": "Intermediate",
+    "interviewerIsTesting": "This scenario tests whether you can translate Compliance and Policy into a real operational design, not just repeat product terminology.",
+    "implementationSteps": [
+      "Restate the problem in business terms and identify why Compliance and Policy is the right area to solve it.",
+      "Identify the data source, trigger, approvals, ownership, or target population involved.",
+      "Describe the record flow, automation steps, notifications, and exception path.",
+      "Explain how you would validate the outcome and measure whether the scenario solved the problem."
+    ],
+    "validationChecklist": [
+      "Confirm the target records or devices are in scope.",
+      "Validate the trigger condition and expected downstream action.",
+      "Check notification, audit, and reporting visibility.",
+      "Test at least one exception or failure path."
+    ],
+    "commonPitfalls": [
+      "Explaining the scenario too abstractly without a concrete flow.",
+      "Skipping approvals, ownership, or exception handling.",
+      "Not saying how success would be validated after configuration or rollout."
+    ],
+    "howToAnswerInInterview": "Frame your answer as problem -> Ivanti capability -> implementation flow -> validation -> business outcome.",
+    "relatedTopicNames": [
+      "Compliance Rules",
+      "Ownership Models"
+    ],
+    "priority": "Core",
+    "answerFramework": [
+      "State the problem clearly.",
+      "Name the Ivanti area or module you would use.",
+      "Walk through the implementation sequence.",
+      "Close with validation and business outcome."
+    ]
   },
   {
     "id": "managed-mobile-app-rollout",
@@ -167,7 +507,38 @@
       "ownership-models",
       "compliance-rules"
     ],
-    "difficulty": "Intermediate"
+    "difficulty": "Intermediate",
+    "interviewerIsTesting": "This scenario tests whether you can translate Mobile App Distribution into a real operational design, not just repeat product terminology.",
+    "implementationSteps": [
+      "Restate the problem in business terms and identify why Mobile App Distribution is the right area to solve it.",
+      "Identify the data source, trigger, approvals, ownership, or target population involved.",
+      "Describe the record flow, automation steps, notifications, and exception path.",
+      "Explain how you would validate the outcome and measure whether the scenario solved the problem."
+    ],
+    "validationChecklist": [
+      "Confirm the target records or devices are in scope.",
+      "Validate the trigger condition and expected downstream action.",
+      "Check notification, audit, and reporting visibility.",
+      "Test at least one exception or failure path."
+    ],
+    "commonPitfalls": [
+      "Explaining the scenario too abstractly without a concrete flow.",
+      "Skipping approvals, ownership, or exception handling.",
+      "Not saying how success would be validated after configuration or rollout."
+    ],
+    "howToAnswerInInterview": "Frame your answer as problem -> Ivanti capability -> implementation flow -> validation -> business outcome.",
+    "relatedTopicNames": [
+      "Mobile App Deployment",
+      "Ownership Models",
+      "Compliance Rules"
+    ],
+    "priority": "Core",
+    "answerFramework": [
+      "State the problem clearly.",
+      "Name the Ivanti area or module you would use.",
+      "Walk through the implementation sequence.",
+      "Close with validation and business outcome."
+    ]
   },
   {
     "id": "asset-refresh-planning",
@@ -180,7 +551,37 @@
       "asset-lifecycle",
       "dashboards-and-kpis"
     ],
-    "difficulty": "Intermediate"
+    "difficulty": "Intermediate",
+    "interviewerIsTesting": "This scenario tests whether you can translate Ivanti Neurons for ITAM into a real operational design, not just repeat product terminology.",
+    "implementationSteps": [
+      "Restate the problem in business terms and identify why Ivanti Neurons for ITAM is the right area to solve it.",
+      "Identify the data source, trigger, approvals, ownership, or target population involved.",
+      "Describe the record flow, automation steps, notifications, and exception path.",
+      "Explain how you would validate the outcome and measure whether the scenario solved the problem."
+    ],
+    "validationChecklist": [
+      "Confirm the target records or devices are in scope.",
+      "Validate the trigger condition and expected downstream action.",
+      "Check notification, audit, and reporting visibility.",
+      "Test at least one exception or failure path."
+    ],
+    "commonPitfalls": [
+      "Explaining the scenario too abstractly without a concrete flow.",
+      "Skipping approvals, ownership, or exception handling.",
+      "Not saying how success would be validated after configuration or rollout."
+    ],
+    "howToAnswerInInterview": "Frame your answer as problem -> Ivanti capability -> implementation flow -> validation -> business outcome.",
+    "relatedTopicNames": [
+      "Asset Lifecycle",
+      "Dashboards and KPIs"
+    ],
+    "priority": "Core",
+    "answerFramework": [
+      "State the problem clearly.",
+      "Name the Ivanti area or module you would use.",
+      "Walk through the implementation sequence.",
+      "Close with validation and business outcome."
+    ]
   },
   {
     "id": "discovery-reconciliation-improvement",
@@ -193,7 +594,37 @@
       "discovery-and-inventory",
       "normalization-and-reconciliation"
     ],
-    "difficulty": "Intermediate"
+    "difficulty": "Intermediate",
+    "interviewerIsTesting": "This scenario tests whether you can translate Ivanti Neurons for Discovery into a real operational design, not just repeat product terminology.",
+    "implementationSteps": [
+      "Restate the problem in business terms and identify why Ivanti Neurons for Discovery is the right area to solve it.",
+      "Identify the data source, trigger, approvals, ownership, or target population involved.",
+      "Describe the record flow, automation steps, notifications, and exception path.",
+      "Explain how you would validate the outcome and measure whether the scenario solved the problem."
+    ],
+    "validationChecklist": [
+      "Confirm the target records or devices are in scope.",
+      "Validate the trigger condition and expected downstream action.",
+      "Check notification, audit, and reporting visibility.",
+      "Test at least one exception or failure path."
+    ],
+    "commonPitfalls": [
+      "Explaining the scenario too abstractly without a concrete flow.",
+      "Skipping approvals, ownership, or exception handling.",
+      "Not saying how success would be validated after configuration or rollout."
+    ],
+    "howToAnswerInInterview": "Frame your answer as problem -> Ivanti capability -> implementation flow -> validation -> business outcome.",
+    "relatedTopicNames": [
+      "Discovery and Inventory",
+      "Normalization and Reconciliation"
+    ],
+    "priority": "Important",
+    "answerFramework": [
+      "State the problem clearly.",
+      "Name the Ivanti area or module you would use.",
+      "Walk through the implementation sequence.",
+      "Close with validation and business outcome."
+    ]
   },
   {
     "id": "control-assessment-cycle",
@@ -206,7 +637,37 @@
       "controls-and-risks",
       "authority-documents-and-citations"
     ],
-    "difficulty": "Intermediate"
+    "difficulty": "Intermediate",
+    "interviewerIsTesting": "This scenario tests whether you can translate Ivanti Neurons for GRC into a real operational design, not just repeat product terminology.",
+    "implementationSteps": [
+      "Restate the problem in business terms and identify why Ivanti Neurons for GRC is the right area to solve it.",
+      "Identify the data source, trigger, approvals, ownership, or target population involved.",
+      "Describe the record flow, automation steps, notifications, and exception path.",
+      "Explain how you would validate the outcome and measure whether the scenario solved the problem."
+    ],
+    "validationChecklist": [
+      "Confirm the target records or devices are in scope.",
+      "Validate the trigger condition and expected downstream action.",
+      "Check notification, audit, and reporting visibility.",
+      "Test at least one exception or failure path."
+    ],
+    "commonPitfalls": [
+      "Explaining the scenario too abstractly without a concrete flow.",
+      "Skipping approvals, ownership, or exception handling.",
+      "Not saying how success would be validated after configuration or rollout."
+    ],
+    "howToAnswerInInterview": "Frame your answer as problem -> Ivanti capability -> implementation flow -> validation -> business outcome.",
+    "relatedTopicNames": [
+      "Controls and Risks",
+      "Authority Documents and Citations"
+    ],
+    "priority": "Important",
+    "answerFramework": [
+      "State the problem clearly.",
+      "Name the Ivanti area or module you would use.",
+      "Walk through the implementation sequence.",
+      "Close with validation and business outcome."
+    ]
   },
   {
     "id": "workspace-shift-left-triage",
@@ -220,7 +681,38 @@
       "knowledge-lifecycle",
       "incident-lifecycle"
     ],
-    "difficulty": "Intermediate"
+    "difficulty": "Intermediate",
+    "interviewerIsTesting": "This scenario tests whether you can translate Ivanti Neurons Workspace into a real operational design, not just repeat product terminology.",
+    "implementationSteps": [
+      "Restate the problem in business terms and identify why Ivanti Neurons Workspace is the right area to solve it.",
+      "Identify the data source, trigger, approvals, ownership, or target population involved.",
+      "Describe the record flow, automation steps, notifications, and exception path.",
+      "Explain how you would validate the outcome and measure whether the scenario solved the problem."
+    ],
+    "validationChecklist": [
+      "Confirm the target records or devices are in scope.",
+      "Validate the trigger condition and expected downstream action.",
+      "Check notification, audit, and reporting visibility.",
+      "Test at least one exception or failure path."
+    ],
+    "commonPitfalls": [
+      "Explaining the scenario too abstractly without a concrete flow.",
+      "Skipping approvals, ownership, or exception handling.",
+      "Not saying how success would be validated after configuration or rollout."
+    ],
+    "howToAnswerInInterview": "Frame your answer as problem -> Ivanti capability -> implementation flow -> validation -> business outcome.",
+    "relatedTopicNames": [
+      "Workspace Triage",
+      "Knowledge Lifecycle",
+      "Incident Lifecycle"
+    ],
+    "priority": "Core",
+    "answerFramework": [
+      "State the problem clearly.",
+      "Name the Ivanti area or module you would use.",
+      "Walk through the implementation sequence.",
+      "Close with validation and business outcome."
+    ]
   },
   {
     "id": "warehouse-picking-redesign",
@@ -233,6 +725,641 @@
       "scan-first-workflow-design",
       "velocity-browser-sessions"
     ],
-    "difficulty": "Intermediate"
+    "difficulty": "Intermediate",
+    "interviewerIsTesting": "This scenario tests whether you can translate Ivanti Velocity into a real operational design, not just repeat product terminology.",
+    "implementationSteps": [
+      "Restate the problem in business terms and identify why Ivanti Velocity is the right area to solve it.",
+      "Identify the data source, trigger, approvals, ownership, or target population involved.",
+      "Describe the record flow, automation steps, notifications, and exception path.",
+      "Explain how you would validate the outcome and measure whether the scenario solved the problem."
+    ],
+    "validationChecklist": [
+      "Confirm the target records or devices are in scope.",
+      "Validate the trigger condition and expected downstream action.",
+      "Check notification, audit, and reporting visibility.",
+      "Test at least one exception or failure path."
+    ],
+    "commonPitfalls": [
+      "Explaining the scenario too abstractly without a concrete flow.",
+      "Skipping approvals, ownership, or exception handling.",
+      "Not saying how success would be validated after configuration or rollout."
+    ],
+    "howToAnswerInInterview": "Frame your answer as problem -> Ivanti capability -> implementation flow -> validation -> business outcome.",
+    "relatedTopicNames": [
+      "Scan-First Workflow Design",
+      "Velocity Browser Sessions"
+    ],
+    "priority": "Important",
+    "answerFramework": [
+      "State the problem clearly.",
+      "Name the Ivanti area or module you would use.",
+      "Walk through the implementation sequence.",
+      "Close with validation and business outcome."
+    ]
+  },
+  {
+    "id": "platform-cross-workflow-automation",
+    "title": "Cross-workflow automation on the Neurons platform",
+    "moduleId": "ivanti-neurons-platform",
+    "problem": "A support event should trigger connected workflow across service and endpoint domains without manual handoff.",
+    "approach": "Use shared platform data and automation to move context between operational workflows.",
+    "outcome": "Teams reduce swivel-chair work and act from one connected operational flow.",
+    "topicIds": [],
+    "difficulty": "Intermediate",
+    "interviewerIsTesting": "This scenario tests whether you can translate Ivanti Neurons Platform into a real operational design, not just repeat product terminology.",
+    "implementationSteps": [
+      "Restate the problem in business terms and identify why Ivanti Neurons Platform is the right area to solve it.",
+      "Identify the data source, trigger, approvals, ownership, or target population involved.",
+      "Describe the record flow, automation steps, notifications, and exception path.",
+      "Explain how you would validate the outcome and measure whether the scenario solved the problem."
+    ],
+    "validationChecklist": [
+      "Confirm the target records or devices are in scope.",
+      "Validate the trigger condition and expected downstream action.",
+      "Check notification, audit, and reporting visibility.",
+      "Test at least one exception or failure path."
+    ],
+    "commonPitfalls": [
+      "Explaining the scenario too abstractly without a concrete flow.",
+      "Skipping approvals, ownership, or exception handling.",
+      "Not saying how success would be validated after configuration or rollout."
+    ],
+    "howToAnswerInInterview": "Frame your answer as problem -> Ivanti capability -> implementation flow -> validation -> business outcome.",
+    "priority": "Important",
+    "answerFramework": [
+      "State the problem clearly.",
+      "Name the Ivanti area or module you would use.",
+      "Walk through the implementation sequence.",
+      "Close with validation and business outcome."
+    ]
+  },
+  {
+    "id": "problem-review-and-corrective-action",
+    "title": "Recurring incident trend to problem review",
+    "moduleId": "problem-management",
+    "problem": "Multiple incidents point to the same underlying failure but no structured root-cause process exists.",
+    "approach": "Use reporting and problem workflow to create a known-error path and assign corrective action.",
+    "outcome": "Recurring support load is reduced through formal problem management.",
+    "topicIds": [
+      "problem-lifecycle",
+      "dashboards-and-kpis"
+    ],
+    "difficulty": "Intermediate",
+    "interviewerIsTesting": "This scenario tests whether you can translate Problem Management into a real operational design, not just repeat product terminology.",
+    "implementationSteps": [
+      "Restate the problem in business terms and identify why Problem Management is the right area to solve it.",
+      "Identify the data source, trigger, approvals, ownership, or target population involved.",
+      "Describe the record flow, automation steps, notifications, and exception path.",
+      "Explain how you would validate the outcome and measure whether the scenario solved the problem."
+    ],
+    "validationChecklist": [
+      "Confirm the target records or devices are in scope.",
+      "Validate the trigger condition and expected downstream action.",
+      "Check notification, audit, and reporting visibility.",
+      "Test at least one exception or failure path."
+    ],
+    "commonPitfalls": [
+      "Explaining the scenario too abstractly without a concrete flow.",
+      "Skipping approvals, ownership, or exception handling.",
+      "Not saying how success would be validated after configuration or rollout."
+    ],
+    "howToAnswerInInterview": "Frame your answer as problem -> Ivanti capability -> implementation flow -> validation -> business outcome.",
+    "relatedTopicNames": [
+      "Problem Lifecycle",
+      "Dashboards and KPIs"
+    ],
+    "priority": "Important",
+    "answerFramework": [
+      "State the problem clearly.",
+      "Name the Ivanti area or module you would use.",
+      "Walk through the implementation sequence.",
+      "Close with validation and business outcome."
+    ]
+  },
+  {
+    "id": "uem-device-lifecycle-control",
+    "title": "Lifecycle control for UEM-managed devices",
+    "moduleId": "ivanti-neurons-for-uem",
+    "problem": "IT needs one view to onboard, secure, manage, and retire multiple endpoint types consistently.",
+    "approach": "Use UEM discovery, policy, targeting, and lifecycle controls to manage devices end to end.",
+    "outcome": "Endpoint operations become more consistent across desktop, mobile, and other managed devices.",
+    "topicIds": [
+      "device-groups-and-targeting",
+      "endpoint-troubleshooting"
+    ],
+    "difficulty": "Intermediate",
+    "interviewerIsTesting": "This scenario tests whether you can translate Ivanti Neurons for UEM into a real operational design, not just repeat product terminology.",
+    "implementationSteps": [
+      "Restate the problem in business terms and identify why Ivanti Neurons for UEM is the right area to solve it.",
+      "Identify the data source, trigger, approvals, ownership, or target population involved.",
+      "Describe the record flow, automation steps, notifications, and exception path.",
+      "Explain how you would validate the outcome and measure whether the scenario solved the problem."
+    ],
+    "validationChecklist": [
+      "Confirm the target records or devices are in scope.",
+      "Validate the trigger condition and expected downstream action.",
+      "Check notification, audit, and reporting visibility.",
+      "Test at least one exception or failure path."
+    ],
+    "commonPitfalls": [
+      "Explaining the scenario too abstractly without a concrete flow.",
+      "Skipping approvals, ownership, or exception handling.",
+      "Not saying how success would be validated after configuration or rollout."
+    ],
+    "howToAnswerInInterview": "Frame your answer as problem -> Ivanti capability -> implementation flow -> validation -> business outcome.",
+    "relatedTopicNames": [
+      "Device Groups and Targeting",
+      "Endpoint Troubleshooting"
+    ],
+    "priority": "Important",
+    "answerFramework": [
+      "State the problem clearly.",
+      "Name the Ivanti area or module you would use.",
+      "Walk through the implementation sequence.",
+      "Close with validation and business outcome."
+    ]
+  },
+  {
+    "id": "software-distribution-validation",
+    "title": "Validate a software distribution rollout",
+    "moduleId": "software-distribution",
+    "problem": "A software rollout succeeds for some groups but leaves a subset of devices incomplete.",
+    "approach": "Review target groups, job settings, endpoint readiness, and rerun remediation only where needed.",
+    "outcome": "Distribution results become measurable and recoverable instead of opaque.",
+    "topicIds": [
+      "software-distribution-jobs",
+      "endpoint-troubleshooting"
+    ],
+    "difficulty": "Intermediate",
+    "interviewerIsTesting": "This scenario tests whether you can translate Software Distribution into a real operational design, not just repeat product terminology.",
+    "implementationSteps": [
+      "Restate the problem in business terms and identify why Software Distribution is the right area to solve it.",
+      "Identify the data source, trigger, approvals, ownership, or target population involved.",
+      "Describe the record flow, automation steps, notifications, and exception path.",
+      "Explain how you would validate the outcome and measure whether the scenario solved the problem."
+    ],
+    "validationChecklist": [
+      "Confirm the target records or devices are in scope.",
+      "Validate the trigger condition and expected downstream action.",
+      "Check notification, audit, and reporting visibility.",
+      "Test at least one exception or failure path."
+    ],
+    "commonPitfalls": [
+      "Explaining the scenario too abstractly without a concrete flow.",
+      "Skipping approvals, ownership, or exception handling.",
+      "Not saying how success would be validated after configuration or rollout."
+    ],
+    "howToAnswerInInterview": "Frame your answer as problem -> Ivanti capability -> implementation flow -> validation -> business outcome.",
+    "relatedTopicNames": [
+      "Software Distribution Jobs",
+      "Endpoint Troubleshooting"
+    ],
+    "priority": "Important",
+    "answerFramework": [
+      "State the problem clearly.",
+      "Name the Ivanti area or module you would use.",
+      "Walk through the implementation sequence.",
+      "Close with validation and business outcome."
+    ]
+  },
+  {
+    "id": "discovery-policy-rollout",
+    "title": "Roll out Discovery and build trustworthy inventory",
+    "moduleId": "ivanti-neurons-for-discovery",
+    "problem": "The organization lacks consistent visibility into devices appearing on the network.",
+    "approach": "Enable discovery capability, configure scans and settings, then normalize and reconcile records into one inventory view.",
+    "outcome": "Asset visibility improves quickly and duplicate reporting is reduced.",
+    "topicIds": [
+      "discovery-and-inventory",
+      "normalization-and-reconciliation"
+    ],
+    "difficulty": "Intermediate",
+    "interviewerIsTesting": "This scenario tests whether you can translate Ivanti Neurons for Discovery into a real operational design, not just repeat product terminology.",
+    "implementationSteps": [
+      "Restate the problem in business terms and identify why Ivanti Neurons for Discovery is the right area to solve it.",
+      "Identify the data source, trigger, approvals, ownership, or target population involved.",
+      "Describe the record flow, automation steps, notifications, and exception path.",
+      "Explain how you would validate the outcome and measure whether the scenario solved the problem."
+    ],
+    "validationChecklist": [
+      "Confirm the target records or devices are in scope.",
+      "Validate the trigger condition and expected downstream action.",
+      "Check notification, audit, and reporting visibility.",
+      "Test at least one exception or failure path."
+    ],
+    "commonPitfalls": [
+      "Explaining the scenario too abstractly without a concrete flow.",
+      "Skipping approvals, ownership, or exception handling.",
+      "Not saying how success would be validated after configuration or rollout."
+    ],
+    "howToAnswerInInterview": "Frame your answer as problem -> Ivanti capability -> implementation flow -> validation -> business outcome.",
+    "relatedTopicNames": [
+      "Discovery and Inventory",
+      "Normalization and Reconciliation"
+    ],
+    "priority": "Important",
+    "answerFramework": [
+      "State the problem clearly.",
+      "Name the Ivanti area or module you would use.",
+      "Walk through the implementation sequence.",
+      "Close with validation and business outcome."
+    ]
+  },
+  {
+    "id": "grc-authority-import-and-control-map",
+    "title": "Import authority documents and map controls",
+    "moduleId": "ivanti-neurons-for-grc",
+    "problem": "Compliance evidence lives in spreadsheets and the team cannot trace requirements cleanly to controls and risk work.",
+    "approach": "Import authority sources, map citations to controls, and connect assessments and corrective actions.",
+    "outcome": "GRC work becomes more repeatable and auditable.",
+    "topicIds": [
+      "authority-documents-and-citations",
+      "controls-and-risks"
+    ],
+    "difficulty": "Advanced",
+    "interviewerIsTesting": "This scenario tests whether you can translate Ivanti Neurons for GRC into a real operational design, not just repeat product terminology.",
+    "implementationSteps": [
+      "Restate the problem in business terms and identify why Ivanti Neurons for GRC is the right area to solve it.",
+      "Identify the data source, trigger, approvals, ownership, or target population involved.",
+      "Describe the record flow, automation steps, notifications, and exception path.",
+      "Explain how you would validate the outcome and measure whether the scenario solved the problem."
+    ],
+    "validationChecklist": [
+      "Confirm the target records or devices are in scope.",
+      "Validate the trigger condition and expected downstream action.",
+      "Check notification, audit, and reporting visibility.",
+      "Test at least one exception or failure path."
+    ],
+    "commonPitfalls": [
+      "Explaining the scenario too abstractly without a concrete flow.",
+      "Skipping approvals, ownership, or exception handling.",
+      "Not saying how success would be validated after configuration or rollout."
+    ],
+    "howToAnswerInInterview": "Frame your answer as problem -> Ivanti capability -> implementation flow -> validation -> business outcome.",
+    "relatedTopicNames": [
+      "Authority Documents and Citations",
+      "Controls and Risks"
+    ],
+    "priority": "Important",
+    "answerFramework": [
+      "State the problem clearly.",
+      "Name the Ivanti area or module you would use.",
+      "Walk through the implementation sequence.",
+      "Close with validation and business outcome."
+    ]
+  },
+  {
+    "id": "workspace-first-call-resolution",
+    "title": "Raise first-call resolution with Workspace",
+    "moduleId": "ivanti-neurons-workspace",
+    "problem": "First-line analysts escalate too many issues because they lack user/device context and quick remediation options.",
+    "approach": "Use Workspace context views and quick actions to diagnose and remediate more incidents at first contact.",
+    "outcome": "Escalation costs drop and users get faster restoration.",
+    "topicIds": [
+      "workspace-triage"
+    ],
+    "difficulty": "Intermediate",
+    "interviewerIsTesting": "This scenario tests whether you can translate Ivanti Neurons Workspace into a real operational design, not just repeat product terminology.",
+    "implementationSteps": [
+      "Restate the problem in business terms and identify why Ivanti Neurons Workspace is the right area to solve it.",
+      "Identify the data source, trigger, approvals, ownership, or target population involved.",
+      "Describe the record flow, automation steps, notifications, and exception path.",
+      "Explain how you would validate the outcome and measure whether the scenario solved the problem."
+    ],
+    "validationChecklist": [
+      "Confirm the target records or devices are in scope.",
+      "Validate the trigger condition and expected downstream action.",
+      "Check notification, audit, and reporting visibility.",
+      "Test at least one exception or failure path."
+    ],
+    "commonPitfalls": [
+      "Explaining the scenario too abstractly without a concrete flow.",
+      "Skipping approvals, ownership, or exception handling.",
+      "Not saying how success would be validated after configuration or rollout."
+    ],
+    "howToAnswerInInterview": "Frame your answer as problem -> Ivanti capability -> implementation flow -> validation -> business outcome.",
+    "relatedTopicNames": [
+      "Workspace Triage"
+    ],
+    "priority": "Important",
+    "answerFramework": [
+      "State the problem clearly.",
+      "Name the Ivanti area or module you would use.",
+      "Walk through the implementation sequence.",
+      "Close with validation and business outcome."
+    ]
+  },
+  {
+    "id": "velocity-web-modernization",
+    "title": "Modernize a browser-based frontline workflow in Velocity",
+    "moduleId": "ivanti-velocity",
+    "problem": "A legacy web or telnet workflow is slow and difficult to use on modern mobile hardware.",
+    "approach": "Use Velocity to simplify screens, optimize prompts, and modernize the worker experience without replacing the host system.",
+    "outcome": "Training time and operator friction are reduced while preserving the backend application.",
+    "topicIds": [
+      "velocity-browser-sessions",
+      "scan-first-workflow-design"
+    ],
+    "difficulty": "Intermediate",
+    "interviewerIsTesting": "This scenario tests whether you can translate Ivanti Velocity into a real operational design, not just repeat product terminology.",
+    "implementationSteps": [
+      "Restate the problem in business terms and identify why Ivanti Velocity is the right area to solve it.",
+      "Identify the data source, trigger, approvals, ownership, or target population involved.",
+      "Describe the record flow, automation steps, notifications, and exception path.",
+      "Explain how you would validate the outcome and measure whether the scenario solved the problem."
+    ],
+    "validationChecklist": [
+      "Confirm the target records or devices are in scope.",
+      "Validate the trigger condition and expected downstream action.",
+      "Check notification, audit, and reporting visibility.",
+      "Test at least one exception or failure path."
+    ],
+    "commonPitfalls": [
+      "Explaining the scenario too abstractly without a concrete flow.",
+      "Skipping approvals, ownership, or exception handling.",
+      "Not saying how success would be validated after configuration or rollout."
+    ],
+    "howToAnswerInInterview": "Frame your answer as problem -> Ivanti capability -> implementation flow -> validation -> business outcome.",
+    "relatedTopicNames": [
+      "Velocity Browser Sessions",
+      "Scan-First Workflow Design"
+    ],
+    "priority": "Important",
+    "answerFramework": [
+      "State the problem clearly.",
+      "Name the Ivanti area or module you would use.",
+      "Walk through the implementation sequence.",
+      "Close with validation and business outcome."
+    ]
+  },
+  {
+    "id": "custom-object-design-review",
+    "title": "Design a custom object for a service process",
+    "moduleId": "ivanti-neurons-for-itsm",
+    "problem": "A new service process needs its own structure without breaking existing reporting and automation.",
+    "approach": "Model the object and fields carefully, decide what to extend versus separate, then validate the impact on forms, searches, and workflows.",
+    "outcome": "The process is represented cleanly and remains supportable over time.",
+    "topicIds": [
+      "business-objects",
+      "relationships",
+      "forms-and-layouts"
+    ],
+    "difficulty": "Intermediate",
+    "interviewerIsTesting": "This scenario tests whether you can translate Ivanti Neurons for ITSM into a real operational design, not just repeat product terminology.",
+    "implementationSteps": [
+      "Restate the problem in business terms and identify why Ivanti Neurons for ITSM is the right area to solve it.",
+      "Identify the data source, trigger, approvals, ownership, or target population involved.",
+      "Describe the record flow, automation steps, notifications, and exception path.",
+      "Explain how you would validate the outcome and measure whether the scenario solved the problem."
+    ],
+    "validationChecklist": [
+      "Confirm the target records or devices are in scope.",
+      "Validate the trigger condition and expected downstream action.",
+      "Check notification, audit, and reporting visibility.",
+      "Test at least one exception or failure path."
+    ],
+    "commonPitfalls": [
+      "Explaining the scenario too abstractly without a concrete flow.",
+      "Skipping approvals, ownership, or exception handling.",
+      "Not saying how success would be validated after configuration or rollout."
+    ],
+    "howToAnswerInInterview": "Frame your answer as problem -> Ivanti capability -> implementation flow -> validation -> business outcome.",
+    "relatedTopicNames": [
+      "Business Objects",
+      "Relationships",
+      "Forms and Layouts"
+    ],
+    "priority": "Core",
+    "answerFramework": [
+      "State the problem clearly.",
+      "Name the Ivanti area or module you would use.",
+      "Walk through the implementation sequence.",
+      "Close with validation and business outcome."
+    ]
+  },
+  {
+    "id": "relationship-driven-task-model",
+    "title": "Build a relationship-driven task model",
+    "moduleId": "ivanti-neurons-for-itsm",
+    "problem": "Requests, tasks, approvals, and ownership records need to stay connected for reporting and lifecycle visibility.",
+    "approach": "Create explicit relationships and test how they drive related lists, reporting, and automation behavior.",
+    "outcome": "Teams can trace work end to end without losing ownership or reporting fidelity.",
+    "topicIds": [
+      "relationships",
+      "request-fulfillment",
+      "approvals"
+    ],
+    "difficulty": "Intermediate",
+    "interviewerIsTesting": "This scenario tests whether you can translate Ivanti Neurons for ITSM into a real operational design, not just repeat product terminology.",
+    "implementationSteps": [
+      "Restate the problem in business terms and identify why Ivanti Neurons for ITSM is the right area to solve it.",
+      "Identify the data source, trigger, approvals, ownership, or target population involved.",
+      "Describe the record flow, automation steps, notifications, and exception path.",
+      "Explain how you would validate the outcome and measure whether the scenario solved the problem."
+    ],
+    "validationChecklist": [
+      "Confirm the target records or devices are in scope.",
+      "Validate the trigger condition and expected downstream action.",
+      "Check notification, audit, and reporting visibility.",
+      "Test at least one exception or failure path."
+    ],
+    "commonPitfalls": [
+      "Explaining the scenario too abstractly without a concrete flow.",
+      "Skipping approvals, ownership, or exception handling.",
+      "Not saying how success would be validated after configuration or rollout."
+    ],
+    "howToAnswerInInterview": "Frame your answer as problem -> Ivanti capability -> implementation flow -> validation -> business outcome.",
+    "relatedTopicNames": [
+      "Relationships",
+      "Request Fulfillment",
+      "Approvals"
+    ],
+    "priority": "Core",
+    "answerFramework": [
+      "State the problem clearly.",
+      "Name the Ivanti area or module you would use.",
+      "Walk through the implementation sequence.",
+      "Close with validation and business outcome."
+    ]
+  },
+  {
+    "id": "persona-based-form-redesign",
+    "title": "Redesign forms for requester and fulfiller personas",
+    "moduleId": "service-request-management",
+    "problem": "One form is overloaded for all users and creates confusion during request submission and fulfillment.",
+    "approach": "Split the experience by role, simplify layouts, and validate that only the right information appears at the right step.",
+    "outcome": "Users see cleaner forms and submit higher-quality data.",
+    "topicIds": [
+      "forms-and-layouts",
+      "validations",
+      "request-fulfillment"
+    ],
+    "difficulty": "Beginner",
+    "interviewerIsTesting": "This scenario tests whether you can translate Service Request Management into a real operational design, not just repeat product terminology.",
+    "implementationSteps": [
+      "Restate the problem in business terms and identify why Service Request Management is the right area to solve it.",
+      "Identify the data source, trigger, approvals, ownership, or target population involved.",
+      "Describe the record flow, automation steps, notifications, and exception path.",
+      "Explain how you would validate the outcome and measure whether the scenario solved the problem."
+    ],
+    "validationChecklist": [
+      "Confirm the target records or devices are in scope.",
+      "Validate the trigger condition and expected downstream action.",
+      "Check notification, audit, and reporting visibility.",
+      "Test at least one exception or failure path."
+    ],
+    "commonPitfalls": [
+      "Explaining the scenario too abstractly without a concrete flow.",
+      "Skipping approvals, ownership, or exception handling.",
+      "Not saying how success would be validated after configuration or rollout."
+    ],
+    "howToAnswerInInterview": "Frame your answer as problem -> Ivanti capability -> implementation flow -> validation -> business outcome.",
+    "relatedTopicNames": [
+      "Forms and Layouts",
+      "Validations",
+      "Request Fulfillment"
+    ],
+    "priority": "Core",
+    "answerFramework": [
+      "State the problem clearly.",
+      "Name the Ivanti area or module you would use.",
+      "Walk through the implementation sequence.",
+      "Close with validation and business outcome."
+    ]
+  },
+  {
+    "id": "validation-guardrail-rollout",
+    "title": "Add validation guardrails without breaking workflows",
+    "moduleId": "ivanti-neurons-for-itsm",
+    "problem": "Teams want stronger data quality checks, but existing automations must continue working.",
+    "approach": "Introduce validation in a controlled way, test known edge cases, and confirm downstream searches and workflows still function.",
+    "outcome": "Data quality improves without causing avoidable operational disruption.",
+    "topicIds": [
+      "validations",
+      "workflows",
+      "saved-searches"
+    ],
+    "difficulty": "Intermediate",
+    "interviewerIsTesting": "This scenario tests whether you can translate Ivanti Neurons for ITSM into a real operational design, not just repeat product terminology.",
+    "implementationSteps": [
+      "Restate the problem in business terms and identify why Ivanti Neurons for ITSM is the right area to solve it.",
+      "Identify the data source, trigger, approvals, ownership, or target population involved.",
+      "Describe the record flow, automation steps, notifications, and exception path.",
+      "Explain how you would validate the outcome and measure whether the scenario solved the problem."
+    ],
+    "validationChecklist": [
+      "Confirm the target records or devices are in scope.",
+      "Validate the trigger condition and expected downstream action.",
+      "Check notification, audit, and reporting visibility.",
+      "Test at least one exception or failure path."
+    ],
+    "commonPitfalls": [
+      "Explaining the scenario too abstractly without a concrete flow.",
+      "Skipping approvals, ownership, or exception handling.",
+      "Not saying how success would be validated after configuration or rollout."
+    ],
+    "howToAnswerInInterview": "Frame your answer as problem -> Ivanti capability -> implementation flow -> validation -> business outcome.",
+    "relatedTopicNames": [
+      "Validations",
+      "Workflows",
+      "Saved Searches"
+    ],
+    "priority": "Core",
+    "answerFramework": [
+      "State the problem clearly.",
+      "Name the Ivanti area or module you would use.",
+      "Walk through the implementation sequence.",
+      "Close with validation and business outcome."
+    ]
+  },
+  {
+    "id": "quick-action-notification-pack",
+    "title": "Create a quick-action notification pack for operations",
+    "moduleId": "ivanti-neurons-for-itsm",
+    "problem": "Analysts repeatedly send the same updates and summaries manually.",
+    "approach": "Create reusable quick actions, connect them to searches and templates, and test for consistent output.",
+    "outcome": "Common operational communication becomes faster and more consistent.",
+    "topicIds": [
+      "quick-actions",
+      "email-templates",
+      "saved-searches"
+    ],
+    "difficulty": "Beginner",
+    "interviewerIsTesting": "This scenario tests whether you can translate Ivanti Neurons for ITSM into a real operational design, not just repeat product terminology.",
+    "implementationSteps": [
+      "Restate the problem in business terms and identify why Ivanti Neurons for ITSM is the right area to solve it.",
+      "Identify the data source, trigger, approvals, ownership, or target population involved.",
+      "Describe the record flow, automation steps, notifications, and exception path.",
+      "Explain how you would validate the outcome and measure whether the scenario solved the problem."
+    ],
+    "validationChecklist": [
+      "Confirm the target records or devices are in scope.",
+      "Validate the trigger condition and expected downstream action.",
+      "Check notification, audit, and reporting visibility.",
+      "Test at least one exception or failure path."
+    ],
+    "commonPitfalls": [
+      "Explaining the scenario too abstractly without a concrete flow.",
+      "Skipping approvals, ownership, or exception handling.",
+      "Not saying how success would be validated after configuration or rollout."
+    ],
+    "howToAnswerInInterview": "Frame your answer as problem -> Ivanti capability -> implementation flow -> validation -> business outcome.",
+    "relatedTopicNames": [
+      "Quick Actions",
+      "Email Templates",
+      "Saved Searches"
+    ],
+    "priority": "Core",
+    "answerFramework": [
+      "State the problem clearly.",
+      "Name the Ivanti area or module you would use.",
+      "Walk through the implementation sequence.",
+      "Close with validation and business outcome."
+    ]
+  },
+  {
+    "id": "escalation-schedule-tuning",
+    "title": "Tune escalation schedules for support response",
+    "moduleId": "incident-management",
+    "problem": "Escalations fire too early for some teams and too late for others, creating noise and missed expectations.",
+    "approach": "Review support hours, thresholds, ownership, and messaging, then adjust schedules and validate real record movement.",
+    "outcome": "Escalations become more credible and operationally useful.",
+    "topicIds": [
+      "escalations",
+      "incident-lifecycle",
+      "dashboards-and-kpis"
+    ],
+    "difficulty": "Intermediate",
+    "interviewerIsTesting": "This scenario tests whether you can translate Incident Management into a real operational design, not just repeat product terminology.",
+    "implementationSteps": [
+      "Restate the problem in business terms and identify why Incident Management is the right area to solve it.",
+      "Identify the data source, trigger, approvals, ownership, or target population involved.",
+      "Describe the record flow, automation steps, notifications, and exception path.",
+      "Explain how you would validate the outcome and measure whether the scenario solved the problem."
+    ],
+    "validationChecklist": [
+      "Confirm the target records or devices are in scope.",
+      "Validate the trigger condition and expected downstream action.",
+      "Check notification, audit, and reporting visibility.",
+      "Test at least one exception or failure path."
+    ],
+    "commonPitfalls": [
+      "Explaining the scenario too abstractly without a concrete flow.",
+      "Skipping approvals, ownership, or exception handling.",
+      "Not saying how success would be validated after configuration or rollout."
+    ],
+    "howToAnswerInInterview": "Frame your answer as problem -> Ivanti capability -> implementation flow -> validation -> business outcome.",
+    "relatedTopicNames": [
+      "Escalations",
+      "Incident Lifecycle",
+      "Dashboards and KPIs"
+    ],
+    "priority": "Core",
+    "answerFramework": [
+      "State the problem clearly.",
+      "Name the Ivanti area or module you would use.",
+      "Walk through the implementation sequence.",
+      "Close with validation and business outcome."
+    ]
   }
 ]

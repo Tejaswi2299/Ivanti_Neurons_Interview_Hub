@@ -9,7 +9,23 @@
       "A warehouse-only tool"
     ],
     "answerIndex": 1,
-    "explanation": "Official Ivanti positioning describes Neurons Platform as a unified cloud-native platform connecting major IT and security capabilities."
+    "explanation": "Official Ivanti positioning describes Neurons Platform as a unified cloud-native platform connecting major IT and security capabilities.",
+    "roleIds": [],
+    "moduleIds": [
+      "ivanti-neurons-platform",
+      "ivanti-neurons-for-itsm",
+      "ivanti-neurons-for-uem",
+      "ivanti-endpoint-manager",
+      "ivanti-neurons-for-mdm",
+      "ivanti-neurons-for-itam",
+      "ivanti-neurons-for-discovery",
+      "ivanti-neurons-for-grc",
+      "ivanti-neurons-workspace",
+      "ivanti-neurons-ipaas",
+      "ivanti-velocity"
+    ],
+    "topicIds": [],
+    "difficulty": "Beginner"
   },
   {
     "id": "q2",
@@ -21,7 +37,16 @@
       "They are only for mobile devices"
     ],
     "answerIndex": 1,
-    "explanation": "Saved searches are a reusable data slice that often powers reporting and scheduled communication."
+    "explanation": "Saved searches are a reusable data slice that often powers reporting and scheduled communication.",
+    "roleIds": [
+      "ivanti-itsm-administrator",
+      "ivanti-itsm-developer"
+    ],
+    "moduleIds": [],
+    "topicIds": [
+      "saved-searches"
+    ],
+    "difficulty": "Beginner"
   },
   {
     "id": "q3",
@@ -33,7 +58,18 @@
       "To replace device groups"
     ],
     "answerIndex": 1,
-    "explanation": "Patch rings reduce rollout risk by enabling pilot validation first."
+    "explanation": "Patch rings reduce rollout risk by enabling pilot validation first.",
+    "roleIds": [
+      "ivanti-uem-engineer",
+      "ivanti-endpoint-manager-engineer"
+    ],
+    "moduleIds": [
+      "patch-management"
+    ],
+    "topicIds": [
+      "patch-rings"
+    ],
+    "difficulty": "Beginner"
   },
   {
     "id": "q4",
@@ -45,7 +81,23 @@
       "Office seating"
     ],
     "answerIndex": 1,
-    "explanation": "Authentication is central to secure integration design."
+    "explanation": "Authentication is central to secure integration design.",
+    "roleIds": [],
+    "moduleIds": [
+      "ivanti-neurons-platform",
+      "ivanti-neurons-for-itsm",
+      "ivanti-neurons-for-uem",
+      "ivanti-endpoint-manager",
+      "ivanti-neurons-for-mdm",
+      "ivanti-neurons-for-itam",
+      "ivanti-neurons-for-discovery",
+      "ivanti-neurons-for-grc",
+      "ivanti-neurons-workspace",
+      "ivanti-neurons-ipaas",
+      "ivanti-velocity"
+    ],
+    "topicIds": [],
+    "difficulty": "Beginner"
   },
   {
     "id": "q5",
@@ -57,7 +109,19 @@
       "Time zone"
     ],
     "answerIndex": 0,
-    "explanation": "BYOD vs corporate-owned heavily affects policy, privacy, and app strategy."
+    "explanation": "BYOD vs corporate-owned heavily affects policy, privacy, and app strategy.",
+    "roleIds": [
+      "ivanti-itsm-administrator",
+      "ivanti-itsm-developer",
+      "ivanti-mdm-engineer"
+    ],
+    "moduleIds": [
+      "change-management"
+    ],
+    "topicIds": [
+      "change-governance"
+    ],
+    "difficulty": "Beginner"
   },
   {
     "id": "q6",
@@ -69,7 +133,16 @@
       "Discovery is only manual"
     ],
     "answerIndex": 1,
-    "explanation": "Discovery improves visibility while ITAM provides lifecycle and governance context."
+    "explanation": "Discovery improves visibility while ITAM provides lifecycle and governance context.",
+    "roleIds": [],
+    "moduleIds": [
+      "reporting-and-dashboards",
+      "compliance-and-policy"
+    ],
+    "topicIds": [
+      "discovery-and-inventory"
+    ],
+    "difficulty": "Beginner"
   },
   {
     "id": "q7",
@@ -81,7 +154,13 @@
       "It removes audit trails"
     ],
     "answerIndex": 1,
-    "explanation": "Workspace is designed to give analysts contextual visibility and quick actions."
+    "explanation": "Workspace is designed to give analysts contextual visibility and quick actions.",
+    "roleIds": [],
+    "moduleIds": [],
+    "topicIds": [
+      "workspace-triage"
+    ],
+    "difficulty": "Beginner"
   },
   {
     "id": "q8",
@@ -93,6 +172,695 @@
       "Only pricing"
     ],
     "answerIndex": 1,
-    "explanation": "Interview use-case answers should show structured implementation thinking."
+    "explanation": "Interview use-case answers should show structured implementation thinking.",
+    "roleIds": [],
+    "moduleIds": [],
+    "topicIds": [],
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "q9",
+    "question": "Which Ivanti capability is positioned as a single pane of glass to discover, manage, and secure devices?",
+    "choices": [
+      "Ivanti Neurons for UEM",
+      "Ivanti Neurons Workspace",
+      "Ivanti Velocity",
+      "Ivanti Neurons for GRC"
+    ],
+    "answerIndex": 0,
+    "explanation": "Ivanti describes Neurons for UEM as a single pane of glass to discover, manage, and secure all devices.",
+    "roleIds": [],
+    "moduleIds": [
+      "ivanti-neurons-platform",
+      "ivanti-neurons-for-itsm",
+      "reporting-and-dashboards",
+      "ivanti-neurons-for-uem",
+      "ivanti-endpoint-manager",
+      "ivanti-neurons-for-mdm",
+      "compliance-and-policy",
+      "ivanti-neurons-for-itam",
+      "ivanti-neurons-for-discovery",
+      "ivanti-neurons-for-grc",
+      "ivanti-neurons-workspace",
+      "ivanti-neurons-ipaas",
+      "ivanti-velocity"
+    ],
+    "topicIds": [
+      "device-groups-and-targeting"
+    ],
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "q10",
+    "question": "Which Ivanti product emphasizes a 360-degree view of devices, users, applications, and services for first-line analysts?",
+    "choices": [
+      "Ivanti Endpoint Manager",
+      "Ivanti Neurons Workspace",
+      "Ivanti Neurons for ITAM",
+      "Ivanti Velocity"
+    ],
+    "answerIndex": 1,
+    "explanation": "Workspace is positioned around a 360-degree analyst view with quick actions to support shift-left resolution.",
+    "roleIds": [],
+    "moduleIds": [
+      "ivanti-neurons-platform",
+      "ivanti-neurons-for-itsm",
+      "service-request-management",
+      "reporting-and-dashboards",
+      "ivanti-neurons-for-uem",
+      "ivanti-endpoint-manager",
+      "ivanti-neurons-for-mdm",
+      "compliance-and-policy",
+      "mobile-app-distribution",
+      "ivanti-neurons-for-itam",
+      "ivanti-neurons-for-discovery",
+      "ivanti-neurons-for-grc",
+      "ivanti-neurons-workspace",
+      "ivanti-neurons-ipaas",
+      "ivanti-velocity"
+    ],
+    "topicIds": [
+      "device-groups-and-targeting"
+    ],
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "q11",
+    "question": "What is a key difference between Discovery and ITAM?",
+    "choices": [
+      "Discovery manages only contracts",
+      "ITAM only finds devices on the network",
+      "Discovery collects and normalizes asset data while ITAM governs lifecycle and repository context",
+      "There is no difference"
+    ],
+    "answerIndex": 2,
+    "explanation": "Discovery focuses on finding and normalizing data, while ITAM manages lifecycle, repository, contracts, and business context.",
+    "roleIds": [],
+    "moduleIds": [
+      "reporting-and-dashboards",
+      "compliance-and-policy"
+    ],
+    "topicIds": [
+      "discovery-and-inventory"
+    ],
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "q12",
+    "question": "Which topic best fits Ivanti Neurons for GRC?",
+    "choices": [
+      "Telnet modernization",
+      "Authority documents, citations, controls, and risks",
+      "Mobile app storefronts",
+      "Patch rings"
+    ],
+    "answerIndex": 1,
+    "explanation": "GRC is officially described around authority documents, citations, controls, risks, assessments, and corrective actions.",
+    "roleIds": [],
+    "moduleIds": [
+      "ivanti-neurons-platform",
+      "ivanti-neurons-for-itsm",
+      "ivanti-neurons-for-uem",
+      "ivanti-endpoint-manager",
+      "ivanti-neurons-for-mdm",
+      "ivanti-neurons-for-itam",
+      "ivanti-neurons-for-discovery",
+      "ivanti-neurons-for-grc",
+      "ivanti-neurons-workspace",
+      "ivanti-neurons-ipaas",
+      "ivanti-velocity"
+    ],
+    "topicIds": [],
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "q13",
+    "question": "What is a standard change?",
+    "choices": [
+      "Any urgent change",
+      "A pre-approved repeatable low-risk change",
+      "A failed change",
+      "A change that skips documentation"
+    ],
+    "answerIndex": 1,
+    "explanation": "Standard changes are pre-approved, repeatable, low-risk changes.",
+    "roleIds": [
+      "ivanti-itsm-administrator",
+      "ivanti-itsm-developer"
+    ],
+    "moduleIds": [
+      "change-management",
+      "reporting-and-dashboards",
+      "compliance-and-policy"
+    ],
+    "topicIds": [
+      "change-governance"
+    ],
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "q14",
+    "question": "Why do patch rings matter?",
+    "choices": [
+      "They simplify mobile enrollment",
+      "They support phased rollout and risk reduction",
+      "They replace dashboards",
+      "They disable pilot groups"
+    ],
+    "answerIndex": 1,
+    "explanation": "Patch rings help validate change on pilot groups before wider rollout.",
+    "roleIds": [
+      "ivanti-uem-engineer",
+      "ivanti-endpoint-manager-engineer"
+    ],
+    "moduleIds": [
+      "patch-management"
+    ],
+    "topicIds": [
+      "patch-rings"
+    ],
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "q15",
+    "question": "Which Ivanti product highlights 1000+ connectors and low-code/no-code integration?",
+    "choices": [
+      "Ivanti Velocity",
+      "Ivanti Neurons iPaaS",
+      "Ivanti Neurons for Discovery",
+      "Ivanti Endpoint Manager"
+    ],
+    "answerIndex": 1,
+    "explanation": "Ivanti Neurons iPaaS is positioned around 1000+ connectors and low-code/no-code bi-directional integrations.",
+    "roleIds": [],
+    "moduleIds": [
+      "ivanti-neurons-platform",
+      "ivanti-neurons-for-itsm",
+      "reporting-and-dashboards",
+      "ivanti-neurons-for-uem",
+      "ivanti-endpoint-manager",
+      "ivanti-neurons-for-mdm",
+      "compliance-and-policy",
+      "ivanti-neurons-for-itam",
+      "ivanti-neurons-for-discovery",
+      "ivanti-neurons-for-grc",
+      "ivanti-neurons-workspace",
+      "ivanti-neurons-ipaas",
+      "ivanti-velocity"
+    ],
+    "topicIds": [],
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "q16",
+    "question": "Which statement best fits Ivanti Velocity?",
+    "choices": [
+      "It replaces host systems by default",
+      "It modernizes telnet and web workflows while preserving existing enterprise applications",
+      "It is only a reporting tool",
+      "It is only for asset contracts"
+    ],
+    "answerIndex": 1,
+    "explanation": "Velocity modernizes frontline workflows without requiring replacement of the host application.",
+    "roleIds": [],
+    "moduleIds": [
+      "ivanti-neurons-platform",
+      "ivanti-neurons-for-itsm",
+      "ivanti-neurons-for-uem",
+      "ivanti-endpoint-manager",
+      "ivanti-neurons-for-mdm",
+      "ivanti-neurons-for-itam",
+      "ivanti-neurons-for-discovery",
+      "ivanti-neurons-for-grc",
+      "ivanti-neurons-workspace",
+      "ivanti-neurons-ipaas",
+      "ivanti-velocity"
+    ],
+    "topicIds": [
+      "velocity-browser-sessions"
+    ],
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "q17",
+    "question": "What is the purpose of saved searches in ITSM interview discussions?",
+    "choices": [
+      "Only branding the portal",
+      "Reusable filtered data for views, reports, dashboards, and automation",
+      "Provisioning endpoints",
+      "Managing barcode scans"
+    ],
+    "answerIndex": 1,
+    "explanation": "Saved searches are reusable filtered datasets often tied to reporting and automation use cases.",
+    "roleIds": [
+      "ivanti-itsm-administrator",
+      "ivanti-itsm-developer"
+    ],
+    "moduleIds": [],
+    "topicIds": [
+      "saved-searches"
+    ],
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "q18",
+    "question": "What does an approval step represent?",
+    "choices": [
+      "The work task itself",
+      "A control point granting permission to proceed",
+      "A dashboard export",
+      "A patch wave"
+    ],
+    "answerIndex": 1,
+    "explanation": "Approvals are governance checkpoints, not the fulfillment tasks themselves.",
+    "roleIds": [],
+    "moduleIds": [
+      "mobile-app-distribution"
+    ],
+    "topicIds": [],
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "q19",
+    "question": "Which MDM topic usually changes how privacy and controls are applied?",
+    "choices": [
+      "Patch rings",
+      "Ownership models",
+      "Authority documents",
+      "Dashboards"
+    ],
+    "answerIndex": 1,
+    "explanation": "Ownership models like BYOD versus corporate-owned affect policy scope and user privacy expectations.",
+    "roleIds": [
+      "ivanti-itsm-administrator",
+      "ivanti-itsm-developer",
+      "ivanti-mdm-engineer"
+    ],
+    "moduleIds": [
+      "change-management",
+      "reporting-and-dashboards",
+      "compliance-and-policy",
+      "mobile-app-distribution"
+    ],
+    "topicIds": [
+      "change-governance",
+      "controls-and-risks"
+    ],
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "q20",
+    "question": "Why is normalization important after discovery?",
+    "choices": [
+      "It removes the need for reporting",
+      "It makes data consistent enough for trustworthy reconciliation and reporting",
+      "It encrypts credentials",
+      "It creates mobile apps"
+    ],
+    "answerIndex": 1,
+    "explanation": "Normalization improves consistency so discovery and asset data can be reconciled and trusted.",
+    "roleIds": [],
+    "moduleIds": [],
+    "topicIds": [
+      "discovery-and-inventory",
+      "normalization-and-reconciliation"
+    ],
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "q21",
+    "question": "Which statement best describes Endpoint Manager?",
+    "choices": [
+      "A client-based endpoint management platform with provisioning, software distribution, remote control, and reporting",
+      "A pure mobile-only MDM tool",
+      "A GRC-only application",
+      "A telnet-only tool"
+    ],
+    "answerIndex": 0,
+    "explanation": "Ivanti Endpoint Manager is positioned as a client-based endpoint management platform.",
+    "roleIds": [
+      "ivanti-uem-engineer",
+      "ivanti-endpoint-manager-engineer"
+    ],
+    "moduleIds": [
+      "ivanti-endpoint-manager"
+    ],
+    "topicIds": [
+      "endpoint-troubleshooting"
+    ],
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "q22",
+    "question": "What does Workspace help reduce most directly?",
+    "choices": [
+      "Barcode labeling",
+      "Escalations from first-line support",
+      "Authority citations",
+      "Patch ring counts"
+    ],
+    "answerIndex": 1,
+    "explanation": "Workspace is designed to help first-line analysts resolve more issues without escalating them.",
+    "roleIds": [],
+    "moduleIds": [],
+    "topicIds": [
+      "workspace-triage"
+    ],
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "q23",
+    "question": "What is the best interview explanation for iPaaS?",
+    "choices": [
+      "A low-code/no-code integration capability for connecting Ivanti with external systems using connectors and workflows",
+      "A replacement for all endpoint agents",
+      "A hardware discovery sensor",
+      "A knowledge base only"
+    ],
+    "answerIndex": 0,
+    "explanation": "iPaaS is Ivanti\u2019s embedded low-code/no-code integration capability with many connectors.",
+    "roleIds": [],
+    "moduleIds": [],
+    "topicIds": [],
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "q24",
+    "question": "What should a good ITAM answer mention?",
+    "choices": [
+      "Only asset names",
+      "Lifecycle, repository visibility, contracts, vendor management, and reporting",
+      "Only mobile restrictions",
+      "Only patch compliance"
+    ],
+    "answerIndex": 1,
+    "explanation": "ITAM is broader than inventory; it includes lifecycle, repository context, contracts, and reporting.",
+    "roleIds": [],
+    "moduleIds": [],
+    "topicIds": [],
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "q25",
+    "question": "When is it usually better to create a new business object instead of extending an existing one?",
+    "choices": [
+      "When the process, lifecycle, or reporting needs materially differ",
+      "Whenever a new field is needed",
+      "Only when forms are slow",
+      "Never"
+    ],
+    "answerIndex": 0,
+    "explanation": "Create a separate object when lifecycle, ownership, or reporting diverges enough that extension would make the model harder to govern.",
+    "roleIds": [],
+    "moduleIds": [],
+    "topicIds": [
+      "business-objects"
+    ],
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "q26",
+    "question": "What is the main difference between a lookup-style relationship and a parent-child relationship?",
+    "choices": [
+      "They are identical",
+      "Parent-child more strongly ties lifecycle and reporting behavior",
+      "Lookup always replaces reporting",
+      "Lookup is only for dashboards"
+    ],
+    "answerIndex": 1,
+    "explanation": "Parent-child relationships usually imply stronger structural and lifecycle linkage than a loose lookup relationship.",
+    "roleIds": [],
+    "moduleIds": [
+      "reporting-and-dashboards",
+      "compliance-and-policy"
+    ],
+    "topicIds": [],
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "q27",
+    "question": "What is the strongest reason to use role-specific layouts?",
+    "choices": [
+      "To add visual decoration",
+      "To simplify the experience for different user personas",
+      "To avoid all validation",
+      "To remove reporting"
+    ],
+    "answerIndex": 1,
+    "explanation": "Role-specific layouts reduce clutter and make forms more relevant to each audience.",
+    "roleIds": [],
+    "moduleIds": [],
+    "topicIds": [],
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "q28",
+    "question": "Which statement is most accurate about UI-required fields versus business validation?",
+    "choices": [
+      "They are the same",
+      "UI-required improves entry behavior, business validation protects process integrity",
+      "Business validation only affects color",
+      "UI-required is always enough"
+    ],
+    "answerIndex": 1,
+    "explanation": "UI requirement helps users enter data, while business validation enforces rules regardless of update channel.",
+    "roleIds": [],
+    "moduleIds": [],
+    "topicIds": [
+      "business-objects"
+    ],
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "q29",
+    "question": "What is a good use of a quick action?",
+    "choices": [
+      "A broad multi-step orchestration with several branches",
+      "A focused repeatable operation such as sending a saved-search summary",
+      "A replacement for all workflows",
+      "A dashboard-only widget"
+    ],
+    "answerIndex": 1,
+    "explanation": "Quick actions are strong for targeted, repeatable actions tied to records or saved-search outputs.",
+    "roleIds": [],
+    "moduleIds": [],
+    "topicIds": [
+      "quick-actions"
+    ],
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "q30",
+    "question": "Why are escalation schedules more than simple notifications?",
+    "choices": [
+      "Because they only change email wording",
+      "Because they influence urgency and response expectations based on thresholds",
+      "Because they always create new incidents",
+      "Because they remove ownership"
+    ],
+    "answerIndex": 1,
+    "explanation": "Escalations change operational behavior, not just message delivery.",
+    "roleIds": [],
+    "moduleIds": [],
+    "topicIds": [],
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "q31",
+    "question": "What does a request-level record usually represent compared with a fulfillment task?",
+    "choices": [
+      "Internal task execution only",
+      "Customer-facing commitment and progress while tasks track internal execution",
+      "Only reporting metadata",
+      "A duplicate of the task"
+    ],
+    "answerIndex": 1,
+    "explanation": "The request tracks the service obligation; tasks represent internal execution steps.",
+    "roleIds": [],
+    "moduleIds": [
+      "service-request-management"
+    ],
+    "topicIds": [
+      "request-fulfillment"
+    ],
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "q32",
+    "question": "What is the difference between a dashboard and a report?",
+    "choices": [
+      "A dashboard is operational visibility across KPIs; a report answers a more specific analytical question",
+      "They are the same",
+      "Reports cannot use saved searches",
+      "Dashboards cannot show trends"
+    ],
+    "answerIndex": 0,
+    "explanation": "Dashboards are usually ongoing operational views, while reports answer focused questions.",
+    "roleIds": [],
+    "moduleIds": [
+      "reporting-and-dashboards",
+      "compliance-and-policy"
+    ],
+    "topicIds": [],
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "q33",
+    "question": "Authentication in integrations answers which question?",
+    "choices": [
+      "What data should be transformed?",
+      "Who are you?",
+      "Which dashboard do you open?",
+      "How many devices are enrolled?"
+    ],
+    "answerIndex": 1,
+    "explanation": "Authentication establishes identity, while authorization determines permitted actions.",
+    "roleIds": [],
+    "moduleIds": [],
+    "topicIds": [
+      "authentication-patterns"
+    ],
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "q34",
+    "question": "What best describes data mapping?",
+    "choices": [
+      "Changing the UI color",
+      "Deciding which source field lands in which target field",
+      "Any retry behavior",
+      "Only logging"
+    ],
+    "answerIndex": 1,
+    "explanation": "Mapping aligns source and target fields; transformation may then change the value itself.",
+    "roleIds": [],
+    "moduleIds": [
+      "mobile-app-distribution"
+    ],
+    "topicIds": [
+      "data-mapping"
+    ],
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "q35",
+    "question": "Why can replaying failed integrations be riskier than retrying them?",
+    "choices": [
+      "Replay never works",
+      "Replay can create duplicate business actions if not validated carefully",
+      "Retry always changes authentication",
+      "Replay is only for dashboards"
+    ],
+    "answerIndex": 1,
+    "explanation": "Replay often requires idempotency or duplicate controls to avoid repeating a completed business action.",
+    "roleIds": [],
+    "moduleIds": [],
+    "topicIds": [],
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "q36",
+    "question": "In endpoint troubleshooting, what should you verify early?",
+    "choices": [
+      "Only the dashboard theme",
+      "Agent health and execution context",
+      "Only the policy name",
+      "Only the patch severity"
+    ],
+    "answerIndex": 1,
+    "explanation": "Many endpoint failures come from communication or execution context, not the policy definition itself.",
+    "roleIds": [
+      "ivanti-uem-engineer",
+      "ivanti-endpoint-manager-engineer"
+    ],
+    "moduleIds": [
+      "ivanti-endpoint-manager"
+    ],
+    "topicIds": [
+      "endpoint-troubleshooting"
+    ],
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "q37",
+    "question": "What is the correct distinction between device enrollment and compliance?",
+    "choices": [
+      "They are identical",
+      "Enrollment starts management; compliance confirms the device meets policy",
+      "Compliance happens before enrollment",
+      "Enrollment only matters for desktops"
+    ],
+    "answerIndex": 1,
+    "explanation": "Enrollment establishes management, while compliance is an ongoing policy state.",
+    "roleIds": [],
+    "moduleIds": [
+      "reporting-and-dashboards",
+      "compliance-and-policy"
+    ],
+    "topicIds": [
+      "device-groups-and-targeting",
+      "enrollment",
+      "compliance-rules"
+    ],
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "q38",
+    "question": "How does a required mobile app differ from an available mobile app?",
+    "choices": [
+      "Required apps are policy-driven pushes; available apps are optional installs",
+      "There is no difference",
+      "Available apps always bypass compliance",
+      "Required apps never need support"
+    ],
+    "answerIndex": 0,
+    "explanation": "Deployment intent changes user experience and support expectations.",
+    "roleIds": [
+      "ivanti-mdm-engineer"
+    ],
+    "moduleIds": [
+      "mobile-app-distribution"
+    ],
+    "topicIds": [
+      "mobile-app-deployment"
+    ],
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "q39",
+    "question": "What is the difference between a discovered record and an asset record?",
+    "choices": [
+      "Discovered records carry all lifecycle governance automatically",
+      "Asset records add lifecycle, ownership, and governance context beyond raw discovery",
+      "They are interchangeable",
+      "Asset records are only for mobile"
+    ],
+    "answerIndex": 1,
+    "explanation": "Discovery improves visibility, while asset records provide governed business context.",
+    "roleIds": [],
+    "moduleIds": [
+      "reporting-and-dashboards",
+      "compliance-and-policy"
+    ],
+    "topicIds": [
+      "asset-lifecycle"
+    ],
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "q40",
+    "question": "In GRC, what is a control?",
+    "choices": [
+      "The risk itself",
+      "A measure designed to reduce or detect risk",
+      "Only a dashboard component",
+      "An inventory identifier"
+    ],
+    "answerIndex": 1,
+    "explanation": "Controls are the mechanisms used to manage risk exposure.",
+    "roleIds": [],
+    "moduleIds": [],
+    "topicIds": [],
+    "difficulty": "Beginner"
   }
 ]

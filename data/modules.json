@@ -3,19 +3,58 @@
     "id": "ivanti-neurons-platform",
     "name": "Ivanti Neurons Platform",
     "family": "Platform",
-    "summary": "Unified cloud-native platform connecting ITSM, endpoint management, automation, and security-oriented workflows.",
-    "whyItMatters": "One cohesive platform. Unified IT and security. Powered by AI.",
-    "topicIds": [],
-    "codingIds": [],
-    "useCaseIds": [],
-    "trickyIds": []
+    "summary": "Unified cloud-native platform connecting ITSM, endpoint management, security, and automation with shared data and AI-powered workflows.",
+    "whyItMatters": "This module matters because Ivanti positions Neurons as one cohesive, cloud-native platform connecting ITSM, endpoint management, and security through shared data, AI, and automation.",
+    "topicIds": [
+      "workflows",
+      "dashboards-and-kpis",
+      "rest-api-basics"
+    ],
+    "codingIds": [
+      "dashboard-kpi-design",
+      "rest-integration-walk-through",
+      "workflow-exception-handling"
+    ],
+    "useCaseIds": [
+      "asset-refresh-planning",
+      "change-approval-and-scheduling",
+      "customer-response-reactivation",
+      "escalation-schedule-tuning",
+      "external-approval-sync",
+      "multi-step-request-approvals",
+      "pilot-based-patch-rollout",
+      "platform-cross-workflow-automation",
+      "problem-review-and-corrective-action",
+      "scheduled-report-push-to-external-endpoint",
+      "validation-guardrail-rollout",
+      "weekly-open-incident-summary"
+    ],
+    "trickyIds": [
+      "dashboard-vs-report",
+      "ipaas-connector-vs-custom-integration",
+      "workflow-vs-state-driven-routing"
+    ],
+    "priority": "Core",
+    "whatInterviewersUsuallyAsk": [
+      "How do you design a workflow?",
+      "Which KPIs matter?",
+      "How do you explain a REST integration?",
+      "Dashboard vs report",
+      "iPaaS connector vs custom integration"
+    ],
+    "answerFramework": [
+      "Define what the module does and where it fits in Ivanti.",
+      "Mention the highest-value topics inside the module.",
+      "Add one coding, automation, or reporting angle if relevant.",
+      "Finish with one practical use case and the business outcome."
+    ]
   },
   {
     "id": "ivanti-neurons-for-itsm",
     "name": "Ivanti Neurons for ITSM",
     "family": "ITSM",
     "summary": "Service management foundation for tickets, requests, approvals, self-service, and workflow automation.",
-    "whyItMatters": "Modern IT service management software with automation and no-code configuration.",
+    "whyItMatters": "This module matters because official positioning emphasizes workflow automation, self-service, role-based dashboards, and scalable service management without heavy custom coding.",
     "topicIds": [
       "business-objects",
       "relationships",
@@ -26,17 +65,48 @@
       "email-templates"
     ],
     "codingIds": [
+      "business-object-extension-plan",
+      "email-template-dynamic-fields",
+      "form-layout-design-review",
+      "quick-action-design-pattern",
+      "relationship-impact-walk-through",
       "validation-logic-design",
       "workflow-exception-handling"
     ],
     "useCaseIds": [
-      "weekly-open-incident-summary",
+      "change-approval-and-scheduling",
+      "custom-object-design-review",
       "customer-response-reactivation",
       "multi-step-request-approvals",
-      "change-approval-and-scheduling"
+      "persona-based-form-redesign",
+      "quick-action-notification-pack",
+      "relationship-driven-task-model",
+      "validation-guardrail-rollout",
+      "weekly-open-incident-summary"
     ],
     "trickyIds": [
-      "quick-action-vs-workflow"
+      "lookup-vs-parent-child-relationship",
+      "object-extension-vs-new-object",
+      "quick-action-vs-workflow",
+      "single-form-vs-role-specific-layouts",
+      "template-content-vs-recipient-logic",
+      "ui-required-vs-business-validation",
+      "workflow-vs-state-driven-routing"
+    ],
+    "priority": "Core",
+    "whatInterviewersUsuallyAsk": [
+      "What is a business object?",
+      "Why do relationships matter?",
+      "How do you design a good form?",
+      "How do validations improve quality?",
+      "Lookup vs parent-child relationship",
+      "Extending an object vs creating a new one"
+    ],
+    "answerFramework": [
+      "Define what the module does and where it fits in Ivanti.",
+      "Mention the highest-value topics inside the module.",
+      "Add one coding, automation, or reporting angle if relevant.",
+      "Finish with one practical use case and the business outcome."
     ]
   },
   {
@@ -44,32 +114,67 @@
     "name": "Incident Management",
     "family": "ITSM",
     "summary": "Operational handling of incidents, assignment, communication, prioritization, and restoration of service.",
-    "whyItMatters": "Core service desk process for incident intake, ownership, and resolution.",
+    "whyItMatters": "Incident management is a core interview area because it tests how you design triage, communication, assignment, and resolution flow under real support pressure.",
     "topicIds": [
       "incident-lifecycle"
     ],
-    "codingIds": [],
+    "codingIds": [
+      "incident-priority-and-routing"
+    ],
     "useCaseIds": [
-      "weekly-open-incident-summary",
       "customer-response-reactivation",
+      "escalation-schedule-tuning",
       "knowledge-deflection-for-support",
+      "weekly-open-incident-summary",
       "workspace-shift-left-triage"
     ],
-    "trickyIds": []
+    "trickyIds": [
+      "escalation-vs-notification",
+      "incident-vs-service-request"
+    ],
+    "priority": "Core",
+    "whatInterviewersUsuallyAsk": [
+      "How do you explain incident lifecycle?",
+      "Escalation vs notification",
+      "Incident vs service request"
+    ],
+    "answerFramework": [
+      "Define what the module does and where it fits in Ivanti.",
+      "Mention the highest-value topics inside the module.",
+      "Add one coding, automation, or reporting angle if relevant.",
+      "Finish with one practical use case and the business outcome."
+    ]
   },
   {
     "id": "problem-management",
     "name": "Problem Management",
     "family": "ITSM",
     "summary": "Root-cause investigation, trend analysis, known error handling, and recurrence reduction.",
-    "whyItMatters": "Problem analysis and prevention oriented process area.",
+    "whyItMatters": "Problem management matters because it reveals whether you can move from repeated incidents to root-cause analysis and corrective action.",
     "topicIds": [
       "problem-lifecycle"
     ],
-    "codingIds": [],
-    "useCaseIds": [],
+    "codingIds": [
+      "problem-trend-analysis"
+    ],
+    "useCaseIds": [
+      "problem-review-and-corrective-action"
+    ],
     "trickyIds": [
-      "incident-vs-problem"
+      "incident-vs-problem",
+      "problem-vs-known-error"
+    ],
+    "priority": "Important",
+    "whatInterviewersUsuallyAsk": [
+      "What is the difference between incident and problem?",
+      "Incident vs problem",
+      "Problem vs known error"
+    ],
+    "answerFramework": [
+      "Define what the module does and where it fits in Ivanti.",
+      "Mention the highest-value topics inside the module.",
+      "Add one coding, automation, or reporting angle if relevant.",
+      "Finish with one practical use case and the business outcome."
     ]
   },
   {
@@ -77,52 +182,104 @@
     "name": "Change Management",
     "family": "ITSM",
     "summary": "Change planning, approvals, risk visibility, and controlled deployment governance.",
-    "whyItMatters": "Structured control for change review and execution.",
+    "whyItMatters": "Change management is high-signal because interviewers want to hear how you balance speed, approvals, scheduling, communication, and risk.",
     "topicIds": [
       "escalations",
       "change-governance"
     ],
-    "codingIds": [],
-    "useCaseIds": [
-      "change-approval-and-scheduling"
+    "codingIds": [
+      "change-risk-and-approval-design",
+      "escalation-trigger-design"
     ],
-    "trickyIds": []
+    "useCaseIds": [
+      "change-approval-and-scheduling",
+      "escalation-schedule-tuning"
+    ],
+    "trickyIds": [
+      "escalation-vs-notification",
+      "standard-vs-normal-change"
+    ],
+    "priority": "Important",
+    "whatInterviewersUsuallyAsk": [
+      "How do you design escalations?",
+      "How do you assess change risk?",
+      "Escalation vs notification",
+      "Standard vs normal change"
+    ],
+    "answerFramework": [
+      "Define what the module does and where it fits in Ivanti.",
+      "Mention the highest-value topics inside the module.",
+      "Add one coding, automation, or reporting angle if relevant.",
+      "Finish with one practical use case and the business outcome."
+    ]
   },
   {
     "id": "service-request-management",
     "name": "Service Request Management",
     "family": "ITSM",
     "summary": "Request catalog design, fulfillment, approvals, and service delivery workflows.",
-    "whyItMatters": "Standard request intake and fulfillment for IT and enterprise services.",
+    "whyItMatters": "Request management matters because it combines catalog design, approvals, tasks, and user experience into one measurable workflow.",
     "topicIds": [
       "approvals",
       "request-fulfillment"
     ],
     "codingIds": [
-      "approval-routing-logic"
+      "approval-routing-logic",
+      "request-fulfillment-task-design"
     ],
     "useCaseIds": [
+      "change-approval-and-scheduling",
       "multi-step-request-approvals",
-      "change-approval-and-scheduling"
+      "persona-based-form-redesign",
+      "relationship-driven-task-model"
     ],
-    "trickyIds": []
+    "trickyIds": [
+      "approval-vs-fulfillment-task",
+      "catalog-request-vs-fulfillment-task"
+    ],
+    "priority": "Core",
+    "whatInterviewersUsuallyAsk": [
+      "How do you design multi-step approvals?",
+      "How do you structure request fulfillment?",
+      "Approval vs fulfillment task",
+      "Catalog/request item vs fulfillment task"
+    ],
+    "answerFramework": [
+      "Define what the module does and where it fits in Ivanti.",
+      "Mention the highest-value topics inside the module.",
+      "Add one coding, automation, or reporting angle if relevant.",
+      "Finish with one practical use case and the business outcome."
+    ]
   },
   {
     "id": "knowledge-management",
     "name": "Knowledge Management",
     "family": "ITSM",
     "summary": "Knowledge article lifecycle, reuse, visibility, and support efficiency improvement.",
-    "whyItMatters": "Knowledge authoring, publishing, and support reuse.",
+    "whyItMatters": "Knowledge management is important because mature service teams reduce demand and improve self-service through reusable, governed articles.",
     "topicIds": [
       "knowledge-lifecycle"
     ],
-    "codingIds": [],
+    "codingIds": [
+      "knowledge-feedback-loop"
+    ],
     "useCaseIds": [
       "knowledge-deflection-for-support",
       "workspace-shift-left-triage"
     ],
     "trickyIds": [
       "knowledge-article-vs-workaround"
+    ],
+    "priority": "Important",
+    "whatInterviewersUsuallyAsk": [
+      "Why is knowledge important?",
+      "Knowledge article vs workaround"
+    ],
+    "answerFramework": [
+      "Define what the module does and where it fits in Ivanti.",
+      "Mention the highest-value topics inside the module.",
+      "Add one coding, automation, or reporting angle if relevant.",
+      "Finish with one practical use case and the business outcome."
     ]
   },
   {
@@ -130,61 +287,115 @@
     "name": "Reporting and Dashboards",
     "family": "Analytics",
     "summary": "Operational dashboards, KPI views, trend reporting, and saved-search-based visibility.",
-    "whyItMatters": "Reporting surfaces for operational visibility and stakeholder metrics.",
+    "whyItMatters": "This module matters because role-based dashboards and actionable insights are a major part of how Ivanti positions operational visibility.",
     "topicIds": [
       "saved-searches",
       "dashboards-and-kpis"
     ],
     "codingIds": [
+      "dashboard-kpi-design",
       "notification-automation-with-saved-searches"
     ],
     "useCaseIds": [
-      "weekly-open-incident-summary",
-      "scheduled-report-push-to-external-endpoint",
+      "asset-refresh-planning",
+      "escalation-schedule-tuning",
       "pilot-based-patch-rollout",
-      "asset-refresh-planning"
+      "problem-review-and-corrective-action",
+      "quick-action-notification-pack",
+      "scheduled-report-push-to-external-endpoint",
+      "validation-guardrail-rollout",
+      "weekly-open-incident-summary"
     ],
     "trickyIds": [
+      "dashboard-vs-report",
       "saved-search-vs-dashboard"
+    ],
+    "priority": "Important",
+    "whatInterviewersUsuallyAsk": [
+      "How are saved searches used?",
+      "Which KPIs matter?",
+      "Dashboard vs report",
+      "Saved search vs dashboard"
+    ],
+    "answerFramework": [
+      "Define what the module does and where it fits in Ivanti.",
+      "Mention the highest-value topics inside the module.",
+      "Add one coding, automation, or reporting angle if relevant.",
+      "Finish with one practical use case and the business outcome."
     ]
   },
   {
     "id": "ivanti-neurons-for-uem",
     "name": "Ivanti Neurons for UEM",
     "family": "Endpoint",
-    "summary": "Unified endpoint management for discovery, management, securing, and healing of endpoints.",
-    "whyItMatters": "Single-pane UEM for desktop, mobile, and IoT endpoints.",
+    "summary": "Cloud-based unified endpoint management for discovering, managing, securing, and healing endpoints from a single pane of glass.",
+    "whyItMatters": "This module matters because UEM is officially positioned as a single pane of glass to discover, manage, secure, and heal endpoints across the lifecycle.",
     "topicIds": [],
-    "codingIds": [],
-    "useCaseIds": [],
-    "trickyIds": []
+    "codingIds": [
+      "uem-policy-baseline-review"
+    ],
+    "useCaseIds": [
+      "uem-device-lifecycle-control"
+    ],
+    "trickyIds": [
+      "uem-vs-endpoint-manager"
+    ],
+    "priority": "Core",
+    "whatInterviewersUsuallyAsk": [
+      "UEM vs Endpoint Manager"
+    ],
+    "answerFramework": [
+      "Define what the module does and where it fits in Ivanti.",
+      "Mention the highest-value topics inside the module.",
+      "Add one coding, automation, or reporting angle if relevant.",
+      "Finish with one practical use case and the business outcome."
+    ]
   },
   {
     "id": "ivanti-endpoint-manager",
     "name": "Ivanti Endpoint Manager",
     "family": "Endpoint",
     "summary": "Client-based endpoint administration for distribution, patching, inventory, and endpoint control.",
-    "whyItMatters": "Enterprise endpoint management with software distribution and lifecycle actions.",
+    "whyItMatters": "Endpoint Manager matters because it remains a client-based endpoint platform for provisioning, software delivery, remote control, reporting, and device operations.",
     "topicIds": [
       "device-groups-and-targeting",
       "endpoint-troubleshooting"
     ],
     "codingIds": [
       "endpoint-targeting-strategy",
-      "software-deployment-failure-triage"
+      "software-deployment-failure-triage",
+      "uem-policy-baseline-review"
     ],
     "useCaseIds": [
       "pilot-based-patch-rollout",
-      "targeted-software-rollout"
+      "software-distribution-validation",
+      "targeted-software-rollout",
+      "uem-device-lifecycle-control"
     ],
-    "trickyIds": []
+    "trickyIds": [
+      "agent-issue-vs-policy-issue",
+      "uem-vs-endpoint-manager"
+    ],
+    "priority": "Important",
+    "whatInterviewersUsuallyAsk": [
+      "Why are device groups important?",
+      "How do you troubleshoot failed jobs?",
+      "Agent issue vs policy issue",
+      "UEM vs Endpoint Manager"
+    ],
+    "answerFramework": [
+      "Define what the module does and where it fits in Ivanti.",
+      "Mention the highest-value topics inside the module.",
+      "Add one coding, automation, or reporting angle if relevant.",
+      "Finish with one practical use case and the business outcome."
+    ]
   },
   {
     "id": "patch-management",
     "name": "Patch Management",
     "family": "Endpoint",
     "summary": "Patch assessment, staged rollout, compliance visibility, and remediation workflows.",
-    "whyItMatters": "Controlled patch deployment and risk reduction.",
+    "whyItMatters": "Patch management is a practical interview area because it directly tests rollout strategy, risk reduction, and compliance tracking.",
     "topicIds": [
       "patch-rings"
     ],
@@ -196,6 +407,17 @@
     ],
     "trickyIds": [
       "patch-ring-vs-broad-rollout"
+    ],
+    "priority": "Important",
+    "whatInterviewersUsuallyAsk": [
+      "Why use patch rings?",
+      "Patch ring vs broad rollout"
+    ],
+    "answerFramework": [
+      "Define what the module does and where it fits in Ivanti.",
+      "Mention the highest-value topics inside the module.",
+      "Add one coding, automation, or reporting angle if relevant.",
+      "Finish with one practical use case and the business outcome."
     ]
   },
   {
@@ -203,36 +425,67 @@
     "name": "Software Distribution",
     "family": "Endpoint",
     "summary": "Application/package rollout, targeting, scheduling, and deployment validation.",
-    "whyItMatters": "Managed software delivery to endpoint groups.",
+    "whyItMatters": "Software distribution matters because candidates are expected to explain targeting, scheduling, deployment validation, and remediation of failed jobs.",
     "topicIds": [
       "software-distribution-jobs"
     ],
-    "codingIds": [],
+    "codingIds": [
+      "software-distribution-wave-design"
+    ],
     "useCaseIds": [
+      "software-distribution-validation",
       "targeted-software-rollout"
     ],
-    "trickyIds": []
+    "trickyIds": [
+      "distribution-vs-app-distribution"
+    ],
+    "priority": "Important",
+    "whatInterviewersUsuallyAsk": [
+      "How do you explain software distribution?",
+      "Software distribution vs mobile app distribution"
+    ],
+    "answerFramework": [
+      "Define what the module does and where it fits in Ivanti.",
+      "Mention the highest-value topics inside the module.",
+      "Add one coding, automation, or reporting angle if relevant.",
+      "Finish with one practical use case and the business outcome."
+    ]
   },
   {
     "id": "ivanti-neurons-for-mdm",
     "name": "Ivanti Neurons for MDM",
     "family": "Mobility",
-    "summary": "Modern device management across iOS, Android, macOS, ChromeOS, and Windows.",
-    "whyItMatters": "Cloud mobile device management and lifecycle control.",
+    "summary": "Cloud-based modern device management for onboarding, securing, and managing iOS, iPadOS, Android, macOS, ChromeOS, Windows, and more.",
+    "whyItMatters": "This module matters because official MDM positioning centers on cloud-based onboarding, app delivery, security policy, and management of many operating systems.",
     "topicIds": [
       "enrollment",
       "ownership-models"
     ],
     "codingIds": [
-      "enrollment-troubleshooting"
+      "enrollment-troubleshooting",
+      "ownership-model-policy-mapping"
     ],
     "useCaseIds": [
       "byod-enrollment-program",
-      "non-compliant-device-response",
-      "managed-mobile-app-rollout"
+      "managed-mobile-app-rollout",
+      "non-compliant-device-response"
     ],
     "trickyIds": [
-      "byod-vs-corporate-owned"
+      "byod-vs-corporate-owned",
+      "device-enrolled-vs-device-compliant"
+    ],
+    "priority": "Core",
+    "whatInterviewersUsuallyAsk": [
+      "How do you explain enrollment?",
+      "How do you explain BYOD vs corporate-owned?",
+      "BYOD vs corporate-owned",
+      "Device enrolled vs device compliant"
+    ],
+    "answerFramework": [
+      "Define what the module does and where it fits in Ivanti.",
+      "Mention the highest-value topics inside the module.",
+      "Add one coding, automation, or reporting angle if relevant.",
+      "Finish with one practical use case and the business outcome."
     ]
   },
   {
@@ -240,7 +493,7 @@
     "name": "Compliance and Policy",
     "family": "Mobility",
     "summary": "Policy design, compliance states, remediation, and governance across managed devices.",
-    "whyItMatters": "Rules, restrictions, and remediation for endpoint/mobile governance.",
+    "whyItMatters": "This module matters because policy and compliance decisions shape both security posture and end-user experience.",
     "topicIds": [
       "compliance-rules"
     ],
@@ -249,11 +502,22 @@
     ],
     "useCaseIds": [
       "byod-enrollment-program",
-      "non-compliant-device-response",
-      "managed-mobile-app-rollout"
+      "managed-mobile-app-rollout",
+      "non-compliant-device-response"
     ],
     "trickyIds": [
       "compliance-state-vs-remediation-action"
+    ],
+    "priority": "Important",
+    "whatInterviewersUsuallyAsk": [
+      "What is a compliance rule?",
+      "Compliance state vs remediation action"
+    ],
+    "answerFramework": [
+      "Define what the module does and where it fits in Ivanti.",
+      "Mention the highest-value topics inside the module.",
+      "Add one coding, automation, or reporting angle if relevant.",
+      "Finish with one practical use case and the business outcome."
     ]
   },
   {
@@ -261,96 +525,175 @@
     "name": "Mobile App Distribution",
     "family": "Mobility",
     "summary": "Managed application rollout, ownership-aware delivery, and lifecycle support.",
-    "whyItMatters": "Controlled app deployment to managed mobile devices.",
+    "whyItMatters": "App distribution matters because secure, targeted rollout and configuration are central to real-world MDM success.",
     "topicIds": [
       "mobile-app-deployment"
     ],
-    "codingIds": [],
+    "codingIds": [
+      "mobile-app-rollout-planning"
+    ],
     "useCaseIds": [
       "managed-mobile-app-rollout"
     ],
-    "trickyIds": []
+    "trickyIds": [
+      "required-vs-available-mobile-app"
+    ],
+    "priority": "Important",
+    "whatInterviewersUsuallyAsk": [
+      "How do you plan app rollout?",
+      "Required app vs available app"
+    ],
+    "answerFramework": [
+      "Define what the module does and where it fits in Ivanti.",
+      "Mention the highest-value topics inside the module.",
+      "Add one coding, automation, or reporting angle if relevant.",
+      "Finish with one practical use case and the business outcome."
+    ]
   },
   {
     "id": "ivanti-neurons-for-itam",
     "name": "Ivanti Neurons for ITAM",
     "family": "Asset",
-    "summary": "Lifecycle tracking, visibility, repository alignment, and cost/risk-aware asset management.",
-    "whyItMatters": "IT asset visibility from acquisition through retirement.",
+    "summary": "Strategic IT asset management focused on lifecycle control, repository visibility, contracts, reporting, and optimization.",
+    "whyItMatters": "This module matters because Ivanti emphasizes full lifecycle tracking, repository visibility, contracts, vendor management, barcode scanning, and automation.",
     "topicIds": [
       "asset-lifecycle",
       "normalization-and-reconciliation"
     ],
     "codingIds": [
+      "asset-lifecycle-state-model",
       "asset-reconciliation-approach"
     ],
     "useCaseIds": [
       "asset-refresh-planning",
+      "discovery-policy-rollout",
       "discovery-reconciliation-improvement"
     ],
-    "trickyIds": []
+    "trickyIds": [
+      "asset-record-vs-discovered-record",
+      "itam-vs-discovery"
+    ],
+    "priority": "Core",
+    "whatInterviewersUsuallyAsk": [
+      "How do you explain lifecycle?",
+      "What is normalization?",
+      "Asset record vs discovered record",
+      "ITAM repository vs Discovery data"
+    ],
+    "answerFramework": [
+      "Define what the module does and where it fits in Ivanti.",
+      "Mention the highest-value topics inside the module.",
+      "Add one coding, automation, or reporting angle if relevant.",
+      "Finish with one practical use case and the business outcome."
+    ]
   },
   {
     "id": "ivanti-neurons-for-discovery",
     "name": "Ivanti Neurons for Discovery",
     "family": "Asset",
-    "summary": "Network and endpoint discovery, normalized inventory, connectors, and visibility.",
-    "whyItMatters": "Discovery and normalized visibility into assets and services.",
+    "summary": "Always-on discovery capability that detects devices, captures data, normalizes attributes, and feeds a unified asset view.",
+    "whyItMatters": "This module matters because official Discovery messaging centers on always-on detection, normalization, and single-record visibility for assets.",
     "topicIds": [
       "discovery-and-inventory"
     ],
-    "codingIds": [],
+    "codingIds": [
+      "discovery-scan-and-reconciliation"
+    ],
     "useCaseIds": [
+      "discovery-policy-rollout",
       "discovery-reconciliation-improvement"
     ],
     "trickyIds": [
       "discovery-vs-itam-record"
+    ],
+    "priority": "Important",
+    "whatInterviewersUsuallyAsk": [
+      "Why is discovery important?",
+      "Discovery vs ITAM record"
+    ],
+    "answerFramework": [
+      "Define what the module does and where it fits in Ivanti.",
+      "Mention the highest-value topics inside the module.",
+      "Add one coding, automation, or reporting angle if relevant.",
+      "Finish with one practical use case and the business outcome."
     ]
   },
   {
     "id": "ivanti-neurons-for-grc",
     "name": "Ivanti Neurons for GRC",
     "family": "Governance",
-    "summary": "Authority documents, citations, controls, risks, assessments, and corrective actions.",
-    "whyItMatters": "Governance, risk, and compliance workflows.",
+    "summary": "Centralized governance, risk, and compliance management for authority documents, citations, controls, risks, assessments, and corrective actions.",
+    "whyItMatters": "This module matters because GRC is positioned around authority documents, citations, controls, risks, assessments, and corrective actions in one system.",
     "topicIds": [
       "controls-and-risks",
       "authority-documents-and-citations"
     ],
     "codingIds": [
+      "authority-document-structure",
       "grc-control-mapping-approach"
     ],
     "useCaseIds": [
-      "control-assessment-cycle"
+      "control-assessment-cycle",
+      "grc-authority-import-and-control-map"
     ],
-    "trickyIds": []
+    "trickyIds": [
+      "citation-vs-control",
+      "control-vs-risk"
+    ],
+    "priority": "Advanced",
+    "whatInterviewersUsuallyAsk": [
+      "How do controls reduce risk?",
+      "Why do citations matter?",
+      "Citation vs control",
+      "Control vs risk"
+    ],
+    "answerFramework": [
+      "Define what the module does and where it fits in Ivanti.",
+      "Mention the highest-value topics inside the module.",
+      "Add one coding, automation, or reporting angle if relevant.",
+      "Finish with one practical use case and the business outcome."
+    ]
   },
   {
     "id": "ivanti-neurons-workspace",
     "name": "Ivanti Neurons Workspace",
     "family": "Experience",
-    "summary": "Analyst workspace for faster issue resolution with 360-degree context and quick actions.",
-    "whyItMatters": "Shift-left support experience with unified context.",
+    "summary": "Analyst workspace that provides 360-degree user and device context plus quick actions for faster first-line resolution.",
+    "whyItMatters": "This module matters because Workspace is designed to give first-line analysts a 360-degree view plus quick actions for shift-left resolution.",
     "topicIds": [
       "workspace-triage"
     ],
     "codingIds": [
+      "workspace-first-line-remediation",
       "workspace-quick-action-thinking"
     ],
     "useCaseIds": [
       "knowledge-deflection-for-support",
+      "workspace-first-call-resolution",
       "workspace-shift-left-triage"
     ],
     "trickyIds": [
-      "workspace-context-vs-ticket-notes"
+      "workspace-context-vs-ticket-notes",
+      "workspace-vs-service-desk-notes"
+    ],
+    "priority": "Advanced",
+    "whatInterviewersUsuallyAsk": [
+      "What does Workspace improve?",
+      "Workspace context vs ticket notes"
+    ],
+    "answerFramework": [
+      "Define what the module does and where it fits in Ivanti.",
+      "Mention the highest-value topics inside the module.",
+      "Add one coding, automation, or reporting angle if relevant.",
+      "Finish with one practical use case and the business outcome."
     ]
   },
   {
     "id": "ivanti-neurons-ipaas",
     "name": "Ivanti Neurons iPaaS",
     "family": "Integrations",
-    "summary": "Low-code/no-code integration with prebuilt connectors and bidirectional workflows.",
-    "whyItMatters": "Embedded iPaaS with hundreds of connectors and workflow automation.",
+    "summary": "Embedded low-code/no-code integration platform with bi-directional workflows and a large connector library for ITSM and ESM use cases.",
+    "whyItMatters": "This module matters because iPaaS extends Ivanti with low-code integration, bi-directional workflows, and a large connector library.",
     "topicIds": [
       "rest-api-basics",
       "authentication-patterns",
@@ -358,8 +701,9 @@
       "error-handling-and-retries"
     ],
     "codingIds": [
-      "rest-integration-walk-through",
+      "auth-token-flow-review",
       "data-mapping-strategy",
+      "rest-integration-walk-through",
       "retry-and-backoff-patterns"
     ],
     "useCaseIds": [
@@ -367,25 +711,61 @@
       "scheduled-report-push-to-external-endpoint"
     ],
     "trickyIds": [
-      "ipaas-connector-vs-custom-integration"
+      "authn-vs-authz-in-integrations",
+      "ipaas-connector-vs-custom-integration",
+      "mapping-vs-transformation",
+      "retry-vs-replay"
+    ],
+    "priority": "Core",
+    "whatInterviewersUsuallyAsk": [
+      "How do you explain a REST integration?",
+      "Why does authentication design matter?",
+      "What matters in mapping?",
+      "How do you design retries?",
+      "Authentication vs authorization in integrations",
+      "iPaaS connector vs custom integration"
+    ],
+    "answerFramework": [
+      "Define what the module does and where it fits in Ivanti.",
+      "Mention the highest-value topics inside the module.",
+      "Add one coding, automation, or reporting angle if relevant.",
+      "Finish with one practical use case and the business outcome."
     ]
   },
   {
     "id": "ivanti-velocity",
     "name": "Ivanti Velocity",
     "family": "Frontline",
-    "summary": "Browser-based and scan-driven workflow optimization for frontline and warehouse teams.",
-    "whyItMatters": "Frontline productivity through optimized mobile/browser workflows.",
+    "summary": "Mobile workforce platform that modernizes telnet and web workflows for frontline operations with low/no-code optimization.",
+    "whyItMatters": "This module matters because Velocity modernizes telnet and web workflows for frontline teams while preserving existing host systems.",
     "topicIds": [
       "velocity-browser-sessions",
       "scan-first-workflow-design"
     ],
     "codingIds": [
-      "velocity-flow-redesign"
+      "velocity-flow-redesign",
+      "velocity-session-optimization"
     ],
     "useCaseIds": [
+      "velocity-web-modernization",
       "warehouse-picking-redesign"
     ],
-    "trickyIds": []
+    "trickyIds": [
+      "scan-speed-vs-data-quality",
+      "velocity-modernize-vs-replace"
+    ],
+    "priority": "Advanced",
+    "whatInterviewersUsuallyAsk": [
+      "What is a Velocity browser session?",
+      "What makes a good scan workflow?",
+      "Scan speed vs data quality in frontline flows",
+      "Velocity modernization vs full app replacement"
+    ],
+    "answerFramework": [
+      "Define what the module does and where it fits in Ivanti.",
+      "Mention the highest-value topics inside the module.",
+      "Add one coding, automation, or reporting angle if relevant.",
+      "Finish with one practical use case and the business outcome."
+    ]
   }
 ]
