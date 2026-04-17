@@ -82,7 +82,24 @@ code,pre,.mono{font-family:'JetBrains Mono',monospace}
 /* ---- BRAND ---- */
 .brand{padding:16px 14px 14px;border-bottom:1px solid var(--line);flex-shrink:0}
 .brand-logo{display:flex;align-items:center;gap:10px;margin-bottom:6px}
-.brand-icon{width:34px;height:34px;background:var(--brand);border-radius:9px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:16px;box-shadow:0 0 16px var(--brand-glow)}
+.brand-icon{
+  width:34px;
+  height:34px;
+  background:var(--brand);
+  border-radius:9px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-shrink:0;
+  box-shadow:0 0 16px var(--brand-glow);
+  overflow:hidden;
+}
+.brand-icon img{
+  width:20px;
+  height:20px;
+  object-fit:contain;
+  display:block;
+}
 .brand-title{font-family:'Syne',sans-serif;font-size:1rem;font-weight:800;color:var(--text)}
 .brand-sub{font-size:.73rem;color:var(--muted);letter-spacing:.04em;text-transform:uppercase;font-weight:600}
 .brand-chips{display:flex;gap:5px;flex-wrap:wrap;margin-top:6px}
