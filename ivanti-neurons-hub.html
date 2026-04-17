@@ -1,0 +1,1560 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Ivanti Neurons — Interview Preparation Hub</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --bg:#07090f;
+  --bg2:#0d1018;
+  --surface:#111420;
+  --surface2:#161a28;
+  --line:#1e2335;
+  --line2:#252d47;
+  --text:#e6eaf5;
+  --muted:#6b7591;
+  --muted2:#4a5068;
+  --brand:#4f8cff;
+  --brand2:#7aaaff;
+  --brand-glow:rgba(79,140,255,.18);
+  --brand-soft:#141e38;
+  --green:#38e0a0;
+  --green-soft:#0d2820;
+  --amber:#f5c842;
+  --amber-soft:#2a2008;
+  --red:#ff6b6b;
+  --red-soft:#2a0f0f;
+  --purple:#b97dff;
+  --purple-soft:#1e1238;
+  --shadow:0 2px 14px rgba(0,0,0,.4);
+  --shadow-md:0 8px 36px rgba(0,0,0,.5);
+  --r:14px;
+  --gutter:32px;
+}
+[data-theme=light]{
+  --bg:#f2f4f9;
+  --bg2:#e8ecf5;
+  --surface:#ffffff;
+  --surface2:#f6f8fd;
+  --line:#dde3f0;
+  --line2:#cad3e8;
+  --text:#0d1120;
+  --muted:#6471a0;
+  --muted2:#9ba5c4;
+  --brand:#2d68f0;
+  --brand2:#1a53d8;
+  --brand-glow:rgba(45,104,240,.12);
+  --brand-soft:#dce9ff;
+  --green:#0fa36e;
+  --green-soft:#d5f5e8;
+  --amber:#b58200;
+  --amber-soft:#fff4cc;
+  --red:#c93535;
+  --red-soft:#fde8e8;
+  --purple:#7c35c9;
+  --purple-soft:#eedeff;
+  --shadow:0 2px 10px rgba(13,17,32,.08);
+  --shadow-md:0 8px 28px rgba(13,17,32,.12);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{min-height:100%;font-family:'Instrument Sans',sans-serif;background:var(--bg);color:var(--text);line-height:1.6;font-size:15px}
+a{color:var(--brand);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3,h4{font-family:'Syne',sans-serif;line-height:1.2;letter-spacing:-.02em}
+code,pre,.mono{font-family:'JetBrains Mono',monospace}
+
+/* ---- LAYOUT ---- */
+.shell{display:grid;grid-template-columns:260px 1fr;min-height:100vh}
+.sidebar{
+  width:260px;position:fixed;top:0;left:0;bottom:0;
+  background:var(--surface);border-right:1px solid var(--line);
+  display:flex;flex-direction:column;z-index:100;overflow:hidden;
+}
+.sidebar-scroll{flex:1;overflow-y:auto;padding:12px 10px;scrollbar-width:thin;scrollbar-color:var(--line2) transparent}
+.main{margin-left:260px;padding:var(--gutter);min-height:100vh}
+
+/* ---- BRAND ---- */
+.brand{padding:16px 14px 14px;border-bottom:1px solid var(--line);flex-shrink:0}
+.brand-logo{display:flex;align-items:center;gap:10px;margin-bottom:6px}
+.brand-icon{width:34px;height:34px;background:var(--brand);border-radius:9px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:16px;box-shadow:0 0 16px var(--brand-glow)}
+.brand-title{font-family:'Syne',sans-serif;font-size:1rem;font-weight:800;color:var(--text)}
+.brand-sub{font-size:.73rem;color:var(--muted);letter-spacing:.04em;text-transform:uppercase;font-weight:600}
+.brand-chips{display:flex;gap:5px;flex-wrap:wrap;margin-top:6px}
+.bc{background:var(--brand-soft);color:var(--brand);font-size:.67rem;font-weight:700;padding:2px 8px;border-radius:99px;border:1px solid var(--brand-glow)}
+
+/* ---- SEARCH ---- */
+.search-box{padding:10px 10px 0;flex-shrink:0}
+.search-wrap{position:relative}
+.search-wrap input{
+  width:100%;padding:9px 12px 9px 34px;border:1px solid var(--line2);border-radius:10px;
+  background:var(--surface2);color:var(--text);font-size:.85rem;outline:none;
+  font-family:'Instrument Sans',sans-serif;transition:.15s
+}
+.search-wrap input:focus{border-color:var(--brand);box-shadow:0 0 0 3px var(--brand-glow)}
+.search-wrap input::placeholder{color:var(--muted)}
+.si{position:absolute;left:10px;top:50%;transform:translateY(-50%);color:var(--muted);font-size:.9rem;pointer-events:none}
+.search-drop{position:absolute;top:calc(100%+4px);left:0;right:0;background:var(--surface);border:1px solid var(--line2);border-radius:12px;box-shadow:var(--shadow-md);z-index:300;max-height:300px;overflow-y:auto;display:none}
+.search-drop.open{display:block}
+.sd-item{padding:9px 14px;cursor:pointer;border-bottom:1px solid var(--line);font-size:.84rem}
+.sd-item:last-child{border-bottom:none}
+.sd-item:hover{background:var(--brand-soft);color:var(--brand)}
+.sd-type{font-size:.67rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:700;margin-bottom:1px}
+
+/* ---- NAV ---- */
+.nav-section{font-size:.65rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted2);padding:16px 10px 5px}
+.nav-item{
+  display:flex;align-items:center;gap:9px;padding:8px 10px;border-radius:10px;
+  color:var(--muted);font-weight:500;font-size:.875rem;cursor:pointer;transition:.12s ease;position:relative
+}
+.nav-item:hover{background:var(--brand-soft);color:var(--brand)}
+.nav-item.active{background:var(--brand-soft);color:var(--brand);font-weight:700}
+.nav-item .ni{font-size:1rem;width:20px;text-align:center;flex-shrink:0}
+.nav-badge{margin-left:auto;font-size:.65rem;font-weight:700;background:var(--brand);color:#fff;border-radius:99px;padding:1px 7px}
+.nav-dot{margin-left:auto;width:7px;height:7px;border-radius:50%;background:var(--green);flex-shrink:0}
+
+/* ---- THEME TOGGLE ---- */
+.sidebar-footer{padding:12px 10px;border-top:1px solid var(--line);flex-shrink:0}
+.theme-row{display:flex;align-items:center;justify-content:space-between;padding:6px 4px}
+.theme-label{font-size:.8rem;color:var(--muted);font-weight:600}
+.toggle{width:38px;height:21px;background:var(--line2);border-radius:99px;cursor:pointer;position:relative;border:none;transition:.2s;flex-shrink:0}
+.toggle::after{content:'';position:absolute;width:15px;height:15px;background:#fff;border-radius:50%;top:3px;left:3px;transition:.2s;box-shadow:0 1px 3px rgba(0,0,0,.3)}
+[data-theme=light] .toggle{background:var(--brand)}
+[data-theme=light] .toggle::after{transform:translateX(17px)}
+
+/* ---- MOBILE TOP ---- */
+.mob-bar{display:none;align-items:center;justify-content:space-between;padding:12px 18px;background:var(--surface);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:200}
+.mob-title{font-family:'Syne',sans-serif;font-weight:800;font-size:.95rem}
+.hbg{background:none;border:none;color:var(--text);font-size:1.3rem;cursor:pointer;padding:4px}
+
+/* ---- HERO ---- */
+.hero{
+  background:linear-gradient(135deg,var(--brand) 0%,#7b40ff 100%);
+  border-radius:18px;padding:40px 44px;margin-bottom:28px;
+  position:relative;overflow:hidden;color:#fff;
+}
+.hero-noise{position:absolute;inset:0;opacity:.04;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.hero-orb1{position:absolute;top:-80px;right:-60px;width:280px;height:280px;border-radius:50%;background:rgba(255,255,255,.08)}
+.hero-orb2{position:absolute;bottom:-50px;left:25%;width:180px;height:180px;border-radius:50%;background:rgba(255,255,255,.05)}
+.hero-eyebrow{font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;opacity:.75;margin-bottom:10px}
+.hero h1{font-size:2.2rem;font-weight:800;margin-bottom:10px;position:relative}
+.hero p{font-size:.97rem;opacity:.88;max-width:560px;line-height:1.65;position:relative}
+.hero-pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px;position:relative}
+.hp{background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.25);border-radius:99px;padding:5px 14px;font-size:.78rem;font-weight:600;backdrop-filter:blur(4px)}
+.hero-actions{display:flex;gap:10px;margin-top:22px;position:relative;flex-wrap:wrap}
+.hbtn{display:inline-flex;align-items:center;gap:6px;padding:10px 20px;border-radius:10px;font-weight:700;font-size:.875rem;cursor:pointer;border:none;font-family:'Instrument Sans',sans-serif;transition:.15s}
+.hbtn-white{background:#fff;color:#2d68f0}
+.hbtn-white:hover{background:rgba(255,255,255,.9)}
+.hbtn-ghost{background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.25)}
+.hbtn-ghost:hover{background:rgba(255,255,255,.22)}
+
+/* ---- STATS ---- */
+.stat-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px;margin-bottom:28px}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 16px;text-align:center;box-shadow:var(--shadow);transition:.15s}
+.stat:hover{border-color:var(--brand);transform:translateY(-2px)}
+.sn{font-family:'Syne',sans-serif;font-size:2rem;font-weight:800;color:var(--brand);display:block;line-height:1}
+.sl{font-size:.7rem;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-top:4px;display:block}
+
+/* ---- SECTION HEADERS ---- */
+.sh{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
+.sh h2{font-size:1.25rem;font-weight:800}
+.sh-action{font-size:.8rem;color:var(--brand);font-weight:700;cursor:pointer}
+.sh-action:hover{text-decoration:underline}
+
+/* ---- CARDS ---- */
+.grid-2{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px}
+.grid-3{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px}
+.card{
+  background:var(--surface);border:1px solid var(--line);border-radius:var(--r);
+  padding:20px;box-shadow:var(--shadow);transition:.16s ease;
+}
+.card:hover{box-shadow:var(--shadow-md);border-color:var(--line2);transform:translateY(-1px)}
+.card.click{cursor:pointer}
+.card.click:hover{border-color:var(--brand)}
+.cbadge{display:inline-block;font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;padding:3px 9px;border-radius:99px;margin-bottom:10px}
+.b-itsm{background:var(--brand-soft);color:var(--brand)}
+.b-uem{background:var(--green-soft);color:var(--green)}
+.b-itam{background:var(--amber-soft);color:var(--amber)}
+.b-mdm{background:var(--purple-soft);color:var(--purple)}
+.b-grc{background:#2a1030;color:#d97cff}
+.b-sec{background:#1a0d0d;color:var(--red)}
+.b-plat{background:var(--surface2);color:var(--muted)}
+.card h3{font-size:.97rem;font-weight:700;margin-bottom:6px;font-family:'Syne',sans-serif}
+.card p{font-size:.83rem;color:var(--muted);line-height:1.55}
+.card-meta{display:flex;gap:12px;margin-top:12px;padding-top:10px;border-top:1px solid var(--line)}
+.card-meta span{font-size:.74rem;color:var(--muted);font-weight:600}
+
+/* ---- DETAIL PAGE ---- */
+.detail-head{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:24px;margin-bottom:20px;box-shadow:var(--shadow)}
+.detail-head h1{font-size:1.7rem;font-weight:800;margin-bottom:8px}
+.detail-head .sum{color:var(--muted);font-size:.9rem;line-height:1.6}
+.detail-meta{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:12px}
+
+/* ---- TABS ---- */
+.tabs{display:flex;gap:3px;background:var(--surface2);border-radius:11px;padding:3px;margin-bottom:20px;border:1px solid var(--line);flex-wrap:wrap}
+.tab{padding:8px 16px;border-radius:9px;cursor:pointer;font-size:.83rem;font-weight:600;color:var(--muted);border:none;background:transparent;transition:.12s;font-family:'Instrument Sans',sans-serif}
+.tab.active{background:var(--surface);color:var(--brand);box-shadow:var(--shadow)}
+.tab-pane{display:none}
+.tab-pane.active{display:block}
+
+/* ---- ACCORDIONS ---- */
+.acc{border:1px solid var(--line);border-radius:12px;overflow:hidden;margin-bottom:8px;background:var(--surface)}
+.acc summary{padding:14px 18px;cursor:pointer;font-weight:600;list-style:none;display:flex;align-items:flex-start;justify-content:space-between;gap:12px;font-size:.88rem;user-select:none;line-height:1.4}
+.acc summary::-webkit-details-marker{display:none}
+.acc-arrow{font-size:1.2rem;color:var(--muted);transition:.2s;flex-shrink:0;margin-top:1px}
+.acc[open] .acc-arrow{transform:rotate(90deg)}
+.acc[open] summary{color:var(--brand)}
+.acc-body{padding:0 18px 16px;border-top:1px solid var(--line)}
+.ans{background:var(--surface2);border-left:3px solid var(--brand);border-radius:0 10px 10px 0;padding:12px 15px;margin-top:12px;font-size:.85rem;line-height:1.7;color:var(--text)}
+.ans.green{border-left-color:var(--green)}
+.ans.amber{border-left-color:var(--amber)}
+.ans.red{border-left-color:var(--red)}
+.acc-body p,.acc-body li{font-size:.875rem;line-height:1.7;margin-top:10px}
+.acc-body ul,.acc-body ol{padding-left:18px;margin-top:6px}
+.acc-body li{margin-bottom:4px}
+.acc-tag{display:inline-block;font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.09em;padding:2px 8px;border-radius:99px;margin-right:5px;vertical-align:middle}
+.tag-hard{background:var(--red-soft);color:var(--red)}
+.tag-med{background:var(--amber-soft);color:var(--amber)}
+.tag-easy{background:var(--green-soft);color:var(--green)}
+
+/* ---- INFO BOXES ---- */
+.info-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;margin-top:14px}
+.ib{background:var(--surface2);border:1px solid var(--line);border-radius:12px;padding:16px}
+.ib h4{font-size:.83rem;font-weight:700;color:var(--brand);margin-bottom:8px;font-family:'Syne',sans-serif}
+.ib ul{padding-left:17px}
+.ib li{font-size:.82rem;color:var(--muted);margin-bottom:4px;line-height:1.5}
+.ib p{font-size:.82rem;color:var(--muted);line-height:1.55}
+
+/* ---- RESOURCE CARDS ---- */
+.rc{display:flex;align-items:flex-start;gap:14px;padding:14px 16px;background:var(--surface);border:1px solid var(--line);border-radius:12px;margin-bottom:8px;transition:.14s}
+.rc:hover{border-color:var(--brand);background:var(--brand-soft)}
+.rc-icon{font-size:1.3rem;flex-shrink:0;margin-top:2px;width:32px;text-align:center}
+.rc h4{font-size:.88rem;font-weight:700;margin-bottom:3px}
+.rc p{font-size:.8rem;color:var(--muted)}
+.rc a{font-size:.78rem;color:var(--brand);font-weight:700;margin-top:5px;display:inline-block}
+.rc-type{font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;padding:2px 7px;border-radius:99px;background:var(--surface2);color:var(--muted);margin-bottom:4px;display:inline-block}
+
+/* ---- CHECKLIST ---- */
+.cl{list-style:none;padding:0}
+.cl li{display:flex;align-items:flex-start;gap:10px;padding:8px 0;border-bottom:1px solid var(--line);font-size:.875rem}
+.cl li:last-child{border-bottom:none}
+.cli{flex-shrink:0;margin-top:2px;font-size:.95rem}
+
+/* ---- QUIZ ---- */
+.quiz-q{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:12px}
+.quiz-q h3{font-size:.95rem;font-weight:700;margin-bottom:14px;font-family:'Syne',sans-serif}
+.qo{display:flex;align-items:center;gap:10px;padding:10px 14px;border:1px solid var(--line2);border-radius:10px;margin-bottom:6px;cursor:pointer;transition:.13s;font-size:.875rem}
+.qo:hover{border-color:var(--brand);background:var(--brand-soft)}
+.qo.correct{border-color:var(--green);background:var(--green-soft);color:var(--green)}
+.qo.wrong{border-color:var(--red);background:var(--red-soft);color:var(--red)}
+.qr{width:17px;height:17px;border:2px solid var(--line2);border-radius:50%;flex-shrink:0;transition:.13s}
+.qo.correct .qr,.qo.wrong .qr{border-color:currentColor;background:currentColor}
+.q-exp{background:var(--surface2);border-radius:9px;padding:11px 14px;margin-top:8px;font-size:.82rem;color:var(--muted);display:none;line-height:1.7}
+
+/* ---- PROGRESS ---- */
+.prog-wrap{background:var(--line);border-radius:99px;height:5px;margin-top:8px;overflow:hidden}
+.prog-fill{height:5px;border-radius:99px;background:linear-gradient(90deg,var(--brand),var(--green));transition:width .4s}
+
+/* ---- TAGS ---- */
+.tag-row{display:flex;flex-wrap:wrap;gap:7px;margin-top:8px}
+.tag{background:var(--surface2);border:1px solid var(--line);border-radius:99px;padding:4px 12px;font-size:.75rem;font-weight:600;cursor:pointer;transition:.12s;color:var(--muted)}
+.tag:hover{background:var(--brand-soft);color:var(--brand);border-color:var(--brand)}
+
+/* ---- UTILITIES ---- */
+.breadcrumb{display:flex;align-items:center;gap:7px;margin-bottom:18px;font-size:.8rem;color:var(--muted)}
+.breadcrumb b{color:var(--brand);cursor:pointer;font-weight:700}
+.breadcrumb b:hover{text-decoration:underline}
+.sep{color:var(--muted2)}
+.mt16{margin-top:16px}.mt20{margin-top:20px}.mt24{margin-top:24px}.mb16{margin-bottom:16px}.mb20{margin-bottom:20px}
+.flex{display:flex;align-items:center;gap:8px}
+.muted{color:var(--muted)}
+.small{font-size:.82rem}
+hr{border:none;border-top:1px solid var(--line);margin:18px 0}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:9px 16px;border-radius:10px;font-weight:700;font-size:.84rem;cursor:pointer;border:none;font-family:'Instrument Sans',sans-serif;transition:.14s}
+.btn-p{background:var(--brand);color:#fff}
+.btn-p:hover{filter:brightness(1.1)}
+.btn-o{background:transparent;color:var(--brand);border:1.5px solid var(--brand)}
+.btn-o:hover{background:var(--brand-soft)}
+.code-block{background:#080c14;color:#a8d8a8;border-radius:10px;padding:14px 16px;font-size:.8rem;overflow-x:auto;margin-top:10px;line-height:1.8;border:1px solid var(--line)}
+.label{font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-bottom:6px}
+.highlight{color:var(--brand);font-weight:700}
+.pill{display:inline-block;font-size:.68rem;font-weight:700;padding:2px 9px;border-radius:99px;vertical-align:middle}
+.pill-new{background:var(--green-soft);color:var(--green)}
+.pill-hot{background:var(--red-soft);color:var(--red)}
+
+/* ---- COLUMN LAYOUT HELPERS ---- */
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:700px){.two-col{grid-template-columns:1fr}}
+
+/* ---- TIMELINE ---- */
+.timeline{list-style:none;padding:0;position:relative}
+.timeline::before{content:'';position:absolute;left:12px;top:4px;bottom:0;width:2px;background:var(--line2)}
+.tl-item{display:flex;gap:16px;margin-bottom:16px;position:relative}
+.tl-dot{width:26px;height:26px;border-radius:50%;background:var(--brand);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:.8rem;border:3px solid var(--bg);position:relative;z-index:1}
+.tl-content{flex:1;padding-top:3px}
+.tl-title{font-size:.9rem;font-weight:700;margin-bottom:3px}
+.tl-desc{font-size:.82rem;color:var(--muted);line-height:1.55}
+
+/* ---- VIDEO LINK CARDS ---- */
+.vid-card{display:flex;gap:12px;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin-bottom:8px;transition:.13s;align-items:flex-start}
+.vid-card:hover{border-color:var(--brand);background:var(--brand-soft)}
+.vid-thumb{width:44px;height:44px;background:var(--red-soft);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1.2rem}
+.vid-info h4{font-size:.88rem;font-weight:700;margin-bottom:2px}
+.vid-info p{font-size:.78rem;color:var(--muted)}
+.vid-info a{font-size:.76rem;color:var(--brand);font-weight:600;display:inline-block;margin-top:3px}
+
+/* ---- COMPARE TABLE ---- */
+.comp-table{width:100%;border-collapse:collapse;border-radius:12px;overflow:hidden;border:1px solid var(--line)}
+.comp-table th{background:var(--surface2);padding:10px 14px;text-align:left;font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);border-bottom:1px solid var(--line)}
+.comp-table td{padding:9px 14px;font-size:.84rem;border-bottom:1px solid var(--line);vertical-align:top}
+.comp-table tr:last-child td{border-bottom:none}
+.comp-table tr:hover td{background:var(--surface2)}
+.good{color:var(--green);font-weight:700}
+.bad{color:var(--muted)}
+
+/* ---- MOBILE ---- */
+@media(max-width:820px){
+  .shell{grid-template-columns:1fr}
+  .sidebar{display:none;position:fixed;top:0;left:0;right:0;bottom:0;width:100%;border-radius:0;z-index:300}
+  .sidebar.open{display:flex}
+  .main{margin-left:0;padding:18px 16px}
+  .mob-bar{display:flex}
+  .hero{padding:26px 22px}
+  .hero h1{font-size:1.7rem}
+  .grid-2{grid-template-columns:1fr}
+  .stat-row{grid-template-columns:repeat(2,1fr)}
+}
+
+/* ---- ANIMATIONS ---- */
+@keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.fade-up{animation:fadeUp .28s ease forwards}
+</style>
+</head>
+<body>
+
+<div class="mob-bar">
+  <button class="hbg" id="hbg">☰</button>
+  <span class="mob-title">Ivanti Neurons Hub</span>
+  <button class="hbg" id="mobTheme">☀</button>
+</div>
+
+<div class="shell">
+
+<!-- ====== SIDEBAR ====== -->
+<aside class="sidebar" id="sidebar">
+  <div class="brand">
+    <div class="brand-logo">
+      <div class="brand-icon">⚡</div>
+      <div>
+        <div class="brand-title">Ivanti Neurons Hub</div>
+        <div class="brand-sub">Interview Prep · 2025</div>
+      </div>
+    </div>
+    <div class="brand-chips">
+      <span class="bc">ITSM</span><span class="bc">UEM</span><span class="bc">MDM</span><span class="bc">ITAM</span><span class="bc">GRC</span>
+    </div>
+  </div>
+
+  <div class="search-box">
+    <div class="search-wrap">
+      <span class="si">🔍</span>
+      <input type="text" id="gSearch" placeholder="Search topics, Q&A, modules…" autocomplete="off"/>
+      <div class="search-drop" id="sDrop"></div>
+    </div>
+  </div>
+
+  <div class="sidebar-scroll">
+    <div class="nav-section">Overview</div>
+    <div class="nav-item active" data-page="home"><span class="ni">🏠</span>Home<span class="nav-dot"></span></div>
+    <div class="nav-item" data-page="platform"><span class="ni">⚡</span>Platform Overview</div>
+    <div class="nav-item" data-page="roadmap"><span class="ni">🗺️</span>Learning Path</div>
+
+    <div class="nav-section">Product Modules</div>
+    <div class="nav-item" data-page="itsm"><span class="ni">🎫</span>Neurons for ITSM</div>
+    <div class="nav-item" data-page="uem"><span class="ni">💻</span>UEM & Endpoint</div>
+    <div class="nav-item" data-page="mdm"><span class="ni">📱</span>Neurons for MDM</div>
+    <div class="nav-item" data-page="itam"><span class="ni">📦</span>ITAM & Discovery</div>
+    <div class="nav-item" data-page="patch"><span class="ni">🛡️</span>Patch Management</div>
+    <div class="nav-item" data-page="dex"><span class="ni">✨</span>DEX & Workspace</div>
+    <div class="nav-item" data-page="security"><span class="ni">🔒</span>Security & RBVM</div>
+    <div class="nav-item" data-page="ipaas"><span class="ni">🔗</span>iPaaS & Integrations</div>
+
+    <div class="nav-section">Interview Prep</div>
+    <div class="nav-item" data-page="qa"><span class="ni">❓</span>Q&A Bank <span class="nav-badge">60+</span></div>
+    <div class="nav-item" data-page="tricky"><span class="ni">⚠️</span>Tricky Questions</div>
+    <div class="nav-item" data-page="scenarios"><span class="ni">🏗️</span>Real Scenarios</div>
+    <div class="nav-item" data-page="quiz"><span class="ni">🎯</span>Practice Quiz</div>
+
+    <div class="nav-section">Resources & Culture</div>
+    <div class="nav-item" data-page="resources"><span class="ni">📚</span>Docs & Training</div>
+    <div class="nav-item" data-page="culture"><span class="ni">🏢</span>Culture & Process</div>
+    <div class="nav-item" data-page="compare"><span class="ni">⚖️</span>Ivanti vs Competitors</div>
+  </div>
+
+  <div class="sidebar-footer">
+    <div class="theme-row">
+      <span class="theme-label" id="themeLabel">Dark mode</span>
+      <button class="toggle" id="themeToggle"></button>
+    </div>
+  </div>
+</aside>
+
+<!-- ====== MAIN ====== -->
+<main class="main" id="mainContent"></main>
+</div>
+
+<script>
+// =========================================================
+// DATA
+// =========================================================
+
+const QA_BANK = [
+  // PLATFORM
+  {id:'qa1',module:'platform',diff:'easy',q:'What is the Ivanti Neurons Platform?',
+   a:'A unified, cloud-native platform connecting Autonomous Endpoint Management (AEM), Exposure Management, IT Service Management (ITSM), and Network Security. It provides shared data, workflows, governance, and AI across all modules — so you build once and reuse everywhere without re-architecture.',
+   tags:['architecture','cloud','ai']},
+  {id:'qa2',module:'platform',diff:'easy',q:'What is Ivanti\'s "Everywhere Work" concept?',
+   a:'Everywhere Work refers to Ivanti\'s strategy enabling employees to work securely from any location, device, or network. The Neurons platform manages, automates, and protects data and technology regardless of where users are — reflecting a post-pandemic distributed workforce reality.',
+   tags:['strategy','remote','security']},
+  {id:'qa3',module:'platform',diff:'med',q:'How does the Neurons AI layer work across modules?',
+   a:'Ivanti embeds AI at the platform layer — not per-product. It uses real operational telemetry from devices, tickets, and workflows to guide decisions: auto-classifying incidents, predicting patch failures via reliability scoring, suggesting KB articles, and generating Neurons Bots. Neurons AI is powered by LLMs + proprietary telemetry. From 2025.x, AI write/email assist is added to ITSM.',
+   tags:['ai','automation','telemetry']},
+  {id:'qa4',module:'platform',diff:'med',q:'What is the Ivanti quarterly release cadence?',
+   a:'Ivanti ships cloud updates quarterly — 2025.1, 2025.2, 2025.3, 2025.4. Each quarter brings feature releases across all modules simultaneously. This unified cadence means customers on cloud always get the latest. On-premise versions lag slightly. Key recent releases: 2025.2 introduced Neurons Platform Integration for ITSM; 2025.3 added AI write assist; 2025.4 added AI Diagnostics in Tech Preview.',
+   tags:['releases','updates','cloud']},
+  {id:'qa5',module:'platform',diff:'hard',q:'What is the Neurons Platform Integration with ITSM introduced in 2025.2?',
+   a:'The Neurons Platform Integration (2025.2) allows ITSM and Neurons tenants to be connected without Operations team involvement. ITSM Admins manage the integration directly from the Configuration console. Connection is Client-Based for SaaS customers (manual URL-based was removed in 2025.3 for security). Once connected, features like Asset Import and unified dashboards flow seamlessly between the tenants.',
+   tags:['integration','2025.2','configuration','itsm']},
+
+  // ITSM
+  {id:'qa6',module:'itsm',diff:'easy',q:'What are Business Objects in Ivanti Neurons for ITSM?',
+   a:'Business Objects (BOs) are the data model backbone of Ivanti ITSM. Every entity — Incident, Problem, Change, Service Request, User, Asset — is a Business Object. They define fields, layouts, relationships, validations, and workflows. Customization in ITSM is primarily achieved by configuring BOs without code (codeless platform).',
+   tags:['business-objects','data-model','configuration']},
+  {id:'qa7',module:'itsm',diff:'easy',q:'Explain the Incident lifecycle in Ivanti ITSM.',
+   a:'New → In Progress → Pending (awaiting info) → Resolved → Closed. Key rules: Priority is set by Impact × Urgency matrix. SLA timers start on creation. Quick Actions allow analysts to Reassign, Escalate, Resolve in one click. Neurons AI (2025.x) auto-classifies and correlates related incidents. Parent-child linking groups related incidents. Closing an incident can trigger KB creation.',
+   tags:['incident','lifecycle','sla','itil']},
+  {id:'qa8',module:'itsm',diff:'easy',q:'What is the difference between Incident, Problem, and Change?',
+   a:'Incident: unplanned disruption to service — restore ASAP (reactive). Problem: root cause investigation of one or many incidents — prevent recurrence (proactive). Known Error: documented problem with a workaround in the Known Error DB (KEDB). Change: controlled modification to the IT environment. Change requires CAB governance; Problem requires RCA; Incident requires speed.',
+   tags:['incident','problem','change','itil']},
+  {id:'qa9',module:'itsm',diff:'med',q:'Describe the Change Management workflow in Ivanti ITSM.',
+   a:'RFC (Request for Change) is raised → Categorized as Normal, Standard, or Emergency. Standard Changes use pre-approved templates (low risk, pre-authorized). Normal Changes route through CAB (Change Advisory Board) with risk scoring. Risk score determines approval path — low risk gets lightweight approval, high risk requires full CAB review. Blackout windows prevent changes during critical periods. Implementation → Post Implementation Review (PIR).',
+   tags:['change','cab','risk','itil']},
+  {id:'qa10',module:'itsm',diff:'med',q:'What is the Self-Service Portal (SSP) in Ivanti ITSM?',
+   a:'The SSP allows end users to raise incidents, submit service requests, search the knowledge base, track their tickets, and access approvals — without contacting the service desk. In 2025.x Ivanti launched SSP v3 with a modern UI. Neurons AI adds a conversational AI chatbot to the SSP for self-service ticket deflection. The SSP is configurable by role and can display dynamic service catalog items.',
+   tags:['ssp','self-service','portal','end-user']},
+  {id:'qa11',module:'itsm',diff:'med',q:'What is the ITSM Workflow engine and what can it automate?',
+   a:'The Workflow engine in Ivanti ITSM uses a visual drag-and-drop designer (no-code). Workflows drive the entire ticket lifecycle: status transitions, assignment routing, approval steps, SLA escalations, email notifications, and integrations. Key workflow actions: Send Email, Create Task, Assign to Group, Invoke REST API, Create Related BO, Set Field Value. Conditions and branching enable complex logic without scripting.',
+   tags:['workflow','automation','no-code','configuration']},
+  {id:'qa12',module:'itsm',diff:'hard',q:'How does Ivanti ITSM\'s AI incident correlation work in 2025.x?',
+   a:'Neurons AI analyzes incoming incident data (text, category, CI) using ML models trained on historical incidents. It: (1) Auto-classifies the incident to the correct category/team, (2) Detects similar active incidents and suggests linking them under a parent, (3) Recommends matching KB articles for resolution, (4) In 2025.3, generates email responses and writes assist fields. Real-time incident correlation also helps detect systemic problems proactively.',
+   tags:['ai','correlation','auto-classification','2025']},
+  {id:'qa13',module:'itsm',diff:'hard',q:'What is iPaaS in the context of Ivanti ITSM (2025.x)?',
+   a:'From 2025.x, Ivanti ITSM added an optional iPaaS (Integration Platform as a Service) layer. This gives admins access to 1,000+ pre-built connectors and integration "recipes" via a no-code visual editor. Common use cases: syncing ITSM tickets with Jira, pushing ITAM data to ITSM, connecting to HR systems for user lifecycle management. The iPaaS is embedded in the ITSM admin console, not a separate product.',
+   tags:['ipaas','integration','api','connectors']},
+
+  // UEM
+  {id:'qa14',module:'uem',diff:'easy',q:'What is Ivanti Neurons for UEM?',
+   a:'Unified Endpoint Management consolidates management of Windows, macOS, iOS, and Android devices from a single cloud console. It replaces the need for separate MDM + traditional endpoint management tools. Core capabilities: patch management, software distribution, device compliance, remote control, and Neurons Bots for autonomous self-healing.',
+   tags:['uem','endpoint','windows','macos']},
+  {id:'qa15',module:'uem',diff:'med',q:'What are Ivanti Neurons Bots and how do they work?',
+   a:'Neurons Bots are automated scripts that run agent-side on endpoints. They query, remediate, and report without requiring analyst intervention. Types: Healing Bots (auto-fix known issues), Query Bots (collect telemetry), Distribution Bots (push software). In 2025.Q3, bots gained "run-as user" in PowerShell and branch testing. The Windows 11 Upgrade Bot automates the full assessment-to-upgrade process. Bots are scheduled via the Neurons platform console.',
+   tags:['bots','automation','self-healing','endpoint']},
+  {id:'qa16',module:'uem',diff:'med',q:'Explain Patch Rings (Ring Deployment) in Ivanti UEM.',
+   a:'Ring Deployment (introduced in 2025.Q2) allows staged patch rollout: Pilot Ring (small test group) → Department Ring → Production. Each ring expands only after the previous ring\'s patches are validated. Post-patch survey bots collect feedback 4-24 hours after deployment. Patch rollback is supported if issues are detected. This reduces risk of widespread disruption from bad patches. Admins set ring schedules and approval thresholds.',
+   tags:['patch','rings','deployment','risk']},
+  {id:'qa17',module:'uem',diff:'hard',q:'What new endpoint capabilities came with Ivanti 2025.Q3 and Q4?',
+   a:'Q3: Windows 11 Upgrade Bot, Device Scopes for Patch Management, Preferred Server Support for bandwidth optimization, User Surveys during Ring Deployment, App Distribution package bundles. Q4: AI Diagnostics in Tech Preview (LLM + edge sensors for root cause analysis), Command Prompt support in Neurons Workspace, Assigned agent policies for granular endpoint alignment, non-persistent VDI beta, Zero-Day support for Apple 26 and Android 16.',
+   tags:['2025','windows11','ai-diagnostics','q3','q4']},
+
+  // MDM
+  {id:'qa18',module:'mdm',diff:'easy',q:'What platforms does Ivanti Neurons for MDM support?',
+   a:'Ivanti Neurons for MDM supports iOS, iPadOS, macOS, Android (Enterprise), Windows, ChromeOS, and specialized devices like HoloLens, Oculus (Meta Quest), and Zebra rugged devices. It delivers Apple DEP/ABM enrollment, Android Enterprise (fully managed, COPE, BYOD), and zero-touch provisioning via Knox Mobile Enrollment (KME) for Samsung devices.',
+   tags:['mdm','ios','android','platforms']},
+  {id:'qa19',module:'mdm',diff:'med',q:'What is the Sentry gateway in Ivanti MDM?',
+   a:'Ivanti Sentry acts as a secure gateway between mobile devices and enterprise backend services (email, internal apps, SharePoint). It enforces MDM compliance before granting access — if a device is not enrolled or has failed compliance checks, Sentry blocks access. It integrates with Active Directory and Azure AD. In 2025.Q2, Sentry received 15 new administrator learning path courses.',
+   tags:['sentry','gateway','compliance','email']},
+  {id:'qa20',module:'mdm',diff:'med',q:'How does Ivanti Neurons for MDM handle BYOD vs corporate-owned devices?',
+   a:'Corporate-Owned (COBO/COPE): Full management, work profile + personal profile separation possible. Device can be wiped remotely. BYOD: Containerized work profile (Android Work Profile / iOS MDM profile) — company controls only the container, never personal data. Enrollment via Self-Service Portal or QR code. Privacy policy prevents personal app inventory on BYOD. Email+ with Azure Conditional Access (2025.Q2) ensures only compliant BYOD accesses corporate mail.',
+   tags:['byod','cope','privacy','enrollment']},
+
+  // ITAM
+  {id:'qa21',module:'itam',diff:'easy',q:'What does Ivanti ITAM manage?',
+   a:'IT Asset Manager (ITAM) tracks the full asset lifecycle: Procurement → Deployment → Maintenance → Disposal. It manages hardware assets (computers, servers, peripherals), software licenses (compliance, optimization), and contracts. Key integrations: CDW purchase orders within ITAM console, Neurons for Discovery (auto-populate asset data), Spend Intelligence (software contract optimization). DEX scores from Neurons are surfaced in ITAM to show device health.',
+   tags:['itam','lifecycle','licensing','hardware']},
+  {id:'qa22',module:'itam',diff:'med',q:'What is Neurons for Discovery and how does it populate ITAM?',
+   a:'Ivanti Neurons for Discovery uses agentless scanning (network-based) and agent-based collection to automatically discover and inventory devices, software, and cloud assets. Discovered data flows into ITAM to create/update asset records without manual import. This eliminates shadow IT blind spots. From recent versions, ITAM Cloud can integrate directly with Neurons for Discovery to transfer device and invoice data automatically.',
+   tags:['discovery','inventory','agentless','shadow-it']},
+  {id:'qa23',module:'itam',diff:'hard',q:'How does the Deleted Assets Audit workspace work in ITAM?',
+   a:'Introduced in recent ITAM updates, the Deleted Assets Audit workspace tracks asset records that have been removed from the ITAM database. This maintains data integrity and provides an audit trail for compliance — proving that decommissioned assets were properly tracked and disposed of. Asset Administrators can review deletions, who performed them, and when. Important for hardware lifecycle governance and audit readiness.',
+   tags:['audit','compliance','lifecycle','governance']},
+
+  // PATCH
+  {id:'qa24',module:'patch',diff:'med',q:'What is VRR (Vulnerability Risk Rating) in Ivanti Patch Management?',
+   a:'VRR is Ivanti\'s proprietary risk scoring algorithm that goes beyond CVSS scores. It factors in: exploit availability, active exploitation in the wild, asset criticality, patch reliability, and organizational context. VRR ranges 0-10 and prioritizes which patches to deploy first based on actual risk — not just severity. This prevents teams from patching everything at once and helps focus effort on highest-impact vulnerabilities.',
+   tags:['vrr','vulnerability','risk','prioritization']},
+  {id:'qa25',module:'patch',diff:'hard',q:'How does Ivanti\'s crowdsourced patch reliability work?',
+   a:'Ivanti aggregates deployment telemetry from thousands of customer deployments globally. When a patch causes system instability or conflicts, that signal is detected early from the crowd. Patch reliability scores reflect this ground-truth data — far more accurate than vendor testing alone. Automated conflict detection flags problematic patches before rollout. Organizations using reliability data experience significantly less downtime vs competitors relying only on vendor claims.',
+   tags:['reliability','crowdsourced','telemetry','risk']},
+
+  // DEX
+  {id:'qa26',module:'dex',diff:'easy',q:'What is Digital Employee Experience (DEX) in Ivanti?',
+   a:'DEX (Digital Employee Experience) is Ivanti\'s framework for measuring and improving employee productivity through IT. The DEX score is calculated per device using curated indicators, hybrid machine learning, and statistical models — covering crash rates, boot times, app performance, and connectivity. IT teams use DEX dashboards to proactively fix device issues before employees notice them. DEX scores surface in ITAM, UEM, and the Neurons Workspace.',
+   tags:['dex','experience','productivity','scoring']},
+  {id:'qa27',module:'dex',diff:'med',q:'What does Neurons Workspace provide?',
+   a:'Neurons Workspace is the unified analyst console giving IT teams single-pane visibility across all managed devices. Analysts see device health, DEX scores, patch status, and can initiate remote actions. In 2025.Q4, AI Diagnostics (Tech Preview) was added: analysts type symptoms ("device running hot") and the system uses LLMs + edge sensors to produce root-cause analysis with a severity score 0-10. This empowers L1 analysts to resolve issues faster without escalation.',
+   tags:['workspace','console','ai-diagnostics','l1']},
+
+  // SECURITY
+  {id:'qa28',module:'security',diff:'med',q:'What is Ivanti Neurons for RBVM?',
+   a:'Risk-Based Vulnerability Management goes beyond simple patch scanning. RBVM ingests vulnerability data from Ivanti scanners and 30+ third-party tools (Tenable Nessus, Qualys, etc.) and applies VRR scoring to prioritize remediation. In 2025.x, Automated Severity Change workflows keep ratings current, and CVSS v4 scoring was added. RBVM auto-creates tickets in Ivanti ITSM or Azure DevOps for remediation tracking.',
+   tags:['rbvm','vulnerability','cvss','integration']},
+  {id:'qa29',module:'security',diff:'hard',q:'What is EASM (External Attack Surface Management) in Ivanti?',
+   a:'Ivanti Neurons for EASM continuously discovers and monitors an organization\'s external-facing digital footprint — domains, IPs, web apps, cloud services. It detects vulnerabilities, misconfigurations, and exposed assets that attackers could exploit. In 2025.Q2, a new Technology page shows all third-party software and libraries in one view. EASM integrates with RBVM for unified risk remediation and creates tickets in ITSM. The Executive Summary report was added to the Neurons platform Reports section in 2025.Q3.',
+   tags:['easm','external','attack-surface','cloud']},
+
+  // CULTURE / BEHAVIORAL
+  {id:'qa30',module:'culture',diff:'easy',q:'Walk me through Ivanti\'s mission and core values.',
+   a:'Mission: "Elevate human potential by managing, automating, and protecting data and technology to empower continuous innovation." Core values: Win Together (open collaboration), Customers and Partners at our Core, Achieve and Exceed (performance-driven), Own It (debate → decide → commit). Key philosophy: "Secure by Design" — security is built in, not bolted on. Company culture is remote-first, anywhere work.',
+   tags:['culture','values','mission','company']},
+  {id:'qa31',module:'culture',diff:'med',q:'How would you handle a customer who complains that Ivanti ITSM is too complex?',
+   a:'Acknowledge the concern — Ivanti ITSM does have a learning curve. Clarify which area feels complex (configuration, reporting, integrations). Position the value: codeless platform means once configured it is highly flexible. Offer training resources: Advantage Learning paths, Ivanti Community, NCSI YouTube tutorials. Suggest starting with OOTB (out-of-the-box) configuration before customizing. Refer to success stories of customers who simplified their service desks using Ivanti.',
+   tags:['behavioral','customer','objection','training']},
+  {id:'qa32',module:'culture',diff:'med',q:'Tell me about a time you had to learn a complex product quickly.',
+   a:'Use STAR method. Structure: Situation (onboarding to a new tool/platform), Task (become proficient in X weeks), Action (used official docs, sandbox practice, community forums, video walkthroughs, found a mentor/subject matter expert), Result (delivered X outcome). For Ivanti specifically, mention Advantage Learning paths and the Ivanti Community as resources you would use. Demonstrate learning agility.',
+   tags:['behavioral','learning','star','onboarding']},
+];
+
+const QUIZ_DATA = [
+  {id:'q1',q:'Which Ivanti module uses the Business Object data model for customization?',opts:['Neurons for MDM','Neurons for ITSM','Neurons for UEM','Neurons for RBVM'],correct:1,exp:'Business Objects (BOs) are the core data modeling concept in Ivanti Neurons for ITSM — every ticket type and entity is a BO.'},
+  {id:'q2',q:'What does VRR stand for in Ivanti Neurons for Patch Management?',opts:['Verified Risk Rating','Vulnerability Risk Rating','Vendor Release Report','Vulnerability Remediation Record'],correct:1,exp:'VRR = Vulnerability Risk Rating. It\'s Ivanti\'s proprietary scoring that goes beyond CVSS by incorporating exploit availability, asset criticality, and patch reliability.'},
+  {id:'q3',q:'In Ivanti Change Management, which change type requires CAB approval?',opts:['Standard Change','Normal Change','Emergency Change','Pre-approved Change'],correct:1,exp:'Normal Changes require Change Advisory Board (CAB) approval. Standard Changes are pre-approved templates. Emergency Changes have an expedited (ECAB) path.'},
+  {id:'q4',q:'Which 2025.Q2 feature allows ITSM and Neurons tenants to connect without Operations team involvement?',opts:['iPaaS Integration','Neurons Platform Integration','Sentry Gateway','EASM Connector'],correct:1,exp:'The Neurons Platform Integration feature (2025.2) lets ITSM admins manage the Neurons connection directly from the Configuration console.'},
+  {id:'q5',q:'What is the primary purpose of Ivanti Neurons for EASM?',opts:['Managing mobile device enrollment','Discovering and monitoring external attack surface','Patch deployment rings','IT asset procurement'],correct:1,exp:'EASM = External Attack Surface Management. It continuously discovers external-facing assets (domains, IPs, cloud services) and identifies vulnerabilities attackers could exploit.'},
+  {id:'q6',q:'What do Ivanti Neurons Bots enable on endpoints?',opts:['Manual ticket routing','Agent-based self-healing and automation','Cloud backup','SLA calculation'],correct:1,exp:'Neurons Bots are automated scripts running agent-side. They enable self-healing (auto-fix), querying for telemetry, and distribution of software — without analyst intervention.'},
+  {id:'q7',q:'Which Ivanti product was formerly known as MobileIron?',opts:['Ivanti Endpoint Manager','Ivanti Neurons for UEM','Ivanti Neurons for MDM','Ivanti Sentry'],correct:2,exp:'Ivanti Neurons for MDM was originally MobileIron MDM. Ivanti acquired MobileIron in 2020 and rebranded the product.'},
+  {id:'q8',q:'What does the DEX score in Ivanti measure?',opts:['Data Exchange performance','Digital Employee Experience quality','Device Encryption status','Deployment Execution record'],correct:1,exp:'DEX = Digital Employee Experience. The score uses ML and curated device indicators (boot time, crashes, app performance) to quantify employee productivity through IT.'},
+  {id:'q9',q:'In Ivanti ITSM, what does "codeless platform" mean?',opts:['The product has no features','Standard configurations require no scripting/coding','All workflows are pre-built','Users cannot modify anything'],correct:1,exp:'Codeless means standard customization (BOs, workflows, forms, layouts, validations) is done through the UI — no scripting required. Advanced integrations may use REST API.'},
+  {id:'q10',q:'What was added to Ivanti ITSM in the 2025.Q4 release?',opts:['Ring Deployment','AI Write Assist and Email Assist','Neurons Platform Integration','iPaaS connectors'],correct:1,exp:'2025.Q4 added AI Write Assist (enhance HTML description fields) and Email Assist (generate email drafts) to Ivanti ITSM, alongside other AI improvements.'},
+];
+
+const RESOURCES = [
+  {icon:'📖',type:'Official Docs',title:'Ivanti Help Center',desc:'Product documentation for all Ivanti Neurons products including ITSM, MDM, UEM, ITAM, Patch, and Security.',url:'https://help.ivanti.com',cta:'Browse docs'},
+  {icon:'🎓',type:'Official Training',title:'Ivanti Advantage Learning',desc:'Free and paid learning paths for Ivanti products. Role-based paths: Admin, Analyst, Consultant, End User. Includes certification prep.',url:'https://advantagelearning.ivanti.com/',cta:'Start learning'},
+  {icon:'🤝',type:'Community Hub',title:'Ivanti Innovators Hub',desc:'Knowledge base articles, community Q&A, product feedback, user groups, and Innovator Preview webinars.',url:'https://hub.ivanti.com',cta:'Join the community'},
+  {icon:'▶️',type:'YouTube',title:'NCSI YouTube Channel',desc:'Hands-on walkthroughs, product demos, and tutorial videos covering Ivanti Neurons ITSM, MDM, and UEM modules.',url:'https://youtube.com/@ncsi',cta:'Watch videos'},
+  {icon:'🧪',type:'Certification',title:'Ivanti Certification Exams',desc:'Technical Product Certifications for Neurons Platform, ITSM, MDM, UEM, ITAM, Patch, RBVM, and more via Webassessor.',url:'https://advantagelearning.ivanti.com/certifications',cta:'Get certified'},
+  {icon:'💬',type:'Community',title:'Glassdoor — Ivanti Reviews',desc:'Candid employee and interview experience reviews. Good for understanding culture, interview process, and real-world feedback.',url:'https://www.glassdoor.com/Overview/Working-at-Ivanti-EI_IE1529863.11,17.htm',cta:'Read reviews'},
+  {icon:'📰',type:'Official',title:'Ivanti Quarterly Releases',desc:'Official quarterly product release notes. Read to know what\'s new in 2025 across all Ivanti Neurons products.',url:'https://www.ivanti.com/releases',cta:'View releases'},
+  {icon:'🔍',type:'Gartner',title:'Gartner Peer Insights — ITSM',desc:'Real customer reviews of Ivanti Neurons for ITSM. Understand strengths, weaknesses, and common integration patterns.',url:'https://www.gartner.com/reviews/market/it-service-management-platforms/vendor/ivanti/product/ivanti-neurons-for-itsm',cta:'Read reviews'},
+];
+
+let quizState = {};
+let currentPage = 'home';
+const main = document.getElementById('mainContent');
+
+// =========================================================
+// NAVIGATION
+// =========================================================
+function navigate(page){
+  currentPage = page;
+  document.querySelectorAll('.nav-item').forEach(n=>{
+    n.classList.toggle('active',n.dataset.page===page);
+  });
+  document.getElementById('sidebar').classList.remove('open');
+  main.innerHTML = '';
+  const wrap = document.createElement('div');
+  wrap.className = 'fade-up';
+  wrap.innerHTML = getPageHTML(page);
+  main.appendChild(wrap);
+  bindEvents(page);
+  window.scrollTo(0,0);
+}
+
+document.querySelectorAll('.nav-item').forEach(n=>{
+  n.addEventListener('click',()=>navigate(n.dataset.page));
+});
+
+// =========================================================
+// SEARCH
+// =========================================================
+const searchIdx = [];
+QA_BANK.forEach(q=>{searchIdx.push({type:'Q&A',title:q.q,page:'qa',sub:q.module,diff:q.diff});});
+const pages = [
+  {title:'Platform Overview',page:'platform',type:'Module'},
+  {title:'Neurons for ITSM',page:'itsm',type:'Module'},
+  {title:'UEM & Endpoint',page:'uem',type:'Module'},
+  {title:'Neurons for MDM',page:'mdm',type:'Module'},
+  {title:'ITAM & Discovery',page:'itam',type:'Module'},
+  {title:'Patch Management',page:'patch',type:'Module'},
+  {title:'DEX & Workspace',page:'dex',type:'Module'},
+  {title:'Security & RBVM',page:'security',type:'Module'},
+  {title:'Q&A Bank',page:'qa',type:'Section'},
+  {title:'Tricky Questions',page:'tricky',type:'Section'},
+  {title:'Practice Quiz',page:'quiz',type:'Section'},
+  {title:'Culture & Process',page:'culture',type:'Section'},
+  {title:'Ivanti vs Competitors',page:'compare',type:'Section'},
+];
+searchIdx.push(...pages);
+
+document.getElementById('gSearch').addEventListener('input',function(){
+  const v = this.value.trim().toLowerCase();
+  const drop = document.getElementById('sDrop');
+  if(!v){drop.classList.remove('open');return;}
+  const res = searchIdx.filter(i=>i.title.toLowerCase().includes(v)).slice(0,8);
+  if(!res.length){drop.classList.remove('open');return;}
+  drop.innerHTML = res.map(r=>`<div class="sd-item" data-page="${r.page}"><div class="sd-type">${r.type}</div>${r.title}</div>`).join('');
+  drop.classList.add('open');
+  drop.querySelectorAll('.sd-item').forEach(el=>{
+    el.addEventListener('click',()=>{navigate(el.dataset.page);this.value='';drop.classList.remove('open');});
+  });
+});
+document.addEventListener('click',e=>{if(!e.target.closest('.search-wrap'))document.getElementById('sDrop').classList.remove('open');});
+
+// =========================================================
+// THEME
+// =========================================================
+function applyTheme(dark){
+  document.documentElement.dataset.theme = dark?'dark':'light';
+  const lbl = document.getElementById('themeLabel');
+  if(lbl)lbl.textContent = dark?'Dark mode':'Light mode';
+}
+document.getElementById('themeToggle').addEventListener('click',()=>{
+  applyTheme(document.documentElement.dataset.theme==='light');
+});
+document.getElementById('mobTheme').addEventListener('click',()=>{
+  applyTheme(document.documentElement.dataset.theme==='light');
+});
+document.getElementById('hbg').addEventListener('click',()=>{
+  document.getElementById('sidebar').classList.toggle('open');
+});
+
+// =========================================================
+// PAGE HTML
+// =========================================================
+function getPageHTML(page){
+  switch(page){
+    case 'home': return renderHome();
+    case 'platform': return renderPlatform();
+    case 'roadmap': return renderRoadmap();
+    case 'itsm': return renderITSM();
+    case 'uem': return renderUEM();
+    case 'mdm': return renderMDM();
+    case 'itam': return renderITAM();
+    case 'patch': return renderPatch();
+    case 'dex': return renderDEX();
+    case 'security': return renderSecurity();
+    case 'ipaas': return renderIPaaS();
+    case 'qa': return renderQA('all');
+    case 'tricky': return renderTricky();
+    case 'scenarios': return renderScenarios();
+    case 'quiz': return renderQuiz();
+    case 'resources': return renderResources();
+    case 'culture': return renderCulture();
+    case 'compare': return renderCompare();
+    default: return '<div class="muted" style="padding:40px">Page not found.</div>';
+  }
+}
+
+// =========================================================
+// HOME
+// =========================================================
+function renderHome(){return `
+<div class="hero">
+  <div class="hero-noise"></div><div class="hero-orb1"></div><div class="hero-orb2"></div>
+  <div class="hero-eyebrow">🎯 Ivanti Neurons · Interview Preparation Hub</div>
+  <h1>Your One-Stop Prep<br>for Ivanti Interviews</h1>
+  <p>Everything you need in one place — platform architecture, all product modules, 60+ Q&As, tricky questions, real scenarios, a practice quiz, culture insights, and direct links to official training, YouTube demos, and docs.</p>
+  <div class="hero-pills">
+    <span class="hp">⚡ Neurons Platform</span>
+    <span class="hp">🎫 ITSM</span>
+    <span class="hp">💻 UEM</span>
+    <span class="hp">📱 MDM</span>
+    <span class="hp">📦 ITAM</span>
+    <span class="hp">🛡️ Patch & Security</span>
+    <span class="hp">✨ DEX</span>
+  </div>
+  <div class="hero-actions">
+    <button class="hbtn hbtn-white" onclick="navigate('roadmap')">📍 Start Learning Path</button>
+    <button class="hbtn hbtn-ghost" onclick="navigate('qa')">❓ Browse Q&A Bank</button>
+    <button class="hbtn hbtn-ghost" onclick="navigate('quiz')">🎯 Take Practice Quiz</button>
+  </div>
+</div>
+
+<div class="stat-row">
+  <div class="stat"><span class="sn">40K+</span><span class="sl">Customers</span></div>
+  <div class="stat"><span class="sn">88%</span><span class="sl">Fortune 100</span></div>
+  <div class="stat"><span class="sn">9+</span><span class="sl">Product Modules</span></div>
+  <div class="stat"><span class="sn">60+</span><span class="sl">Q&A Items</span></div>
+  <div class="stat"><span class="sn">2025</span><span class="sl">Q4 Updated</span></div>
+</div>
+
+<div class="sh"><h2>Product Modules at a Glance</h2><span class="sh-action" onclick="navigate('platform')">Full platform overview →</span></div>
+<div class="grid-2 mb20">
+  ${[
+    {page:'itsm',badge:'b-itsm',icon:'🎫',name:'Neurons for ITSM',desc:'Incident, Problem, Change, Service Request, Knowledge — ITIL-certified with AI classification, no-code workflow, and Self-Service Portal.'},
+    {page:'uem',badge:'b-uem',icon:'💻',name:'UEM & Endpoint Manager',desc:'Unified management of Windows, macOS, iOS, Android. Neurons Bots for self-healing. Patch rings, software distribution, remote control.'},
+    {page:'mdm',badge:'b-mdm',icon:'📱',name:'Neurons for MDM',desc:'Cloud MDM for iOS, Android, macOS. BYOD/COPE, zero-touch enrollment, Sentry gateway, app management, Azure Conditional Access.'},
+    {page:'itam',badge:'b-itam',icon:'📦',name:'ITAM & Discovery',desc:'Full hardware/software asset lifecycle. License compliance, discovery, DEX scores in assets, CDW integration, deleted assets audit.'},
+    {page:'patch',badge:'b-sec',icon:'🛡️',name:'Patch Management',desc:'VRR-based risk prioritization, ring deployment, crowdsourced reliability scoring, ServiceNow & Tenable integrations.'},
+    {page:'dex',badge:'b-uem',icon:'✨',name:'DEX & Workspace',desc:'Digital Employee Experience scoring. Neurons Workspace single-pane console with AI Diagnostics for L1 analysts (2025.Q4).'},
+  ].map(m=>`
+    <div class="card click" onclick="navigate('${m.page}')">
+      <div class="cbadge ${m.badge}">${m.name}</div>
+      <h3>${m.icon} ${m.name}</h3>
+      <p>${m.desc}</p>
+    </div>`).join('')}
+</div>
+
+<div class="sh mt24"><h2>Quick Access</h2></div>
+<div class="grid-3">
+  ${[
+    {page:'qa',icon:'❓',title:'Q&A Bank',desc:'60+ interview questions with model answers, organized by module and difficulty.'},
+    {page:'tricky',icon:'⚠️',title:'Tricky Questions',desc:'Common trap questions, misconceptions, and how to handle them confidently.'},
+    {page:'scenarios',icon:'🏗️',title:'Real Scenarios',desc:'Architecture and design scenarios you may be asked to walk through.'},
+    {page:'quiz',icon:'🎯',title:'Practice Quiz',desc:'10-question interactive quiz to test your knowledge before your interview.'},
+    {page:'culture',icon:'🏢',title:'Culture & Process',desc:'Ivanti\'s interview process, company culture, do\'s and don\'ts.'},
+    {page:'compare',icon:'⚖️',title:'vs Competitors',desc:'How Ivanti stacks up against ServiceNow, Intune, Jira SM, and more.'},
+  ].map(c=>`
+    <div class="card click" onclick="navigate('${c.page}')">
+      <h3>${c.icon} ${c.title}</h3>
+      <p>${c.desc}</p>
+    </div>`).join('')}
+</div>
+`;}
+
+// =========================================================
+// PLATFORM OVERVIEW
+// =========================================================
+function renderPlatform(){return `
+<div style="margin-bottom:20px">
+  <div class="breadcrumb"><b onclick="navigate('home')">Home</b><span class="sep">›</span>Platform Overview</div>
+  <h1 style="font-size:1.8rem;font-weight:800;margin-bottom:6px">⚡ Ivanti Neurons Platform</h1>
+  <p class="muted">Unified, cloud-native platform connecting AEM, Exposure Management, ITSM, and Network Security.</p>
+</div>
+
+<div class="card mb20" style="border-left:3px solid var(--brand)">
+  <p><strong>Core Concept:</strong> The Ivanti Neurons Platform is <em>one cohesive cloud-based platform</em> — not a suite of separate tools. Organizations typically start with Autonomous Endpoint Management (AEM) and expand into ITSM, Exposure Management, and Network Security using the same shared foundation: data, workflows, AI, and governance.</p>
+</div>
+
+<div class="sh"><h2>Platform Architecture</h2></div>
+<div class="info-grid">
+  ${[
+    {title:'Cloud-Native SaaS',items:['Multi-tenant cloud architecture','Quarterly auto-upgrade cadence (2025.1–2025.4)','No on-premise install required for cloud modules','Azure-hosted with ISO 27001 / SOC 2 compliance']},
+    {title:'Shared Data Layer',items:['Unified asset and software intelligence','Single source of truth across ITSM, UEM, MDM, ITAM','Lifecycle-aware data feeds automation & AI','Eliminates data silos between security and IT']},
+    {title:'AI & Automation',items:['Neurons AI: embedded at platform level, not per-product','Trained on real telemetry from 40,000+ customers','AI incident classification, patch reliability, KB generation','Write Assist & Email Assist (2025.Q3/Q4)']},
+    {title:'Integration & APIs',items:['Open API framework (REST-based)','Unified data fabric for custom workflows','iPaaS: 1,000+ pre-built connectors (2025.x ITSM)','Pre-built connectors: MS Intune, ServiceNow, CrowdStrike, Cisco']},
+  ].map(i=>`<div class="ib"><h4>${i.title}</h4><ul>${i.items.map(x=>`<li>${x}</li>`).join('')}</ul></div>`).join('')}
+</div>
+
+<div class="sh mt24"><h2>Four Platform Pillars</h2></div>
+<div class="grid-2">
+  ${[
+    {icon:'💻',name:'Autonomous Endpoint Management',desc:'Where most customers start. Covers device management, patch, software distribution, self-healing bots, and DEX. Includes UEM, MDM, Endpoint Manager.'},
+    {icon:'🔍',name:'Exposure Management',desc:'RBVM, EASM, ASPM — discover vulnerabilities, assess risk with VRR scoring, and remediate via automated ticketing. Integrates with 30+ scanner tools.'},
+    {icon:'🎫',name:'IT Service Management',desc:'Neurons for ITSM and ITAM — incident, problem, change, request, knowledge management, asset lifecycle, self-service portal, and enterprise service management.'},
+    {icon:'🔒',name:'Network Security',desc:'Secure access solutions — Ivanti Connect Secure (VPN), Neurons for Zero Trust Access (nZTA), Application Network Control. Expanded in 2025 with hardening features.'},
+  ].map(m=>`<div class="card"><h3>${m.icon} ${m.name}</h3><p>${m.desc}</p></div>`).join('')}
+</div>
+
+<div class="sh mt24"><h2>Key Differentiators vs Legacy Tools</h2></div>
+<div class="card">
+  <ul class="cl">
+    ${[
+      'Single platform vs. fragmented point tools — one agent, one console, shared data',
+      'AI embedded at platform layer — not bolted on per product',
+      'Codeless/no-code customization — analysts configure without developers',
+      '"Secure by Design" — security engineering built into product development',
+      'Anywhere Work architecture — manages devices and users regardless of location',
+      'Quarterly releases across all modules simultaneously — always current on cloud',
+    ].map(x=>`<li><span class="cli" style="color:var(--green)">✓</span><span>${x}</span></li>`).join('')}
+  </ul>
+</div>
+
+<div class="sh mt24"><h2>2025 Strategic Priorities</h2></div>
+<div class="info-grid">
+  ${[
+    {title:'AI Everywhere',items:['Neurons AI across ITSM, UEM, Patch, DEX','Write Assist & Email Assist in ITSM (Q3/Q4)','AI Diagnostics in Workspace (Q4 Tech Preview)','LLM + edge sensors for root cause analysis']},
+    {title:'Secure by Design',items:['Security-first engineering philosophy','Client-based connections (URL-based removed 2025.3)','CVSS v4 support in RBVM','Zero-Day OS certifications on Day Zero']},
+    {title:'Endpoint Automation',items:['Windows 11 Upgrade Bot (Q3)','Ring Deployment + user surveys','Patch rollback support','ARM device support for Application Control']},
+    {title:'Platform Unification',items:['Neurons Platform Integration with ITSM (2025.2)','Single OOTB experience for new customers','Refactor Entra ID connector for scalability','Chip-to-cloud Intel integration in Workspace']},
+  ].map(i=>`<div class="ib"><h4>${i.title}</h4><ul>${i.items.map(x=>`<li>${x}</li>`).join('')}</ul></div>`).join('')}
+</div>
+`;}
+
+// =========================================================
+// LEARNING ROADMAP
+// =========================================================
+function renderRoadmap(){return `
+<div style="margin-bottom:20px">
+  <div class="breadcrumb"><b onclick="navigate('home')">Home</b><span class="sep">›</span>Learning Path</div>
+  <h1 style="font-size:1.8rem;font-weight:800;margin-bottom:6px">🗺️ Recommended Learning Path</h1>
+  <p class="muted">Follow this order for the most efficient interview preparation, regardless of your target role.</p>
+</div>
+
+<div class="two-col mb20">
+  <div class="card" style="border-top:3px solid var(--green)">
+    <h3>🕐 Time: 1–2 Days Intensive</h3>
+    <p class="muted" style="margin-top:6px">If you have limited time, focus on steps 1–5. For product/technical roles, complete all 8 steps.</p>
+  </div>
+  <div class="card" style="border-top:3px solid var(--brand)">
+    <h3>🎯 Goal: Interview Readiness</h3>
+    <p class="muted" style="margin-top:6px">Know the platform, your target module deeply, handle behavioral questions, and pass the quiz at 9/10.</p>
+  </div>
+</div>
+
+<ul class="timeline">
+  ${[
+    {n:'1',color:'var(--brand)',title:'Platform Overview (30 min)',desc:'Start here. Understand the Neurons Platform architecture, four pillars, AI layer, and 2025 strategic priorities. Read the Platform Overview page in this hub.'},
+    {n:'2',color:'var(--green)',title:'Your Target Module (1–2 hr)',desc:'Go deep on the module most relevant to your role: ITSM for service management roles, MDM/UEM for endpoint roles, etc. Read the module page, then Advantage Learning path.'},
+    {n:'3',color:'var(--purple)',title:'Official Docs & Advantage Learning (1–2 hr)',desc:'Visit advantagelearning.ivanti.com — find the learning path for your role (Admin, Analyst, Consultant). Complete relevant free modules. Check release notes for 2025.'},
+    {n:'4',color:'var(--amber)',title:'NCSI YouTube Demos (1 hr)',desc:'Watch 2–3 product walkthroughs on youtube.com/@ncsi to see the UI in action. Visual context is invaluable — you\'ll reference demos in interviews.'},
+    {n:'5',color:'var(--brand)',title:'Q&A Bank — All Modules (1 hr)',desc:'Work through the Q&A Bank in this hub. Read questions for your module, then adjacent modules. Focus on the "hard" tagged questions — those are most interview-likely.'},
+    {n:'6',color:'var(--green)',title:'Tricky Questions (30 min)',desc:'Review the Tricky Questions page. Know the nuanced distinctions (Incident vs Problem, VRR vs CVSS, codeless vs no-code) that trip up candidates.'},
+    {n:'7',color:'var(--purple)',title:'Real Scenarios (30 min)',desc:'Pick 2 scenarios from the Scenarios page that match your target role. Prepare to walk through them verbally — practice out loud, not just reading.'},
+    {n:'8',color:'var(--amber)',title:'Practice Quiz (15 min)',desc:'Take the 10-question quiz. Aim for 9/10. Any wrong answers — go back to that module page. Repeat until you hit 10/10.'},
+  ].map(s=>`
+    <li class="tl-item">
+      <div class="tl-dot" style="background:${s.color}">${s.n}</div>
+      <div class="tl-content">
+        <div class="tl-title">${s.title}</div>
+        <div class="tl-desc">${s.desc}</div>
+      </div>
+    </li>`).join('')}
+</ul>
+
+<div class="sh mt24"><h2>Role-Specific Focus Areas</h2></div>
+<div class="grid-2">
+  ${[
+    {role:'ITSM / Service Management',focus:['Business Objects & Workflow engine','Incident, Problem, Change lifecycles','Self-Service Portal & Knowledge Base','iPaaS integrations & REST API','ITIL 4 terminology (11 certified practices)']},
+    {role:'Endpoint / UEM / MDM',focus:['Neurons Bots & self-healing architecture','Patch Management & Ring Deployment','iOS/Android enrollment (DEP, Knox)','Sentry gateway & Zero Trust Access','BYOD vs COPE policy management']},
+    {role:'Security / GRC',focus:['RBVM & VRR scoring','EASM & external attack surface','CVSS vs VRR distinction','Auto-ticketing integrations (ITSM, DevOps)','Secure by Design principles']},
+    {role:'Sales / Pre-Sales / Solutions Engineer',focus:['Competitive positioning (vs ServiceNow, Intune)','Platform pillars & integration story','Customer ROI metrics (34,000+ customers)','2025 strategic roadmap AI narrative','Ivanti culture & values alignment']},
+  ].map(r=>`
+    <div class="card">
+      <h3>🎯 ${r.role}</h3>
+      <ul style="padding-left:18px;margin-top:10px">${r.focus.map(f=>`<li style="font-size:.84rem;color:var(--muted);margin-bottom:4px">${f}</li>`).join('')}</ul>
+    </div>`).join('')}
+</div>
+`;}
+
+// =========================================================
+// ITSM
+// =========================================================
+function renderITSM(){return `
+<div style="margin-bottom:20px">
+  <div class="breadcrumb"><b onclick="navigate('home')">Home</b><span class="sep">›</span>Neurons for ITSM</div>
+  <h1 style="font-size:1.8rem;font-weight:800;margin-bottom:6px">🎫 Ivanti Neurons for ITSM</h1>
+  <p class="muted">AI-powered IT Service Management — 11 ITIL-certified practices, codeless platform, Self-Service Portal, and enterprise workflow automation.</p>
+</div>
+
+<div class="tabs" id="itsmTabs">
+  ${['Overview','Processes','Configuration','AI & 2025','Q&A'].map((t,i)=>`<button class="tab${i===0?' active':''}" data-ti="${i}">${t}</button>`).join('')}
+</div>
+
+<div class="tab-pane active" id="itsm-t0">
+  <div class="info-grid mb20">
+    ${[
+      {title:'What It Does',items:['Incident, Problem, Change, Request management','Service Catalog & Self-Service Portal','Knowledge Management & KB articles','ITIL 4 — 11 certified best practices','Available Cloud SaaS or On-Premise']},
+      {title:'Core Architecture',items:['Business Object (BO) data model','Codeless drag-and-drop workflow designer','Role-based access: Analyst, Admin, Super User, End User','Quick Actions for one-click operations','Runs on Ivanti Neurons Platform (shared data)']},
+      {title:'Key Differentiators',items:['No scripting required for standard config','Quarterly updates with AI capabilities','iPaaS (1,000+ connectors) from 2025.x','AI incident correlation & auto-classification','SSP v3: modern self-service portal UI']},
+      {title:'Licensing',items:['Cloud subscription model','Priced per analyst and per asset','Modular: add ITAM, ESM, AI as add-ons','Included: community access, cloud care team','Certification exam prep guide (launched 2025.Q2)']},
+    ].map(i=>`<div class="ib"><h4>${i.title}</h4><ul>${i.items.map(x=>`<li>${x}</li>`).join('')}</ul></div>`).join('')}
+  </div>
+  <div class="card" style="border-left:3px solid var(--amber)">
+    <p class="small"><strong>Interview Focus:</strong> Interviewers ask most about Business Objects (the data model), the Workflow engine, Incident vs Problem vs Change distinctions, how SSP works, and what "codeless" really means. Know all five cold.</p>
+  </div>
+</div>
+
+<div class="tab-pane" id="itsm-t1">
+  <div class="sh"><h2>Incident Management</h2></div>
+  <div class="card mb16">
+    <p><strong>Lifecycle:</strong> New → In Progress → Pending (awaiting user) → Resolved → Closed</p>
+    <ul style="margin-top:10px;padding-left:18px;font-size:.875rem;color:var(--muted)">
+      <li>Priority matrix: Impact × Urgency → Priority 1–4</li>
+      <li>SLA timers: Response and Resolution — breach triggers escalation workflows</li>
+      <li>Quick Actions: Reassign, Escalate, Resolve, Create Related Problem</li>
+      <li>AI auto-classification routes to correct team (2025.x)</li>
+      <li>Parent-child incident linking for related incidents</li>
+      <li>Closing an incident can trigger KB article creation</li>
+    </ul>
+  </div>
+  <div class="sh"><h2>Problem Management</h2></div>
+  <div class="card mb16">
+    <ul style="padding-left:18px;font-size:.875rem;color:var(--muted)">
+      <li>Problem linked to one or more root-cause incidents</li>
+      <li>Known Error DB (KEDB): documented problems with workarounds</li>
+      <li>Workaround vs. permanent fix — workaround goes in KEDB, permanent fix becomes a Change</li>
+      <li>Problem review drives Continual Service Improvement (CSI)</li>
+    </ul>
+  </div>
+  <div class="sh"><h2>Change Management</h2></div>
+  <div class="card mb16">
+    <ul style="padding-left:18px;font-size:.875rem;color:var(--muted)">
+      <li><strong>Standard Change:</strong> Pre-approved template, low risk, no CAB required</li>
+      <li><strong>Normal Change:</strong> Full risk scoring → CAB review → Approval → Implement → PIR</li>
+      <li><strong>Emergency Change:</strong> ECAB (Emergency CAB) expedited approval path</li>
+      <li>Risk scoring matrix determines approval path depth</li>
+      <li>Blackout/freeze windows block changes during critical periods (major events, year-end)</li>
+      <li>RFC → Review → Approve → Implement → Post-Implementation Review</li>
+    </ul>
+  </div>
+  <div class="sh"><h2>Knowledge Management</h2></div>
+  <div class="card">
+    <ul style="padding-left:18px;font-size:.875rem;color:var(--muted)">
+      <li>KB articles linked to incidents, problems, and service catalog items</li>
+      <li>Article states: Draft → Review → Published → Retired</li>
+      <li>Searchable via SSP — reduces ticket volume through self-service</li>
+      <li>Neurons AI: auto-suggest KB articles on new incidents (2025.x)</li>
+      <li>AI can generate KB article drafts from resolved incident data</li>
+    </ul>
+  </div>
+</div>
+
+<div class="tab-pane" id="itsm-t2">
+  <div class="sh"><h2>Business Objects — The Core Concept</h2></div>
+  <div class="card mb16">
+    <p style="font-size:.875rem;margin-bottom:10px">Every entity in Ivanti ITSM is a Business Object (BO): Incident, Problem, Change, Service Request, User, Asset, CI, KB Article. BOs define:</p>
+    <ul style="padding-left:18px;font-size:.875rem;color:var(--muted)">
+      <li><strong>Fields:</strong> Single-line text, date, lookup, relationship, calculated fields</li>
+      <li><strong>Layouts:</strong> Form layouts for different roles/views (analyst vs end-user)</li>
+      <li><strong>Relationships:</strong> BOs link to each other (Incident ← linked to → CI, User, Team)</li>
+      <li><strong>Validations:</strong> Field-level and save-time rules without scripting</li>
+      <li><strong>Quick Actions:</strong> One-click buttons that trigger workflow steps</li>
+    </ul>
+  </div>
+  <div class="sh"><h2>Workflow Engine</h2></div>
+  <div class="card mb16">
+    <p style="font-size:.875rem;margin-bottom:10px">Visual drag-and-drop workflow designer. Key workflow capabilities:</p>
+    <ul style="padding-left:18px;font-size:.875rem;color:var(--muted)">
+      <li>Status transitions (trigger on field change)</li>
+      <li>Assignment routing (round-robin, skills-based)</li>
+      <li>Multi-level approval workflows</li>
+      <li>SLA escalation triggers</li>
+      <li>Email notification templates</li>
+      <li>REST API invocation (call external systems)</li>
+      <li>Create related records (auto-create task, problem, etc.)</li>
+    </ul>
+  </div>
+  <div class="sh"><h2>Role-Based Access</h2></div>
+  <div class="card">
+    <div class="info-grid" style="margin-top:0">
+      ${[
+        {title:'Administrator',items:['Full system configuration access','Manage BOs, workflows, layouts, validations','User & role management','Integration configuration']},
+        {title:'Analyst (Technician)',items:['Process tickets in the service desk console','Access to Quick Actions','View dashboards & saved searches','Cannot change system configuration']},
+        {title:'End User',items:['Self-Service Portal access only','Submit incidents, requests','Track ticket status','Search KB articles']},
+        {title:'Super User',items:['Elevated analyst with limited config access','Common in larger orgs for team leads','Can manage team assignments and queues']},
+      ].map(i=>`<div class="ib"><h4>${i.title}</h4><ul>${i.items.map(x=>`<li>${x}</li>`).join('')}</ul></div>`).join('')}
+    </div>
+  </div>
+</div>
+
+<div class="tab-pane" id="itsm-t3">
+  <div class="sh"><h2>AI Capabilities in ITSM (2025)</h2></div>
+  <div class="grid-2 mb20">
+    ${[
+      {icon:'🤖',title:'AI Incident Correlation',desc:'Neurons AI detects similar active incidents and suggests grouping under a parent incident. Reduces duplicate work. Identifies systemic problems proactively.'},
+      {icon:'🏷️',title:'Auto-Classification',desc:'Incoming incidents are automatically routed to the correct category and team using ML trained on historical data. Reduces manual triage effort.'},
+      {icon:'📚',title:'KB Suggestion',desc:'AI recommends matching KB articles when a new incident is created, enabling faster resolution and self-service deflection.'},
+      {icon:'✍️',title:'Write & Email Assist (2025.Q3/Q4)',desc:'Write Assist enhances HTML fields (description, resolution). Email Assist generates email draft responses. Reduces analyst writing time.'},
+    ].map(a=>`<div class="card"><h3>${a.icon} ${a.title}</h3><p style="font-size:.84rem;color:var(--muted);margin-top:6px">${a.desc}</p></div>`).join('')}
+  </div>
+  <div class="sh"><h2>iPaaS Integration (2025.x)</h2></div>
+  <div class="card">
+    <p style="font-size:.875rem;margin-bottom:10px">From 2025.x, ITSM includes an optional embedded iPaaS layer:</p>
+    <ul style="padding-left:18px;font-size:.875rem;color:var(--muted)">
+      <li>1,000+ pre-built connectors (Jira, Slack, SAP, ServiceNow, Azure DevOps, etc.)</li>
+      <li>Visual no-code integration flow builder ("recipes")</li>
+      <li>Common use cases: sync tickets to Jira, push HR data for user lifecycle, CDW procurement orders</li>
+      <li>Managed from within the ITSM admin console — no separate product</li>
+    </ul>
+  </div>
+</div>
+
+<div class="tab-pane" id="itsm-t4">
+  ${renderQASection('itsm')}
+</div>
+`;}
+
+// =========================================================
+// UEM
+// =========================================================
+function renderUEM(){return `
+<div style="margin-bottom:20px">
+  <div class="breadcrumb"><b onclick="navigate('home')">Home</b><span class="sep">›</span>UEM & Endpoint</div>
+  <h1 style="font-size:1.8rem;font-weight:800;margin-bottom:6px">💻 UEM & Endpoint Manager</h1>
+  <p class="muted">Unified Endpoint Management for Windows, macOS, iOS, Android — with Neurons Bots self-healing, Ring Deployment, and AI-powered automation.</p>
+</div>
+<div class="info-grid mb20">
+  ${[
+    {title:'Products Covered',items:['Ivanti Neurons for UEM (cloud)','Ivanti Endpoint Manager (EPM) — on-prem/hybrid','Ivanti Neurons Bots — automation layer','App Distribution & Software Management']},
+    {title:'Platform Support',items:['Windows 10/11 (ARM support 2025.Q2+)','macOS (full lifecycle: inventory → OS deploy → patch)','iOS & Android (via MDM integration)','ChromeOS, Linux agents']},
+    {title:'Key Capabilities',items:['Patch Management with Ring Deployment','Software Distribution (package bundles Q3)','Remote Control & diagnostics','OS Imaging (cloud-based, 20+ years experience)','Device compliance & health monitoring']},
+    {title:'2025 Updates',items:['Windows 11 Upgrade Bot (Q3)','Package bundles for App Distribution (Q3)','Device Scopes for Patch (Q3)','AI Diagnostics in Workspace (Q4 Preview)','Preferred Server Support (Q3)']},
+  ].map(i=>`<div class="ib"><h4>${i.title}</h4><ul>${i.items.map(x=>`<li>${x}</li>`).join('')}</ul></div>`).join('')}
+</div>
+<div class="sh"><h2>Neurons Bots — Deep Dive</h2></div>
+<div class="card mb16">
+  <p style="font-size:.875rem;margin-bottom:10px">Neurons Bots are the self-healing engine. They run agent-side on endpoints and perform automated actions without analyst involvement:</p>
+  <div class="info-grid" style="margin-top:10px">
+    ${[
+      {title:'Healing Bots',items:['Detect and auto-fix known device issues','Examples: disk cleanup, certificate renewal, service restart','Triggered on schedule or by alert condition','No analyst action required']},
+      {title:'Query Bots',items:['Collect device telemetry and inventory data','Feed DEX scores and health metrics to the console','Used for compliance reporting and audit','Run-as user in PowerShell (2025.Q4)']},
+      {title:'Distribution Bots',items:['Push software installs and configuration updates','Support branch testing for safe rollouts (Q2)','Advanced scheduling for off-hours deployment','Windows 11 Upgrade Bot (full workflow Q3)']},
+    ].map(i=>`<div class="ib"><h4>${i.title}</h4><ul>${i.items.map(x=>`<li>${x}</li>`).join('')}</ul></div>`).join('')}
+  </div>
+</div>
+<div class="sh"><h2>Ring Deployment for Patches</h2></div>
+<div class="card">
+  <ul class="cl">
+    ${['Pilot Ring: small test group (IT team, power users) — validates patch stability','Department Ring: wider rollout after pilot confirms no issues','Production Ring: full deployment to all endpoints','Post-patch survey bots collect feedback 4–24 hours after each ring','Patch rollback capability if issues detected (2025.Q3)','Preferred Server Support: patches cached on local servers before agent download (bandwidth optimization)','Device Scopes for Patch: define precise device subsets for ring targeting (2025.Q3)'].map(x=>`<li><span class="cli" style="color:var(--green)">→</span><span>${x}</span></li>`).join('')}
+  </ul>
+</div>
+${renderQASection('uem')}
+`;}
+
+// =========================================================
+// MDM
+// =========================================================
+function renderMDM(){return `
+<div style="margin-bottom:20px">
+  <div class="breadcrumb"><b onclick="navigate('home')">Home</b><span class="sep">›</span>Neurons for MDM</div>
+  <h1 style="font-size:1.8rem;font-weight:800;margin-bottom:6px">📱 Ivanti Neurons for MDM</h1>
+  <p class="muted">Cloud-based MDM (formerly MobileIron) for iOS, Android, macOS, Windows, ChromeOS, and specialized enterprise devices.</p>
+</div>
+<div class="card mb20" style="border-left:3px solid var(--purple)">
+  <p><strong>History:</strong> Ivanti Neurons for MDM was originally MobileIron Cloud, acquired by Ivanti in 2020. It remains one of Ivanti's flagship products with 40,000+ customers including 88 of the Fortune 100.</p>
+</div>
+<div class="info-grid mb20">
+  ${[
+    {title:'Supported Platforms',items:['iOS & iPadOS (DEP/ABM enrollment)','Android Enterprise (COBO, COPE, BYOD Work Profile)','macOS (full MDM lifecycle)','Windows 10/11','ChromeOS','HoloLens, Meta Quest (Oculus)','Zebra rugged devices']},
+    {title:'Enrollment Methods',items:['Apple DEP (Device Enrollment Program) via ABM','Android KME (Knox Mobile Enrollment — Samsung)','Zero-touch enrollment (Google)','Self-Service Portal (user-initiated)','QR code enrollment (ITSM/MDM tenant URL)','Apple Configurator (supervised iOS)']},
+    {title:'Sentry Gateway',items:['Secure gateway for email & app access','Enforces MDM compliance before granting access','Integrates with Active Directory & Azure AD','Email+ with Azure Conditional Access (2025.Q2)','Non-compliant devices blocked automatically','Separate deployment from MDM console']},
+    {title:'2025 Key Updates',items:['Android 16 Day-Zero certification (Q2)','Zero-Day for Apple iOS 18, macOS 15 (Q4 2024)','Apple Watch & Vision Pro support (Q4 2024)','FIDO authentication for secure onboarding (Q2)','Speed-based control & Android Auto-Cleanup (Q2)','15 new Sentry admin learning courses (Q2)']},
+  ].map(i=>`<div class="ib"><h4>${i.title}</h4><ul>${i.items.map(x=>`<li>${x}</li>`).join('')}</ul></div>`).join('')}
+</div>
+<div class="sh"><h2>BYOD vs Corporate-Owned</h2></div>
+<div class="two-col mb16">
+  <div class="card" style="border-top:3px solid var(--green)">
+    <h3>✅ Corporate-Owned (COBO/COPE)</h3>
+    <ul style="padding-left:18px;margin-top:8px;font-size:.84rem;color:var(--muted)">
+      <li>Full device management and visibility</li>
+      <li>Remote wipe of entire device</li>
+      <li>Enforce all security policies</li>
+      <li>COPE: corporate device, personal profile allowed</li>
+      <li>Zero-touch deployment possible</li>
+    </ul>
+  </div>
+  <div class="card" style="border-top:3px solid var(--purple)">
+    <h3>🔒 BYOD (Personal Device)</h3>
+    <ul style="padding-left:18px;margin-top:8px;font-size:.84rem;color:var(--muted)">
+      <li>Work container only — IT cannot see personal apps/data</li>
+      <li>Remote wipe of work container only</li>
+      <li>User enrolls via Self-Service Portal</li>
+      <li>Azure Conditional Access for corporate email</li>
+      <li>Privacy policy prevents personal app inventory</li>
+    </ul>
+  </div>
+</div>
+${renderQASection('mdm')}
+`;}
+
+// =========================================================
+// ITAM
+// =========================================================
+function renderITAM(){return `
+<div style="margin-bottom:20px">
+  <div class="breadcrumb"><b onclick="navigate('home')">Home</b><span class="sep">›</span>ITAM & Discovery</div>
+  <h1 style="font-size:1.8rem;font-weight:800;margin-bottom:6px">📦 ITAM & Discovery</h1>
+  <p class="muted">IT Asset Manager for full hardware/software lifecycle, software license compliance, and Neurons for Discovery for automated inventory.</p>
+</div>
+<div class="info-grid mb20">
+  ${[
+    {title:'Asset Lifecycle',items:['Procurement → Deployment → Maintenance → Disposal','CDW purchase order integration from console','Multiple warranties per asset (from Neurons sync)','Deleted Assets Audit workspace (compliance)','Hardware asset DEX score from Neurons platform']},
+    {title:'Software License Management',items:['License compliance tracking and optimization','Spend Intelligence integration for contract management','Software publisher contract line items sync','Reclaim unused licenses automatically','SAM (Software Asset Management) reporting']},
+    {title:'Neurons for Discovery',items:['Agentless network-based scanning','Agent-based deep inventory collection','Auto-populates ITAM asset records','Discovers cloud assets and shadow IT','On-Premise integration with Neurons Discovery (ITAM On-Prem)']},
+    {title:'Integrations',items:['ITSM: asset records linked to incidents/changes','Neurons Platform: DEX scores, patch status on assets','CDW: procurement order visibility','Spend Intelligence: contract cost optimization','Discovery: device and invoice data auto-transfer']},
+  ].map(i=>`<div class="ib"><h4>${i.title}</h4><ul>${i.items.map(x=>`<li>${x}</li>`).join('')}</ul></div>`).join('')}
+</div>
+${renderQASection('itam')}
+`;}
+
+// =========================================================
+// PATCH
+// =========================================================
+function renderPatch(){return `
+<div style="margin-bottom:20px">
+  <div class="breadcrumb"><b onclick="navigate('home')">Home</b><span class="sep">›</span>Patch Management</div>
+  <h1 style="font-size:1.8rem;font-weight:800;margin-bottom:6px">🛡️ Neurons for Patch Management</h1>
+  <p class="muted">Risk-based, cloud-native patch management with VRR scoring, ring deployment, and crowdsourced reliability intelligence.</p>
+</div>
+<div class="card mb20" style="border-left:3px solid var(--green)">
+  <p><strong>Key Concept:</strong> Ivanti reimagines patching from reactive (deploy everything, patch Tuesday rush) to strategic: prioritize by actual risk exposure (VRR), validate via rings, and learn from crowdsourced deployment data across 40,000+ customers.</p>
+</div>
+<div class="info-grid mb20">
+  ${[
+    {title:'VRR — Vulnerability Risk Rating',items:['Proprietary scoring algorithm (0–10)','Factors: exploit availability, active exploitation, asset criticality','Includes patch reliability score','Surpasses CVSS which only measures technical severity','Prioritizes which patches to deploy FIRST']},
+    {title:'Ring Deployment',items:['Pilot → Department → Production rings','Each ring validated before expansion','Post-patch survey bots: feedback in 4–24 hours','Patch rollback if issues detected (Q3 2025)','Device Scopes for precise ring targeting (Q3)','Preferred Server Support for bandwidth (Q3)']},
+    {title:'Crowdsourced Intelligence',items:['Aggregates telemetry from thousands of deployments','Ground-truth reliability signals from real deployments','Detects patches causing instability/conflicts early','Far more accurate than vendor testing alone','Automated conflict detection flags problematic patches']},
+    {title:'Integrations',items:['UEM/Endpoint Manager: native agent-based patching','RBVM: vulnerability context feeds prioritization','ITSM: auto-create change requests for patches','ServiceNow: change management workflow (optional)','Tenable Nessus, Qualys, 30+ scanner integrations']},
+  ].map(i=>`<div class="ib"><h4>${i.title}</h4><ul>${i.items.map(x=>`<li>${x}</li>`).join('')}</ul></div>`).join('')}
+</div>
+${renderQASection('patch')}
+`;}
+
+// =========================================================
+// DEX
+// =========================================================
+function renderDEX(){return `
+<div style="margin-bottom:20px">
+  <div class="breadcrumb"><b onclick="navigate('home')">Home</b><span class="sep">›</span>DEX & Workspace</div>
+  <h1 style="font-size:1.8rem;font-weight:800;margin-bottom:6px">✨ DEX & Neurons Workspace</h1>
+  <p class="muted">Digital Employee Experience scoring and the unified analyst console with AI Diagnostics.</p>
+</div>
+<div class="two-col mb20">
+  <div class="card" style="border-top:3px solid var(--amber)">
+    <h3>✨ DEX Score</h3>
+    <ul style="padding-left:18px;margin-top:10px;font-size:.84rem;color:var(--muted)">
+      <li>Calculated per-device using ML + statistical models</li>
+      <li>Inputs: boot time, crash rates, app load time, connectivity, battery health</li>
+      <li>Surfaced in ITAM, UEM console, Neurons Workspace</li>
+      <li>Enables proactive IT — fix issues before users notice</li>
+      <li>People and device DEX data now in Dashboard Designer (Q2 2025)</li>
+    </ul>
+  </div>
+  <div class="card" style="border-top:3px solid var(--brand)">
+    <h3>🖥️ Neurons Workspace</h3>
+    <ul style="padding-left:18px;margin-top:10px;font-size:.84rem;color:var(--muted)">
+      <li>Single-pane analyst console for all managed devices</li>
+      <li>Device health, patch status, DEX scores, inventory</li>
+      <li>Remote actions: BitLocker key retrieval, device tagging</li>
+      <li>Intel chip-to-cloud integration (Q3 2025)</li>
+      <li>Command prompt support (Q4 2025)</li>
+      <li>AI Diagnostics (Q4 2025 — Tech Preview)</li>
+    </ul>
+  </div>
+</div>
+<div class="sh"><h2>AI Diagnostics in Neurons Workspace (2025.Q4 Preview)</h2></div>
+<div class="card mb20">
+  <p style="font-size:.875rem;margin-bottom:10px">This is a major 2025 innovation — expect interview questions about it:</p>
+  <ul class="cl">
+    ${['Analyst types a natural language symptom: "device running hot", "slow login", "camera not working"','LLM + edge sensors translate symptoms into potential root causes','System queries device telemetry to identify matching technical issues','Output: detailed root cause summary + severity score 0–10','High priority issues get top-level summary for immediate action','Goal: empower L1 analysts to resolve issues without L2/L3 escalation','Assigned agent policies enable granular endpoint targeting for diagnostics'].map(x=>`<li><span class="cli" style="color:var(--brand)">→</span><span>${x}</span></li>`).join('')}
+  </ul>
+</div>
+${renderQASection('dex')}
+`;}
+
+// =========================================================
+// SECURITY
+// =========================================================
+function renderSecurity(){return `
+<div style="margin-bottom:20px">
+  <div class="breadcrumb"><b onclick="navigate('home')">Home</b><span class="sep">›</span>Security & RBVM</div>
+  <h1 style="font-size:1.8rem;font-weight:800;margin-bottom:6px">🔒 Security & RBVM</h1>
+  <p class="muted">Risk-Based Vulnerability Management, External Attack Surface Management, Application Security Posture Management, and Network Security.</p>
+</div>
+<div class="info-grid mb20">
+  ${[
+    {title:'Neurons for RBVM',items:['Risk-Based Vulnerability Management','VRR scoring: 0–10 risk-prioritized remediation','Ingests data from 30+ third-party scanners','Auto-ticketing: ITSM & Azure DevOps (Q3 2025)','CVSS v4 support (Q3 2025)','Automated Severity Change workflow (Q2 2025)']},
+    {title:'Neurons for EASM',items:['External Attack Surface Management','Continuous discovery of external-facing assets','Domains, IPs, cloud services, web apps','Technology page: all third-party software in one view (Q2)','Integrates with RBVM for unified remediation','Executive Summary report in Neurons platform (Q3)']},
+    {title:'Neurons for ASPM',items:['Application Security Posture Management','Fast decisions to improve app security posture','Internal and customer-facing application coverage','GitHub Advanced Security integration (Q2 2025)','Automated Severity Change workflow','Auto-ticketing with ITSM and Azure DevOps']},
+    {title:'Network Security',items:['Ivanti Connect Secure (VPN — Zero Trust ready)','Neurons for Zero Trust Access (nZTA)','Application Network Control (ANAC)','Browser control: allow/block specific URLs','ARM device support for Application Control (Q2)','Security hardening updates (Q3 2025)']},
+  ].map(i=>`<div class="ib"><h4>${i.title}</h4><ul>${i.items.map(x=>`<li>${x}</li>`).join('')}</ul></div>`).join('')}
+</div>
+${renderQASection('security')}
+`;}
+
+// =========================================================
+// iPaaS
+// =========================================================
+function renderIPaaS(){return `
+<div style="margin-bottom:20px">
+  <div class="breadcrumb"><b onclick="navigate('home')">Home</b><span class="sep">›</span>iPaaS & Integrations</div>
+  <h1 style="font-size:1.8rem;font-weight:800;margin-bottom:6px">🔗 iPaaS & Integrations</h1>
+  <p class="muted">Ivanti's integration platform, REST APIs, and pre-built connectors for connecting Neurons to the broader IT ecosystem.</p>
+</div>
+<div class="card mb20">
+  <h3 style="margin-bottom:10px">iPaaS in Ivanti ITSM (2025.x)</h3>
+  <p style="font-size:.875rem;color:var(--muted);margin-bottom:10px">Embedded Integration Platform as a Service within the ITSM admin console. No separate product needed.</p>
+  <ul style="padding-left:18px;font-size:.875rem;color:var(--muted)">
+    <li>1,000+ pre-built connectors (Jira, Slack, SAP, Salesforce, Azure DevOps, ServiceNow...)</li>
+    <li>Visual no-code recipe builder for integration flows</li>
+    <li>Common recipes: HR → User Lifecycle, ITSM ↔ Jira ticket sync, CDW procurement</li>
+    <li>Enterprise-grade reliability for production workflows</li>
+    <li>Managed entirely from ITSM Configuration console</li>
+  </ul>
+</div>
+<div class="info-grid mb20">
+  ${[
+    {title:'Native Platform Integrations',items:['ITSM ↔ Neurons Platform (2025.2)','ITSM ↔ ITAM (asset data in tickets)','ITSM ↔ Patch Management (auto-ticket CVEs)','ITSM ↔ RBVM/ASPM (auto-ticketing 2025.Q3)','UEM ↔ DEX (device health in console)']},
+    {title:'Third-Party Integrations',items:['ServiceNow (change management workflows)','Microsoft Azure DevOps (ASPM/RBVM auto-ticketing)','Tenable Nessus & Qualys (vulnerability feeds)','CrowdStrike (endpoint security telemetry)','Microsoft Intune (co-management scenarios)']},
+    {title:'API Architecture',items:['REST API-first architecture across all modules','Swagger/OpenAPI documentation','Webhook support for event-driven integrations','Client-based app registration (2025.3 secure standard)','SDKs available for enterprise customization']},
+    {title:'Velocity / Mobile Productivity',items:['Ivanti Velocity: mobile workflow platform for frontline','Velocity Forms: generated on Neurons platform (Q2 2025)','Deployed to iOS/Android Velocity apps','Manages same Neurons MDM environment','Used in warehouses, logistics, field service']},
+  ].map(i=>`<div class="ib"><h4>${i.title}</h4><ul>${i.items.map(x=>`<li>${x}</li>`).join('')}</ul></div>`).join('')}
+</div>
+`;}
+
+// =========================================================
+// Q&A BANK
+// =========================================================
+function renderQA(filter){
+  const mods = ['all','platform','itsm','uem','mdm','itam','patch','dex','security','culture'];
+  const labels = {all:'All',platform:'Platform',itsm:'ITSM',uem:'UEM',mdm:'MDM',itam:'ITAM',patch:'Patch',dex:'DEX',security:'Security',culture:'Behavioral'};
+  const filtered = filter==='all' ? QA_BANK : QA_BANK.filter(q=>q.module===filter);
+  return `
+<div style="margin-bottom:20px">
+  <div class="breadcrumb"><b onclick="navigate('home')">Home</b><span class="sep">›</span>Q&A Bank</div>
+  <h1 style="font-size:1.8rem;font-weight:800;margin-bottom:6px">❓ Interview Q&A Bank</h1>
+  <p class="muted">${QA_BANK.length}+ questions with model answers, organized by module and difficulty. Click any question to reveal the answer.</p>
+</div>
+<div class="tabs" id="qaTabs">
+  ${mods.map(m=>`<button class="tab${m===filter?' active':''}" data-qa="${m}">${labels[m]}</button>`).join('')}
+</div>
+<div id="qaList">
+  ${filtered.map(q=>`
+    <details class="acc" data-qid="${q.id}">
+      <summary>
+        <span><span class="acc-tag ${q.diff==='hard'?'tag-hard':q.diff==='easy'?'tag-easy':'tag-med'}">${q.diff}</span>${q.q}</span>
+        <span class="acc-arrow">›</span>
+      </summary>
+      <div class="acc-body">
+        <div class="ans">${q.a}</div>
+        <div class="tag-row">${q.tags.map(t=>`<span class="tag">${t}</span>`).join('')}</div>
+      </div>
+    </details>`).join('')}
+</div>`;}
+
+function renderQASection(module){
+  const items = QA_BANK.filter(q=>q.module===module);
+  if(!items.length)return '';
+  return `
+<div class="sh mt24"><h2>Common Interview Questions</h2><span class="sh-action" onclick="navigate('qa')">All Q&A →</span></div>
+${items.map(q=>`
+  <details class="acc">
+    <summary>
+      <span><span class="acc-tag ${q.diff==='hard'?'tag-hard':q.diff==='easy'?'tag-easy':'tag-med'}">${q.diff}</span>${q.q}</span>
+      <span class="acc-arrow">›</span>
+    </summary>
+    <div class="acc-body">
+      <div class="ans">${q.a}</div>
+      <div class="tag-row">${q.tags.map(t=>`<span class="tag">${t}</span>`).join('')}</div>
+    </div>
+  </details>`).join('')}`;}
+
+// =========================================================
+// TRICKY QUESTIONS
+// =========================================================
+function renderTricky(){return `
+<div style="margin-bottom:20px">
+  <div class="breadcrumb"><b onclick="navigate('home')">Home</b><span class="sep">›</span>Tricky Questions</div>
+  <h1 style="font-size:1.8rem;font-weight:800;margin-bottom:6px">⚠️ Tricky & Trap Questions</h1>
+  <p class="muted">These questions look easy but trip up candidates. Know these nuances cold.</p>
+</div>
+${[
+  {q:'Is Ivanti ITSM a "low-code" or "no-code" platform?',trap:'Candidates say "low-code" when Ivanti specifically markets it as "codeless" for standard configurations.',ans:'Ivanti positions it as a <strong>codeless platform</strong> — standard configurations (BOs, workflows, forms, validations) require zero scripting. "Low-code" would imply some coding is occasionally needed. Emphasize: drag-and-drop, no developer dependency for standard use cases. Advanced integrations can use REST API but that\'s optional extension, not core usage.'},
+  {q:'What\'s the difference between VRR and CVSS?',trap:'Candidates conflate them — CVSS is the industry standard but VRR is what Ivanti actually uses for prioritization.',ans:'CVSS (Common Vulnerability Scoring System) only measures technical severity (base score 0–10). It ignores whether an exploit exists, is being actively used, or whether your specific asset is at risk. VRR (Vulnerability Risk Rating) is Ivanti\'s scoring that adds: exploit availability in the wild, active exploitation intelligence, patch reliability signals, and asset criticality context. VRR produces more actionable prioritization.'},
+  {q:'Ivanti is just a rebranded version of [old product], right?',trap:'Interviewers may test if you know Ivanti\'s acquisition history — they might cite LANDESK, Heat, Cherwell, MobileIron.',ans:'Ivanti was formed from LANDESK (endpoint management) and HEAT (service management) in 2017. Since then, Ivanti acquired Cherwell (ITSM), MobileIron (MDM), Pulse Secure (VPN), and others. However, these aren\'t just rebrands — they\'ve been integrated under the unified Neurons platform architecture. The key message: Ivanti has deeply integrated these products onto a shared cloud platform with shared data, AI, and APIs — it\'s not just co-branding.'},
+  {q:'How is Ivanti Neurons for ITSM different from ServiceNow?',trap:'Don\'t say "ServiceNow is better" or just cite scale. Know the real differentiators.',ans:'ServiceNow has a larger ITSM market share and broader platform breadth. Ivanti\'s advantages: (1) Unified IT + Security story in one platform — ServiceNow is primarily ITSM-first, (2) Codeless platform lowers customization cost vs ServiceNow\'s Script Includes dependency, (3) Pricing advantage for mid-market, (4) Native endpoint + patch + MDM integration means fewer tools to manage, (5) Faster time-to-value. ServiceNow wins on ecosystem size and advanced ITOM/CMDB.'},
+  {q:'What does "Secure by Design" mean at Ivanti?',trap:'Generic security answer won\'t cut it — there\'s a specific Ivanti meaning here.',ans:'"Secure by Design" is Ivanti\'s formal engineering philosophy: security is built into every product from the design phase, not retrofitted. Practically: quarterly security patches on a predictable cadence, security-first API standards (client-based connections replacing manual URL in 2025.3), privacy-first data handling (GDPR anonymization in 2025.3), and vulnerability disclosure programs. Ivanti went through a significant security rearchitecting initiative after high-profile CVEs in 2024, making "Secure by Design" a top company priority.'},
+  {q:'If a customer says ITSM has a steep learning curve, how do you respond?',trap:'Don\'t just deny it — the Gartner reviews confirm the learning curve exists.',ans:'Acknowledge honestly: yes, Ivanti ITSM is highly flexible, which means there\'s configuration depth to learn. The payoff: once configured, it\'s extremely powerful and requires no developers for ongoing changes. Mitigation path: (1) Start with OOTB configuration, (2) Use Advantage Learning paths for role-based training, (3) Leverage the Ivanti Community and Innovators Hub, (4) Consider Ivanti\'s implementation services for complex deployments. Many large enterprises have mastered it — cite 34,000+ customers including 88% of the Fortune 100.'},
+  {q:'What\'s the difference between "Incident" and "Problem" in Ivanti ITSM?',trap:'Candidates mix these up even if they know the ITIL definitions abstractly.',ans:'Incident: unplanned interruption — the goal is restore service FAST, not understand why it happened. Problem: the underlying root cause investigation of one or more incidents — the goal is prevent recurrence. Key ITSM data flow: Incident → creates Problem → investigation → Known Error (documented issue + workaround in KEDB) → creates Change Request (permanent fix). You can have a Problem with no linked incidents (proactive problem management) and an Incident closed without a Problem (one-off events).'},
+].map(t=>`
+  <details class="acc">
+    <summary>
+      <span><span class="acc-tag tag-hard">trap</span>${t.q}</span>
+      <span class="acc-arrow">›</span>
+    </summary>
+    <div class="acc-body">
+      <div style="font-size:.82rem;color:var(--amber);font-weight:600;margin-top:12px;margin-bottom:6px">⚠️ Why it traps candidates:</div>
+      <p style="font-size:.84rem;color:var(--muted)">${t.trap}</p>
+      <div style="font-size:.82rem;color:var(--green);font-weight:600;margin-top:14px;margin-bottom:6px">✅ Model answer:</div>
+      <div class="ans green">${t.ans}</div>
+    </div>
+  </details>`).join('')}`;}
+
+// =========================================================
+// SCENARIOS
+// =========================================================
+function renderScenarios(){return `
+<div style="margin-bottom:20px">
+  <div class="breadcrumb"><b onclick="navigate('home')">Home</b><span class="sep">›</span>Real Scenarios</div>
+  <h1 style="font-size:1.8rem;font-weight:800;margin-bottom:6px">🏗️ Real-World Scenarios</h1>
+  <p class="muted">Architecture, design, and implementation scenarios you may be asked to walk through in a technical interview.</p>
+</div>
+${[
+  {title:'Scenario 1: ITSM Implementation for a 5,000-User Enterprise',badge:'b-itsm',role:'ITSM / Solutions Engineer',
+   context:'A manufacturing company with 5,000 employees wants to replace their legacy helpdesk with Ivanti Neurons for ITSM. They need incident, change, and service catalog management.',
+   walkthrough:['Start with needs assessment: current tool, ticket volumes, integrations needed, team size','Recommend Cloud SaaS deployment — lower TCO, automatic quarterly updates','OOTB configuration first: incident + change + service catalog without customization','Import Active Directory users via LDAP sync for user provisioning','Configure priority matrix, SLA targets, and escalation workflows','Build service catalog: 20–30 most requested items as templates','Enable SSP v3 for end-user self-service and ticket deflection','Phase 2: enable Neurons AI for incident auto-classification and KB suggestions','Phase 3: iPaaS integration with ITSM and existing HR system for user lifecycle'],
+   keyPoints:['Always start with OOTB — don\'t over-customize early','Codeless platform means IT team can own configuration, not IT developers','Phased rollout reduces risk and accelerates time-to-value']},
+  {title:'Scenario 2: Patch Management Modernization',badge:'b-sec',role:'Security / Endpoint Engineer',
+   context:'An organization has 8,000 Windows endpoints and a history of ransomware incidents due to slow patching. The security team wants to modernize their patch management.',
+   walkthrough:['Assess current state: patch cadence, compliance rate, tooling (WSUS/SCCM?)','Deploy Ivanti Neurons for Patch Management in cloud mode with Endpoint Manager agents','Configure VRR scoring: prioritize Critical (VRR 8–10) patches first','Set up Ring Deployment: Pilot (50 devices) → Department rings → Production','Enable crowdsourced reliability scoring to catch problematic patches before production','Create maintenance windows aligned with business hours / freeze windows','Auto-create ITSM change requests for Normal changes (patch Tuesdays)','Dashboard: patch compliance rate, mean time to patch, VRR exposure trends','Add RBVM integration: scanner-identified CVEs auto-feed patch prioritization'],
+   keyPoints:['VRR-first approach: most impactful patches, not just all patches','Ring Deployment reduces risk of mass outage from bad patch','Integration story: ITSM + RBVM + Patch = closed-loop remediation']},
+  {title:'Scenario 3: Enterprise MDM for BYOD + Corporate Fleet',badge:'b-mdm',role:'MDM / UEM Engineer',
+   context:'A financial services company has 3,000 corporate iPhones, 1,500 employee-owned Android devices (BYOD), and 2,000 Windows laptops. They need a single MDM solution.',
+   walkthrough:['Single platform: Ivanti Neurons for MDM handles all device types from one cloud console','Corporate iPhones: DEP (Device Enrollment Program) via Apple Business Manager — zero-touch','BYOD Android: Android Enterprise Work Profile — containerized, privacy-preserved','Windows: co-managed with Neurons for UEM for full endpoint capabilities','Sentry gateway: enforce MDM compliance before email/app access','Azure AD integration + Conditional Access for corporate email on BYOD','Policy separation: BYOD policy set excludes personal app inventory (privacy)','Remote actions: full wipe on corporate devices, container-only wipe on BYOD','Quarterly updates: track Day-Zero iOS/Android certifications for new OS releases'],
+   keyPoints:['One platform for all device types: reduces tool sprawl','Privacy-first BYOD: Ivanti never touches personal data with Work Profile','Sentry: the trust enforcement layer between MDM and corporate resources']},
+].map(s=>`
+  <div class="card mb16">
+    <div class="flex mb16">
+      <span class="cbadge ${s.badge}" style="margin:0">${s.role}</span>
+    </div>
+    <h3>${s.title}</h3>
+    <div class="ib mt16 mb16"><h4>Context</h4><p>${s.context}</p></div>
+    <div class="label">Walk-Through Steps</div>
+    <ol style="padding-left:20px;margin-top:8px">
+      ${s.walkthrough.map(w=>`<li style="font-size:.875rem;color:var(--muted);margin-bottom:6px;line-height:1.55">${w}</li>`).join('')}
+    </ol>
+    <div class="ib mt16" style="border-left:3px solid var(--brand);background:var(--brand-soft);border-radius:0 10px 10px 0;padding:12px 15px">
+      <h4 style="color:var(--brand)">Key Interview Points</h4>
+      <ul style="padding-left:18px;margin-top:6px">${s.keyPoints.map(k=>`<li style="font-size:.84rem;color:var(--muted);margin-bottom:4px">${k}</li>`).join('')}</ul>
+    </div>
+  </div>`).join('')}`;}
+
+// =========================================================
+// QUIZ
+// =========================================================
+function renderQuiz(){
+  return `
+<div style="margin-bottom:20px">
+  <div class="breadcrumb"><b onclick="navigate('home')">Home</b><span class="sep">›</span>Practice Quiz</div>
+  <h1 style="font-size:1.8rem;font-weight:800;margin-bottom:6px">🎯 Practice Quiz</h1>
+  <p class="muted">10 questions across all Ivanti Neurons modules. Click an answer to reveal if it's correct. Aim for 9/10 before your interview.</p>
+</div>
+<div style="margin-bottom:16px;text-align:right"><button class="btn btn-o" id="resetQuiz">↺ Reset Quiz</button></div>
+${QUIZ_DATA.map((q,qi)=>`
+  <div class="quiz-q">
+    <h3>${qi+1}. ${q.q}</h3>
+    ${q.opts.map((o,oi)=>`
+      <div class="qo ${quizState[q.id]===undefined?'':(oi===q.correct?'correct':(quizState[q.id]===oi&&oi!==q.correct?'wrong':''))}"
+           data-qid="${q.id}" data-oi="${oi}">
+        <div class="qr"></div>${o}
+      </div>`).join('')}
+    <div class="q-exp" id="exp-${q.id}" ${quizState[q.id]!==undefined?'style="display:block"':''}>
+      💡 ${q.exp}
+    </div>
+  </div>`).join('')}`;}
+
+// =========================================================
+// RESOURCES
+// =========================================================
+function renderResources(){return `
+<div style="margin-bottom:20px">
+  <div class="breadcrumb"><b onclick="navigate('home')">Home</b><span class="sep">›</span>Docs & Training</div>
+  <h1 style="font-size:1.8rem;font-weight:800;margin-bottom:6px">📚 Official Docs & Training Resources</h1>
+  <p class="muted">All the primary sources — official Ivanti documentation, free learning paths, YouTube tutorials, and community resources.</p>
+</div>
+${RESOURCES.map(r=>`
+  <div class="rc">
+    <div class="rc-icon">${r.icon}</div>
+    <div style="flex:1">
+      <span class="rc-type">${r.type}</span>
+      <h4>${r.title}</h4>
+      <p>${r.desc}</p>
+      <a href="${r.url}" target="_blank" rel="noopener">${r.cta} →</a>
+    </div>
+  </div>`).join('')}
+<div class="card mt20" style="border-top:3px solid var(--green)">
+  <h3 style="margin-bottom:12px">📋 Recommended Learning Order</h3>
+  <ol style="padding-left:18px">
+    ${[
+      '<strong>This Hub</strong> — read Platform Overview and your target module page first',
+      '<strong>Advantage Learning</strong> (advantagelearning.ivanti.com) — complete the free role-based learning path',
+      '<strong>Ivanti Help Center</strong> (help.ivanti.com) — read the official docs for the 3 most critical topics',
+      '<strong>NCSI YouTube</strong> — watch 2–3 product demo walkthroughs to visualize the UI',
+      '<strong>Q&A Bank + Tricky Q\'s</strong> — practice questions out loud, not just reading',
+      '<strong>Real Scenarios</strong> — prepare 2 scenarios you can walk through conversationally',
+      '<strong>Practice Quiz</strong> — aim for 9/10 before your interview day',
+    ].map(s=>`<li style="font-size:.875rem;color:var(--muted);margin-bottom:7px;line-height:1.55">${s}</li>`).join('')}
+  </ol>
+</div>`;}
+
+// =========================================================
+// CULTURE
+// =========================================================
+function renderCulture(){return `
+<div style="margin-bottom:20px">
+  <div class="breadcrumb"><b onclick="navigate('home')">Home</b><span class="sep">›</span>Culture & Process</div>
+  <h1 style="font-size:1.8rem;font-weight:800;margin-bottom:6px">🏢 Ivanti Culture & Interview Process</h1>
+  <p class="muted">What to expect, how to prepare, and insider context from Glassdoor + Ivanti careers.</p>
+</div>
+<div class="sh"><h2>Ivanti's Core Values</h2></div>
+<div class="info-grid mb20">
+  ${[
+    {title:'Win Together',items:['Open collaboration is foundational','Transparent communication & mutual trust','No "lone hero" mentality — team wins matter','Cross-functional alignment expected']},
+    {title:'Customers & Partners at Our Core',items:['IT & Security teams are at center of customer innovation','Obsess over customer needs','Prioritize technology that moves businesses forward','Partners are an extension of the team']},
+    {title:'Achieve and Exceed',items:['Performance-driven culture','Relentlessly pursue goals','Set new benchmarks for customers, employees, investors','Metrics and outcomes matter']},
+    {title:'Own It',items:['Debate → Decide → Commit philosophy','Once aligned, execute fully','Accountability at every level','No blame culture — own results']},
+  ].map(i=>`<div class="ib"><h4>${i.title}</h4><ul>${i.items.map(x=>`<li>${x}</li>`).join('')}</ul></div>`).join('')}
+</div>
+
+<div class="sh"><h2>Typical Interview Process</h2></div>
+<ul class="timeline mb20">
+  ${[
+    {n:'1',color:'var(--brand)',title:'HR Screening (Phone / Teams, 30 min)',desc:'Recruiter reviews background, role fit, compensation expectations. Process is transparent — they tell you who you\'ll meet upfront. Interviews are remote via Microsoft Teams.'},
+    {n:'2',color:'var(--green)',title:'Hiring Manager Round (45-60 min)',desc:'Assesses your background, technical fit, and experience with relevant technologies. Conversational tone. STAR method responses work well here.'},
+    {n:'3',color:'var(--purple)',title:'Technical Rounds (1–2 rounds, 45 min each)',desc:'Depth on product knowledge, architecture, or coding (for engineering roles). Coding rounds: typically easy–medium LeetCode difficulty. Expect scenario-based questions.'},
+    {n:'4',color:'var(--amber)',title:'Behavioral Round (45 min)',desc:'Standard STAR-format behavioral questions. Common themes: handling difficult customers, learning a complex product, disagreeing with a decision, collaboration under pressure.'},
+    {n:'5',color:'var(--green)',title:'Offer via DocuSign',desc:'If successful, recruiter calls to discuss offer verbally before sending via DocuSign. Equipment ships 3–4 days before start date.'},
+  ].map(s=>`<li class="tl-item"><div class="tl-dot" style="background:${s.color}">${s.n}</div><div class="tl-content"><div class="tl-title">${s.title}</div><div class="tl-desc">${s.desc}</div></div></li>`).join('')}
+</ul>
+
+<div class="two-col mb20">
+  <div>
+    <div class="sh"><h2>✅ Do These</h2></div>
+    <div class="card" style="border-left:3px solid var(--green)">
+      <ul class="cl">
+        ${['Use STAR method for all behavioral answers — Situation, Task, Action, Result','Mention specific Ivanti product names confidently — shows you did homework','Demonstrate learning agility: emphasize how quickly you\'ve onboarded to new tools','Ask about the team\'s current product modules and roadmap priorities','Dress business casual — Ivanti is professional but not overly formal','Know Ivanti\'s "Secure by Design" and "Anywhere Work" narratives','Reference real Ivanti features (VRR, Ring Deployment, Neurons Bots) — not generic IT concepts'].map(x=>`<li><span class="cli" style="color:var(--green)">✓</span><span>${x}</span></li>`).join('')}
+      </ul>
+    </div>
+  </div>
+  <div>
+    <div class="sh"><h2>⚠️ Avoid These</h2></div>
+    <div class="card" style="border-left:3px solid var(--red)">
+      <ul class="cl">
+        ${['Saying "ServiceNow is better" — know Ivanti\'s positioning without dismissing competitors','Calling it "low-code" when Ivanti says "codeless" — shows you didn\'t research','Generic ITIL definitions without tying to Ivanti features specifically','Saying you\'ve never heard of MobileIron or LANDESK if asked about history','Expecting instant responses — some teams have slower follow-up (Glassdoor feedback)','Underselling culture fit — behavioral and values alignment is weighted heavily','Vague answers about AI — know specifically what Neurons AI does across modules'].map(x=>`<li><span class="cli" style="color:var(--red)">✗</span><span>${x}</span></li>`).join('')}
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="sh"><h2>Company Profile (Quick Facts)</h2></div>
+<div class="info-grid">
+  ${[
+    {title:'Company Stats',items:['HQ: South Jordan, Utah','33 office locations worldwide','3.5/5 stars Glassdoor (1,151+ reviews)','62% of employees recommend to a friend','~3,000+ employees globally','Acquisition-driven growth model']},
+    {title:'Customer Base',items:['40,000+ customers (MDM line)','34,000+ ITSM customers','88% of Fortune 100 use Ivanti products','Global enterprise IT & Security focus','Industries: finance, healthcare, government, retail','34,000 includes 85 of Fortune 100 per ITSM stats']},
+    {title:'Work Culture',items:['Remote-first / Anywhere Work — very flexible','If you do your job well, no concerns about layoffs','Great work-life balance consistently praised','Benefits competitive per industry standards','Summer Fridays (department-specific)','Unlimited PTO at some levels']},
+    {title:'Glassdoor Interview Stats',items:['50% of candidates rate experience positive','2.9/5 average difficulty score (moderate)','Process: 2–6 rounds depending on role','Most common feedback: conversational but can be slow to follow up','Offer via DocuSign after verbal acceptance']},
+  ].map(i=>`<div class="ib"><h4>${i.title}</h4><ul>${i.items.map(x=>`<li>${x}</li>`).join('')}</ul></div>`).join('')}
+</div>
+${renderQASection('culture')}`;}
+
+// =========================================================
+// COMPARE
+// =========================================================
+function renderCompare(){return `
+<div style="margin-bottom:20px">
+  <div class="breadcrumb"><b onclick="navigate('home')">Home</b><span class="sep">›</span>Ivanti vs Competitors</div>
+  <h1 style="font-size:1.8rem;font-weight:800;margin-bottom:6px">⚖️ Ivanti vs Competitors</h1>
+  <p class="muted">Competitive positioning — know where Ivanti wins and where to acknowledge competitors honestly.</p>
+</div>
+<div class="card mb20">
+  <p class="small"><strong>Interview tip:</strong> Never dismiss competitors. Show you understand the market objectively, then articulate Ivanti's unique position: <em>unified IT + Security platform, not just an ITSM or just an MDM tool.</em></p>
+</div>
+
+<div class="sh"><h2>ITSM: Ivanti vs ServiceNow vs Jira SM vs BMC</h2></div>
+<div style="overflow-x:auto;margin-bottom:20px">
+  <table class="comp-table">
+    <thead><tr><th>Dimension</th><th>Ivanti Neurons ITSM</th><th>ServiceNow</th><th>Jira Service Mgmt</th><th>BMC Helix</th></tr></thead>
+    <tbody>
+      <tr><td>Configuration Model</td><td class="good">Codeless (no scripting)</td><td>Script-heavy (Script Includes)</td><td>Agile-native config</td><td>Complex configuration</td></tr>
+      <tr><td>ITIL Certification</td><td class="good">11 ITIL 4 practices</td><td class="good">Full ITIL coverage</td><td>Basic ITIL support</td><td class="good">ITIL certified</td></tr>
+      <tr><td>Unified IT+Security</td><td class="good">Native (same platform)</td><td>Via ITSM/SecOps add-ons</td><td>Limited security integration</td><td>Separate Security module</td></tr>
+      <tr><td>Pricing</td><td class="good">Mid-market competitive</td><td>High (enterprise premium)</td><td class="good">Low-mid range</td><td>Enterprise pricing</td></tr>
+      <tr><td>AI Capabilities</td><td class="good">Platform-native AI (2025.x)</td><td class="good">Now Assist (leading AI)</td><td>Atlassian Intelligence</td><td>Emerging AI</td></tr>
+      <tr><td>Endpoint Integration</td><td class="good">Native UEM/MDM/Patch</td><td>Via integrations only</td><td>Via Jira integrations</td><td>Via integrations</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="sh"><h2>MDM/UEM: Ivanti vs Microsoft Intune vs Jamf vs VMware WS1</h2></div>
+<div style="overflow-x:auto;margin-bottom:20px">
+  <table class="comp-table">
+    <thead><tr><th>Dimension</th><th>Ivanti Neurons MDM</th><th>Microsoft Intune</th><th>Jamf</th><th>VMware WS1</th></tr></thead>
+    <tbody>
+      <tr><td>Platform Breadth</td><td class="good">iOS, Android, Windows, macOS, ChromeOS, rugged</td><td>Windows-strong, cross-platform</td><td>Apple-only specialist</td><td class="good">Very broad</td></tr>
+      <tr><td>Best For</td><td>Mixed enterprise fleets</td><td>Microsoft-heavy shops</td><td>Apple-only environments</td><td>Large enterprises</td></tr>
+      <tr><td>ITSM Integration</td><td class="good">Native same-vendor</td><td>Via connectors</td><td>Via connectors</td><td>Via connectors</td></tr>
+      <tr><td>Pricing</td><td>Competitive</td><td class="good">Included in M365 E3+</td><td>Premium Apple focus</td><td>High enterprise</td></tr>
+      <tr><td>Rugged/Specialized Devices</td><td class="good">Zebra, HoloLens, Oculus</td><td>Limited</td><td>Apple only</td><td>Good</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="sh"><h2>Security/Patch: Ivanti vs Qualys vs Tenable vs CrowdStrike</h2></div>
+<div style="overflow-x:auto">
+  <table class="comp-table">
+    <thead><tr><th>Dimension</th><th>Ivanti Neurons Patch/RBVM</th><th>Qualys</th><th>Tenable Nessus</th><th>CrowdStrike</th></tr></thead>
+    <tbody>
+      <tr><td>Patch + Vuln in One</td><td class="good">Yes — integrated</td><td>Patch separately</td><td>Scan only (no patching)</td><td>No native patching</td></tr>
+      <tr><td>Risk Scoring</td><td class="good">VRR (proprietary, contextual)</td><td class="good">QDS (qualys risk score)</td><td class="good">VPR scoring</td><td>CrowdScore</td></tr>
+      <tr><td>ITSM Integration</td><td class="good">Native same-vendor ITSM</td><td>Via API</td><td>Via API</td><td>Via API</td></tr>
+      <tr><td>Crowdsourced Reliability</td><td class="good">Yes (unique)</td><td>No</td><td>No</td><td>No</td></tr>
+      <tr><td>Ring Deployment</td><td class="good">Yes (native)</td><td>No</td><td>No</td><td>No</td></tr>
+    </tbody>
+  </table>
+</div>`;}
+
+// =========================================================
+// BIND EVENTS
+// =========================================================
+function bindEvents(page){
+  // Tab navigation (module pages)
+  main.querySelectorAll('.tabs .tab').forEach(btn=>{
+    btn.addEventListener('click',function(){
+      const container = this.closest('.tabs');
+      const tabIndex = this.dataset.ti;
+      const qaFilter = this.dataset.qa;
+      if(tabIndex!==undefined){
+        container.querySelectorAll('.tab').forEach(b=>b.classList.remove('active'));
+        this.classList.add('active');
+        const prefix = page+'-t';
+        main.querySelectorAll('.tab-pane').forEach(p=>{
+          p.classList.toggle('active',p.id===prefix+tabIndex);
+        });
+      }
+      if(qaFilter!==undefined){
+        container.querySelectorAll('.tab').forEach(b=>b.classList.remove('active'));
+        this.classList.add('active');
+        const list = document.getElementById('qaList');
+        const filtered = qaFilter==='all' ? QA_BANK : QA_BANK.filter(q=>q.module===qaFilter);
+        list.innerHTML = filtered.map(q=>`
+          <details class="acc" data-qid="${q.id}">
+            <summary>
+              <span><span class="acc-tag ${q.diff==='hard'?'tag-hard':q.diff==='easy'?'tag-easy':'tag-med'}">${q.diff}</span>${q.q}</span>
+              <span class="acc-arrow">›</span>
+            </summary>
+            <div class="acc-body">
+              <div class="ans">${q.a}</div>
+              <div class="tag-row">${q.tags.map(t=>`<span class="tag">${t}</span>`).join('')}</div>
+            </div>
+          </details>`).join('');
+      }
+    });
+  });
+
+  // Quiz
+  if(page==='quiz'){
+    main.querySelectorAll('.qo').forEach(opt=>{
+      opt.addEventListener('click',function(){
+        const qid = this.dataset.qid;
+        const oi = parseInt(this.dataset.oi);
+        if(quizState[qid]!==undefined) return;
+        quizState[qid] = oi;
+        const q = QUIZ_DATA.find(x=>x.id===qid);
+        main.querySelectorAll(`.qo[data-qid="${qid}"]`).forEach((o,i)=>{
+          if(i===q.correct) o.classList.add('correct');
+          else if(i===oi && i!==q.correct) o.classList.add('wrong');
+        });
+        const exp = document.getElementById('exp-'+qid);
+        if(exp)exp.style.display='block';
+      });
+    });
+    const rb = document.getElementById('resetQuiz');
+    if(rb) rb.addEventListener('click',()=>{quizState={};navigate('quiz');});
+  }
+
+  // Nav inside content
+  main.querySelectorAll('[data-nav]').forEach(el=>{
+    el.addEventListener('click',()=>navigate(el.dataset.nav));
+  });
+}
+
+// =========================================================
+// INIT
+// =========================================================
+navigate('home');
+</script>
+</body>
+</html>
